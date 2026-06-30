@@ -1,54 +1,75 @@
 # CATATAN PROJECT — Plandemic Space Landing Page
-# Update terakhir: 30 Juni 2026 (sesi logo asli, favicon, OG image)
+# Update terakhir: 30 Juni 2026 (sesi SEO + favicon gold + grid layanan)
 
 ---
 
-## UPDATE SESI INI: Logo Asli, Favicon, OG Image, Navbar
+## UPDATE SESI INI
 
-Owner upload logo asli (PNG + SVG, versi navy & gold) tanpa tulisan,
-font logo terkonfirmasi: **Rajdhani**.
+### 1. Favicon diganti ke versi GOLD
+Favicon sebelumnya pakai logo navy — nyaris invisible di browser tab
+mode gelap (dark mode). Diganti ke logo gold, kontras lebih bagus di
+tab mode terang maupun gelap. File yang diganti di `img/`:
+favicon.ico, favicon-16.png, favicon-32.png, apple-touch-icon.png, logo-512.png
 
-### File baru di folder `img/`
+### 2. Grid Layanan dikunci 3 kolom (gak bolong lagi)
+Sebelumnya pakai `auto-fit` yang bikin baris terakhir bolong 2 kotak
+kosong di lebar layar tertentu. Sekarang dikunci:
+- Desktop: 3 kolom x 2 baris (pas buat 6 layanan)
+- Mobile (≤720px): 2 kolom x 3 baris
+- Kalau nanti nambah jadi 8 layanan → tinggal ganti ke 4 kolom desktop
 
-- `favicon.ico` — multi-resolusi (16/32/48px)
-- `favicon-16.png`, `favicon-32.png` — favicon individual
-- `apple-touch-icon.png` — 180x180, buat iOS homescreen
-- `logo-512.png` — versi besar, cadangan
-- `og-image.png` — 1200x630, background navy + logo gold + teks
-  "PLANDEMIC SPACE" (font Rajdhani) buat preview link di WA/Facebook
-- `logo.svg`, `logo_gold.svg` — file asli dari owner, disimpan sebagai master
+### 3. POSITIONING DIPERBAIKI — fokus utama Laptop/Komputer/Printer
+Owner klarifikasi: basic usaha adalah servis **komputer, laptop, printer**.
+Servis HP itu cuma bantu-bantu warga sesekali, sparepart masih nebeng
+dari teman, kadang malah dilempar ke teman lain kalau susah. SEO &
+konten sebelumnya kesannya HP jadi fokus utama — ini salah & bisa
+bikin ekspektasi customer gak sesuai kapasitas owner.
 
-Proses yang dilakukan:
-- Logo asli (1024x1258, gak 1:1) dikasih padding biar jadi kotak
-  proporsional sebelum di-resize ke ukuran favicon kecil (gak di-stretch)
-- OG image dibikin manual pakai PIL: background navy `#1B2E4B`,
-  logo gold di kiri, teks brand di kanan pakai font Rajdhani
+Yang diubah:
+- `<title>` — sebelumnya "Servis HP, Laptop & Print" → sekarang
+  "Servis Laptop, Komputer & Printer" (HP dihapus dari title)
+- `meta description` & `keywords` — laptop/komputer/printer di depan,
+  HP cuma disebut "bantuan servis HP" di akhir kalimat
+- `og:title` & `og:description` — sama, fokus laptop/komputer/printer
+- **Card layanan "Servis HP" digeser ke nomor 06 (paling akhir)**,
+  badge "PANGGILAN" dihapus dari card ini, deskripsi diganti jadi
+  jujur: "Bantuan servis ringan, konsultasi dulu via WhatsApp untuk
+  cek ketersediaan sparepart" — gak janji bisa semua kerusakan
 
-### Perubahan di `index.html`
+### 4. File SEO baru: `robots.txt` & `sitemap.xml`
+Taruh KEDUANYA di **root project** (sejajar sama `index.html`, BUKAN
+di dalam folder manapun).
+- `robots.txt` — kasih tau Google boleh crawl semua halaman + lokasi sitemap
+- `sitemap.xml` — daftar URL halaman, baru ada 1 URL (homepage) karena
+  situs masih single-page
 
-- `<link rel="icon">` lama (logo.png langsung) diganti jadi referensi
-  favicon.ico + favicon-16.png + favicon-32.png + apple-touch-icon.png
-- `og:image` diganti dari `logo.png` ke `img/og-image.png`
-- **SVG navbar diganti** — sebelumnya SVG hasil coding manual ("P" generik),
-  sekarang pakai path asli dari `logo_gold.svg` (3 path, warna gold,
-  proporsi asli gak dipaksa kotak) → biar konsisten sama logo asli
-  di favicon & OG image
+### LANGKAH SELANJUTNYA buat SEO (belum dikerjakan, giliran owner)
 
-### Perubahan di `style.css`
+1. **Daftarkan ke Google Search Console** (search.google.com/search-console)
+   - Login pakai email yang sama dengan akun GitHub/Vercel
+   - Tambah properti pakai URL: `https://plandemicspace.vercel.app`
+   - Verifikasi kepemilikan (biasanya otomatis kalau pakai metode "URL prefix"
+     + ada akses ke DNS, atau pakai metode upload file HTML verifikasi —
+     nanti tanya saya kalau sampai langkah ini, saya bantu)
+   - Submit sitemap: masukin `sitemap.xml` di menu "Sitemaps"
+2. **Cek Google Business Profile** udah link ke web yang bener
+   (`plandemicspace.vercel.app`, bukan link lama/salah)
+3. Tunggu 1-2 minggu, baru cek di GSC apakah halaman udah ke-index
 
-- `.nav-logo` ditambah `display: block` (minor, biar svg gak ada gap aneh)
+---
 
-### Yang TETAP Montserrat (dari sesi sebelumnya)
+## File yang perlu diupload sesi ini
 
-Label section, badge, nomor step/svc, tombol CTA — tidak berubah.
+- `index.html` (root) — replace
+- `robots.txt` (root) — file BARU
+- `sitemap.xml` (root) — file BARU
+- `img/favicon.ico`, `img/favicon-16.png`, `img/favicon-32.png`,
+  `img/apple-touch-icon.png`, `img/logo-512.png` — replace (versi gold)
+- `css/style.css` — replace (grid layanan 3 kolom)
 
-### Action wajib pas upload ke GitHub
+---
 
-1. Bikin folder `img/` di root project (kalau belum ada)
-2. Upload semua file dari folder `img/` hasil sesi ini ke situ
-3. Replace `index.html` dan `css/style.css` dengan versi terbaru
-
-### Belum dikerjakan (PR selanjutnya)
+## Belum dikerjakan (PR selanjutnya, urutan prioritas)
 
 1. **Foto asli untuk galeri** — PALING PENTING, belum ada progress
 2. Cek ulang data WA/rating/ulasan masih akurat
@@ -56,11 +77,11 @@ Label section, badge, nomor step/svc, tombol CTA — tidak berubah.
 4. Jam operasional ditampilkan di web
 5. Embed peta kecil di section Kontak
 6. Test langsung di HP fisik (terutama tombol WA mengambang pas scroll)
-7. robots.txt & sitemap.xml (SEO)
-8. Daftar ke Google Search Console setelah semua live
+7. Daftar Google Search Console + submit sitemap (lihat langkah di atas)
 
 ---
 
 (Catatan struktur halaman, warna, kontak, dll — lihat versi sebelumnya,
 tidak berubah di sesi ini)
+
 
