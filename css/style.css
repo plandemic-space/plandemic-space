@@ -61,11 +61,11 @@ body {
 }
 
 .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.nav-logo { flex-shrink: 0; }
+.nav-logo { flex-shrink: 0; display: block; }
 
 .nav-name {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
   color: var(--white);
@@ -73,7 +73,9 @@ body {
 .nav-name span { color: var(--gold); }
 
 .nav-tagline {
+  font-family: 'Rajdhani', sans-serif;
   font-size: 9px;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.3);
   letter-spacing: 1.5px;
   margin-top: 1px;
@@ -678,8 +680,8 @@ footer {
 }
 
 .ft-name {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.4);
