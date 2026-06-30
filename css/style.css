@@ -712,6 +712,22 @@ footer {
 /* ============================================
    RESPONSIVE
    ============================================ */
+/* ============================================
+   DESKTOP — Hero pas 1 layar (rating & WA langsung kelihatan)
+   ============================================ */
+@media (min-width: 861px) {
+  .hero {
+    min-height: calc(100vh - 64px);
+    display: flex;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .hero-sub { margin-bottom: 2rem; }
+  .hero-btns { margin-bottom: 0; }
+  .hero-stats { margin-top: 2.5rem; padding-top: 1.75rem; }
+}
+
 @media (max-width: 860px) {
   .about-inner { grid-template-columns: 1fr; }
 }
