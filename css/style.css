@@ -541,6 +541,55 @@ body {
 .gal-maps-link:hover { gap: 10px; }
 
 /* ============================================
+   TESTIMONI
+   ============================================ */
+.testi {
+  background: var(--cream);
+  padding: 5rem 2rem;
+}
+.testi-inner { max-width: 880px; margin: 0 auto; }
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.testi-card {
+  background: var(--white);
+  border: 1px solid var(--pastel);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+.testi-stars {
+  color: var(--gold);
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 0.75rem;
+}
+.testi-text {
+  font-size: 13px;
+  color: var(--navy);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.testi-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--navy);
+}
+.testi-source {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+@media (max-width: 720px) {
+  .testi-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================
    NILAI KAMI
    ============================================ */
 .values {
@@ -645,6 +694,38 @@ body {
   justify-content: center;
   gap: 0.75rem;
   flex-wrap: wrap;
+}
+
+.cta-hours {
+  max-width: 280px;
+  margin: 2.5rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--pastel-dark);
+}
+.cta-hours-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--navy-mid);
+  opacity: 0.6;
+  margin-bottom: 0.75rem;
+}
+.cta-hours-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--muted);
+  padding: 4px 0;
+}
+.cta-hours-row span:first-child { color: var(--navy); font-weight: 600; }
+
+.cta-map {
+  margin-top: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--pastel-dark);
+  line-height: 0;
 }
 
 .soc {
