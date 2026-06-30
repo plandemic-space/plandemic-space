@@ -437,7 +437,7 @@ body {
 
 .svc-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--pastel);
   border: 1px solid var(--pastel);
@@ -731,6 +731,10 @@ footer {
   .hero-sub { margin-bottom: 1.5rem; }
   .hero-btns { margin-bottom: 0; }
   .hero-stats { margin-top: 1.75rem; padding-top: 1.25rem; }
+}
+
+@media (max-width: 720px) {
+  .svc-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 860px) {
