@@ -57,7 +57,7 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         "opens": "08:00",
         "closes": "17:00"
       }
@@ -96,7 +96,7 @@
         <a href="#tentang" class="nav-link">Tentang</a>
         <a href="#layanan" class="nav-link">Layanan</a>
         <a href="#galeri" class="nav-link">Galeri</a>
-        <button class="nav-cta" onclick="scrollTo('kontak')">HUBUNGI KAMI</button>
+        <button class="nav-cta" onclick="scrollToSection('kontak')">HUBUNGI KAMI</button>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -111,8 +111,8 @@
       <h1>Ruang Solusi,<br><em>Tumbuh Bersama.</em></h1>
       <p class="hero-sub">Solusi teknologi dan layanan harian yang praktis, terpercaya, dan dekat — untuk kebutuhan nyata masyarakat sekitar.</p>
       <div class="hero-btns">
-        <button class="btn-main" onclick="scrollTo('layanan')">LIHAT LAYANAN</button>
-        <button class="btn-ghost" onclick="scrollTo('tentang')">Tentang kami <span>→</span></button>
+        <button class="btn-main" onclick="scrollToSection('layanan')">LIHAT LAYANAN</button>
+        <button class="btn-ghost" onclick="scrollToSection('tentang')">Tentang kami <span>→</span></button>
       </div>
       <div class="hero-stats">
         <div class="stat">
@@ -203,7 +203,7 @@
         </div>
         <div class="step">
           <div class="step-num">03</div>
-          <div class="step-title">SELESAI & BERES</div>
+          <div class="step-title">TINGGAL AMBIL</div>
           <div class="step-desc">Perangkat selesai diperbaiki. Bisa diambil langsung atau kami antar.</div>
           <div class="step-tag">BISA PANGGILAN</div>
         </div>
@@ -242,13 +242,13 @@
         <div class="svc">
           <div class="svc-num">05</div>
           <div class="svc-name">Jual Beli HP & Laptop</div>
-          <div class="svc-desc">Perangkat second maupun baru, harga transparan</div>
-          <div class="svc-badge">2ND & NEW</div>
+          <div class="svc-desc">Cari second berkualitas atau pengen yang baru? Tinggal pilih sesuai budget, harga transparan</div>
+          <div class="svc-badge">SECOND & BARU</div>
         </div>
         <div class="svc">
           <div class="svc-num">06</div>
           <div class="svc-name">Servis HP</div>
-          <div class="svc-desc">Berbagai kerusakan bisa ditangani, chat WhatsApp dulu biar sparepart disiapkan</div>
+          <div class="svc-desc">Jangan panik duluan — chat dulu yuk, kami bantu carikan solusi & sparepartnya</div>
         </div>
       </div>
     </div>
@@ -364,8 +364,7 @@
 
       <div class="cta-hours">
         <div class="cta-hours-label">JAM OPERASIONAL</div>
-        <div class="cta-hours-row"><span>Senin – Sabtu</span><span>08.00 – 17.00</span></div>
-        <div class="cta-hours-row"><span>Minggu</span><span>Tutup</span></div>
+        <div class="cta-hours-row"><span>Senin – Minggu</span><span>08.00 – 17.00</span></div>
       </div>
 
       <div class="cta-map">

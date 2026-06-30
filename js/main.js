@@ -3,7 +3,7 @@
 // ============================================
 
 // Smooth scroll helper (dipanggil dari HTML onclick)
-function scrollTo(id) {
+function scrollToSection(id) {
   const el = document.getElementById(id);
   if (el) el.scrollIntoView({ behavior: 'smooth' });
 }
