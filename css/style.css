@@ -1,6 +1,6 @@
 /* ============================================
    PLANDEMIC SPACE — style.css
-   Font: DM Serif Display + Plus Jakarta Sans + Montserrat
+   Font: DM Serif Display + Plus Jakarta Sans + Rajdhani
    Palette: Navy + Gold + Pastel Blue + Cream
    ============================================ */
 
@@ -95,7 +95,7 @@ body {
 .nav-link:hover { color: var(--white); }
 
 .nav-cta {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -150,7 +150,7 @@ body {
 }
 
 .hero-kicker {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -190,7 +190,7 @@ body {
 .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 
 .btn-main {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -274,7 +274,7 @@ body {
 }
 
 .label {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -334,7 +334,7 @@ body {
 }
 
 .tl-date {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -365,7 +365,7 @@ body {
 .howto-inner { max-width: 880px; margin: 0 auto; }
 
 .sec-label {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -400,7 +400,7 @@ body {
   margin-bottom: 0.5rem;
 }
 .step-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 12px;
   font-weight: 700;
   color: var(--navy);
@@ -417,7 +417,7 @@ body {
   margin-top: 8px;
   font-size: 10px;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   letter-spacing: 0.5px;
   padding: 2px 9px;
   border-radius: 2px;
@@ -474,7 +474,7 @@ body {
   margin-top: 8px;
   font-size: 10px;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   letter-spacing: 0.5px;
   padding: 2px 8px;
   border-radius: 2px;
@@ -494,12 +494,12 @@ body {
 .gal-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 190px 190px 190px;
   gap: 0.75rem;
   margin-top: 2rem;
-  height: 420px;
 }
 .gal-large { grid-row: span 2; }
+.gal-tall  { grid-row: span 3; }
 
 .gal-item {
   border-radius: 8px;
@@ -507,14 +507,23 @@ body {
   background: var(--pastel-light);
   border: 1px solid var(--pastel);
 }
-.gal-item img {
+.gal-placeholder {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--pastel-dark);
 }
-.gal-item:hover img { transform: scale(1.03); }
+.gal-large .gal-placeholder span {
+  font-size: 11px;
+  color: var(--muted);
+  text-align: center;
+  max-width: 200px;
+  line-height: 1.5;
+}
 
 .gal-maps-link {
   display: inline-flex;
@@ -660,7 +669,7 @@ body {
   color: var(--white);
   padding: 14px 28px;
   border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -673,7 +682,7 @@ body {
 .cta-wa:hover { background: var(--navy-mid); }
 
 .cta-find-us {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 9px;
   letter-spacing: 2px;
   color: var(--muted);
@@ -694,7 +703,7 @@ body {
   border-top: 1px solid var(--pastel-dark);
 }
 .cta-hours-label {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -846,8 +855,9 @@ footer {
   .val { grid-template-columns: 1fr; }
   .val-dot { display: none; }
   .gal-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; height: auto; }
-  .gal-large { grid-row: span 1; grid-column: span 2; height: 200px; }
-  .gal-grid .gal-item:not(.gal-large) { height: 130px; }
+  .gal-large { grid-row: span 1; grid-column: span 2; height: 180px; }
+  .gal-tall  { grid-row: span 1; height: 220px; }
+  .gal-grid .gal-item:not(.gal-large):not(.gal-tall) { height: 130px; }
   .ft-inner { flex-direction: column; text-align: center; }
   .ft-links { justify-content: center; }
   #navbar { padding: 0 1.25rem; }
