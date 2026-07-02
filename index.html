@@ -27,14 +27,14 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600&family=Montserrat:wght@600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
   <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ElectronicsStore",
+    "@type": ["LocalBusiness", "RepairShop"],
     "name": "Plandemic Space",
     "image": "https://plandemicspace.vercel.app/img/og-image.png",
     "logo": "https://plandemicspace.vercel.app/img/logo-512-whitebg.png",
@@ -67,6 +67,18 @@
       "ratingValue": "4.9",
       "reviewCount": "28"
     },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Layanan Plandemic Space",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Servis Laptop & Komputer" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Servis Printer" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Print, Fotokopi & Scan" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pengetikan Dokumen" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jual Beli HP & Laptop" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Servis HP" } }
+      ]
+    },
     "sameAs": [
       "https://www.instagram.com/zns.srr/",
       "https://www.facebook.com/zainus.surur/",
@@ -88,7 +100,7 @@
       </svg>
       <div>
         <div class="nav-name">PLANDEMIC <span>SPACE</span></div>
-        <div class="nav-tagline">MULTI SERVICE & HOME BUSINESS</div>
+        <div class="nav-tagline">KEMIRI · PURWOREJO · JAWA TENGAH</div>
       </div>
     </a>
     <div class="nav-right">
@@ -107,9 +119,9 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-inner">
-      <div class="hero-kicker">PURWOREJO, JAWA TENGAH</div>
+      <div class="hero-kicker">KEMIRI, PURWOREJO</div>
       <h1>Ruang Solusi,<br><em>Tumbuh Bersama.</em></h1>
-      <p class="hero-sub">Solusi teknologi dan layanan harian yang praktis, terpercaya, dan dekat — untuk kebutuhan nyata masyarakat sekitar.</p>
+      <p class="hero-sub">Servis laptop, komputer &amp; printer terpercaya di Kemiri — plus print, fotokopi, dan kebutuhan digital harian warga sekitar. Konsultasi &amp; diagnosa gratis.</p>
       <div class="hero-btns">
         <button class="btn-main" onclick="scrollToSection('layanan')">LIHAT LAYANAN</button>
         <button class="btn-ghost" onclick="scrollToSection('tentang')">Tentang kami <span>→</span></button>
@@ -143,16 +155,15 @@
       <div class="about-text">
         <div class="label">TENTANG KAMI</div>
         <h2>Dimulai dari satu postingan. Berkembang jadi solusi.</h2>
-        <p>Plandemic Space lahir di tengah pandemi — bukan dari rencana besar, tapi dari kebutuhan nyata di sekitar. Dari satu postingan di Instagram, satu orderan pertama, dan keputusan untuk tidak berhenti.</p>
-        <p>Nama <strong>Plandemic</strong> bukan sekadar plesetan dari <em>pandemic</em> — tapi pengingat bahwa dari masa paling sulit pun, sesuatu yang bermanfaat bisa lahir.</p>
-        <p>Kini Plandemic Space terus berkembang — melayani kebutuhan teknologi, digital, dan harian masyarakat sekitar dengan pendekatan yang jujur dan terjangkau.</p>
+        <p>Plandemic Space tidak lahir dari rencana bisnis. Lahir dari satu pertanyaan sederhana: kalau warga sekitar butuh bantuan — perangkat rusak, internet mati, tugas sekolah menumpuk — siapa yang bisa mereka andalkan? Pemiliknya sudah 10 tahun bekerja di bidang ini sebelum memutuskan pulang dan melayani dari rumah.</p>
+        <p>Nama <strong>Plandemic</strong> bukan sekadar plesetan dari <em>pandemic</em> — dan bukan soal teori apa pun tentang pandemi itu. 'Plan' dipilih karena kami percaya semua yang terjadi adalah rencana-Nya, termasuk masa sulit yang justru melahirkan tempat ini. Pengingat bahwa dari masa paling sulit pun, sesuatu yang benar-benar berguna bisa lahir. Plandemic Space adalah salah satunya.</p>
       </div>
       <div class="timeline">
         <div class="tl">
           <div class="tl-left"><div class="tl-dot"></div></div>
           <div class="tl-right">
             <div class="tl-date">31 JULI 2020</div>
-            <div class="tl-title">Pertama kali promosi</div>
+            <div class="tl-title">Satu postingan, satu keputusan</div>
             <div class="tl-desc">Satu postingan di Instagram. Awal dari semuanya.</div>
           </div>
         </div>
@@ -169,7 +180,7 @@
           <div class="tl-right">
             <div class="tl-date">5 AGUSTUS 2021</div>
             <div class="tl-title">PlandemicNET lahir</div>
-            <div class="tl-desc">Inisiatif internet iuran warga saat akses digital paling dibutuhkan.</div>
+            <div class="tl-desc">Anak-anak sekitar butuh internet untuk sekolah daring — sinyal seluler tidak memadai, internet kabel belum masuk, paket data terlalu mahal untuk dipakai setiap hari. Kami bangun sendiri solusinya: dari nol, untuk warga, berjalan sampai sekarang. Dari situlah karakter Plandemic Space terbentuk — bukan sekadar membantu, tapi hadir ketika dibutuhkan. Ada yang butuh, ada yang gerak.</div>
           </div>
         </div>
         <div class="tl">
@@ -177,7 +188,7 @@
           <div class="tl-right">
             <div class="tl-date">SEKARANG & KE DEPAN</div>
             <div class="tl-title">Multi service & digital dusun</div>
-            <div class="tl-desc">Berkembang jadi pusat layanan dan mulai bantu UMKM lokal go digital.</div>
+            <div class="tl-desc">Dari servis perangkat ke layanan digital harian — dan ke depan, pelan-pelan ikut bantu warga sekitar hadir secara digital. Satu langkah sekaligus, sesuai kapasitas.</div>
           </div>
         </div>
       </div>
@@ -188,7 +199,7 @@
   <section class="howto" id="cara-kerja">
     <div class="howto-inner">
       <div class="sec-label">CARA KERJA</div>
-      <h2 class="sec-title">Mudah, transparan, tanpa ribet.</h2>
+      <h2 class="sec-title">Tiga langkah, tanpa biaya kejutan.</h2>
       <div class="steps">
         <div class="step">
           <div class="step-num">01</div>
@@ -215,40 +226,40 @@
   <section class="services" id="layanan">
     <div class="services-inner">
       <div class="sec-label">LAYANAN</div>
-      <h2 class="sec-title">Apa yang bisa kami bantu?</h2>
+      <h2 class="sec-title">Servis cepat, harga jelas dari awal.</h2>
       <div class="svc-grid">
         <div class="svc">
           <div class="svc-num">01</div>
-          <div class="svc-name">Servis Laptop & PC</div>
-          <div class="svc-desc">Diagnosa gratis sebelum perbaikan dimulai</div>
+          <div class="svc-name">Servis Laptop & Komputer</div>
+          <div class="svc-desc">Laptop, notebook, PC desktop, mini PC, hingga AIO — diagnosa gratis sebelum perbaikan dimulai.</div>
           <div class="svc-badge">PANGGILAN</div>
         </div>
         <div class="svc">
           <div class="svc-num">02</div>
           <div class="svc-name">Servis Printer</div>
-          <div class="svc-desc">Infus tinta, ganti cartridge, perawatan berkala</div>
+          <div class="svc-desc">Infus tinta, ganti cartridge, perawatan berkala. Termasuk layanan panggilan.</div>
           <div class="svc-badge">PANGGILAN</div>
         </div>
         <div class="svc">
           <div class="svc-num">03</div>
           <div class="svc-name">Print, Fotokopi & Scan</div>
-          <div class="svc-desc">Hitam-putih maupun warna, bisa ditunggu</div>
+          <div class="svc-desc">Hitam-putih maupun warna. Bisa ditunggu langsung.</div>
         </div>
         <div class="svc">
           <div class="svc-num">04</div>
           <div class="svc-name">Pengetikan Dokumen</div>
-          <div class="svc-desc">Surat, proposal, tugas sekolah, dan lainnya</div>
+          <div class="svc-desc">Surat, proposal, CV, tugas sekolah — rapi dan siap pakai.</div>
         </div>
         <div class="svc">
           <div class="svc-num">05</div>
           <div class="svc-name">Jual Beli HP & Laptop</div>
-          <div class="svc-desc">Cari second berkualitas atau pengen yang baru? Tinggal pilih sesuai budget, harga transparan</div>
+          <div class="svc-desc">Cari second berkualitas atau pengen yang baru? Tinggal pilih sesuai budget, harga transparan.</div>
           <div class="svc-badge">SECOND & BARU</div>
         </div>
         <div class="svc">
           <div class="svc-num">06</div>
           <div class="svc-name">Servis HP</div>
-          <div class="svc-desc">Jangan panik duluan — chat dulu yuk, kami bantu carikan solusi & sparepartnya</div>
+          <div class="svc-desc">Jangan panik duluan — chat dulu yuk, kami bantu carikan solusi & sparepartnya.</div>
         </div>
       </div>
     </div>
@@ -261,58 +272,30 @@
       <h2 class="sec-title">Lihat langsung tempat kami.</h2>
       <div class="gal-grid">
         <div class="gal-item">
-          <img src="img/gallery/gal-1-servis-laptop.webp" alt="Teknisi Plandemic Space sedang servis laptop" loading="lazy">
+          <img src="img/gallery/gal-4-meja-kerja.webp" alt="Meja kerja servis laptop Plandemic Space" loading="lazy">
+        </div>
+        <div class="gal-item">
+          <img src="img/gallery/gal-1-servis-laptop.webp" alt="Teknisi sedang mengerjakan servis laptop" loading="lazy">
+        </div>
+        <div class="gal-item">
+          <img src="img/gallery/gal-5-printer.webp" alt="Servis printer Epson di Plandemic Space" loading="lazy">
+        </div>
+        <div class="gal-item">
+          <img src="img/gallery/gal-7-laptop-merah.webp" alt="Laptop selesai diservis, siap dikembalikan" loading="lazy">
+        </div>
+        <div class="gal-item">
+          <img src="img/gallery/gal-6-mainboard.webp" alt="Mainboard printer yang berhasil diperbaiki" loading="lazy">
         </div>
         <div class="gal-item">
           <img src="img/gallery/gal-2-heatsink.webp" alt="Pembersihan heatsink laptop yang tersumbat debu" loading="lazy">
         </div>
         <div class="gal-item">
-          <img src="img/gallery/gal-4-meja-kerja.webp" alt="Meja kerja servis laptop dengan peralatan lengkap" loading="lazy">
-        </div>
-        <div class="gal-item">
-          <img src="img/gallery/gal-3-before-after.webp" alt="Test print warna setelah servis printer" loading="lazy">
-        </div>
-        <div class="gal-item">
-          <img src="img/gallery/gal-5-printer.webp" alt="Servis printer Epson" loading="lazy">
-        </div>
-        <div class="gal-item">
-          <img src="img/gallery/gal-6-mainboard.webp" alt="Mainboard printer yang diperbaiki" loading="lazy">
-        </div>
-        <div class="gal-item">
-          <img src="img/gallery/gal-7-laptop-merah.webp" alt="Laptop ASUS setelah servis baterai" loading="lazy">
+          <img src="img/gallery/gal-3-before-after.webp" alt="Before after servis laptop bersih dari debu" loading="lazy">
         </div>
       </div>
       <a href="https://maps.app.goo.gl/W6FxkN82ArRKb5NT9" target="_blank" rel="noopener" class="gal-maps-link">
         Lihat ulasan &amp; lokasi di Google Maps <span>→</span>
       </a>
-    </div>
-  </section>
-
-  <!-- TESTIMONI -->
-  <section class="testi" id="testimoni">
-    <div class="testi-inner">
-      <div class="sec-label">TESTIMONI</div>
-      <h2 class="sec-title">Apa kata pelanggan kami?</h2>
-      <div class="testi-grid">
-        <div class="testi-card">
-          <div class="testi-stars">★★★★★</div>
-          <p class="testi-text">"Keren pelayanannya, hasilnya memuaskan, semangat mas 🔥🔥🔥"</p>
-          <div class="testi-name">Grandpeaks (Local Guide)</div>
-          <div class="testi-source">Ulasan Google Maps</div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-stars">★★★★★</div>
-          <p class="testi-text">"Joss pelayanannya 👍"</p>
-          <div class="testi-name">Dhikaphone Bayan</div>
-          <div class="testi-source">Ulasan Google Maps</div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-stars">★★★★★</div>
-          <p class="testi-text">"Utama dalam pelayanan 👍"</p>
-          <div class="testi-name">Wahidin Putra</div>
-          <div class="testi-source">Ulasan Google Maps</div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -339,9 +322,38 @@
         <div class="val">
           <div>
             <div class="val-title">Tumbuh bersama kebutuhan warga</div>
-            <div class="val-text">Dari satu layanan jadi multi service — dan ke depan membantu UMKM lokal hadir secara digital.</div>
+            <div class="val-text">Dari PlandemicNET — internet gotong-royong saat pandemi — sampai multi service yang melayani kebutuhan harian warga. Tumbuh bukan karena strategi, tapi karena dipercaya.</div>
           </div>
           <div class="val-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TESTIMONI -->
+  <section class="testi" id="testimoni">
+    <div class="testi-inner">
+      <div class="sec-label">TESTIMONI</div>
+      <h2 class="sec-title">Kata mereka yang sudah pernah ke sini.</h2>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Keren pelayanannya, hasilnya memuaskan, semangat mas 🔥🔥🔥"</p>
+          <div class="testi-name">Grandpeaks (Local Guide)</div>
+          <div class="testi-source">Ulasan Google Maps</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Joss pelayanannya 👍"</p>
+          <div class="testi-name">Dhikaphone Bayan</div>
+          <div class="testi-source">Ulasan Google Maps</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Utama dalam pelayanan 👍"</p>
+          <div class="testi-name">Wahidin Putra</div>
+          <div class="testi-source">Ulasan Google Maps</div>
         </div>
       </div>
     </div>
@@ -350,7 +362,7 @@
   <!-- CTA / KONTAK -->
   <section class="cta" id="kontak">
     <div class="cta-inner">
-      <h2>Ada yang bisa kami <em>bantu?</em></h2>
+      <h2>Ceritakan dulu, <em>kami dengarkan.</em></h2>
       <p>Konsultasi langsung via WhatsApp. Ceritakan kebutuhannya, kami bantu carikan solusinya.</p>
       <a class="cta-wa" href="https://wa.me/6282241439784" target="_blank" rel="noopener">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -387,7 +399,7 @@
     <div class="ft-inner">
       <div class="ft-col">
         <div class="ft-name">PLANDEMIC <span>SPACE</span></div>
-        <div class="ft-copy">© 2020–2026 · Ruang Solusi, Tumbuh Bersama</div>
+        <div class="ft-copy">© 2020–2026 · Dari rumah, untuk warga.</div>
       </div>
       <div class="ft-col ft-addr">
         Ngemplak 02/02, Dusun III<br>
