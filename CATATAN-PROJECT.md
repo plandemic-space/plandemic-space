@@ -1,87 +1,230 @@
-# CATATAN PROJECT — Plandemic Space Landing Page
-# Update terakhir: 30 Juni 2026 (sesi SEO + favicon gold + grid layanan)
+# CATATAN PROJECT — Plandemic Space
+# Update: 2 Februari 2026
+# Status: Website solid — siap live, beberapa hal masih bisa ditingkatkan
 
 ---
 
-## UPDATE SESI INI
+## KEPUTUSAN BRAND YANG DIKUNCI
+> Jangan diubah tanpa data atau diskusi ulang
 
-### 1. Favicon diganti ke versi GOLD
-Favicon sebelumnya pakai logo navy — nyaris invisible di browser tab
-mode gelap (dark mode). Diganti ke logo gold, kontras lebih bagus di
-tab mode terang maupun gelap. File yang diganti di `img/`:
-favicon.ico, favicon-16.png, favicon-32.png, apple-touch-icon.png, logo-512.png
+**Positioning:** Pusat layanan digital masyarakat — bukan toko servis biasa, bukan startup.
+- Layer 1: Servis (laptop/komputer/printer) = yang cari nafkah, harus jelas dalam 3 detik
+- Layer 2: Komunitas & cerita = yang bikin orang percaya dan cerita ke tetangga
 
-### 2. Grid Layanan dikunci 3 kolom (gak bolong lagi)
-Sebelumnya pakai `auto-fit` yang bikin baris terakhir bolong 2 kotak
-kosong di lebar layar tertentu. Sekarang dikunci:
-- Desktop: 3 kolom x 2 baris (pas buat 6 layanan)
-- Mobile (≤720px): 2 kolom x 3 baris
-- Kalau nanti nambah jadi 8 layanan → tinggal ganti ke 4 kolom desktop
+**Karakter:** Lowprofile, jujur, tidak overclaim. Nada: santai-sopan, bukan korporat.
 
-### 3. POSITIONING DIPERBAIKI — fokus utama Laptop/Komputer/Printer
-Owner klarifikasi: basic usaha adalah servis **komputer, laptop, printer**.
-Servis HP itu cuma bantu-bantu warga sesekali, sparepart masih nebeng
-dari teman, kadang malah dilempar ke teman lain kalau susah. SEO &
-konten sebelumnya kesannya HP jadi fokus utama — ini salah & bisa
-bikin ekspektasi customer gak sesuai kapasitas owner.
-
-Yang diubah:
-- `<title>` — sebelumnya "Servis HP, Laptop & Print" → sekarang
-  "Servis Laptop, Komputer & Printer" (HP dihapus dari title)
-- `meta description` & `keywords` — laptop/komputer/printer di depan,
-  HP cuma disebut "bantuan servis HP" di akhir kalimat
-- `og:title` & `og:description` — sama, fokus laptop/komputer/printer
-- **Card layanan "Servis HP" digeser ke nomor 06 (paling akhir)**,
-  badge "PANGGILAN" dihapus dari card ini, deskripsi diganti jadi
-  jujur: "Bantuan servis ringan, konsultasi dulu via WhatsApp untuk
-  cek ketersediaan sparepart" — gak janji bisa semua kerusakan
-
-### 4. File SEO baru: `robots.txt` & `sitemap.xml`
-Taruh KEDUANYA di **root project** (sejajar sama `index.html`, BUKAN
-di dalam folder manapun).
-- `robots.txt` — kasih tau Google boleh crawl semua halaman + lokasi sitemap
-- `sitemap.xml` — daftar URL halaman, baru ada 1 URL (homepage) karena
-  situs masih single-page
-
-### LANGKAH SELANJUTNYA buat SEO (belum dikerjakan, giliran owner)
-
-1. **Daftarkan ke Google Search Console** (search.google.com/search-console)
-   - Login pakai email yang sama dengan akun GitHub/Vercel
-   - Tambah properti pakai URL: `https://plandemicspace.vercel.app`
-   - Verifikasi kepemilikan (biasanya otomatis kalau pakai metode "URL prefix"
-     + ada akses ke DNS, atau pakai metode upload file HTML verifikasi —
-     nanti tanya saya kalau sampai langkah ini, saya bantu)
-   - Submit sitemap: masukin `sitemap.xml` di menu "Sitemaps"
-2. **Cek Google Business Profile** udah link ke web yang bener
-   (`plandemicspace.vercel.app`, bukan link lama/salah)
-3. Tunggu 1-2 minggu, baru cek di GSC apakah halaman udah ke-index
+**Trade-off SEO vs Branding (disengaja, jangan diubah tanpa data GSC):**
+- H1 "Ruang Solusi, Tumbuh Bersama" — tidak mengandung keyword, sengaja demi diferensiasi
+- H2 section titles fokus ke konversi, bukan keyword
+- Keyword sudah tercakup di: title tag, meta desc, hero subheadline, nama card layanan
 
 ---
 
-## File yang perlu diupload sesi ini
+## STATUS WEBSITE (per 2 Februari 2026)
 
-- `index.html` (root) — replace
-- `robots.txt` (root) — file BARU
-- `sitemap.xml` (root) — file BARU
-- `img/favicon.ico`, `img/favicon-16.png`, `img/favicon-32.png`,
-  `img/apple-touch-icon.png`, `img/logo-512.png` — replace (versi gold)
-- `css/style.css` — replace (grid layanan 3 kolom)
+### SECTION ORDER (sudah benar)
+Hero → Cara Kerja → Layanan → Tentang Kami → Galeri → Nilai Kami → Testimoni → FAQ → Kontak
+
+### META & SEO TEKNIS
+- Title: "Plandemic Space | Servis Laptop, Komputer & Printer di Kemiri Purworejo" ✓
+- Meta desc: lokasi spesifik (Dusun Ngemplak, Kemiri, Purworejo) ✓
+- Schema: ["LocalBusiness", "RepairShop"] + hasOfferCatalog (6 layanan) ✓
+- reviewCount: 32 (update manual kalau ulasan bertambah)
+- robots.txt + sitemap.xml: sudah ada ✓
+- Google Search Console: sudah didaftarkan ✓
+
+### FONT
+- 3 family: DM Serif Display (headline puitis) + Plus Jakarta Sans (body) + Rajdhani (brand name)
+- Montserrat: sudah dihapus ✓
+
+### COPYWRITING
+**Hero:**
+- Kicker: BUKA SETIAP HARI · 08.00–17.00
+- H1: Ruang Solusi, Tumbuh Bersama.
+- Sub: "Servis laptop, komputer & printer terpercaya di Kemiri, Purworejo — plus print, fotokopi, pengetikan dokumen, dan jual beli perangkat. Konsultasi & diagnosa gratis."
+
+**Navbar:**
+- Tagline: KEMIRI · PURWOREJO · JAWA TENGAH
+
+**Cara Kerja:**
+- Title: "Tiga langkah, beres."
+- Step 1: angle analisa dulu, bukan "gratis" (sudah disebut di hero)
+- Step 2: "Tidak ada biaya kejutan" — satu-satunya tempat kalimat ini di Cara Kerja
+- Step 3: bisa ambil langsung atau diantar
+
+**Layanan (6 card):**
+- 01: Servis Laptop & Komputer (laptop, notebook, PC desktop, mini PC, AIO) · badge PANGGILAN
+- 02: Servis Printer (infus, cartridge, perawatan) · badge PANGGILAN
+- 03: Print, Fotokopi & Scan
+- 04: Pengetikan Dokumen
+- 05: Jual Beli HP & Laptop · badge SECOND & BARU
+- 06: Servis HP (bantuan, bukan fokus utama — chat dulu)
+
+**Tentang Kami:**
+- P1: tidak lahir dari rencana bisnis + 10 tahun pengalaman
+- P2: filosofi nama Plandemic (tangkis konspirasi → filosofi rencana-Nya → "Plandemic Space adalah salah satunya")
+- Timeline 1: "Satu postingan, satu keputusan"
+- Timeline 2: "Orderan pertama masuk"
+- Timeline 3 (PlandemicNET): sinyal tidak ada, internet kabel belum masuk, paket data mahal → bangun sendiri → "Ada yang butuh, ada yang gerak"
+- Timeline 4: "Multi service & digital dusun" (intentional — ada simbahngemplak.vercel.app)
+
+**Nilai Kami (4 poin):**
+1. Berbasis rumah, bukan toko besar
+2. Jujur & transparan dari awal (diagnosa gratis, tidak ada biaya kejutan)
+3. Tumbuh bersama kebutuhan warga (PlandemicNET → multi service)
+4. Ada garansi pengerjaan ← naik dari FAQ, value prop penting
+
+**Testimoni (5 review, semua real dari Google Maps):**
+1. Wylda Maulana — HP mati total, sudah gagal di tempat lain, berhasil di sini + komunikatif
+2. Nur Waidah — keyboard+speaker laptop, lebih murah dari kota
+3. Wagiyah Ngisor — repeat customer, ga asal nyuruh beli yg mahal, laptop awet untuk kuliah
+4. Sumi Hamdalah — HP tombol mangslep kirain ga bisa, ternyata bisa + bonus softcase
+5. Grandpeaks (Local Guide) — keren, memuaskan
+
+**FAQ (6 pertanyaan):**
+1. Berapa lama servis? → 1-2 jam ringan, 1-3 hari hardware
+2. Berapa biaya? → tidak ada biaya cek, estimasi dulu
+3. Bisa panggilan? → bisa laptop/komputer/printer
+4. HP bisa diservis? → bisa, chat dulu
+5. Ada garansi? → ada
+6. Jual laptop second? → ada, sudah dicek kondisinya
+
+**CTA:** "Ceritakan dulu, kami dengarkan."
+
+**Footer:** © 2020–2026 · Dari rumah, untuk warga.
+
+### GALERI (bento CSS grid, 3 kolom × 4 baris)
+Urutan & kelas:
+1. gal-4-meja-kerja.webp → gal-wide (landscape, hero galeri)
+2. gal-1-servis-laptop.webp → gal-tall (square, proses kerja)
+3. gal-5-printer.webp → reguler (landscape)
+4. gal-7-laptop-merah.webp → gal-tall (portrait)
+5. gal-6-mainboard.webp → reguler (landscape)
+6. gal-2-heatsink.webp → gal-tall (portrait)
+7. gal-3-keyboard.webp → gal-wide (landscape, keyboard replacement)
+
+CSS: grid-template-rows: 190px × 4, gap: 0.75rem
+Mobile: 2 kolom, semua span direset, height: 150px
+
+### REDUNDANSI YANG MASIH ADA (terkontrol, tidak perlu dikurangi lagi)
+- "biaya kejutan": 3x (Step 2, Nilai Kami, FAQ) — tiga konteks berbeda, OK
+- "diagnosa gratis": 3x — satu di hero sub, satu di card, satu di Nilai Kami
+- "gratis": 6x total — masih agak banyak tapi nilai prop utama, bisa monitor
+- "warga": 6x — brand language, intentional
+- "transparan": 3x — masih OK
 
 ---
 
-## Belum dikerjakan (PR selanjutnya, urutan prioritas)
+## YANG MASIH PENDING (urutan prioritas)
 
-1. **Foto asli untuk galeri** — PALING PENTING, belum ada progress
-2. Cek ulang data WA/rating/ulasan masih akurat
-3. Testimoni pelanggan asli (2-3 dari Maps/WA)
-4. Jam operasional ditampilkan di web
-5. Embed peta kecil di section Kontak
-6. Test langsung di HP fisik (terutama tombol WA mengambang pas scroll)
-7. Daftar Google Search Console + submit sitemap (lihat langkah di atas)
+### PRIORITAS 1 — Bisa dikerjakan sekarang
+- [ ] Test di HP fisik (Android minimal 2 perangkat berbeda kelas)
+      Fokus: tombol WA mengambang, ukuran tombol, keterbacaan teks
+      Ini belum pernah dilakukan sama sekali
+
+- [ ] Jalankan Google PageSpeed Insights
+      URL: https://pagespeed.web.dev/
+      Catat score mobile vs desktop, laporkan ke sesi berikutnya
+
+### PRIORITAS 2 — Konten
+- [ ] Update reviewCount di schema kalau ulasan bertambah
+      Ada di index.html baris schema, cari "reviewCount"
+
+- [ ] Foto galeri tambahan ke depan:
+      - Area print/fotokopi (belum ada foto layanan ini)
+      - Hasil servis yang bersih/rapi (bukan proses)
+      - Suasana tempat lebih luas
+
+### PRIORITAS 3 — Pertimbangkan, belum urgent
+- [ ] Gallery max-width: sekarang 880px, bisa naik ke 1080px
+      Perlu cek konsistensi dengan section lain
+
+- [ ] Jam operasional di hero atau navbar sticky
+      Sekarang hanya di kicker dan footer
+
+- [ ] Embed Google Maps kecil di section Kontak
+
+- [ ] Pantau GSC setelah 2-4 minggu
+      Cek: query apa yang membawa traffic, halaman mana terindex
+      Ini akan kasih data untuk keputusan SEO berikutnya
 
 ---
 
-(Catatan struktur halaman, warna, kontak, dll — lihat versi sebelumnya,
-tidak berubah di sesi ini)
+## KONTEKS BISNIS (tidak semua perlu masuk website)
 
+**PlandemicNET:**
+- Aktif, ~10 rumah tetangga, model iuran bukan langganan
+- Sengaja tidak ekspansi: modal terbatas + tidak mau ganggu ISP lokal berizin
+- Free untuk yatim/tidak mampu: dihentikan (disalahgunakan)
 
+**Servis HP:**
+- Bukan fokus utama, dimulai dari niat bantu satu warga
+- Sparepart via jaringan teman, selalu konsultasi WA dulu
+- Efek samping: dikenal "serba bisa" termasuk magicom/kipas/setrika
+
+**Proyek UMKM (simbahngemplak.vercel.app):**
+- Belum dibuka resmi: kapasitas teknis masih belajar + sadar website saja tidak cukup
+- Pelajaran dari edukasi Maps warga: tanpa strategi konten, bosan 1-2 bulan, balik ke marketplace
+
+---
+
+## STRUKTUR FILE
+
+```
+/
+├── index.html              ← file utama, source of truth
+├── CATATAN-PROJECT.md      ← dokumen ini
+├── robots.txt
+├── sitemap.xml
+├── css/
+│   └── style.css           ← font, grid galeri, semua styling
+├── js/
+│   └── main.js             ← tidak berubah dari awal
+└── img/
+    ├── favicon.ico / favicon-*.png / apple-touch-icon.png
+    ├── logo.svg / logo_gold.svg / logo-512*.png / og-image.png
+    └── gallery/
+        ├── gal-1-servis-laptop.webp    (1200×1200, square)
+        ├── gal-2-heatsink.webp         (675×1200, portrait)
+        ├── gal-3-before-after.webp     (tidak dipakai di HTML, bisa dihapus)
+        ├── gal-3-keyboard.webp         (1456×816, landscape) ← pengganti
+        ├── gal-4-meja-kerja.webp       (1200×675, landscape)
+        ├── gal-5-printer.webp          (1200×675, landscape)
+        ├── gal-6-mainboard.webp        (1200×675, landscape)
+        └── gal-7-laptop-merah.webp     (675×1200, portrait)
+```
+
+---
+
+## SKOR AUDIT FINAL
+
+| Aspek | Skor | Catatan |
+|---|---|---|
+| Storytelling | 8.5/10 | PlandemicNET kuat, filosofi nama jelas |
+| Branding | 8/10 | Karakter konsisten dari hero sampai footer |
+| Copywriting | 8/10 | Semua section solid, redundansi terkontrol |
+| Hook | 8/10 | "Diagnosa gratis" + "garansi" = 2 hook utama |
+| Testimoni | 8.5/10 | 5 review real, spesifik, ada cerita |
+| UI/Galeri | 7.5/10 | Bento grid rapi, foto autentik |
+| UX | 7/10 | Mobile belum ditest fisik |
+| SEO Teknis | 7.5/10 | Schema solid, H1 trade-off disengaja |
+| Konversi | 7.5/10 | CTA hangat, FAQ bantu keputusan |
+| **Overall** | **7.9/10** | Potensi 8.5+ setelah mobile test & GSC data |
+
+---
+
+## WORKFLOW ANTAR SESI
+
+**Masalah yang sering terjadi:**
+Setiap kali upload versi baru, beberapa fix dari sesi sebelumnya hilang karena
+user edit manual file lama (bukan file output dari Claude).
+
+**Cara yang benar:**
+1. Selalu mulai dari file output Claude sebagai base
+2. Kalau ada edit manual, ceritakan perubahannya ke Claude dulu
+3. Claude akan merge perubahan ke file yang sudah benar
+4. Baru upload ke GitHub
+
+---
+
+(Disusun dari sesi panjang bersama Claude/Anthropic — 2 Februari 2026)
