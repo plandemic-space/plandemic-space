@@ -538,13 +538,17 @@ body {
   background: var(--cream);
   padding: 5rem 2rem;
 }
-.testi-inner { max-width: 880px; margin: 0 auto; }
+.testi-inner { max-width: 1000px; margin: 0 auto; }
 
 .testi-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin-top: 2rem;
+}
+
+@media (min-width: 861px) {
+  .testi-grid { grid-template-columns: repeat(5, 1fr); }
 }
 
 .testi-card {
@@ -578,6 +582,42 @@ body {
 
 @media (max-width: 720px) {
   .testi-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================
+   FAQ
+   ============================================ */
+.faq {
+  background: var(--white);
+  padding: 5rem 2rem;
+}
+.faq-inner { max-width: 720px; margin: 0 auto; }
+
+.faq-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--pastel);
+  padding: 1.5rem 0;
+}
+.faq-item:first-child { border-top: 1px solid var(--pastel); }
+
+.faq-q {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0.3px;
+  margin-bottom: 0.6rem;
+}
+.faq-a {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.75;
 }
 
 /* ============================================
