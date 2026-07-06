@@ -238,24 +238,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-.hero-float-wa {
-  position: absolute;
-  bottom: 28px;
-  right: 28px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: var(--gold);
-  color: var(--navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-  transition: transform 0.2s, background 0.2s;
-  z-index: 2;
-}
-.hero-float-wa:hover { background: #d4b050; transform: scale(1.06); }
-
 /* ============================================
    TENTANG KAMI
    ============================================ */
@@ -469,6 +451,28 @@ body {
   color: var(--muted);
   line-height: 1.55;
 }
+.svc-list {
+  list-style: none;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.svc-list li {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+  padding-left: 14px;
+  position: relative;
+}
+.svc-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 11px;
+}
 .svc-badge {
   display: inline-block;
   margin-top: 8px;
@@ -607,7 +611,7 @@ body {
 .faq-item:first-child { border-top: 1px solid var(--pastel); }
 
 .faq-q {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: var(--navy);
@@ -894,6 +898,5 @@ footer {
   #navbar { padding: 0 1.25rem; }
   .nav-links { padding: 0.5rem 1.25rem 1.5rem; }
   .hero { padding: 4rem 1.25rem 4.5rem; }
-  .hero-float-wa { width: 46px; height: 46px; bottom: 18px; right: 18px; }
   .about, .howto, .services, .gallery, .values, .cta { padding: 4rem 1.25rem; }
 }
