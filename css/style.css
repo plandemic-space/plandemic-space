@@ -1019,11 +1019,18 @@ footer {
   display: flex;
   flex-direction: column;
   position: relative;
+  box-shadow: 0 4px 16px rgba(27, 46, 75, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.jd-price-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(27, 46, 75, 0.1);
 }
 .jd-price-card.featured {
   border: 1px solid var(--gold);
-  box-shadow: 0 8px 28px rgba(201, 168, 76, 0.16);
+  box-shadow: 0 8px 28px rgba(201, 168, 76, 0.2);
 }
+.jd-price-card.featured:hover { box-shadow: 0 14px 34px rgba(201, 168, 76, 0.28); }
 .jd-price-ribbon {
   position: absolute;
   top: -11px;
@@ -1035,19 +1042,22 @@ footer {
   letter-spacing: 1px;
   padding: 4px 10px;
   border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(201, 168, 76, 0.35);
 }
 .jd-price-name {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--navy);
   letter-spacing: 0.3px;
 }
 .jd-price-tag {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 700;
   color: var(--gold-dim);
   margin: 8px 0 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed var(--pastel);
   font-family: 'Rajdhani', sans-serif;
 }
 .jd-price-tag small {
@@ -1098,16 +1108,49 @@ footer {
   border: 1px solid var(--pastel);
   border-radius: 14px;
   padding: 1.75rem 1.5rem;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(27, 46, 75, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.jd-tier-card.mapan { border: 1px solid var(--gold); background: var(--pastel-light); }
+.jd-tier-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(27, 46, 75, 0.1);
+}
+.jd-tier-card.mapan {
+  border: 1px solid var(--gold);
+  background: var(--pastel-light);
+  box-shadow: 0 8px 28px rgba(201, 168, 76, 0.2);
+}
+.jd-tier-card.mapan:hover { box-shadow: 0 14px 34px rgba(201, 168, 76, 0.28); }
 .jd-tier-name {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 4px;
 }
 .jd-tier-sub { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+.jd-tier-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed var(--pastel);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.jd-tier-price strong {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--gold-dim);
+  text-transform: none;
+  letter-spacing: 0;
+}
 .jd-tier-card ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .jd-tier-card li {
   font-size: 13px;
@@ -1123,6 +1166,18 @@ footer {
   color: var(--gold-dim);
   font-weight: 700;
   font-size: 11px;
+}
+.jd-tier-bonus {
+  display: inline-block;
+  margin-top: 14px;
+  background: linear-gradient(135deg, #DEC57A, var(--gold));
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(201, 168, 76, 0.35);
 }
 
 .jd-portfolio { background: var(--white); padding: 5rem 2rem; }
