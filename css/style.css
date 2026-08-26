@@ -1332,6 +1332,13 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
 
 /* Nilai Tambah Lainnya (menggantikan paragraf panjang jd-price-note) */
 .jd-value-add { margin-top: 2.5rem; }
+.jd-extra-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--navy);
+}
 .jd-value-grid {
   margin-top: 0.75rem;
   display: grid;
