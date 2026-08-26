@@ -1166,11 +1166,125 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
 }
 .jd-pf-col .jd-pf-items { grid-template-columns: 1fr; }
 
-.jd-pf-body { padding: 0; }
+.jd-pf-preview {
+  position: relative;
+  width: 100%;
+  padding-top: 62%;
+  overflow: hidden;
+  background: var(--pastel-light);
+  border-bottom: 1px solid var(--pastel);
+}
+.jd-pf-preview iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 400%;
+  border: 0;
+  pointer-events: none;
+  transform: scale(0.25);
+  transform-origin: 0 0;
+  background: var(--white);
+}
+.jd-pf-body { padding: 1.1rem 1.3rem 1.3rem; }
+
+/* Kotak perbandingan harga (sebelumnya belum ada CSS-nya) */
+.jd-compare {
+  margin-top: 2.5rem;
+  background: var(--cream);
+  border: 1px solid var(--pastel);
+  border-radius: 14px;
+  padding: 1.75rem;
+}
+.jd-compare-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.05rem;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.jd-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.jd-compare-box {
+  background: var(--white);
+  border: 1px solid var(--pastel);
+  border-radius: 10px;
+  padding: 1.25rem 1.4rem;
+}
+.jd-compare-box.good { border-color: var(--gold); background: var(--pastel-light); }
+.jd-compare-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.jd-compare-price {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold-dim);
+  margin-bottom: 10px;
+}
+.jd-compare-box ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.jd-compare-box li {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.5;
+  padding-left: 16px;
+  position: relative;
+}
+.jd-compare-box li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+}
+.jd-compare-box.good li::before { content: '✓'; color: var(--gold); font-weight: 700; }
+
+/* Info tambahan (menggantikan paragraf panjang jd-price-note) */
+.jd-extra {
+  margin-top: 2rem;
+  border-top: 1px dashed var(--pastel);
+  padding-top: 1.5rem;
+}
+.jd-extra-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 0.75rem;
+}
+.jd-extra-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.jd-extra-list li {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.65;
+  padding-left: 18px;
+  position: relative;
+}
+.jd-extra-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 11px;
+}
+.jd-extra-list li strong { color: var(--navy); }
+
+/* Grid Layanan halaman ini cuma 4 kartu — 2x2 biar nggak nyisain slot kosong */
+.svc-grid-4 { grid-template-columns: repeat(2, 1fr); }
 
 @media (max-width: 720px) {
   .jd-price-grid { grid-template-columns: 1fr; }
   .jd-tier-grid { grid-template-columns: 1fr; }
   .jd-pf-items { grid-template-columns: 1fr; }
   .jd-pf-dual { grid-template-columns: 1fr; }
+  .jd-compare-grid { grid-template-columns: 1fr; }
+  .svc-grid-4 { grid-template-columns: 1fr; }
 }
