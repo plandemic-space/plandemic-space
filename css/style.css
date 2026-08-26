@@ -1252,22 +1252,49 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
   padding: 1.75rem;
 }
 .jd-compare-title {
-  font-family: 'DM Serif Display', serif;
-  font-size: 1.05rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
   color: var(--navy);
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 .jd-compare-grid {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 1.75rem;
+}
+.jd-compare-vs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 5px var(--cream), 0 4px 12px rgba(27, 46, 75, 0.25);
+  z-index: 1;
 }
 .jd-compare-box {
   background: var(--white);
   border: 1px solid var(--pastel);
   border-radius: 10px;
   padding: 1.25rem 1.4rem;
+}
+.jd-compare-box.bad {
+  background: #FBF2F0;
+  border-color: #E8C9C2;
 }
 .jd-compare-box.good { border-color: var(--gold); background: var(--pastel-light); }
 .jd-compare-label {
@@ -1283,54 +1310,53 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
   color: var(--gold-dim);
   margin-bottom: 10px;
 }
+.jd-compare-box.bad .jd-compare-price { color: #B3564A; }
 .jd-compare-box ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .jd-compare-box li {
   font-size: 12.5px;
   color: var(--muted);
   line-height: 1.5;
-  padding-left: 16px;
-  position: relative;
-}
-.jd-compare-box li::before {
-  content: '–';
-  position: absolute;
-  left: 0;
-  color: var(--muted);
-}
-.jd-compare-box.good li::before { content: '✓'; color: var(--gold); font-weight: 700; }
-
-/* Info tambahan (menggantikan paragraf panjang jd-price-note) */
-.jd-extra {
-  margin-top: 2rem;
-  border-top: 1px dashed var(--pastel);
-  padding-top: 1.5rem;
-}
-.jd-extra-title {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: var(--gold-dim);
-  margin-bottom: 0.75rem;
-}
-.jd-extra-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.jd-extra-list li {
-  font-size: 12.5px;
-  color: var(--muted);
-  line-height: 1.65;
   padding-left: 18px;
   position: relative;
 }
-.jd-extra-list li::before {
-  content: '✓';
+.jd-compare-box.bad li { color: #8C5850; }
+.jd-compare-box.bad li::before {
+  content: '✕';
   position: absolute;
   left: 0;
-  top: 1px;
-  color: var(--gold);
+  color: #C77268;
   font-weight: 700;
   font-size: 11px;
 }
-.jd-extra-list li strong { color: var(--navy); }
+.jd-compare-box.good li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+
+/* Nilai Tambah Lainnya (menggantikan paragraf panjang jd-price-note) */
+.jd-value-add { margin-top: 2.5rem; }
+.jd-value-grid {
+  margin-top: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.jd-value-item {
+  background: var(--white);
+  border: 1px solid var(--pastel);
+  border-radius: 12px;
+  padding: 1.25rem 1.4rem;
+}
+.jd-value-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.jd-value-desc {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.jd-value-desc strong { color: var(--gold-dim); }
 
 /* Grid Layanan halaman ini cuma 4 kartu — 2x2 biar nggak nyisain slot kosong */
 .svc-grid-4 { grid-template-columns: repeat(2, 1fr); }
@@ -1341,5 +1367,12 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
   .jd-pf-items { grid-template-columns: 1fr; }
   .jd-pf-dual { grid-template-columns: 1fr; }
   .jd-compare-grid { grid-template-columns: 1fr; }
+  .jd-compare-vs {
+    position: static;
+    transform: none;
+    margin: 0.75rem auto;
+    box-shadow: 0 4px 12px rgba(27, 46, 75, 0.25);
+  }
+  .jd-value-grid { grid-template-columns: 1fr; }
   .svc-grid-4 { grid-template-columns: 1fr; }
 }
