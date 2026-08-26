@@ -513,7 +513,6 @@ body {
 }
 .gal-wide { grid-column: span 2; }
 .gal-tall { grid-row: span 2; }
-.gal-large { }
 
 .gal-item {
   border-radius: 8px;
@@ -1089,14 +1088,6 @@ footer {
   border-radius: 50%;
   background: var(--gold);
 }
-.jd-price-note {
-  margin-top: 2rem;
-  font-size: 12px;
-  color: var(--muted);
-  text-align: center;
-  line-height: 1.7;
-}
-
 .jd-tier-grid {
   margin-top: 1.5rem;
   display: grid;
