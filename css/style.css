@@ -1216,13 +1216,8 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
 .jd-pf-item-desc { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
 .jd-pf-item-link { font-size: 11px; color: var(--gold-dim); font-weight: 600; margin-top: 8px; display: inline-block; }
 
-.jd-pf-dual {
-  margin-top: 2.25rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-.jd-pf-col .jd-pf-items { grid-template-columns: 1fr; }
+.jd-pf-group-spaced { margin-top: 2.25rem; }
+.jd-pf-items-single { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
 
 .jd-pf-custom {
   margin-top: 1rem;
