@@ -22,6 +22,7 @@
 }
 
 html { scroll-behavior: smooth; }
+section[id], div[id] { scroll-margin-top: 84px; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -209,6 +210,8 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.2s;
+  display: inline-block;
+  text-decoration: none;
 }
 .btn-main:hover { background: #d4b050; }
 
@@ -1231,6 +1234,21 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
   margin-bottom: 4px;
 }
 .jd-pf-item-desc { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+.jd-pf-meta {
+  list-style: none;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--pastel);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.jd-pf-meta li {
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.jd-pf-meta strong { color: var(--gold-dim); }
 .jd-pf-item-link { font-size: 11px; color: var(--gold-dim); font-weight: 600; margin-top: 8px; display: inline-block; }
 
 .jd-pf-group-spaced { margin-top: 2.25rem; }
@@ -1288,91 +1306,14 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
 .jd-pf-body { padding: 1.1rem 1.3rem 1.3rem; }
 
 /* Kotak perbandingan harga (sebelumnya belum ada CSS-nya) */
-.jd-compare {
-  margin-top: 2.5rem;
-  background: var(--cream);
-  border: 1px solid var(--pastel);
-  border-radius: 14px;
-  padding: 1.75rem;
-}
-.jd-compare-title {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  color: var(--navy);
+.jd-compare-note {
   text-align: center;
-  margin-bottom: 1.5rem;
-}
-.jd-compare-grid {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.75rem;
-}
-.jd-compare-vs {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--navy);
-  color: var(--white);
+  margin-top: 1.75rem;
   font-family: 'Rajdhani', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 0 5px var(--cream), 0 4px 12px rgba(27, 46, 75, 0.25);
-  z-index: 1;
-}
-.jd-compare-box {
-  background: var(--white);
-  border: 1px solid var(--pastel);
-  border-radius: 10px;
-  padding: 1.25rem 1.4rem;
-}
-.jd-compare-box.bad {
-  background: #FBF2F0;
-  border-color: #E8C9C2;
-}
-.jd-compare-box.good { border-color: var(--gold); background: var(--pastel-light); }
-.jd-compare-label {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--navy);
-  margin-bottom: 6px;
 }
-.jd-compare-price {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--gold-dim);
-  margin-bottom: 10px;
-}
-.jd-compare-box.bad .jd-compare-price { color: #B3564A; }
-.jd-compare-box ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-.jd-compare-box li {
-  font-size: 12.5px;
-  color: var(--muted);
-  line-height: 1.5;
-  padding-left: 18px;
-  position: relative;
-}
-.jd-compare-box.bad li { color: #8C5850; }
-.jd-compare-box.bad li::before {
-  content: '✕';
-  position: absolute;
-  left: 0;
-  color: #C77268;
-  font-weight: 700;
-  font-size: 11px;
-}
-.jd-compare-box.good li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
 
 /* Nilai Tambah Lainnya (menggantikan paragraf panjang jd-price-note) */
 .jd-value-add { margin-top: 2.5rem; }
@@ -1414,17 +1355,6 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
 
 /* Grid Layanan halaman ini cuma 4 kartu — 2x2 biar nggak nyisain slot kosong */
 .svc-grid-4 { grid-template-columns: repeat(2, 1fr); }
-
-/* Perbandingan single-box ("Rp999 ribu dapat apa?") */
-.jd-compare-solo { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
-.jd-compare-note {
-  text-align: center;
-  margin-top: 1.25rem;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--navy);
-}
 
 /* Catatan manfaat/cocok-untuk di kartu layanan */
 .svc-fit {
@@ -1533,13 +1463,6 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
   .jd-price-grid { grid-template-columns: 1fr; }
   .jd-tier-grid { grid-template-columns: 1fr; }
   .jd-pf-items { grid-template-columns: 1fr; }
-  .jd-compare-grid { grid-template-columns: 1fr; }
-  .jd-compare-vs {
-    position: static;
-    transform: none;
-    margin: 0.75rem auto;
-    box-shadow: 0 4px 12px rgba(27, 46, 75, 0.25);
-  }
   .jd-value-grid { grid-template-columns: 1fr; }
   .svc-grid-4 { grid-template-columns: 1fr; }
   .jd-picker-grid { grid-template-columns: 1fr; }
