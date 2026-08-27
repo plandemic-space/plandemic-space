@@ -1419,7 +1419,6 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
   .jd-price-grid { grid-template-columns: 1fr; }
   .jd-tier-grid { grid-template-columns: 1fr; }
   .jd-pf-items { grid-template-columns: 1fr; }
-  .jd-pf-dual { grid-template-columns: 1fr; }
   .jd-compare-grid { grid-template-columns: 1fr; }
   .jd-compare-vs {
     position: static;
