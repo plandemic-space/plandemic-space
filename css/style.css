@@ -1009,6 +1009,12 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 }
+.jd-price-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .jd-price-card {
   background: var(--white);
@@ -1042,6 +1048,11 @@ footer {
   padding: 4px 10px;
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba(201, 168, 76, 0.35);
+}
+.jd-price-ribbon.limited {
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: 0 2px 8px rgba(27, 46, 75, 0.3);
 }
 .jd-price-name {
   font-family: 'Rajdhani', sans-serif;
@@ -1185,6 +1196,7 @@ footer {
   border-radius: 20px;
   margin-bottom: 1rem;
 }
+.jd-pf-label-spaced { margin-top: 2.75rem; }
 .jd-pf-items { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 .jd-pf-item {
   border: 1px solid var(--pastel);
@@ -1364,6 +1376,9 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+}
+.jd-value-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
 }
 .jd-value-item {
   background: var(--white);
