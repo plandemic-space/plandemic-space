@@ -1173,6 +1173,18 @@ footer {
   font-weight: 700;
   font-size: 11px;
 }
+.jd-card-cta {
+  display: inline-block;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--pastel);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gold-dim);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.jd-card-cta:hover { color: var(--gold); text-decoration: underline; }
 .jd-tier-bonus {
   display: inline-block;
   margin-top: 14px;
