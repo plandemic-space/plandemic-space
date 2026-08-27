@@ -44,21 +44,21 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.1, rootMargin: '0px 0px 150px 0px' });
 
 // Grup elemen yang di-stagger bareng (delay bertahap per item dalam grup yang sama)
 const staggerGroups = document.querySelectorAll('.svc-grid, .steps, .val-list, .gal-grid');
 staggerGroups.forEach(group => {
   const items = group.querySelectorAll(':scope > .svc, :scope > .step, :scope > .val, :scope > .gal-item');
   items.forEach((el, i) => {
-    el.style.transitionDelay = `${Math.min(i * 70, 350)}ms`;
+    el.style.transitionDelay = `${Math.min(i * 50, 250)}ms`;
   });
 });
 
 document.querySelectorAll('.svc, .step, .val, .tl, .gal-item').forEach(el => {
   el.style.opacity = '0';
-  el.style.transform = 'translateY(16px)';
-  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  el.style.transform = 'translateY(10px)';
+  el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
   observer.observe(el);
 });
 
