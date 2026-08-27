@@ -1333,6 +1333,12 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
 .jd-value-grid-2 {
   grid-template-columns: repeat(2, 1fr);
 }
+.jd-value-grid-1 {
+  grid-template-columns: 1fr;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .jd-value-item {
   background: var(--white);
   border: 1px solid var(--pastel);
