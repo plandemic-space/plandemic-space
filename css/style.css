@@ -1212,6 +1212,28 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
 }
 .jd-pf-col .jd-pf-items { grid-template-columns: 1fr; }
 
+.jd-pf-custom {
+  margin-top: 1rem;
+  border: 1px dashed var(--gold);
+  border-radius: 12px;
+  padding: 1.1rem 1.3rem;
+  background: var(--pastel-light);
+}
+.jd-pf-custom-h { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.jd-pf-custom-p { font-size: 12.5px; color: var(--muted); line-height: 1.6; margin-bottom: 0.8rem; }
+.jd-pf-custom-cta {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  background: linear-gradient(135deg, #DEC57A, var(--gold));
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.jd-pf-custom-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(201,168,76,0.35); }
+
 .jd-pf-preview {
   position: relative;
   width: 100%;
