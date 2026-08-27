@@ -739,6 +739,10 @@ body {
   flex-wrap: wrap;
 }
 
+/* Versi jasa-digital: judulnya lebih panjang dari homepage, kasih ruang lebih biar nggak numpuk */
+.jd-cta-inner { max-width: 600px; }
+.jd-cta-secondary { margin-top: 1.5rem; }
+
 .cta-hours {
   max-width: 280px;
   margin: 2.5rem auto 0;
