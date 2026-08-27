@@ -1233,6 +1233,13 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .jd-pf-custom-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(201,168,76,0.35); }
+.jd-pf-custom-wide { max-width: 640px; margin: 1.5rem auto 0; }
+
+.jd-desa-pricing { margin-top: 2.75rem; text-align: center; }
+.jd-desa-pricing-h { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--navy); margin-bottom: 0.4rem; }
+.jd-desa-pricing-sub { font-size: 13.5px; color: var(--muted); margin-bottom: 1.5rem; }
+.jd-desa-pricing .jd-tier-grid { text-align: left; }
+.jd-desa-pricing-note { font-size: 12px; color: var(--muted); max-width: 560px; margin: 1.25rem auto 0; line-height: 1.6; }
 
 .jd-pf-preview {
   position: relative;
