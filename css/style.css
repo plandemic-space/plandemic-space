@@ -1415,6 +1415,120 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
 /* Grid Layanan halaman ini cuma 4 kartu — 2x2 biar nggak nyisain slot kosong */
 .svc-grid-4 { grid-template-columns: repeat(2, 1fr); }
 
+/* Perbandingan single-box ("Rp999 ribu dapat apa?") */
+.jd-compare-solo { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+.jd-compare-note {
+  text-align: center;
+  margin-top: 1.25rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* Catatan manfaat/cocok-untuk di kartu layanan */
+.svc-fit {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--pastel);
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.svc-fit strong { color: var(--gold-dim); }
+
+/* ============================================
+   USAHAMU BUTUH YANG MANA (problem picker)
+   ============================================ */
+.jd-picker { background: var(--white); padding: 5rem 2rem; }
+.jd-picker-inner { max-width: 880px; margin: 0 auto; }
+.jd-picker-sub {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  max-width: 560px;
+}
+.jd-picker-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--pastel);
+  border: 1px solid var(--pastel);
+}
+.jd-picker-item {
+  background: var(--cream);
+  padding: 1.1rem 1.2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: background 0.2s;
+}
+.jd-picker-item:hover { background: var(--pastel-light); }
+.jd-picker-q {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.4;
+}
+.jd-picker-a {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--gold-dim);
+}
+.jd-picker-note {
+  margin-top: 1.5rem;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 560px;
+}
+
+/* ============================================
+   CARA KERJA (7 langkah)
+   ============================================ */
+.jd-workflow { background: var(--cream); padding: 5rem 2rem; }
+.jd-workflow-inner { max-width: 960px; margin: 0 auto; }
+.jd-steps-7 {
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2rem;
+}
+
+/* ============================================
+   YANG PERLU DISIAPKAN
+   ============================================ */
+.jd-checklist { background: var(--white); padding: 5rem 2rem; }
+.jd-checklist-inner { max-width: 640px; margin: 0 auto; }
+.jd-checklist-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+.jd-checklist-list li {
+  font-size: 13px;
+  color: var(--navy);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+.jd-checklist-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+.jd-checklist-note {
+  margin-top: 1.5rem;
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 @media (max-width: 720px) {
   .jd-price-grid { grid-template-columns: 1fr; }
   .jd-tier-grid { grid-template-columns: 1fr; }
@@ -1428,4 +1542,7 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
   }
   .jd-value-grid { grid-template-columns: 1fr; }
   .svc-grid-4 { grid-template-columns: 1fr; }
+  .jd-picker-grid { grid-template-columns: 1fr; }
+  .jd-steps-7 { grid-template-columns: 1fr; }
+  .jd-checklist-list { grid-template-columns: 1fr; }
 }
