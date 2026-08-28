@@ -660,6 +660,7 @@ body {
 
 .values-inner { max-width: 880px; margin: 0 auto; }
 .values .sec-title { color: var(--white); }
+.values .sec-label { color: rgba(var(--pastel-rgb), 0.6); }
 
 .val-list {
   margin-top: 2.5rem;
