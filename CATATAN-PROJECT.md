@@ -1,6 +1,12 @@
 # CATATAN PROJECT — Plandemic Space
-# Update: 2 Februari 2026
-# Status: Website solid — siap live, beberapa hal masih bisa ditingkatkan
+# Update terakhir: 28 Agustus 2026 (code cleanup) — sebelumnya 2 Februari 2026 (konten/brand)
+# Status: Konten & brand solid (Feb 2026) + kode sudah dirapikan & lolos audit teknis (Agu 2026)
+
+---
+
+## RIWAYAT REVISI SINGKAT
+- **2 Feb 2026** — Audit konten, copywriting, brand, SEO teknis. Lihat bagian "STATUS WEBSITE" & "SKOR AUDIT FINAL — Konten/Brand" di bawah.
+- **28 Agu 2026** — Code cleanup & refactor (bukan ubah konten/tampilan). Lihat bagian "RIWAYAT REFACTOR KODE" untuk detail lengkap.
 
 ---
 
@@ -122,9 +128,15 @@ Mobile: 2 kolom, semua span direset, height: 150px
       Fokus: tombol WA mengambang, ukuran tombol, keterbacaan teks
       Ini belum pernah dilakukan sama sekali
 
-- [ ] Jalankan Google PageSpeed Insights
-      URL: https://pagespeed.web.dev/
-      Catat score mobile vs desktop, laporkan ke sesi berikutnya
+- [x] Jalankan Google PageSpeed Insights — SUDAH (28 Agu 2026)
+      Hasil: index.html → Performance 91, Accessibility 100 (setelah fix kontras),
+      Best Practices 100, SEO 100 (mobile). jasa-digital.html → Performance 90,
+      Accessibility 100, Best Practices 100, SEO 100 (mobile).
+      Detail perbaikan kontras ada di "RIWAYAT REFACTOR KODE" di bawah.
+
+- [ ] Performance masih 90-91 (bukan 100) di kedua halaman — belum digali
+      lebih lanjut, kemungkinan besar dari asset loading (gambar galeri/hero).
+      Kalau mau dinaikkan, ini titik mulainya.
 
 ### PRIORITAS 2 — Konten
 - [ ] Update reviewCount di schema kalau ulasan bertambah
@@ -179,24 +191,60 @@ Mobile: 2 kolom, semua span direset, height: 150px
 ├── css/
 │   └── style.css           ← font, grid galeri, semua styling
 ├── js/
-│   └── main.js             ← tidak berubah dari awal
+│   └── main.js             ← dibersihkan Agu 2026 (lihat RIWAYAT REFACTOR KODE)
 └── img/
     ├── favicon.ico / favicon-*.png / apple-touch-icon.png
     ├── logo.svg / logo_gold.svg / logo-512*.png / og-image.png
     └── gallery/
         ├── gal-1-servis-laptop.webp    (1200×1200, square)
         ├── gal-2-heatsink.webp         (675×1200, portrait)
-        ├── gal-3-before-after.webp     (tidak dipakai di HTML, bisa dihapus)
-        ├── gal-3-keyboard.webp         (1456×816, landscape) ← pengganti
+        ├── gal-3-keyboard.webp         (1456×816, landscape)
         ├── gal-4-meja-kerja.webp       (1200×675, landscape)
         ├── gal-5-printer.webp          (1200×675, landscape)
         ├── gal-6-mainboard.webp        (1200×675, landscape)
         └── gal-7-laptop-merah.webp     (675×1200, portrait)
 ```
+*(gal-3-before-after.webp yang disebut di catatan lama sudah nggak ada di folder — sudah diganti gal-3-keyboard.webp sebelum Agu 2026, catatan lama belum di-update)*
 
 ---
 
-## SKOR AUDIT FINAL
+## RIWAYAT REFACTOR KODE (28 Agustus 2026)
+
+Ini refactor internal — **bukan** ubah konten, copywriting, atau tampilan.
+Semua perubahan divalidasi computed-style-nya identik sebelum/sesudah.
+
+**Priority 1 — struktur & pemisahan concern:**
+- Hapus ±45 baris CSS mati (sisa section lama yang sudah diganti)
+- Fix typo selector `.val-desc` → `.val-text` (aturan `text-wrap: pretty` sebelumnya nggak pernah nyala di section Nilai Kami)
+- Hapus 1 `!important` yang nggak perlu di `.cta-find-us`
+- `main.js` sebelumnya nyuntik `<style>` tag ke `<head>` saat runtime buat class `.visible` — dipindah jadi CSS biasa
+- 3× `onclick="..."` inline di HTML diganti `data-scroll-to` + 1 event listener terpusat di `main.js`
+- `index.html` ditambah `<main>` wrapper (landmark aksesibilitas yang tadinya cuma ada di jasa-digital.html)
+
+**Priority 2 — konsolidasi duplikasi:**
+- `.step-tag` & `.svc-badge` (90% sama) digabung jadi 1 selector gabungan + sisa beda dikit per-class
+- Media query yang nyasar di section masing-masing (testi-grid, wa-float) dipindah ke block RESPONSIVE terpusat — dari 11 block jadi 7
+
+**Priority 3 — opsional, tetap dikerjakan:**
+- Warna `rgba(200, 223, 232, x)` yang ditulis literal berkali-kali → jadi `--pastel-rgb` CSS variable, dipanggil `rgba(var(--pastel-rgb), x)`
+- Ketemu 1 sisa di HTML: `.sec-label` di section Nilai Kami override warnanya lewat **inline style** duplikat di 2 halaman → dipindah jadi rule CSS `.values .sec-label`, ngikutin pola yang sudah ada (`.values .sec-title`)
+
+**Fix aksesibilitas (kontras warna, ditemukan lewat PageSpeed):**
+Backround/foreground kontras di bawah standar WCAG AA (4.5:1) di 3 tempat. Dihitung manual pakai rumus WCAG, bukan asal naik:
+- `.stat-l` (Rating Google/Ulasan Maps/Tahun Beroperasi, di hero navy): opacity 0.3 (2.59:1 ❌) → 0.52 (4.84:1 ✅)
+- `.label` ("Tentang Kami", di section pastel muda): opacity 0.6 (3.25:1 ❌) → 0.75 (4.72:1 ✅)
+- `.cta-hours-label` ("Jam Operasional", di section pastel muda): opacity 0.6 (3.25:1 ❌) → 0.75 (4.72:1 ✅)
+
+**Hasil akhir (scan menyeluruh setelah semua di atas):**
+0 CSS class tidak terpakai, 0 duplikat definisi selector, semua path aset aman,
+HTML/CSS/JS tervalidasi (brace balance, syntax check).
+
+**File yang berubah dari kode asli:** `index.html`, `jasa-digital.html`, `css/style.css`, `js/main.js`.
+Tidak ada file yang di-rename atau dipindah folder — aman ditimpa langsung di path yang sama.
+
+---
+
+## SKOR AUDIT FINAL — Konten/Brand (2 Feb 2026)
 
 | Aspek | Skor | Catatan |
 |---|---|---|
@@ -210,6 +258,21 @@ Mobile: 2 kolom, semua span direset, height: 150px
 | SEO Teknis | 7.5/10 | Schema solid, H1 trade-off disengaja |
 | Konversi | 7.5/10 | CTA hangat, FAQ bantu keputusan |
 | **Overall** | **7.9/10** | Potensi 8.5+ setelah mobile test & GSC data |
+
+## SKOR AUDIT FINAL — Kualitas Kode (28 Agu 2026)
+
+| Aspek | Sebelum | Sesudah |
+|---|---|---|
+| Overall | 7.5/10 | 8.5/10 |
+| Struktur folder | 8/10 | 8/10 |
+| HTML | 7.5/10 | 8/10 |
+| CSS | 7/10 | 8.5/10 |
+| JavaScript | 7.5/10 | 8.5/10 |
+| Maintainability | 7/10 | 8.5/10 |
+| Accessibility | 8/10 | 8/10 (tapi PageSpeed nunjukin 100 setelah fix kontras) |
+| Performance | 8/10 | 8.5/10 (PageSpeed: 90-91 mobile, belum digali lebih jauh) |
+
+*(Catatan: dua tabel skor di atas ngukur hal beda — yang pertama soal konten/copywriting/brand, yang kedua soal kualitas & kerapian kode. Keduanya independen, jangan disamakan.)*
 
 ---
 
@@ -227,4 +290,5 @@ user edit manual file lama (bukan file output dari Claude).
 
 ---
 
-(Disusun dari sesi panjang bersama Claude/Anthropic — 2 Februari 2026)
+(Disusun dari sesi panjang bersama Claude/Anthropic — 2 Februari 2026, konten/brand)
+(Diperbarui dengan sesi code cleanup & refactor — 28 Agustus 2026)
