@@ -2,21 +2,27 @@
 // PLANDEMIC SPACE — main.js
 // ============================================
 
-// Smooth scroll helper (dipanggil dari HTML onclick)
+// Smooth scroll helper (dipakai lewat data-scroll-to di HTML, lihat bawah)
 function scrollToSection(id) {
   const el = document.getElementById(id);
   if (el) el.scrollIntoView({ behavior: 'smooth' });
 }
 
+document.querySelectorAll('[data-scroll-to]').forEach(btn => {
+  btn.addEventListener('click', () => scrollToSection(btn.dataset.scrollTo));
+});
+
 // Navbar shadow saat scroll
 const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 10) {
-    navbar.style.boxShadow = '0 4px 24px rgba(0,0,0,0.25)';
-  } else {
-    navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.2)';
-  }
-});
+if (navbar) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      navbar.style.boxShadow = '0 4px 24px rgba(0,0,0,0.25)';
+    } else {
+      navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.2)';
+    }
+  });
+}
 
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
@@ -60,13 +66,6 @@ document.querySelectorAll('.svc, .step, .val, .tl, .gal-item').forEach(el => {
   el.style.transform = 'translateY(10px)';
   el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
   observer.observe(el);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Tambahkan class visible saat elemen masuk viewport
-  const style = document.createElement('style');
-  style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
-  document.head.appendChild(style);
 });
 
 // Hover tilt 3D ringan di kartu layanan (mengikuti posisi mouse)

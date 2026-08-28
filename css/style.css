@@ -10,7 +10,7 @@
 /* Anti-orphan: browser modern otomatis hindari kata sendirian di baris terakhir.
    Firefox belum dukung 'pretty' (fallback ke wrap normal, aman) — makanya titik
    krusial tetap dikunci pakai &nbsp; manual di HTML sebagai lapisan utama. */
-p, li, dd, .faq-a, .val-desc { text-wrap: pretty; }
+p, li, dd, .faq-a, .val-text { text-wrap: pretty; }
 h1, h2, h3 { text-wrap: balance; }
 
 :root {
@@ -19,6 +19,7 @@ h1, h2, h3 { text-wrap: balance; }
   --gold:         #C9A84C;
   --gold-dim:     #7A5F1F;
   --pastel:       #C8DFE8;
+  --pastel-rgb:   200, 223, 232; /* dipakai untuk rgba(var(--pastel-rgb), alpha) */
   --pastel-light: #E0EEF3;
   --pastel-dark:  #A8C8D5;
   --cream:        #F7F4EF;
@@ -50,6 +51,11 @@ body {
   outline: 2px solid var(--gold);
   outline-offset: 3px;
 }
+
+/* Dipakai oleh IntersectionObserver di main.js untuk fade-in saat elemen masuk
+   viewport. !important diperlukan karena observer men-set opacity/transform
+   awal langsung lewat inline style, yang harus dikalahkan begitu elemen terlihat. */
+.visible { opacity: 1 !important; transform: translateY(0) !important; }
 
 /* ============================================
    NAVBAR
@@ -179,7 +185,7 @@ body {
   content: '';
   flex: 1;
   height: 1px;
-  background: rgba(200, 223, 232, 0.2);
+  background: rgba(var(--pastel-rgb), 0.2);
   max-width: 60px;
 }
 
@@ -353,6 +359,27 @@ body {
   color: var(--muted);
   line-height: 1.6;
 }
+.tl-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: var(--navy);
+  text-decoration: none;
+  background: linear-gradient(135deg, #DEC57A, var(--gold));
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(201, 168, 76, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, gap 0.2s ease;
+}
+.tl-link:hover {
+  transform: translateY(-1px);
+  gap: 11px;
+  box-shadow: 0 4px 16px rgba(201, 168, 76, 0.4);
+}
 
 /* ============================================
    CARA KERJA
@@ -412,18 +439,19 @@ body {
   color: var(--muted);
   line-height: 1.65;
 }
-.step-tag {
+/* Tag/badge kecil (dipakai di step & svc, beda dikit di padding/opacity background) */
+.step-tag,
+.svc-badge {
   display: inline-block;
   margin-top: 8px;
   font-size: 10px;
   font-weight: 700;
   font-family: 'Plus Jakarta Sans', sans-serif;
   letter-spacing: 0.5px;
-  padding: 2px 9px;
   border-radius: 2px;
-  background: rgba(200, 223, 232, 0.4);
   color: var(--navy-mid);
 }
+.step-tag { padding: 2px 9px; background: rgba(var(--pastel-rgb), 0.4); }
 
 /* ============================================
    LAYANAN
@@ -491,18 +519,7 @@ body {
   font-weight: 700;
   font-size: 11px;
 }
-.svc-badge {
-  display: inline-block;
-  margin-top: 8px;
-  font-size: 10px;
-  font-weight: 700;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  letter-spacing: 0.5px;
-  padding: 2px 8px;
-  border-radius: 2px;
-  background: rgba(200, 223, 232, 0.5);
-  color: var(--navy-mid);
-}
+.svc-badge { padding: 2px 8px; background: rgba(var(--pastel-rgb), 0.5); }
 
 /* ============================================
    GALERI
@@ -568,10 +585,6 @@ body {
   margin-top: 2rem;
 }
 
-@media (min-width: 861px) {
-  .testi-grid { grid-template-columns: repeat(5, 1fr); }
-}
-
 .testi-card {
   background: var(--white);
   border: 1px solid var(--pastel);
@@ -599,10 +612,6 @@ body {
   font-size: 11px;
   color: var(--muted);
   margin-top: 2px;
-}
-
-@media (max-width: 720px) {
-  .testi-grid { grid-template-columns: 1fr; }
 }
 
 /* ============================================
@@ -654,7 +663,7 @@ body {
 
 .val-list {
   margin-top: 2.5rem;
-  border-top: 1px solid rgba(200, 223, 232, 0.1);
+  border-top: 1px solid rgba(var(--pastel-rgb), 0.1);
 }
 
 .val {
@@ -662,7 +671,7 @@ body {
   grid-template-columns: 1fr auto;
   align-items: center;
   padding: 1.75rem 0;
-  border-bottom: 1px solid rgba(200, 223, 232, 0.1);
+  border-bottom: 1px solid rgba(var(--pastel-rgb), 0.1);
   gap: 2rem;
 }
 
@@ -733,12 +742,12 @@ body {
 }
 .cta-wa:hover { background: var(--navy-mid); }
 
-.cta-find-us {
+p.cta-find-us {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 9px;
   letter-spacing: 2px;
   color: var(--muted);
-  margin-bottom: 0.75rem !important;
+  margin-bottom: 0.75rem;
 }
 
 .cta-socials {
@@ -868,10 +877,7 @@ footer {
   .hero-sub { margin-bottom: 1.5rem; }
   .hero-btns { margin-bottom: 0; }
   .hero-stats { margin-top: 1.75rem; padding-top: 1.25rem; }
-}
-
-@media (max-width: 720px) {
-  .svc-grid { grid-template-columns: repeat(2, 1fr); }
+  .testi-grid { grid-template-columns: repeat(5, 1fr); }
 }
 
 @media (max-width: 860px) {
@@ -879,6 +885,9 @@ footer {
 }
 
 @media (max-width: 720px) {
+  .svc-grid { grid-template-columns: repeat(2, 1fr); }
+  .testi-grid { grid-template-columns: 1fr; }
+
   .nav-toggle { display: flex; }
   .nav-links {
     position: fixed;
@@ -920,6 +929,8 @@ footer {
   .nav-links { padding: 0.5rem 1.25rem 1.5rem; }
   .hero { padding: 4rem 1.25rem 4.5rem; }
   .about, .howto, .services, .gallery, .values, .cta { padding: 4rem 1.25rem; }
+  .wa-float { bottom: 18px; right: 18px; width: 52px; height: 52px; }
+  .wa-icon { width: 26px; height: 26px; }
 }
 
 /* ============================================
@@ -969,33 +980,6 @@ footer {
 
 @media (prefers-reduced-motion: reduce) {
   .wa-float-ping { animation: none; }
-}
-
-@media (max-width: 640px) {
-  .wa-float { bottom: 18px; right: 18px; width: 52px; height: 52px; }
-  .wa-icon { width: 26px; height: 26px; }
-}
-
-.tl-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 12px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  color: var(--navy);
-  text-decoration: none;
-  background: linear-gradient(135deg, #DEC57A, var(--gold));
-  padding: 8px 16px;
-  border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(201, 168, 76, 0.25);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, gap 0.2s ease;
-}
-.tl-link:hover {
-  transform: translateY(-1px);
-  gap: 11px;
-  box-shadow: 0 4px 16px rgba(201, 168, 76, 0.4);
 }
 
 /* ============================================
@@ -1287,7 +1271,6 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
 .jd-desa-pricing-h { font-family: 'Rajdhani', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 0.2px; color: var(--navy); margin-bottom: 0.4rem; }
 .jd-desa-pricing-sub { font-size: 13.5px; color: var(--muted); margin-bottom: 1.5rem; }
 .jd-desa-pricing .jd-tier-grid { text-align: left; }
-.jd-desa-pricing-note { font-size: 12px; color: var(--muted); max-width: 560px; margin: 1.25rem auto 0; line-height: 1.6; }
 .jd-desa-pricing-note-list { list-style: none; max-width: 560px; margin: 1.25rem auto 0; text-align: left; display: flex; flex-direction: column; gap: 8px; }
 .jd-desa-pricing-note-list li {
   font-size: 13px;
@@ -1327,7 +1310,6 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
 }
 .jd-pf-body { padding: 1.1rem 1.3rem 1.3rem; }
 
-/* Kotak perbandingan harga (sebelumnya belum ada CSS-nya) */
 .jd-compare-note {
   text-align: center;
   margin-top: 1.75rem;
@@ -1337,49 +1319,7 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
   color: var(--navy);
 }
 
-/* Nilai Tambah Lainnya (menggantikan paragraf panjang jd-price-note) */
 .jd-value-add { margin-top: 2.5rem; }
-.jd-extra-title {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  color: var(--navy);
-}
-.jd-value-grid {
-  margin-top: 0.75rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-}
-.jd-value-grid-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-.jd-value-grid-1 {
-  grid-template-columns: 1fr;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.jd-value-item {
-  background: var(--white);
-  border: 1px solid var(--pastel);
-  border-radius: 12px;
-  padding: 1.25rem 1.4rem;
-}
-.jd-value-name {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 6px;
-}
-.jd-value-desc {
-  font-size: 12px;
-  color: var(--muted);
-  line-height: 1.6;
-}
-.jd-value-desc strong { color: var(--gold-dim); }
 
 /* Grid Layanan halaman ini cuma 4 kartu — 2x2 biar nggak nyisain slot kosong */
 .svc-grid-4 { grid-template-columns: repeat(2, 1fr); }
@@ -1491,7 +1431,6 @@ a.jd-pf-item:hover { background: var(--pastel-light); }
   .jd-price-grid { grid-template-columns: 1fr; }
   .jd-tier-grid { grid-template-columns: 1fr; }
   .jd-pf-items { grid-template-columns: 1fr; }
-  .jd-value-grid { grid-template-columns: 1fr; }
   .svc-grid-4 { grid-template-columns: 1fr; }
   .jd-picker-grid { grid-template-columns: 1fr; }
   .jd-steps-7 { grid-template-columns: 1fr; }
