@@ -7,6 +7,12 @@
 /* RESET & BASE */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* Anti-orphan: browser modern otomatis hindari kata sendirian di baris terakhir.
+   Firefox belum dukung 'pretty' (fallback ke wrap normal, aman) — makanya titik
+   krusial tetap dikunci pakai &nbsp; manual di HTML sebagai lapisan utama. */
+p, li, dd, .faq-a, .val-desc { text-wrap: pretty; }
+h1, h2, h3 { text-wrap: balance; }
+
 :root {
   --navy:         #1B2E4B;
   --navy-mid:     #243d63;
