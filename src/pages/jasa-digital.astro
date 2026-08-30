@@ -1,193 +1,13 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+import Layout from '../layouts/Layout.astro';
+import schema0 from '../data/schema-jasa-digital-0.json';
+import schema1 from '../data/schema-jasa-digital-1.json';
+import schema2 from '../data/schema-jasa-digital-2.json';
 
-  <!-- SEO -->
-  <title>Jasa Digital UMKM | Google Bisnis &amp; Website — Purworejo</title>
-  <meta name="description" content="Bantu usaha di Kemiri &amp; Purworejo makin gampang ditemukan pelanggan lewat Google Bisnis, website, dan media sosial. Konsultasi via WhatsApp.">
-  <meta name="keywords" content="jasa digital UMKM Purworejo, bikin Google Bisnis Kemiri, jasa website UMKM Purworejo, rapikan media sosial usaha, SEO UMKM Purworejo">
-  <meta name="author" content="Plandemic Space">
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="canonical" href="https://plandemicspace.my.id/jasa-digital">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Jasa Digital UMKM — Plandemic Space">
-  <meta property="og:description" content="Bantu usaha di Kemiri &amp; Purworejo makin gampang ditemukan pelanggan — Google Bisnis, website, dan media sosial dirapikan dari satu tempat.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://plandemicspace.my.id/jasa-digital">
-  <meta property="og:image" content="https://plandemicspace.my.id/img/og-image-jasa-digital.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:locale" content="id_ID">
-  <meta name="robots" content="index, follow">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Rajdhani:wght@600;700&amp;display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Schema.org Service -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Jasa Digital UMKM",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Plandemic Space",
-      "telephone": "+6282241439784",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Kemiri",
-        "addressRegion": "Purworejo, Jawa Tengah",
-        "addressCountry": "ID"
-      }
-    },
-    "areaServed": "Kemiri, Purworejo",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Jasa Digital UMKM",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Bisnis & Maps" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Optimasi Website" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rapikan Media Sosial" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pembuatan Website Baru" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paket Selaras" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sosmed — Konten Siap Pakai" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sosmed — Admin Penuh" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Portofolio Desa — Paket Standar" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Portofolio Desa — Paket Lengkap" } }
-      ]
-    }
-  }
-  </script>
-  <!-- Schema.org FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Saya gaptek, apakah bisa?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bisa. Semua langkah teknis kami yang kerjakan — kamu tinggal ceritakan usahanya lewat WhatsApp dan kirim bahan yang diminta."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Saya belum punya foto produk, bagaimana?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nggak apa-apa, ceritakan dulu kondisinya. Kami bantu lihat apa yang masih kurang dan cara paling mudah melengkapinya."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Berapa lama website selesai?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tergantung paket dan kelengkapan bahan yang dikirim, umumnya beberapa hari sampai dua minggu sejak bahan lengkap."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Apakah SEO menjamin nomor 1 Google?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tidak ada yang bisa menjamin itu, termasuk kami. Hasil SEO dipengaruhi persaingan, kualitas konten, reputasi, lokasi, dan faktor lain di luar kendali satu pihak."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Kalau usaha saya masih kecil, apakah perlu website?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Belum tentu. Kalau kondisi usaha belum perlu, kami akan bilang belum perlu — kadang cukup mulai dari Google Maps atau merapikan sosial media dulu."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Sistem pembayarannya bagaimana?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Untuk paket kecil seperti Google Bisnis & Maps, dibayar lunas di depan karena pengerjaannya cepat. Untuk paket menengah-besar (Optimasi Website, Selaras, Website), DP 50% di awal, sisanya dilunasi sebelum hasil final diserahkan."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Kalau hasilnya kurang pas, bisa direvisi?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bisa, setiap paket sudah termasuk 2x revisi kecil (teks, foto, tata letak). Kalau ternyata mau ubah konsep besar-besaran, itu dihitung kerjaan tambahan — nanti diinfokan dulu biayanya sebelum dikerjakan, jadi tidak ada kejutan di kedua belah pihak."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Kalau pilih domain sendiri (.com/.id), biaya tahunannya bagaimana?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Biaya domain tahun pertama sudah termasuk dalam harga Paket Mapan, jadi tidak ada tagihan terpisah di awal. Menjelang domain habis masa aktifnya, kami kabari lewat WhatsApp untuk perpanjangan."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Kalau nanti desanya mau pindah ke domain resmi (.desa.id), gimana caranya?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bisa dilakukan kapan saja, tidak harus sejak awal. Kami mendampingi dan membantu mengurus proses migrasinya tanpa biaya jasa tambahan — namun pendaftaran domainnya sendiri tetap melalui portal resmi Kominfo dan wajib dilakukan langsung oleh perangkat desa (Sekdes/Kasi/Kaur), karena itu aturan pemerintah yang tidak bisa diwakilkan."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Ini berarti langganan bulanan?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tidak. Semua paket di atas bayar satu kali (one-time), bukan retainer. Yang sifatnya bulanan hanya paket konten media sosial, karena memang butuh update rutin tiap bulan."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Bedanya Paket Rintisan dan Paket Mapan apa?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sama-sama website utuh dengan pengerjaan penuh. Bedanya di alamat: Rintisan pakai subdomain, tanpa biaya domain tambahan. Mapan pakai domain sendiri (.com/.id) yang lebih meyakinkan di mata pelanggan. Bisa mulai dari Rintisan dulu, upgrade ke Mapan kapan saja siap."
-        }
-      }
-    ]
-  }
-  </script>
-  <!-- Schema.org BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Beranda",
-        "item": "https://plandemicspace.my.id/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Jasa Digital UMKM",
-        "item": "https://plandemicspace.my.id/jasa-digital"
-      }
-    ]
-  }
-  </script>
-</head>
-<body>
+const title = "Jasa Digital UMKM | Google Bisnis & Website — Purworejo";
+const description = "Bantu usaha di Kemiri & Purworejo makin gampang ditemukan pelanggan lewat Google Bisnis, website, dan media sosial. Konsultasi via WhatsApp.";
+---
+<Layout title={title} description={description} canonical="https://plandemicspace.my.id/jasa-digital" ogImage="https://plandemicspace.my.id/img/og/og-image-jasa-digital.png" schemas={[schema0, schema1, schema2]}>
 
   <!-- NAVBAR -->
   <nav id="navbar">
@@ -253,7 +73,7 @@
         </a>
         <a class="jd-picker-item" href="#paket-seo">
           <span class="jd-picker-q">Website sudah ada tapi belum maksimal</span>
-          <span class="jd-picker-a">→ Optimasi Website</span>
+          <span class="jd-picker-a">→ SEO / Website Tune-Up</span>
         </a>
         <a class="jd-picker-item" href="#paket-sosmed">
           <span class="jd-picker-q">Facebook, Instagram, TikTok berantakan</span>
@@ -388,7 +208,7 @@
             <li>Sesi ngobrol via WA buat dijelasin&nbsp;hasilnya</li>
             <li>Nggak ada jaminan nomor 1 Google — hasil dipengaruhi persaingan &amp; faktor lain</li>
           </ul>
-          <a class="jd-card-cta" href="https://wa.me/6282241439784?text=Halo%2C%20saya%20tertarik%20dengan%20Optimasi%20Website%20untuk%20usaha%20saya" target="_blank" rel="noopener">Tanya paket ini →</a>
+          <a class="jd-card-cta" href="https://wa.me/6282241439784?text=Halo%2C%20saya%20tertarik%20dengan%20SEO%20Tune-Up%20untuk%20usaha%20saya" target="_blank" rel="noopener">Tanya paket ini →</a>
         </div>
         <div class="jd-price-card" id="paket-maps">
           <div class="jd-price-name">Google Bisnis &amp; Maps Starter</div>
@@ -766,6 +586,4 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-</body>
-</html>
+</Layout>

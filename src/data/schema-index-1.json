@@ -1,0 +1,54 @@
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Berapa lama proses servis laptop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tergantung kerusakannya — untuk servis ringan seperti install ulang atau bersih-bersih, biasanya 1–2 jam. Untuk kerusakan hardware yang butuh sparepart, bisa 1–3 hari tergantung ketersediaan part."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Berapa estimasi biaya servis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Biaya ditentukan setelah diagnosa. Tidak ada biaya cek — kami informasikan estimasi dulu sebelum pengerjaan dimulai, jadi tidak ada biaya kejutan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah bisa panggilan ke rumah?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bisa, untuk servis laptop, komputer, dan printer. Hubungi dulu via WhatsApp untuk jadwal dan persiapan sparepart yang dibutuhkan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "HP saya rusak, bisa diservis juga?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bisa. Chat WhatsApp dulu ceritakan kerusakannya, kami bantu carikan solusi dan cek ketersediaan sparepartnya."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah ada garansi servis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ada. Untuk servis yang sudah dikerjakan, kami berikan garansi pengerjaan. Kalau ada masalah setelah servis, hubungi kami langsung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bisa beli laptop second di sini?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bisa — kami jual perangkat second pilihan yang sudah dicek kondisinya, maupun perangkat baru. Harga transparan, bisa tanya-tanya dulu via WhatsApp."
+        }
+      }
+    ]
+  }

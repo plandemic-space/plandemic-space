@@ -1,0 +1,94 @@
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Saya gaptek, apakah bisa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bisa. Semua langkah teknis kami yang kerjakan — kamu tinggal ceritakan usahanya lewat WhatsApp dan kirim bahan yang diminta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Saya belum punya foto produk, bagaimana?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nggak apa-apa, ceritakan dulu kondisinya. Kami bantu lihat apa yang masih kurang dan cara paling mudah melengkapinya."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Berapa lama website selesai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tergantung paket dan kelengkapan bahan yang dikirim, umumnya beberapa hari sampai dua minggu sejak bahan lengkap."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah SEO menjamin nomor 1 Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tidak ada yang bisa menjamin itu, termasuk kami. Hasil SEO dipengaruhi persaingan, kualitas konten, reputasi, lokasi, dan faktor lain di luar kendali satu pihak."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kalau usaha saya masih kecil, apakah perlu website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Belum tentu. Kalau kondisi usaha belum perlu, kami akan bilang belum perlu — kadang cukup mulai dari Google Maps atau merapikan sosial media dulu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sistem pembayarannya bagaimana?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Untuk paket kecil seperti Google Bisnis & Maps, dibayar lunas di depan karena pengerjaannya cepat. Untuk paket menengah-besar (Optimasi Website, Selaras, Website), DP 50% di awal, sisanya dilunasi sebelum hasil final diserahkan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kalau hasilnya kurang pas, bisa direvisi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bisa, setiap paket sudah termasuk 2x revisi kecil (teks, foto, tata letak). Kalau ternyata mau ubah konsep besar-besaran, itu dihitung kerjaan tambahan — nanti diinfokan dulu biayanya sebelum dikerjakan, jadi tidak ada kejutan di kedua belah pihak."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kalau pilih domain sendiri (.com/.id), biaya tahunannya bagaimana?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Biaya domain tahun pertama sudah termasuk dalam harga Paket Mapan, jadi tidak ada tagihan terpisah di awal. Menjelang domain habis masa aktifnya, kami kabari lewat WhatsApp untuk perpanjangan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kalau nanti desanya mau pindah ke domain resmi (.desa.id), gimana caranya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bisa dilakukan kapan saja, tidak harus sejak awal. Kami mendampingi dan membantu mengurus proses migrasinya tanpa biaya jasa tambahan — namun pendaftaran domainnya sendiri tetap melalui portal resmi Kominfo dan wajib dilakukan langsung oleh perangkat desa (Sekdes/Kasi/Kaur), karena itu aturan pemerintah yang tidak bisa diwakilkan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ini berarti langganan bulanan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tidak. Semua paket di atas bayar satu kali (one-time), bukan retainer. Yang sifatnya bulanan hanya paket konten media sosial, karena memang butuh update rutin tiap bulan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bedanya Paket Rintisan dan Paket Mapan apa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sama-sama website utuh dengan pengerjaan penuh. Bedanya di alamat: Rintisan pakai subdomain, tanpa biaya domain tambahan. Mapan pakai domain sendiri (.com/.id) yang lebih meyakinkan di mata pelanggan. Bisa mulai dari Rintisan dulu, upgrade ke Mapan kapan saja siap."
+        }
+      }
+    ]
+  }

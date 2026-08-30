@@ -1,12 +1,13 @@
 # CATATAN PROJECT — Plandemic Space
-# Update terakhir: 28 Agustus 2026 (code cleanup) — sebelumnya 2 Februari 2026 (konten/brand)
-# Status: Konten & brand solid (Feb 2026) + kode sudah dirapikan & lolos audit teknis (Agu 2026)
+# Update terakhir: 29 Agustus 2026 (migrasi HTML vanilla → Astro)
+# Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai & siap tayang (29 Agu 2026)
 
 ---
 
 ## RIWAYAT REVISI SINGKAT
 - **2 Feb 2026** — Audit konten, copywriting, brand, SEO teknis. Lihat bagian "STATUS WEBSITE" & "SKOR AUDIT FINAL — Konten/Brand" di bawah.
-- **28 Agu 2026** — Code cleanup & refactor (bukan ubah konten/tampilan). Lihat bagian "RIWAYAT REFACTOR KODE" untuk detail lengkap.
+- **28 Agu 2026** — Code cleanup & refactor versi HTML vanilla (bukan ubah konten/tampilan). Lihat bagian "RIWAYAT REFACTOR KODE (HTML VANILLA)".
+- **29 Agu 2026** — Migrasi dari HTML vanilla ke Astro. Lihat bagian "RIWAYAT MIGRASI ASTRO" di bawah — ini sekarang jadi source of truth, bukan lagi folder HTML vanilla.
 
 ---
 
@@ -26,7 +27,122 @@
 
 ---
 
-## STATUS WEBSITE (per 2 Februari 2026)
+## STRUKTUR FILE (ASTRO — per 29 Agu 2026)
+
+```
+astro-project/
+├── CATATAN-PROJECT.md      ← dokumen ini
+├── README.md               ← panduan setup & deploy
+├── astro.config.mjs        ← site URL, trailingSlash: 'never', integrasi sitemap
+├── vercel.json
+├── package.json
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro    ← <head> terpusat: meta, OG, font, schema injection
+│   ├── components/
+│   │   ├── SiteNav.astro
+│   │   └── SiteFooter.astro
+│   ├── pages/
+│   │   ├── index.astro
+│   │   ├── jasa-digital.astro
+│   │   ├── 404.astro
+│   │   └── tips/
+│   │       ├── index.astro       ← daftar semua tips
+│   │       └── [...slug].astro   ← halaman tips dinamis dari content collection
+│   ├── content/
+│   │   ├── config.ts       ← schema Zod untuk collection "tips"
+│   │   └── tips/*.md       ← 6 artikel tips (lihat daftar di bawah)
+│   ├── data/
+│   │   └── schema-*.json   ← JSON-LD (LocalBusiness, FAQPage, Service, BreadcrumbList)
+│   └── assets/
+│       └── galeri/*.webp   ← foto galeri, dioptimasi Astro saat build (astro:assets)
+└── public/
+    ├── css/style.css       ← tidak berubah dari versi HTML vanilla
+    ├── js/main.js          ← tidak berubah dari versi HTML vanilla
+    ├── img/site/           ← favicon, logo
+    ├── img/og/             ← gambar Open Graph
+    ├── robots.txt
+    └── (sitemap digenerate otomatis saat build, bukan file statis)
+```
+
+**Kenapa foto galeri di `src/assets/` bukan `public/img/`?**
+File di `src/assets/` diproses lewat komponen `<Image />` Astro saat build — otomatis dikompres ulang (biasanya turun 7-11%) dan dapat filename ber-hash untuk caching. File di `public/` tidak diproses sama sekali. Semua aset lain (favicon, CSS, JS, gambar OG) tetap di `public/` karena tidak butuh optimasi ini.
+
+---
+
+## HALAMAN TIPS (baru, 29 Agu 2026)
+
+6 artikel awal, semua kategori "Tips Perawatan/Beli/Laptop/HP/Printer":
+1. `bahaya-charge-semalaman` — mitos/fakta charge HP semalaman
+2. `cek-sebelum-beli-second` — 4 hal wajib dicek beli laptop/HP second
+3. `hp-mati-total-kena-air-jatuh` — pertolongan pertama HP kena air/jatuh
+4. `print-bergaris-atau-buram` — penyebab umum hasil print bermasalah
+5. `tanda-laptop-butuh-servis` — 5 tanda awal laptop butuh servis
+6. `upgrade-ram-ssd-vs-beli-baru` — kapan upgrade vs beli baru
+
+Tiap artikel otomatis dapat:
+- Schema `Article` (headline, datePublished, author, publisher) + `BreadcrumbList`
+- Meta title/description/canonical sendiri, di-generate dari frontmatter
+- Masuk sitemap otomatis
+
+**Cara nambah artikel baru:** taruh file `.md` baru di `src/content/tips/`, isi frontmatter (title, pubDate, category, tags, description), tulis isi pakai markdown biasa (## untuk subjudul). Astro otomatis bikin halaman & masuk ke daftar `/tips` serta sitemap — tidak perlu sentuh kode lain.
+
+**Catatan:** `pubDate` ke-6 artikel awal ini sama semua (29 Agu 2026, tanggal migrasi) karena ditulis dalam satu batch. Kalau mau tanggal publikasi yang lebih natural/bertahap, edit manual di masing-masing file `.md`.
+
+---
+
+## RIWAYAT MIGRASI ASTRO (29 Agustus 2026)
+
+Migrasi dari HTML vanilla (`plandemic-space-main/`) ke Astro (`astro-project/`).
+Konten, copywriting, dan tampilan **tidak berubah** — sudah divalidasi dengan diff teks
+otomatis antara HTML lama dan hasil build Astro (identik, kecuali penambahan link "Tips"
+di navbar yang memang fitur baru).
+
+**Yang dipindah 1:1 (tanpa perubahan):**
+- `css/style.css` dan `js/main.js` — di-copy byte-for-byte
+- Semua schema JSON-LD (LocalBusiness, FAQPage, Service, BreadcrumbList) — hanya path
+  gambar yang disesuaikan ke struktur folder baru (`img/og/`, `img/site/`)
+- Copywriting, section order, dan struktur HTML tiap section
+
+**Perubahan struktural (arsitektur, bukan konten):**
+- Navbar & footer jadi komponen (`SiteNav.astro`, `SiteFooter.astro`) — sebelumnya
+  di-duplikat manual di `index.html` dan `jasa-digital.html`
+- `<head>` (meta, OG, font, schema injection) jadi satu `Layout.astro` — sebelumnya
+  boilerplate yang sama ditulis ulang di tiap file HTML
+
+**Fitur baru yang ditambahkan sekalian saat migrasi:**
+- Halaman `/tips` (content collection, 6 artikel awal) — lihat bagian "HALAMAN TIPS" di atas
+- Sitemap otomatis via `@astrojs/sitemap` — sebelumnya `sitemap.xml` ditulis manual dan
+  gampang basi (dulu cuma nyantumin 2 URL, gak ke-update kalau ada halaman baru)
+- Schema `Article`/`CollectionPage`/`BreadcrumbList` di semua halaman Tips
+- Optimasi gambar galeri lewat `astro:assets` — kompresi otomatis + cache-busting hash
+- Halaman `404.astro` custom (sebelumnya belum ada sama sekali)
+- `.gitignore` (sebelumnya belum ada — `node_modules`/`dist` berisiko ke-commit)
+- `trailingSlash: 'never'` di config biar URL sitemap konsisten sama canonical tag dan
+  `vercel.json` (`cleanUrls: true`)
+
+**Masalah yang ketemu & dibenerin selama migrasi:**
+- `@astrojs/sitemap` versi terbaru (3.7.3) ternyata gak kompatibel sama Astro 4.16
+  yang dipakai project ini (error `reduce` pas build) → di-downgrade ke `3.2.1` yang
+  cocok dan sudah divalidasi build sukses
+
+**Validasi yang dilakukan sebelum dianggap "siap tayang":**
+- `npm install` bersih dari nol, `astro build` sukses tanpa error
+- 10 halaman ter-generate (`/`, `/jasa-digital`, `/404`, `/tips`, 6 artikel tips)
+- Diff teks otomatis: `index.html` dan `jasa-digital.html` hasil build vs versi HTML
+  vanilla lama — identik
+- Semua `href` internal dicek, tidak ada link mati
+- Schema JSON-LD tiap halaman divalidasi strukturnya (`@type` benar semua)
+- Sitemap dicek isinya mencakup semua 8 URL (bukan cuma 2 seperti sitemap.xml lama)
+
+**File yang TIDAK ikut di-migrasi (folder HTML vanilla lama):**
+Folder `plandemic-space-main/` (HTML vanilla) sekarang statusnya arsip — Astro project
+ini yang jadi source of truth baru. Kalau mau develop lagi, mulai dari `astro-project/`,
+bukan dari HTML vanilla lama.
+
+---
+
+## STATUS WEBSITE (konten, per 2 Februari 2026 — masih berlaku)
 
 ### SECTION ORDER (sudah benar)
 Hero → Cara Kerja → Layanan → Tentang Kami → Galeri → Nilai Kami → Testimoni → FAQ → Kontak
@@ -35,89 +151,28 @@ Hero → Cara Kerja → Layanan → Tentang Kami → Galeri → Nilai Kami → T
 - Title: "Plandemic Space | Servis Laptop, Komputer & Printer di Kemiri Purworejo" ✓
 - Meta desc: lokasi spesifik (Dusun Ngemplak, Kemiri, Purworejo) ✓
 - Schema: ["LocalBusiness", "RepairShop"] + hasOfferCatalog (6 layanan) ✓
-- reviewCount: 32 (update manual kalau ulasan bertambah)
-- robots.txt + sitemap.xml: sudah ada ✓
+- reviewCount: 32 (update manual kalau ulasan bertambah — sekarang di
+  `src/data/schema-index-0.json`, cari "reviewCount")
+- robots.txt: ada ✓, sitemap sekarang digenerate otomatis saat build ✓
 - Google Search Console: sudah didaftarkan ✓
 
 ### FONT
 - 3 family: DM Serif Display (headline puitis) + Plus Jakarta Sans (body) + Rajdhani (brand name)
-- Montserrat: sudah dihapus ✓
 
 ### COPYWRITING
-**Hero:**
-- Kicker: BUKA SETIAP HARI · 08.00–17.00
-- H1: Ruang Solusi, Tumbuh Bersama.
-- Sub: "Servis laptop, komputer & printer terpercaya di Kemiri, Purworejo — plus print, fotokopi, pengetikan dokumen, dan jual beli perangkat. Konsultasi & diagnosa gratis."
-
-**Navbar:**
-- Tagline: KEMIRI · PURWOREJO · JAWA TENGAH
-
-**Cara Kerja:**
-- Title: "Tiga langkah, beres."
-- Step 1: angle analisa dulu, bukan "gratis" (sudah disebut di hero)
-- Step 2: "Tidak ada biaya kejutan" — satu-satunya tempat kalimat ini di Cara Kerja
-- Step 3: bisa ambil langsung atau diantar
-
-**Layanan (6 card):**
-- 01: Servis Laptop & Komputer (laptop, notebook, PC desktop, mini PC, AIO) · badge PANGGILAN
-- 02: Servis Printer (infus, cartridge, perawatan) · badge PANGGILAN
-- 03: Print, Fotokopi & Scan
-- 04: Pengetikan Dokumen
-- 05: Jual Beli HP & Laptop · badge SECOND & BARU
-- 06: Servis HP (bantuan, bukan fokus utama — chat dulu)
-
-**Tentang Kami:**
-- P1: tidak lahir dari rencana bisnis + 10 tahun pengalaman
-- P2: filosofi nama Plandemic (tangkis konspirasi → filosofi rencana-Nya → "Plandemic Space adalah salah satunya")
-- Timeline 1: "Satu postingan, satu keputusan"
-- Timeline 2: "Orderan pertama masuk"
-- Timeline 3 (PlandemicNET): sinyal tidak ada, internet kabel belum masuk, paket data mahal → bangun sendiri → "Ada yang butuh, ada yang gerak"
-- Timeline 4: "Multi service & digital dusun" (intentional — ada simbahngemplak.vercel.app)
-
-**Nilai Kami (4 poin):**
-1. Berbasis rumah, bukan toko besar
-2. Jujur & transparan dari awal (diagnosa gratis, tidak ada biaya kejutan)
-3. Tumbuh bersama kebutuhan warga (PlandemicNET → multi service)
-4. Ada garansi pengerjaan ← naik dari FAQ, value prop penting
-
-**Testimoni (5 review, semua real dari Google Maps):**
-1. Wylda Maulana — HP mati total, sudah gagal di tempat lain, berhasil di sini + komunikatif
-2. Nur Waidah — keyboard+speaker laptop, lebih murah dari kota
-3. Wagiyah Ngisor — repeat customer, ga asal nyuruh beli yg mahal, laptop awet untuk kuliah
-4. Sumi Hamdalah — HP tombol mangslep kirain ga bisa, ternyata bisa + bonus softcase
-5. Grandpeaks (Local Guide) — keren, memuaskan
-
-**FAQ (6 pertanyaan):**
-1. Berapa lama servis? → 1-2 jam ringan, 1-3 hari hardware
-2. Berapa biaya? → tidak ada biaya cek, estimasi dulu
-3. Bisa panggilan? → bisa laptop/komputer/printer
-4. HP bisa diservis? → bisa, chat dulu
-5. Ada garansi? → ada
-6. Jual laptop second? → ada, sudah dicek kondisinya
-
-**CTA:** "Ceritakan dulu, kami dengarkan."
-
-**Footer:** © 2020–2026 · Dari rumah, untuk warga.
+Tidak berubah dari audit 2 Feb 2026 — lihat versi lama CATATAN-PROJECT.md kalau butuh
+detail lengkap tiap section (Hero, Cara Kerja, Layanan, Tentang Kami, Nilai Kami,
+Testimoni, FAQ, CTA, Footer). Semua sudah dipindah 1:1 ke Astro tanpa perubahan teks.
 
 ### GALERI (bento CSS grid, 3 kolom × 4 baris)
-Urutan & kelas:
-1. gal-4-meja-kerja.webp → gal-wide (landscape, hero galeri)
-2. gal-1-servis-laptop.webp → gal-tall (square, proses kerja)
-3. gal-5-printer.webp → reguler (landscape)
-4. gal-7-laptop-merah.webp → gal-tall (portrait)
-5. gal-6-mainboard.webp → reguler (landscape)
-6. gal-2-heatsink.webp → gal-tall (portrait)
-7. gal-3-keyboard.webp → gal-wide (landscape, keyboard replacement)
-
-CSS: grid-template-rows: 190px × 4, gap: 0.75rem
-Mobile: 2 kolom, semua span direset, height: 150px
-
-### REDUNDANSI YANG MASIH ADA (terkontrol, tidak perlu dikurangi lagi)
-- "biaya kejutan": 3x (Step 2, Nilai Kami, FAQ) — tiga konteks berbeda, OK
-- "diagnosa gratis": 3x — satu di hero sub, satu di card, satu di Nilai Kami
-- "gratis": 6x total — masih agak banyak tapi nilai prop utama, bisa monitor
-- "warga": 6x — brand language, intentional
-- "transparan": 3x — masih OK
+Urutan & kelas sama seperti sebelumnya, sekarang pakai komponen `<Image />`:
+1. gal-4-meja-kerja.webp → gal-wide
+2. gal-1-servis-laptop.webp → gal-tall
+3. gal-5-printer.webp → reguler
+4. gal-7-laptop-merah.webp → gal-tall
+5. gal-6-mainboard.webp → reguler
+6. gal-2-heatsink.webp → gal-tall
+7. gal-3-keyboard.webp → gal-wide
 
 ---
 
@@ -128,37 +183,28 @@ Mobile: 2 kolom, semua span direset, height: 150px
       Fokus: tombol WA mengambang, ukuran tombol, keterbacaan teks
       Ini belum pernah dilakukan sama sekali
 
-- [x] Jalankan Google PageSpeed Insights — SUDAH (28 Agu 2026)
-      Hasil: index.html → Performance 91, Accessibility 100 (setelah fix kontras),
-      Best Practices 100, SEO 100 (mobile). jasa-digital.html → Performance 90,
-      Accessibility 100, Best Practices 100, SEO 100 (mobile).
-      Detail perbaikan kontras ada di "RIWAYAT REFACTOR KODE" di bawah.
-
-- [ ] Performance masih 90-91 (bukan 100) di kedua halaman — belum digali
-      lebih lanjut, kemungkinan besar dari asset loading (gambar galeri/hero).
-      Kalau mau dinaikkan, ini titik mulainya.
+- [ ] Jalankan ulang Google PageSpeed Insights setelah deploy versi Astro
+      Terakhir kali (versi HTML vanilla, 28 Agu 2026): Performance 90-91 mobile.
+      Optimasi gambar galeri di migrasi Astro ini kemungkinan besar naikin skor —
+      perlu dicek ulang setelah live di domain asli.
 
 ### PRIORITAS 2 — Konten
-- [ ] Update reviewCount di schema kalau ulasan bertambah
-      Ada di index.html baris schema, cari "reviewCount"
-
+- [ ] Update reviewCount di `src/data/schema-index-0.json` kalau ulasan bertambah
 - [ ] Foto galeri tambahan ke depan:
       - Area print/fotokopi (belum ada foto layanan ini)
       - Hasil servis yang bersih/rapi (bukan proses)
       - Suasana tempat lebih luas
+- [ ] Tambah artikel Tips baru secara berkala (SEO jangka panjang, lihat cara di
+      bagian "HALAMAN TIPS" di atas)
 
 ### PRIORITAS 3 — Pertimbangkan, belum urgent
 - [ ] Gallery max-width: sekarang 880px, bisa naik ke 1080px
-      Perlu cek konsistensi dengan section lain
-
 - [ ] Jam operasional di hero atau navbar sticky
-      Sekarang hanya di kicker dan footer
-
 - [ ] Embed Google Maps kecil di section Kontak
-
-- [ ] Pantau GSC setelah 2-4 minggu
-      Cek: query apa yang membawa traffic, halaman mana terindex
-      Ini akan kasih data untuk keputusan SEO berikutnya
+- [ ] Pantau GSC setelah 2-4 minggu (khususnya cek apakah halaman Tips baru mulai
+      ke-index dan bawa traffic)
+- [ ] Tanggal `pubDate` di 6 artikel Tips awal masih sama semua (tanggal migrasi) —
+      bisa disebar biar lebih natural kalau dirasa perlu
 
 ---
 
@@ -180,71 +226,22 @@ Mobile: 2 kolom, semua span direset, height: 150px
 
 ---
 
-## STRUKTUR FILE
+## WORKFLOW ANTAR SESI
 
-```
-/
-├── index.html              ← file utama, source of truth
-├── CATATAN-PROJECT.md      ← dokumen ini
-├── robots.txt
-├── sitemap.xml
-├── css/
-│   └── style.css           ← font, grid galeri, semua styling
-├── js/
-│   └── main.js             ← dibersihkan Agu 2026 (lihat RIWAYAT REFACTOR KODE)
-└── img/
-    ├── favicon.ico / favicon-*.png / apple-touch-icon.png
-    ├── logo.svg / logo_gold.svg / logo-512*.png / og-image.png
-    └── gallery/
-        ├── gal-1-servis-laptop.webp    (1200×1200, square)
-        ├── gal-2-heatsink.webp         (675×1200, portrait)
-        ├── gal-3-keyboard.webp         (1456×816, landscape)
-        ├── gal-4-meja-kerja.webp       (1200×675, landscape)
-        ├── gal-5-printer.webp          (1200×675, landscape)
-        ├── gal-6-mainboard.webp        (1200×675, landscape)
-        └── gal-7-laptop-merah.webp     (675×1200, portrait)
-```
-*(gal-3-before-after.webp yang disebut di catatan lama sudah nggak ada di folder — sudah diganti gal-3-keyboard.webp sebelum Agu 2026, catatan lama belum di-update)*
+**Masalah yang sering terjadi:**
+Setiap kali upload versi baru, beberapa fix dari sesi sebelumnya hilang karena
+user edit manual file lama (bukan file output dari Claude).
+
+**Cara yang benar:**
+1. Selalu mulai dari file output Claude sebagai base (sekarang: folder `astro-project/`,
+   BUKAN lagi `plandemic-space-main/` HTML vanilla)
+2. Kalau ada edit manual, ceritakan perubahannya ke Claude dulu
+3. Claude akan merge perubahan ke file yang sudah benar
+4. Baru upload ke GitHub / deploy ke Vercel
 
 ---
 
-## RIWAYAT REFACTOR KODE (28 Agustus 2026)
-
-Ini refactor internal — **bukan** ubah konten, copywriting, atau tampilan.
-Semua perubahan divalidasi computed-style-nya identik sebelum/sesudah.
-
-**Priority 1 — struktur & pemisahan concern:**
-- Hapus ±45 baris CSS mati (sisa section lama yang sudah diganti)
-- Fix typo selector `.val-desc` → `.val-text` (aturan `text-wrap: pretty` sebelumnya nggak pernah nyala di section Nilai Kami)
-- Hapus 1 `!important` yang nggak perlu di `.cta-find-us`
-- `main.js` sebelumnya nyuntik `<style>` tag ke `<head>` saat runtime buat class `.visible` — dipindah jadi CSS biasa
-- 3× `onclick="..."` inline di HTML diganti `data-scroll-to` + 1 event listener terpusat di `main.js`
-- `index.html` ditambah `<main>` wrapper (landmark aksesibilitas yang tadinya cuma ada di jasa-digital.html)
-
-**Priority 2 — konsolidasi duplikasi:**
-- `.step-tag` & `.svc-badge` (90% sama) digabung jadi 1 selector gabungan + sisa beda dikit per-class
-- Media query yang nyasar di section masing-masing (testi-grid, wa-float) dipindah ke block RESPONSIVE terpusat — dari 11 block jadi 7
-
-**Priority 3 — opsional, tetap dikerjakan:**
-- Warna `rgba(200, 223, 232, x)` yang ditulis literal berkali-kali → jadi `--pastel-rgb` CSS variable, dipanggil `rgba(var(--pastel-rgb), x)`
-- Ketemu 1 sisa di HTML: `.sec-label` di section Nilai Kami override warnanya lewat **inline style** duplikat di 2 halaman → dipindah jadi rule CSS `.values .sec-label`, ngikutin pola yang sudah ada (`.values .sec-title`)
-
-**Fix aksesibilitas (kontras warna, ditemukan lewat PageSpeed):**
-Backround/foreground kontras di bawah standar WCAG AA (4.5:1) di 3 tempat. Dihitung manual pakai rumus WCAG, bukan asal naik:
-- `.stat-l` (Rating Google/Ulasan Maps/Tahun Beroperasi, di hero navy): opacity 0.3 (2.59:1 ❌) → 0.52 (4.84:1 ✅)
-- `.label` ("Tentang Kami", di section pastel muda): opacity 0.6 (3.25:1 ❌) → 0.75 (4.72:1 ✅)
-- `.cta-hours-label` ("Jam Operasional", di section pastel muda): opacity 0.6 (3.25:1 ❌) → 0.75 (4.72:1 ✅)
-
-**Hasil akhir (scan menyeluruh setelah semua di atas):**
-0 CSS class tidak terpakai, 0 duplikat definisi selector, semua path aset aman,
-HTML/CSS/JS tervalidasi (brace balance, syntax check).
-
-**File yang berubah dari kode asli:** `index.html`, `jasa-digital.html`, `css/style.css`, `js/main.js`.
-Tidak ada file yang di-rename atau dipindah folder — aman ditimpa langsung di path yang sama.
-
----
-
-## SKOR AUDIT FINAL — Konten/Brand (2 Feb 2026)
+## SKOR AUDIT FINAL — Konten/Brand (2 Feb 2026, masih berlaku)
 
 | Aspek | Skor | Catatan |
 |---|---|---|
@@ -259,36 +256,20 @@ Tidak ada file yang di-rename atau dipindah folder — aman ditimpa langsung di 
 | Konversi | 7.5/10 | CTA hangat, FAQ bantu keputusan |
 | **Overall** | **7.9/10** | Potensi 8.5+ setelah mobile test & GSC data |
 
-## SKOR AUDIT FINAL — Kualitas Kode (28 Agu 2026)
+## SKOR AUDIT — Kualitas Kode
 
-| Aspek | Sebelum | Sesudah |
+| Aspek | HTML vanilla (28 Agu) | Astro (29 Agu) |
 |---|---|---|
-| Overall | 7.5/10 | 8.5/10 |
-| Struktur folder | 8/10 | 8/10 |
-| HTML | 7.5/10 | 8/10 |
-| CSS | 7/10 | 8.5/10 |
-| JavaScript | 7.5/10 | 8.5/10 |
-| Maintainability | 7/10 | 8.5/10 |
-| Accessibility | 8/10 | 8/10 (tapi PageSpeed nunjukin 100 setelah fix kontras) |
-| Performance | 8/10 | 8.5/10 (PageSpeed: 90-91 mobile, belum digali lebih jauh) |
+| Struktur folder | 8/10 | 9/10 — komponen & content collection |
+| Maintainability | 8.5/10 | 9/10 — nav/footer/head gak perlu duplikat manual |
+| SEO teknis (sitemap, schema) | 8/10 | 9/10 — sitemap otomatis, schema Tips lengkap |
+| Performance (gambar) | 8.5/10 | 9/10 — optimasi build-time via astro:assets |
+| Accessibility | 8/10 | 8/10 — tidak berubah dari versi HTML vanilla |
 
-*(Catatan: dua tabel skor di atas ngukur hal beda — yang pertama soal konten/copywriting/brand, yang kedua soal kualitas & kerapian kode. Keduanya independen, jangan disamakan.)*
-
----
-
-## WORKFLOW ANTAR SESI
-
-**Masalah yang sering terjadi:**
-Setiap kali upload versi baru, beberapa fix dari sesi sebelumnya hilang karena
-user edit manual file lama (bukan file output dari Claude).
-
-**Cara yang benar:**
-1. Selalu mulai dari file output Claude sebagai base
-2. Kalau ada edit manual, ceritakan perubahannya ke Claude dulu
-3. Claude akan merge perubahan ke file yang sudah benar
-4. Baru upload ke GitHub
+*(Skor konten/brand dan skor kode independen, jangan disamakan.)*
 
 ---
 
 (Disusun dari sesi panjang bersama Claude/Anthropic — 2 Februari 2026, konten/brand)
-(Diperbarui dengan sesi code cleanup & refactor — 28 Agustus 2026)
+(Diperbarui dengan sesi code cleanup & refactor HTML vanilla — 28 Agustus 2026)
+(Diperbarui dengan sesi migrasi ke Astro — 29 Agustus 2026)

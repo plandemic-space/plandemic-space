@@ -1,0 +1,137 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allTips = await getCollection('tips');
+  return allTips.map((tip) => ({
+    params: { slug: tip.slug },
+    props: { tip },
+  }));
+}
+
+const { tip } = Astro.props;
+const { Content } = await tip.render();
+
+const formattedDate = tip.data.pubDate.toLocaleDateString('id-ID', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const pageUrl = `https://plandemicspace.my.id/tips/${tip.slug}`;
+const isoDate = tip.data.pubDate.toISOString();
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: tip.data.title,
+  description: tip.data.description,
+  datePublished: isoDate,
+  dateModified: isoDate,
+  author: {
+    '@type': 'Organization',
+    name: 'Plandemic Space',
+    url: 'https://plandemicspace.my.id/',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Plandemic Space',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://plandemicspace.my.id/img/site/logo-512-whitebg.png',
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': pageUrl,
+  },
+  articleSection: tip.data.category,
+  keywords: tip.data.tags.join(', '),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Beranda', item: 'https://plandemicspace.my.id/' },
+    { '@type': 'ListItem', position: 2, name: 'Tips', item: 'https://plandemicspace.my.id/tips' },
+    { '@type': 'ListItem', position: 3, name: tip.data.title, item: pageUrl },
+  ],
+};
+---
+<Layout
+  title={`${tip.data.title} | Plandemic Space`}
+  description={tip.data.description}
+  canonical={pageUrl}
+  schemas={[articleSchema, breadcrumbSchema]}
+>
+  <SiteNav />
+  <main>
+    <article class="tip-article">
+      <div class="tip-article-inner">
+        <a href="/tips" class="tip-back">← Semua Tips</a>
+        <span class="tip-cat">{tip.data.category}</span>
+        <h1>{tip.data.title}</h1>
+        <p class="tip-date">{formattedDate}</p>
+        <div class="tip-body">
+          <Content />
+        </div>
+      </div>
+    </article>
+  </main>
+  <SiteFooter />
+</Layout>
+
+<style>
+  .tip-article { padding: 7rem 1.5rem 5rem; }
+  .tip-article-inner { max-width: 680px; margin: 0 auto; }
+  .tip-back {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--navy-mid);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+  }
+  .tip-cat {
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--gold-dim);
+    background: rgba(201, 168, 76, 0.12);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    margin-bottom: 0.75rem;
+  }
+  .tip-article-inner h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    line-height: 1.3;
+    margin: 0.5rem 0 0.5rem;
+  }
+  .tip-date { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+  .tip-body {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+  .tip-body :global(h2) {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    margin: 2rem 0 0.75rem;
+  }
+  .tip-body :global(p) { margin-bottom: 1.1rem; }
+  .tip-body :global(ul) { margin: 0 0 1.1rem 1.2rem; }
+  .tip-body :global(li) { margin-bottom: 0.4rem; }
+  .tip-body :global(hr) {
+    border: none;
+    border-top: 1px solid rgba(200, 223, 232, 0.8);
+    margin: 2rem 0;
+  }
+  .tip-body :global(a) { color: var(--navy-mid); font-weight: 600; }
+  .tip-body :global(strong) { color: var(--navy); }
+</style>

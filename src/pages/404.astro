@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+
+const title = "Halaman Tidak Ditemukan | Plandemic Space";
+const description = "Halaman yang kamu cari tidak ditemukan. Kembali ke beranda Plandemic Space — servis laptop, komputer & printer di Kemiri, Purworejo.";
+---
+<Layout title={title} description={description} canonical="https://plandemicspace.my.id/404">
+  <SiteNav />
+  <main>
+    <section class="notfound">
+      <div class="notfound-inner">
+        <p class="notfound-kicker">404</p>
+        <h1>Halamannya nggak ketemu.</h1>
+        <p class="notfound-sub">Mungkin link-nya salah ketik atau halamannya sudah dipindah. Coba balik ke beranda, atau langsung chat kami kalau butuh bantuan.</p>
+        <div class="notfound-btns">
+          <a href="/" class="btn-main">KEMBALI KE BERANDA</a>
+          <a href="https://wa.me/6282241439784" target="_blank" rel="noopener" class="btn-ghost">Hubungi kami <span>→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Layout>
+
+<style>
+  .notfound {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 1.5rem 4rem;
+    text-align: center;
+  }
+  .notfound-inner { max-width: 520px; }
+  .notfound-kicker {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    letter-spacing: 0.05em;
+    color: var(--gold-dim, #C9A84C);
+    margin-bottom: 0.5rem;
+  }
+  .notfound h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin-bottom: 1rem;
+  }
+  .notfound-sub {
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  .notfound-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>

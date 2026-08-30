@@ -1,152 +1,20 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="ctXkL6KuBMznNHbs9jCUApY6yQh5nB_k7ubTmcG5HVM" />
-  <meta name="google-site-verification" content="1G2MEXUv7S4VPi795e3nMV6lOMQfOkjBnt6NgPFVcyI" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import schema0 from '../data/schema-index-0.json';
+import schema1 from '../data/schema-index-1.json';
+import galMejaKerja from '../assets/galeri/gal-4-meja-kerja.webp';
+import galServisLaptop from '../assets/galeri/gal-1-servis-laptop.webp';
+import galPrinter from '../assets/galeri/gal-5-printer.webp';
+import galLaptopMerah from '../assets/galeri/gal-7-laptop-merah.webp';
+import galMainboard from '../assets/galeri/gal-6-mainboard.webp';
+import galHeatsink from '../assets/galeri/gal-2-heatsink.webp';
+import galKeyboard from '../assets/galeri/gal-3-keyboard.webp';
 
-  <!-- SEO -->
-  <title>Plandemic Space | Servis Laptop, Komputer &amp; Printer di Kemiri Purworejo</title>
-  <meta name="description" content="Servis laptop, komputer &amp; printer terpercaya di Dusun Ngemplak, Kemiri, Purworejo. Juga melayani print, fotokopi, pengetikan dokumen, dan servis HP. Konsultasi gratis via WhatsApp.">
-  <meta name="keywords" content="servis laptop Purworejo, servis komputer Kemiri, servis printer Purworejo, print fotokopi Kemiri, jasa pengetikan Purworejo, servis HP Ngemplak">
-  <meta name="author" content="Plandemic Space">
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="canonical" href="https://plandemicspace.my.id/">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Plandemic Space — Servis Laptop, Komputer &amp; Printer di Purworejo">
-  <meta property="og:description" content="Multi service &amp; home business di Kemiri, Purworejo. Spesialis servis laptop, komputer, printer, plus print, fotokopi, dan jual beli second.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://plandemicspace.my.id">
-  <meta property="og:image" content="https://plandemicspace.my.id/img/og-image.png">
-  <meta property="og:locale" content="id_ID">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Rajdhani:wght@600;700&amp;display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Schema.org LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "RepairShop"],
-    "name": "Plandemic Space",
-    "image": "https://plandemicspace.my.id/img/og-image.png",
-    "logo": "https://plandemicspace.my.id/img/logo-512-whitebg.png",
-    "url": "https://plandemicspace.my.id/",
-    "telephone": "+6282241439784",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Ngemplak 02/02, Dusun III, Samping",
-      "addressLocality": "Kemiri",
-      "addressRegion": "Purworejo, Jawa Tengah",
-      "postalCode": "54262",
-      "addressCountry": "ID"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -7.659723,
-      "longitude": 109.875111
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "08:00",
-        "closes": "17:00"
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "32"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Layanan Plandemic Space",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Servis Laptop & Komputer" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Servis Printer" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Print, Fotokopi & Scan" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pengetikan & Bantu Tugas" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jual Beli HP & Laptop" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Servis HP" } }
-      ]
-    },
-    "sameAs": [
-      "https://www.instagram.com/zns.srr/",
-      "https://www.facebook.com/zainus.surur/",
-      "https://www.tiktok.com/@hisssdeneng",
-      "https://www.youtube.com/@Sururr"
-    ]
-  }
-  </script>
-  <!-- Schema.org FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Berapa lama proses servis laptop?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tergantung kerusakannya — untuk servis ringan seperti install ulang atau bersih-bersih, biasanya 1–2 jam. Untuk kerusakan hardware yang butuh sparepart, bisa 1–3 hari tergantung ketersediaan part."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Berapa estimasi biaya servis?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Biaya ditentukan setelah diagnosa. Tidak ada biaya cek — kami informasikan estimasi dulu sebelum pengerjaan dimulai, jadi tidak ada biaya kejutan."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Apakah bisa panggilan ke rumah?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bisa, untuk servis laptop, komputer, dan printer. Hubungi dulu via WhatsApp untuk jadwal dan persiapan sparepart yang dibutuhkan."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "HP saya rusak, bisa diservis juga?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bisa. Chat WhatsApp dulu ceritakan kerusakannya, kami bantu carikan solusi dan cek ketersediaan sparepartnya."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Apakah ada garansi servis?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ada. Untuk servis yang sudah dikerjakan, kami berikan garansi pengerjaan. Kalau ada masalah setelah servis, hubungi kami langsung."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Bisa beli laptop second di sini?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bisa — kami jual perangkat second pilihan yang sudah dicek kondisinya, maupun perangkat baru. Harga transparan, bisa tanya-tanya dulu via WhatsApp."
-        }
-      }
-    ]
-  }
-  </script>
-</head>
-<body>
+const title = "Plandemic Space | Servis Laptop, Komputer & Printer di Kemiri Purworejo";
+const description = "Servis laptop, komputer & printer terpercaya di Dusun Ngemplak, Kemiri, Purworejo. Juga melayani print, fotokopi, pengetikan dokumen, dan servis HP. Konsultasi gratis via WhatsApp.";
+---
+<Layout title={title} description={description} canonical="https://plandemicspace.my.id/" schemas={[schema0, schema1]}>
 
   <!-- NAVBAR -->
   <nav id="navbar">
@@ -165,6 +33,7 @@
       <div class="nav-links" id="navLinks">
         <a href="#tentang" class="nav-link">Tentang</a>
         <a href="#layanan" class="nav-link">Layanan</a>
+        <a href="/tips" class="nav-link">Tips</a>
         <a href="#galeri" class="nav-link">Galeri</a>
         <a href="#faq" class="nav-link">FAQ</a>
         <a class="nav-cta" href="https://wa.me/6282241439784" target="_blank" rel="noopener">HUBUNGI KAMI</a>
@@ -349,7 +218,7 @@
             <div class="tl-date">SEKARANG &amp; KE DEPAN</div>
             <div class="tl-title">Multi service &amp; digital dusun</div>
             <div class="tl-desc">Dari servis perangkat ke layanan digital harian — dan ke depan, pelan-pelan ikut bantu warga sekitar hadir secara digital. Satu langkah sekaligus, sesuai kapasitas.</div>
-            <a class="tl-link" href="jasa-digital">Lihat jasa digital kami <span>→</span></a>
+            <a class="tl-link" href="/jasa-digital">Lihat jasa digital kami <span>→</span></a>
           </div>
         </div>
       </div>
@@ -363,25 +232,25 @@
       <h2 class="sec-title">Lihat langsung tempat kami.</h2>
       <div class="gal-grid">
         <div class="gal-item gal-wide">
-          <img src="img/gallery/gal-4-meja-kerja.webp" alt="Meja kerja servis laptop dan komputer Plandemic Space Kemiri Purworejo" loading="lazy" width="1200" height="675" style="object-position: center center;">
+          <Image src={galMejaKerja} alt="Meja kerja servis laptop dan komputer Plandemic Space Kemiri Purworejo" loading="lazy" width={1200} height={675} style="object-position: center center;" />
         </div>
         <div class="gal-item gal-tall">
-          <img src="img/gallery/gal-1-servis-laptop.webp" alt="Teknisi Plandemic Space sedang servis laptop di Ngemplak Purworejo" loading="lazy" width="674" height="1200" style="object-position: center 40%;">
+          <Image src={galServisLaptop} alt="Teknisi Plandemic Space sedang servis laptop di Ngemplak Purworejo" loading="lazy" width={674} height={1200} style="object-position: center 40%;" />
         </div>
         <div class="gal-item">
-          <img src="img/gallery/gal-5-printer.webp" alt="Servis printer Epson di Plandemic Space Kemiri Purworejo" loading="lazy" width="1200" height="675" style="object-position: left center;">
+          <Image src={galPrinter} alt="Servis printer Epson di Plandemic Space Kemiri Purworejo" loading="lazy" width={1200} height={675} style="object-position: left center;" />
         </div>
         <div class="gal-item gal-tall">
-          <img src="img/gallery/gal-7-laptop-merah.webp" alt="Laptop ASUS selesai servis baterai di Plandemic Space Purworejo" loading="lazy" width="675" height="1200" style="object-position: center top;">
+          <Image src={galLaptopMerah} alt="Laptop ASUS selesai servis baterai di Plandemic Space Purworejo" loading="lazy" width={675} height={1200} style="object-position: center top;" />
         </div>
         <div class="gal-item">
-          <img src="img/gallery/gal-6-mainboard.webp" alt="Servis mainboard printer Canon di Plandemic Space Kemiri" loading="lazy" width="675" height="1200" style="object-position: center center;">
+          <Image src={galMainboard} alt="Servis mainboard printer Canon di Plandemic Space Kemiri" loading="lazy" width={675} height={1200} style="object-position: center center;" />
         </div>
         <div class="gal-item gal-tall">
-          <img src="img/gallery/gal-2-heatsink.webp" alt="Bersih-bersih laptop laptop mati total di Plandemic Space Ngemplak Purworejo" loading="lazy" width="675" height="1200" style="object-position: center 30%;">
+          <Image src={galHeatsink} alt="Bersih-bersih laptop laptop mati total di Plandemic Space Ngemplak Purworejo" loading="lazy" width={675} height={1200} style="object-position: center 30%;" />
         </div>
         <div class="gal-item gal-wide">
-          <img src="img/gallery/gal-3-keyboard.webp" alt="Ganti keyboard laptop ASUS dan Acer di Plandemic Space Kemiri Purworejo" loading="lazy" width="1200" height="675" style="object-position: center 40%;">
+          <Image src={galKeyboard} alt="Ganti keyboard laptop ASUS dan Acer di Plandemic Space Kemiri Purworejo" loading="lazy" width={1200} height={675} style="object-position: center 40%;" />
         </div>
       </div>
       <a href="https://maps.app.goo.gl/W6FxkN82ArRKb5NT9" target="_blank" rel="noopener" class="gal-maps-link">
@@ -563,11 +432,9 @@
         <a href="#tentang">Tentang</a>
         <a href="#layanan">Layanan</a>
         <a href="#kontak">Kontak</a>
-        <a href="jasa-digital">Jasa Digital UMKM</a>
+        <a href="/jasa-digital">Jasa Digital UMKM</a>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-</body>
-</html>
+</Layout>

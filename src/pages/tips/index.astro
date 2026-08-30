@@ -1,0 +1,136 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { getCollection } from 'astro:content';
+
+const allTips = await getCollection('tips');
+allTips.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const title = "Tips | Plandemic Space";
+const description = "Kumpulan tips seputar laptop, HP, dan printer dari Plandemic Space — servis laptop, komputer & printer di Kemiri, Purworejo.";
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: title,
+  description,
+  url: 'https://plandemicspace.my.id/tips',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Plandemic Space',
+    url: 'https://plandemicspace.my.id/',
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Beranda', item: 'https://plandemicspace.my.id/' },
+    { '@type': 'ListItem', position: 2, name: 'Tips', item: 'https://plandemicspace.my.id/tips' },
+  ],
+};
+---
+<Layout title={title} description={description} canonical="https://plandemicspace.my.id/tips" schemas={[collectionSchema, breadcrumbSchema]}>
+  <SiteNav />
+  <main>
+    <section class="tips-hero">
+      <div class="tips-hero-inner">
+        <p class="tips-kicker">TIPS &amp; INFO</p>
+        <h1>Tips seputar laptop, HP &amp; printer</h1>
+        <p class="tips-sub">Kenali dulu gejalanya, biar nggak keburu bingung sendiri.</p>
+      </div>
+    </section>
+
+    <section class="tips-list">
+      <div class="tips-list-inner">
+        {allTips.map((tip) => (
+          <a class="tips-card" href={`/tips/${tip.slug}`}>
+            <span class="tips-card-cat">{tip.data.category}</span>
+            <h2 class="tips-card-title">{tip.data.title}</h2>
+            <p class="tips-card-desc">{tip.data.description}</p>
+            <span class="tips-card-more">Baca selengkapnya →</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Layout>
+
+<style>
+  .tips-hero {
+    background: var(--navy);
+    color: var(--white);
+    padding: 6rem 1.5rem 3rem;
+    text-align: center;
+  }
+  .tips-hero-inner { max-width: 680px; margin: 0 auto; }
+  .tips-kicker {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+  .tips-hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin-bottom: 0.75rem;
+  }
+  .tips-sub { color: var(--pastel); font-size: 1.05rem; }
+
+  .tips-list { padding: 3rem 1.5rem 5rem; }
+  .tips-list-inner {
+    max-width: 880px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  .tips-card {
+    display: block;
+    background: var(--white);
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--ink);
+    border: 1px solid rgba(200, 223, 232, 0.6);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .tips-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(27, 46, 75, 0.08);
+  }
+  .tips-card-cat {
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--gold-dim);
+    background: rgba(201, 168, 76, 0.12);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    margin-bottom: 0.75rem;
+  }
+  .tips-card-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.35;
+  }
+  .tips-card-desc {
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 0.9rem;
+  }
+  .tips-card-more {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--navy-mid);
+  }
+</style>
