@@ -1,6 +1,6 @@
 ---
 title: "Hasil Print Bergaris atau Buram, Ini Penyebab Umumnya"
-pubDate: "2026-08-29"
+pubDate: "2026-08-03"
 category: "Printer"
 tags: ["printer", "tinta", "perawatan"]
 description: "Cari tahu kenapa hasil cetakan printer jadi bergaris, buram, atau warnanya pudar, dan kapan sebaiknya minta bantuan servis."

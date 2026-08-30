@@ -1,6 +1,6 @@
 ---
 title: "5 Tanda Laptop Butuh Servis Sebelum Makin Parah"
-pubDate: "2026-08-29"
+pubDate: "2026-08-31"
 category: "Laptop"
 tags: ["laptop", "servis", "perawatan"]
 description: "Kenali gejala-gejala awal laptop bermasalah biar nggak nunggu sampai kerusakan makin parah dan biaya servis makin mahal."

@@ -1,7 +1,7 @@
 ---
 title: "Bahaya Nge-charge HP Semalaman, Mitos atau Fakta?"
-pubDate: "2026-08-29"
-category: "Tips Perawatan"
+pubDate: "2026-08-10"
+category: "Perawatan"
 tags: ["baterai", "charging", "hp"]
 description: "Charge HP semalaman sambil tidur sudah jadi kebiasaan banyak orang. Tapi seberapa aman sebenarnya kebiasaan ini untuk kesehatan baterai jangka panjang?"
 ---

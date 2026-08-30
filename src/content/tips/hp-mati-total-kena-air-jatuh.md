@@ -1,6 +1,6 @@
 ---
 title: "HP Mati Total Abis Kena Air atau Jatuh, Jangan Buru-buru Nyerah"
-pubDate: "2026-08-29"
+pubDate: "2026-08-24"
 category: "HP"
 tags: ["hp", "servis", "kena air"]
 description: "HP mati total setelah kena air atau jatuh bukan berarti selalu harus beli baru. Kenali dulu apa yang sebaiknya dan sebaiknya tidak dilakukan."

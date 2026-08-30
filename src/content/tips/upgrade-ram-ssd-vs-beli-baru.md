@@ -1,7 +1,7 @@
 ---
 title: "Kapan Sebaiknya Upgrade RAM/SSD Dibanding Beli Laptop Baru?"
-pubDate: "2026-08-29"
-category: "Tips Perawatan"
+pubDate: "2026-08-17"
+category: "Aksesoris"
 tags: ["upgrade", "ram", "ssd"]
 description: "Laptop mulai lemot bukan berarti harus langsung ganti baru. Kenali kapan upgrade komponen jadi pilihan yang lebih masuk akal."
 ---

@@ -1,7 +1,7 @@
 ---
 title: "4 Hal yang Wajib Dicek Kalau Mau Beli Laptop atau HP Second"
-pubDate: "2026-08-29"
-category: "Tips Beli"
+pubDate: "2026-07-27"
+category: "Beli"
 tags: ["laptop second", "hp second", "tips beli"]
 description: "Beli laptop atau HP second bisa jadi pilihan hemat yang tepat, asalkan tahu apa saja yang perlu dicek supaya nggak menyesal di kemudian hari."
 ---
