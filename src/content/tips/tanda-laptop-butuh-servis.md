@@ -24,11 +24,17 @@ Baterai yang tadinya bisa dipakai seharian, tiba-tiba drop ke angka aneh (misaln
 
 ## 4. Muncul Suara Aneh dari Dalam Laptop
 
-Bunyi klik-klik, dengung, atau suara berdecit yang sebelumnya nggak ada, apalagi kalau muncul terus-menerus, sebaiknya jangan didiamkan. Suara asing dari dalam biasanya tanda ada komponen mekanis yang mulai bermasalah.
+Bunyi klik-klik, dengung, atau suara berdecit yang sebelumnya nggak ada, apalagi kalau muncul terus-menerus, sebaiknya jangan didiamkan. Tapi nggak semua suara berarti gawat — ini cara bedainnya:
+
+- **Suara "wush" halus dari kipas** yang lebih kenceng pas laptop kerja berat (buka banyak tab, main game) itu wajar, tandanya sistem pendingin lagi kerja normal
+- **Suara "tik-tik" atau "klik" berulang** yang muncul pas laptop lagi buka/simpan file — ini yang perlu diwaspadai, biasanya tanda HDD (bukan SSD) yang mulai bermasalah secara mekanis, dan sebaiknya segera backup data penting sebelum makin parah
+- **Suara dengung tinggi/melengking** yang konstan, bukan cuma pas kerja berat — ini sering disebut *coil whine*, bisa jadi indikasi komponen kelistrikan yang perlu dicek
 
 ## 5. Layar Berkedip atau Muncul Garis Tanpa Sebab Jelas
 
 Kedipan layar sesekali mungkin cuma gangguan kecil, tapi kalau makin sering atau muncul garis-garis warna yang aneh, ini perlu diperiksa lebih lanjut sebelum berkembang jadi kerusakan yang lebih besar dan lebih mahal diperbaiki.
+
+Satu cara gampang buat nebak ini soal software atau hardware: restart laptop, masuk ke **Safe Mode** (tekan tombol Shift sambil klik Restart di menu Start, lalu pilih "Troubleshoot > Advanced options > Startup Settings > Restart", nanti pilih "Enable Safe Mode"). Kalau kedipan atau garisnya **masih muncul di Safe Mode**, kemungkinan besar itu soal hardware (layar atau kabelnya). Kalau di Safe Mode layarnya normal, kemungkinan besar itu soal driver grafis yang perlu diupdate atau di-install ulang — bukan kerusakan fisik.
 
 ## Kenapa Nggak Boleh Ditunda?
 
