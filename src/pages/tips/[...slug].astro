@@ -85,6 +85,35 @@ const breadcrumbSchema = {
   <SiteFooter />
 </Layout>
 
+<script>
+  function addCopyButtons() {
+    document.querySelectorAll('.tip-body pre').forEach((pre) => {
+      if (pre.querySelector('.tip-copy-btn')) return;
+      const btn = document.createElement('button');
+      btn.className = 'tip-copy-btn';
+      btn.type = 'button';
+      btn.textContent = 'Salin';
+      btn.addEventListener('click', async () => {
+        const code = pre.querySelector('code');
+        const text = code ? code.textContent : pre.textContent;
+        try {
+          await navigator.clipboard.writeText(text.trim());
+          btn.textContent = 'Tersalin ✓';
+          btn.classList.add('copied');
+          setTimeout(() => {
+            btn.textContent = 'Salin';
+            btn.classList.remove('copied');
+          }, 2000);
+        } catch (e) {
+          btn.textContent = 'Gagal, coba manual';
+        }
+      });
+      pre.appendChild(btn);
+    });
+  }
+  addCopyButtons();
+</script>
+
 <style>
   .tip-article { padding: 7rem 1.5rem 5rem; }
   .tip-article-inner { max-width: 680px; margin: 0 auto; }
@@ -133,6 +162,45 @@ const breadcrumbSchema = {
     border-top: 1px solid rgba(200, 223, 232, 0.8);
     margin: 2rem 0;
   }
-  .tip-body :global(a) { color: var(--navy-mid); font-weight: 600; }
-  .tip-body :global(strong) { color: var(--navy); }
+  .tip-body :global(a) { color: var(--navy-mid); font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .tip-body :global(strong) { color: var(--ink); font-weight: 700; }
+  .tip-body :global(code) {
+    background: var(--pastel-light);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.92em;
+    color: var(--navy);
+  }
+  .tip-body :global(pre) {
+    position: relative !important;
+    background: var(--navy) !important;
+    color: #E8EEF4 !important;
+    padding: 1rem 3.2rem 1rem 1.1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 0 0 1.1rem;
+  }
+  .tip-body :global(pre) :global(span) { color: inherit !important; }
+  .tip-body :global(pre code) {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.92rem;
+  }
+  .tip-copy-btn {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    background: rgba(255,255,255,0.12);
+    color: #E8EEF4;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 4px 9px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .tip-copy-btn:hover { background: rgba(255,255,255,0.22); }
+  .tip-copy-btn.copied { background: var(--gold); color: var(--navy); border-color: var(--gold); }
 </style>

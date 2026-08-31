@@ -29,7 +29,13 @@ Cara ini paling cepat, tapi khusus laptop keluaran lama-menengah yang RAM-nya ma
 3. Klik tab **Memory**, lihat baris "Type" — di situ tertulis DDR3, DDR4, atau DDR5-nya
 4. Klik tab **SPD**, di kiri atas ada dropdown "Slot #1", "Slot #2", dan seterusnya sesuai jumlah slot fisik di laptop. Klik satu per satu — kalau kolomnya kosong berarti slot itu belum kepasang apa-apa, alias masih bisa ditambah
 
-Buat kapasitas maksimal yang didukung laptopnya (misal max 16GB atau bisa sampai 32GB), CPU-Z nggak nunjukkin ini. Cara ngeceknya: cari nomor model laptop kamu (biasanya ada di stiker bagian bawah laptop, atau ketik `wmic csproduct get name` di Command Prompt), lalu cari spesifikasi resminya di situs merk laptop tersebut atau lewat pencarian "spesifikasi [nomor model] RAM maksimal".
+Buat kapasitas maksimal yang didukung laptopnya (misal max 16GB atau bisa sampai 32GB), CPU-Z nggak nunjukkin ini. Cara ngeceknya: cari nomor model laptop kamu (biasanya ada di stiker bagian bawah laptop), atau ketik perintah ini di Command Prompt:
+
+```
+wmic csproduct get name
+```
+
+Nomor model yang muncul itu tinggal dicari spesifikasi resminya di situs merk laptop tersebut, atau lewat pencarian "spesifikasi [nomor model] RAM maksimal".
 
 Satu tips tambahan: kalau mau nambah RAM dan slotnya masih ada 2 kosong, lebih baik pasang sepasang keping yang identik (misal 2x8GB) daripada 1 keping besar sendirian (1x16GB). Ini soal dual-channel — dua keping yang jalan bareng bikin transfer datanya lebih cepat dibanding satu keping sendirian, walau totalnya sama-sama 16GB.
 
