@@ -31,6 +31,6 @@ Menentukan mana yang jadi penyebab utama lemotnya laptop itu butuh pengecekan la
 
 ---
 
-Udah yakin mau upgrade? Buat RAM, cek toko resmi [Kingston](https://s.shopee.co.id/1qbek7VUt0), [V-GeN](https://s.shopee.co.id/20v4yq8hQA), atau [Transcend](https://s.shopee.co.id/20v4ws4uRX) di Shopee. Buat SSD, selain tiga toko di atas, ada juga [SanDisk](https://s.shopee.co.id/2VrLZbEknh) dan [Samsung Memory](https://s.shopee.co.id/9AOFTxTTj1) — tinggal sesuaikan tipe & kapasitasnya sama kebutuhan laptop kamu.
+Udah yakin mau upgrade? Sebelum checkout, cek dulu [tipe RAM/SSD yang cocok buat laptop kamu apa, sekalian rekomendasi merknya dari yang paling unggul sampai yang paling ekonomis](/tips/cara-cek-tipe-ram-ssd-laptop) — biar nggak salah beli tipe yang ujung-ujungnya nggak kebaca sama laptopnya.
 
 **Laptop kamu mulai lemot dan bingung upgrade atau ganti baru?** [Konsultasikan dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20bingung%20mau%20upgrade%20RAM%2FSSD%20atau%20ganti%20laptop%20baru%2C%20mau%20konsultasi), kami bantu cek dulu apa yang sebenarnya paling dibutuhkan.
