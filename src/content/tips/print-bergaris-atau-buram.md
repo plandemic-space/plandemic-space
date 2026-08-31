@@ -30,6 +30,6 @@ Kalau sudah dicoba beberapa hal di atas tapi hasil print masih bermasalah, sebai
 
 ---
 
-**Butuh tinta atau cartridge pengganti yang sesuai tipe printer kamu?** Cek rekomendasi tinta yang biasa kami sarankan [di sini](#) (link Shopee).
+**Butuh tinta atau cartridge pengganti yang sesuai tipe printer kamu?** Buat printer tabung Epson, paling aman pakai [tinta original Epson 664/T664/003](https://s.shopee.co.id/6L446Bvq8e). Mau opsi isi ulang yang lebih hemat? Ada [tinta bulk kompatibel buat Epson L1110/L3110/L3116/L3150](https://s.shopee.co.id/gPhLocBsy) atau [tinta bulk premium 1 liter](https://s.shopee.co.id/7KwbI6YPkk).
 
 Kalau hasil print tetap bermasalah setelah ganti tinta, konsultasikan ke Plandemic Space via WhatsApp, biar dicek langsung penyebabnya.
