@@ -1,6 +1,6 @@
 ---
 title: "Cara Cek Tipe RAM & SSD yang Cocok untuk Laptop/PC Kamu"
-pubDate: "2026-08-31"
+pubDate: "2026-09-01"
 category: "Aksesoris"
 tags: ["ram", "ssd", "upgrade", "kompatibilitas"]
 description: "Panduan cek tipe RAM dan SSD yang cocok buat laptop/PC, lengkap sama rekomendasi merk dan lini produk spesifik dari yang paling unggul sampai paling ekonomis."

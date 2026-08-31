@@ -1,6 +1,6 @@
 # CATATAN PROJECT — Plandemic Space
-# Update terakhir: 29 Agustus 2026 (migrasi HTML vanilla → Astro)
-# Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai & siap tayang (29 Agu 2026)
+# Update terakhir: 31 Agustus 2026 (artikel Tips ke-7 + fix CSS ordered list)
+# Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai & siap tayang (29 Agu 2026) + 7 artikel Tips (31 Agu 2026)
 
 ---
 
@@ -8,6 +8,7 @@
 - **2 Feb 2026** — Audit konten, copywriting, brand, SEO teknis. Lihat bagian "STATUS WEBSITE" & "SKOR AUDIT FINAL — Konten/Brand" di bawah.
 - **28 Agu 2026** — Code cleanup & refactor versi HTML vanilla (bukan ubah konten/tampilan). Lihat bagian "RIWAYAT REFACTOR KODE (HTML VANILLA)".
 - **29 Agu 2026** — Migrasi dari HTML vanilla ke Astro. Lihat bagian "RIWAYAT MIGRASI ASTRO" di bawah — ini sekarang jadi source of truth, bukan lagi folder HTML vanilla.
+- **31 Agu 2026** — Nambah artikel Tips ke-7 (`cara-cek-tipe-ram-ssd-laptop`) + fix bug CSS ordered list yang ketemu pas nulis artikel ini. Lihat bagian "HALAMAN TIPS" di bawah.
 
 ---
 
@@ -70,24 +71,27 @@ File di `src/assets/` diproses lewat komponen `<Image />` Astro saat build — o
 
 ---
 
-## HALAMAN TIPS (baru, 29 Agu 2026)
+## HALAMAN TIPS (baru, 29 Agu 2026 — 7 artikel per 31 Agu 2026)
 
-6 artikel awal, semua kategori "Tips Perawatan/Beli/Laptop/HP/Printer":
+7 artikel, kategori "Perawatan/Beli/Laptop/HP/Printer/Aksesoris":
 1. `bahaya-charge-semalaman` — mitos/fakta charge HP semalaman
-2. `cek-sebelum-beli-second` — 4 hal wajib dicek beli laptop/HP second
-3. `hp-mati-total-kena-air-jatuh` — pertolongan pertama HP kena air/jatuh
-4. `print-bergaris-atau-buram` — penyebab umum hasil print bermasalah
-5. `tanda-laptop-butuh-servis` — 5 tanda awal laptop butuh servis
-6. `upgrade-ram-ssd-vs-beli-baru` — kapan upgrade vs beli baru
+2. `cara-cek-tipe-ram-ssd-laptop` — cek tipe RAM/SSD yang cocok + ranking merk & lini produk dari yang paling unggul sampai paling ekonomis (baru, 31 Agu 2026)
+3. `cek-sebelum-beli-second` — 4 hal wajib dicek beli laptop/HP second
+4. `hp-mati-total-kena-air-jatuh` — pertolongan pertama HP kena air/jatuh
+5. `print-bergaris-atau-buram` — penyebab umum hasil print bermasalah
+6. `tanda-laptop-butuh-servis` — 5 tanda awal laptop butuh servis
+7. `upgrade-ram-ssd-vs-beli-baru` — kapan upgrade vs beli baru (link penutupnya sekarang ngarah ke artikel `cara-cek-tipe-ram-ssd-laptop` di atas, bukan link toko mentah lagi)
 
 Tiap artikel otomatis dapat:
 - Schema `Article` (headline, datePublished, author, publisher) + `BreadcrumbList`
 - Meta title/description/canonical sendiri, di-generate dari frontmatter
 - Masuk sitemap otomatis
 
-**Cara nambah artikel baru:** taruh file `.md` baru di `src/content/tips/`, isi frontmatter (title, pubDate, category, tags, description), tulis isi pakai markdown biasa (## untuk subjudul). Astro otomatis bikin halaman & masuk ke daftar `/tips` serta sitemap — tidak perlu sentuh kode lain.
+**Cara nambah artikel baru:** taruh file `.md` baru di `src/content/tips/`, isi frontmatter (title, pubDate, category, tags, description), tulis isi pakai markdown biasa (## untuk subjudul). Kalau butuh numbered steps, pakai `1. 2. 3.` biasa — sekarang udah ada style-nya (lihat catatan CSS di bawah). Astro otomatis bikin halaman & masuk ke daftar `/tips` serta sitemap — tidak perlu sentuh kode lain.
 
-**Catatan:** `pubDate` ke-6 artikel awal ini sama semua (29 Agu 2026, tanggal migrasi) karena ditulis dalam satu batch. Kalau mau tanggal publikasi yang lebih natural/bertahap, edit manual di masing-masing file `.md`.
+**Catatan pubDate:** ke-6 artikel awal sekarang sudah disebar manual (bukan tanggal migrasi lagi semua): `cek-sebelum-beli-second` 27 Jul, `print-bergaris-atau-buram` 3 Agu, `bahaya-charge-semalaman` 10 Agu, `upgrade-ram-ssd-vs-beli-baru` 17 Agu, `hp-mati-total-kena-air-jatuh` 24 Agu, `tanda-laptop-butuh-servis` 31 Agu. Artikel ke-7 (`cara-cek-tipe-ram-ssd-laptop`) di-set 1 Sep 2026 biar nggak bentrok tanggal sama `tanda-laptop-butuh-servis` dan tetap jadi yang paling baru.
+
+**Catatan CSS (fix 31 Agu 2026):** style list di `[...slug].astro` awalnya cuma nge-cover `<ul>`, bukan `<ol>` — karena ada reset global `* { margin:0; padding:0 }` di `style.css`, numbered list bakal mepet kiri tanpa indent kalau dipakai. Udah ditambahin `.tip-body :global(ol) { margin: 0 0 1.1rem 1.2rem; }` biar konsisten sama `<ul>`. Kalau nulis artikel baru yang pakai langkah bernomor, ini sudah otomatis kepakai, tidak perlu sentuh apa-apa lagi.
 
 ---
 
@@ -194,8 +198,9 @@ Urutan & kelas sama seperti sebelumnya, sekarang pakai komponen `<Image />`:
       - Area print/fotokopi (belum ada foto layanan ini)
       - Hasil servis yang bersih/rapi (bukan proses)
       - Suasana tempat lebih luas
-- [ ] Tambah artikel Tips baru secara berkala (SEO jangka panjang, lihat cara di
-      bagian "HALAMAN TIPS" di atas)
+- [x] Tambah artikel Tips baru secara berkala (SEO jangka panjang, lihat cara di
+      bagian "HALAMAN TIPS" di atas) — artikel ke-7 (`cara-cek-tipe-ram-ssd-laptop`)
+      ditambahin 31 Agu 2026, lanjut nambah lagi berkala ke depan
 
 ### PRIORITAS 3 — Pertimbangkan, belum urgent
 - [ ] Gallery max-width: sekarang 880px, bisa naik ke 1080px
@@ -203,8 +208,6 @@ Urutan & kelas sama seperti sebelumnya, sekarang pakai komponen `<Image />`:
 - [ ] Embed Google Maps kecil di section Kontak
 - [ ] Pantau GSC setelah 2-4 minggu (khususnya cek apakah halaman Tips baru mulai
       ke-index dan bawa traffic)
-- [ ] Tanggal `pubDate` di 6 artikel Tips awal masih sama semua (tanggal migrasi) —
-      bisa disebar biar lebih natural kalau dirasa perlu
 
 ---
 
