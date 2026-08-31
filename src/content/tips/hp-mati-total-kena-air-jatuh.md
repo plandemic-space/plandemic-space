@@ -16,6 +16,16 @@ Kalau HP kena air dan masih menyala, hal pertama yang wajib dilakukan itu matika
 
 Ini kepercayaan paling populer, tapi juga paling sering menyesatkan. Beras nggak menyerap air dari bagian dalam HP — daya serapnya cuma sampai permukaan, sementara komponen yang basah ada jauh di dalam motherboard yang tertutup rapat. Beberapa produsen HP besar bahkan sudah resmi memperingatkan penggunanya supaya nggak memasukkan HP ke dalam beras, karena partikel-partikel kecilnya justru bisa menyumbat port atau celah sensitif di dalam perangkat.
 
+## Berapa Lama Harus Ditunggu Sebelum Dicoba Nyala Lagi?
+
+Ini yang paling sering ditanyain dan paling sering salah — banyak yang nyoba nyalain lagi cuma 1-2 jam setelah kejadian karena kelihatan udah kering di luar. Padahal bagian dalamnya (di balik motherboard) butuh waktu jauh lebih lama buat benar-benar kering. Patokan amannya:
+
+- **Minimal 24 jam** sebelum dicoba dinyalakan lagi, taruh di tempat yang kering dan sirkulasi udaranya bagus (bukan dijemur matahari langsung)
+- **Idealnya 48-72 jam** kalau airnya cukup banyak (kecebur, bukan cuma kesiram sedikit)
+- Selama nunggu, **jangan dicolok ke charger** buat "ngetes" — kalau di dalam masih ada sisa air, ini yang paling berisiko bikin korsleting
+
+Kalau setelah nunggu segitu lama HP masih belum mau nyala sama sekali, itu tandanya udah butuh dicek langsung, bukan ditunggu lebih lama lagi — makin lama komponen basah dibiarkan, makin besar risiko korosinya menyebar.
+
 ## Hal Lain yang Sebaiknya Dihindari
 
 - Jangan dicolokkan ke charger sebelum benar-benar kering dan dipastikan aman

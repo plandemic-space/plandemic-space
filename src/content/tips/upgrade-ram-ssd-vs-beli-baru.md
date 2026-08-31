@@ -21,9 +21,20 @@ Upgrade komponen biasanya jadi pilihan yang lebih hemat kalau:
 - Performa prosesor sebenarnya masih memadai untuk kebutuhan sehari-hari
 - Keluhan utama cuma soal "lemot" atau "lama loading", bukan kerusakan fisik atau komponen inti
 
+## Cara Cek Prosesor Kamu Masih "Layak" atau Sudah Tertinggal
+
+Ini yang paling sering ditebak-tebak padahal gampang dicek sendiri. Buka Task Manager (`Ctrl + Shift + Esc`), klik tab **Performance**, klik **CPU** — nama lengkap prosesornya muncul di kanan atas, contoh: "Intel Core i5-8250U" atau "AMD Ryzen 5 3500U".
+
+Cara baca angkanya:
+
+- **Prosesor Intel Core (i3/i5/i7/i9):** angka pertama setelah "i5-" atau "i7-" itu penunjuk generasi. Di contoh "i5-**8**250U", angka **8** artinya generasi ke-8. Rumus kasarnya: **generasi 8 ke atas** umumnya masih layak dipakai harian (browsing, office, nonton), **generasi 6 ke bawah** biasanya udah mulai berat untuk kebutuhan sekarang, apalagi kalau dipakai buka banyak tab atau aplikasi berat sekaligus
+- **Prosesor AMD Ryzen:** angka pertama di seri (misalnya "Ryzen 5 **3**500U") itu penunjuk generasi. **Seri 3000 ke atas** umumnya masih oke, **seri 2000 ke bawah** biasanya udah cukup tertinggal
+
+Ini rumus kasar buat gambaran awal, bukan patokan mutlak — kebutuhan tiap orang beda (yang cuma buat ngetik beda kebutuhannya sama yang buat desain atau banyak aplikasi berat sekaligus). Kalau masih ragu prosesor kamu masuk kategori mana, kirim aja nama lengkapnya (yang muncul di Task Manager tadi) ke kami lewat WhatsApp, biar dibantu lihat.
+
 ## Kapan Sebaiknya Pertimbangkan Beli Baru?
 
-Sebaliknya, kalau prosesornya sendiri memang sudah jauh tertinggal untuk kebutuhan sekarang, atau ada beberapa komponen inti yang sudah bermasalah sekaligus, upgrade satu-dua bagian saja biasanya nggak akan memberi hasil yang sepadan dengan biayanya.
+Sebaliknya, kalau prosesornya sendiri memang sudah jauh tertinggal (lihat cara cek di atas), atau ada beberapa komponen inti yang sudah bermasalah sekaligus, upgrade satu-dua bagian saja biasanya nggak akan memberi hasil yang sepadan dengan biayanya.
 
 ## Kenapa Ini Perlu Dicek Dulu, Bukan Ditebak Sendiri?
 

@@ -12,7 +12,13 @@ Hasil print yang tiba-tiba bergaris, buram, atau warnanya jadi pudar sering biki
 
 Garis putih atau warna yang hilang sebagian di hasil cetakan itu paling sering berasal dari nozzle (lubang-lubang kecil di print head) yang tersumbat tinta kering — wajar terjadi kalau printer jarang dipakai dalam waktu lama, karena tintanya sempat mengendap dan mengering di jalurnya.
 
-Hampir semua printer sekarang punya fitur bawaan namanya *nozzle check* atau *head cleaning* di software atau menu printernya. Ini langkah pertama yang paling aman buat dicoba sendiri sebelum mikir servis, dan seringkali langsung menyelesaikan masalah tanpa perlu bongkar apa-apa.
+Hampir semua printer sekarang punya fitur bawaan namanya *nozzle check* atau *head cleaning*. Ini langkah pertama yang paling aman buat dicoba sendiri sebelum mikir servis, dan seringkali langsung menyelesaikan masalah tanpa perlu bongkar apa-apa. Cara nyarinya beda-beda tergantung merk:
+
+- **Printer Epson:** buka aplikasi **Epson Status Monitor** atau **Epson Printer Utility** yang ke-install otomatis pas pasang driver, cari tab atau menu **Maintenance**, di situ ada tombol "Head Cleaning" dan "Nozzle Check". Untuk printer tabung (seri L seperti L120/L360/L3110), biasanya juga bisa dari layar printer langsung — cari ikon kunci pas/segitiga di panel tombolnya
+- **Printer Canon:** buka **Canon IJ Printer Utility** dari daftar aplikasi, ada tab **Maintenance**, tombolnya "Cleaning" dan "Print Head Alignment"
+- **Printer HP:** buka aplikasi **HP Smart** atau **HP Printer Assistant**, cari menu **Print Quality Toolbox**, di situ ada opsi "Clean Printheads"
+
+Kalau nggak nemu aplikasinya di laptop, biasanya masih bisa dicari lewat menu Settings > Printers & Scanners di Windows, klik nama printernya, pilih "Manage" atau "Printing Preferences".
 
 ## Kenapa Warnanya Jadi Pudar atau Buram?
 
