@@ -12,7 +12,7 @@ Berikut beberapa tanda yang sering dianggap sepele, padahal sebenarnya sinyal mi
 
 ## 1. Laptop Mulai Sering Nge-lag Padahal Aplikasinya Itu-itu Saja
 
-Kalau biasanya buka Word atau browser lancar-lancar saja, tapi belakangan mulai lemot padahal aplikasi yang dipakai sama seperti sebelumnya, ini sering jadi indikasi ada komponen yang mulai menurun performanya atau penyimpanan yang sudah penuh dan butuh dicek.
+Kalau biasanya buka Word atau browser lancar-lancar saja, tapi belakangan mulai lemot padahal aplikasi yang dipakai sama seperti sebelumnya, ini sering jadi indikasi ada komponen yang mulai menurun performanya atau penyimpanan yang sudah penuh dan butuh dicek. Coba buka Task Manager (Ctrl+Shift+Esc) dan lihat penggunaan disk-nya — kalau sering nyentuh 100% padahal cuma buka aplikasi ringan, itu salah satu tanda paling jelas.
 
 ## 2. Suhu Laptop Terasa Lebih Panas dari Biasanya
 

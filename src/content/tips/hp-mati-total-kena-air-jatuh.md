@@ -6,25 +6,30 @@ tags: ["hp", "servis", "kena air"]
 description: "HP mati total setelah kena air atau jatuh bukan berarti selalu harus beli baru. Kenali dulu apa yang sebaiknya dan sebaiknya tidak dilakukan."
 ---
 
-Panik itu wajar kalau HP tiba-tiba mati total abis kecebur air atau jatuh. Tapi sebelum buru-buru mikir "berarti harus beli baru", ada baiknya tahu dulu bahwa banyak kasus serupa yang masih bisa diselamatkan, asal ditangani dengan cara yang tepat sejak awal.
+Panik itu wajar kalau HP tiba-tiba mati total abis kecebur air atau jatuh. Tapi sebelum buru-buru mikir "berarti harus beli baru", ada baiknya tahu dulu bahwa banyak kasus serupa yang masih bisa diselamatkan, asal ditangani dengan cara yang tepat sejak menit-menit pertama.
 
-## Kenapa HP Bisa Mati Total?
+## Langkah Pertama yang Paling Menentukan: Matikan Secepat Mungkin
 
-Air atau benturan bisa mengganggu jalur kelistrikan di dalam HP. Tapi "mati total" nggak selalu berarti kerusakannya permanen atau menyeluruh — kadang cuma satu bagian kecil yang terganggu, dan sisanya masih dalam kondisi baik.
+Kalau HP kena air dan masih menyala, hal pertama yang wajib dilakukan itu matikan perangkatnya — jangan ditunggu, jangan dicoba-coba dicek "masih hidup apa nggak", dan jangan ditekan tombol apa pun selain tombol power. Air itu bersifat konduktif, jadi selama HP masih menyala, arus listrik yang tetap mengalir bisa menyebabkan korsleting di jalur motherboard. Banyak kasus kerusakan berat itu justru bukan karena airnya langsung, tapi karena HP-nya dibiarkan tetap hidup atau dicoba-coba dinyalakan berkali-kali.
 
-## Hal yang Sebaiknya Dihindari Setelah HP Kena Air
+## Mitos yang Justru Bikin Tambah Parah: Rendam di Beras
 
-- Jangan buru-buru dinyalakan berkali-kali untuk "dicoba-coba", karena ini justru bisa memperbesar risiko kerusakan kalau masih ada sisa air di dalamnya
-- Jangan dijemur di bawah matahari langsung atau dikeringkan pakai hair dryer, karena panas berlebih bisa berdampak buruk ke komponen di dalamnya
-- Jangan dicas dulu sebelum benar-benar dipastikan kondisinya aman
+Ini kepercayaan paling populer, tapi juga paling sering menyesatkan. Beras nggak menyerap air dari bagian dalam HP — daya serapnya cuma sampai permukaan, sementara komponen yang basah ada jauh di dalam motherboard yang tertutup rapat. Beberapa produsen HP besar bahkan sudah resmi memperingatkan penggunanya supaya nggak memasukkan HP ke dalam beras, karena partikel-partikel kecilnya justru bisa menyumbat port atau celah sensitif di dalam perangkat.
 
-## Kenapa Waktu Penanganan Itu Penting?
+## Hal Lain yang Sebaiknya Dihindari
 
-Semakin cepat ditangani dengan cara yang benar, semakin besar peluang komponen di dalamnya masih bisa diselamatkan. Sebaliknya, semakin lama dibiarkan atau semakin banyak "dicoba-coba" sendiri, risiko kerusakannya justru bisa makin meluas.
+- Jangan dicolokkan ke charger sebelum benar-benar kering dan dipastikan aman
+- Jangan dijemur di bawah matahari langsung atau dikeringkan pakai hair dryer, karena panas berlebih bisa merusak komponen di dalamnya
+- Jangan digoyang-goyang atau ditiup-tiup, karena ini justru mendorong sisa air makin masuk ke dalam, bukan keluar
+- Lepas casing, SIM card, dan kartu memori kalau memungkinkan, supaya nggak ikut kena imbas
+
+## Kenapa Waktu Penanganan Itu Penting
+
+Korosi di dalam HP berkembang secara bertahap — awalnya kelihatan baik-baik saja, tapi kerusakan mulai muncul begitu jalur atau konektor mulai teroksidasi. Semakin cepat ditangani dengan cara yang benar, semakin besar peluang komponen di dalamnya masih bisa diselamatkan, dan semakin kecil kemungkinan biayanya membengkak.
 
 ## Kalau Jatuh, Bukan Cuma Layar yang Perlu Dicek
 
-Kerusakan akibat jatuh nggak selalu langsung kelihatan dari luar. Kadang layar masih utuh tapi ada komponen di dalam yang bergeser atau terganggu, dan ini baru ketahuan setelah diperiksa lebih dalam.
+Kerusakan akibat jatuh nggak selalu langsung kelihatan dari luar. Kadang layar masih utuh, tapi ada komponen di dalam yang bergeser atau kendor, dan ini baru ketahuan setelah diperiksa lebih dalam.
 
 ---
 

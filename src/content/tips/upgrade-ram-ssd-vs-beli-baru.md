@@ -12,7 +12,7 @@ Laptop yang mulai terasa lemot sering langsung disimpulkan "sudah waktunya ganti
 
 Kalau laptop terasa lemot terutama saat membuka banyak aplikasi sekaligus atau saat loading membuka file, tapi baik-baik saja saat dipakai untuk satu-dua aplikasi ringan, ini sering kali soal kapasitas RAM yang sudah nggak cukup untuk kebutuhan sekarang, bukan berarti keseluruhan laptopnya sudah "mati gaya".
 
-Begitu juga kalau laptop terasa lama banget saat booting atau membuka aplikasi, padahal sebelumnya cepat, itu sering berkaitan dengan jenis penyimpanan yang dipakai (SSD dibanding tipe penyimpanan yang lebih lama).
+Begitu juga kalau laptop terasa lama banget saat booting atau membuka aplikasi, padahal sebelumnya cepat, itu sering berkaitan dengan jenis penyimpanan yang dipakai. Laptop lama yang masih pakai HDD (bukan SSD) biasanya butuh waktu booting jauh lebih lama, dan ini termasuk upgrade yang efeknya paling terasa — banyak kasus laptop yang tadinya kerasa "lemot banget" jadi jauh lebih responsif cuma dari ganti penyimpanan doang, tanpa perlu ganti komponen lain.
 
 ## Kapan Upgrade Jadi Pilihan yang Masuk Akal?
 

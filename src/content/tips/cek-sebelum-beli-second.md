@@ -14,11 +14,11 @@ Ini yang paling penting tapi sering diabaikan. Tanyakan dengan jelas apakah unit
 
 ## 2. Kondisi Baterai, Bukan Cuma Body
 
-Body yang mulus di luar nggak menjamin baterai di dalamnya masih sehat. Baterai adalah komponen yang paling cepat menurun kondisinya seiring pemakaian, dan penggantiannya bisa jadi biaya tambahan yang nggak kecil kalau ternyata sudah drop.
+Body yang mulus di luar nggak menjamin baterai di dalamnya masih sehat. Baterai adalah komponen yang paling cepat menurun kondisinya seiring pemakaian, dan penggantiannya bisa jadi biaya tambahan yang nggak kecil kalau ternyata sudah drop. Kalau unitnya HP, biasanya ada menu battery health di pengaturan yang nunjukin persentase kapasitas baterai dibanding kondisi baru — minta penjual buka menu itu langsung di depan kamu.
 
 ## 3. Performa Setelah Dipakai Beberapa Saat, Bukan Cuma Waktu Dicoba Sebentar
 
-Unit second kadang terlihat baik-baik saja saat dicoba sebentar di tempat, tapi mulai kelihatan masalahnya setelah dipakai lebih lama (misalnya mulai panas atau nge-lag). Idealnya, coba unitnya dalam waktu yang cukup, jangan cuma dinyalakan sebentar lalu dimatikan.
+Unit second kadang terlihat baik-baik saja saat dicoba sebentar di tempat, tapi mulai kelihatan masalahnya setelah dipakai lebih lama (misalnya mulai panas atau nge-lag). Idealnya, coba nyalain unitnya minimal 15–30 menit, buka beberapa aplikasi sekaligus atau jalanin video sebentar, jangan cuma dinyalakan sebentar lalu dimatikan.
 
 ## 4. Kejelasan Garansi atau Jaminan Setelah Pembelian
 
