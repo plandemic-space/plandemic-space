@@ -28,4 +28,4 @@ Kerusakan akibat jatuh nggak selalu langsung kelihatan dari luar. Kadang layar m
 
 ---
 
-**HP kamu lagi ngalamin salah satu dari ini?** Jangan didiamkan terlalu lama. Konsultasikan ke Plandemic Space via WhatsApp untuk dicek kondisinya sebelum diambil langkah lebih lanjut.
+**HP kamu lagi ngalamin salah satu dari ini?** Jangan didiamkan terlalu lama. [Konsultasikan ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20HP%20saya%20mati%20total%20abis%20kena%20air%2Fjatuh%2C%20mau%20konsultasi) untuk dicek kondisinya sebelum diambil langkah lebih lanjut.

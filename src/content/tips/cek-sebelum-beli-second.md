@@ -30,4 +30,4 @@ Harga murah itu menarik, tapi kalau ternyata unitnya bermasalah dan nggak ada ke
 
 ---
 
-**Lagi cari laptop atau HP second yang kondisinya jelas dan ada jaminannya?** Tanya-tanya dulu ke Plandemic Space via WhatsApp, unit second kami dicek kondisinya sebelum dijual.
+**Lagi cari laptop atau HP second yang kondisinya jelas dan ada jaminannya?** [Tanya-tanya dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya-tanya%20soal%20laptop%2FHP%20second%20di%20Plandemic%20Space), unit second kami dicek kondisinya sebelum dijual.

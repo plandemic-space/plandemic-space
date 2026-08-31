@@ -36,4 +36,4 @@ Kerusakan kecil yang dibiarkan biasanya "menjalar" ke komponen lain. Laptop yang
 
 ---
 
-**Ngalamin salah satu tanda di atas?** Yuk konsultasi dulu, gratis, biar tahu penyebab pastinya sebelum makin parah. Hubungi Plandemic Space via WhatsApp untuk cek kondisi laptop kamu.
+**Ngalamin salah satu tanda di atas?** Yuk konsultasi dulu, gratis, biar tahu penyebab pastinya sebelum makin parah. [Hubungi Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20mulai%20ada%20tanda-tanda%20perlu%20servis%2C%20mau%20cek%20kondisi) untuk cek kondisi laptop kamu.
