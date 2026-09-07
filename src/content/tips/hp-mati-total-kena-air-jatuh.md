@@ -6,26 +6,42 @@ tags: ["hp", "servis", "kena air"]
 description: "HP mati total setelah kena air atau jatuh bukan berarti selalu harus beli baru. Kenali dulu apa yang sebaiknya dan sebaiknya tidak dilakukan."
 ---
 
-Panik itu wajar kalau HP tiba-tiba mati total abis kecebur air atau jatuh. Tapi sebelum buru-buru mikir "berarti harus beli baru", ada baiknya tahu dulu bahwa banyak kasus serupa yang masih bisa diselamatkan, asal ditangani dengan cara yang tepat sejak awal.
+Panik itu wajar kalau HP tiba-tiba mati total abis kecebur air atau jatuh. Tapi sebelum buru-buru mikir "berarti harus beli baru", ada baiknya tahu dulu bahwa banyak kasus serupa yang masih bisa diselamatkan, asal ditangani dengan cara yang tepat sejak awal — dan penanganan yang tepat itu justru sering kebalikan dari yang orang lakukan secara refleks.
 
-## Kenapa HP Bisa Mati Total?
+## Kenapa HP Bisa Mati Total Kena Air, Padahal Air Bukan Konduktor yang Bagus?
 
-Air atau benturan bisa mengganggu jalur kelistrikan di dalam HP. Tapi "mati total" nggak selalu berarti kerusakannya permanen atau menyeluruh — kadang cuma satu bagian kecil yang terganggu, dan sisanya masih dalam kondisi baik.
+Air murni sebenarnya konduktor listrik yang buruk. Yang jadi masalah adalah air keran, air got, keringat, atau minuman manis — semuanya mengandung mineral dan ion (garam, kalsium, gula terlarut) yang membuatnya jadi konduktif. Begitu cairan ini masuk ke motherboard yang masih teraliri listrik (HP menyala atau baterainya masih terpasang), terjadi **korsleting mikro** antar jalur sirkuit yang seharusnya terpisah.
 
-## Hal yang Sebaiknya Dihindari Setelah HP Kena Air
+Lebih berbahaya lagi kalau HP tetap menyala atau dicas setelah kena air: arus listrik yang mengalir lewat cairan konduktif itu memicu **korosi elektrolitik** — proses di mana logam pada jalur PCB (biasanya tembaga) terurai secara kimia karena dialiri arus dalam kondisi basah, mirip proses elektroplating tapi merusak. Korosi jenis ini butuh waktu (bisa hitungan jam) untuk merusak jalur sampai putus total, dan ini yang membedakan HP yang "keburu dimatikan" dengan yang "dibiarkan menyala" — kerusakannya jauh lebih parah pada yang kedua.
 
-- Jangan buru-buru dinyalakan berkali-kali untuk "dicoba-coba", karena ini justru bisa memperbesar risiko kerusakan kalau masih ada sisa air di dalamnya
-- Jangan dijemur di bawah matahari langsung atau dikeringkan pakai hair dryer, karena panas berlebih bisa berdampak buruk ke komponen di dalamnya
-- Jangan dicas dulu sebelum benar-benar dipastikan kondisinya aman
+## Kenapa Dijemur atau Di-hair Dryer Itu Salah
 
-## Kenapa Waktu Penanganan Itu Penting?
+Menjemur atau mengeringkan pakai hair dryer memang bisa menguapkan air lebih cepat, tapi panas berlebih (terutama di atas suhu operasional normal komponen, sekitar 40-45°C) bisa merusak perekat layar, melengkungkan komponen plastik internal, dan yang paling merugikan: menguapkan air justru bisa **mendorong uap dan mineral terlarutnya makin dalam** ke celah-celah komponen kecil, bukan mengeluarkannya.
 
-Semakin cepat ditangani dengan cara yang benar, semakin besar peluang komponen di dalamnya masih bisa diselamatkan. Sebaliknya, semakin lama dibiarkan atau semakin banyak "dicoba-coba" sendiri, risiko kerusakannya justru bisa makin meluas.
+## Langkah yang Benar Begitu HP Kena Air
+
+1. **Matikan HP sesegera mungkin** — tahan tombol power sampai mati total. Ini memutus aliran listrik yang jadi penyebab utama korosi elektrolitik di atas.
+2. **Jangan dicas, jangan dicoba dinyalakan lagi** untuk sekadar "dicek apa masih hidup" — setiap kali dinyalakan sebelum benar-benar kering, kamu mengulang risiko korsleting yang sama.
+3. **Lepas casing/case tambahan**, keringkan bagian luar dengan kain/tisu, lalu simpan di wadah kedap udara berisi **silica gel** (bukan beras — beras justru bisa meninggalkan debu/pati yang masuk ke port dan speaker, dan daya serapnya kalah jauh dari silica gel).
+4. **Diamkan minimal 48-72 jam** sebelum dicoba nyalakan lagi. Kalau bisa, bawa ke tempat servis untuk dibersihkan pakai isopropyl alcohol dan ultrasonic cleaner sebelum dinyalakan — ini jauh lebih aman daripada nebak sendiri sudah kering apa belum.
+
+## Cara Cek Sendiri: Liquid Damage Indicator (LDI)
+
+Kebanyakan HP punya stiker kecil sensitif air (**Liquid Damage Indicator**) yang berubah warna — biasanya dari putih/perak jadi merah atau pink — kalau kena kontak air. Lokasinya:
+
+- **iPhone:** di dalam slot SIM tray (lepas SIM tray pakai SIM ejector, LDI ada di dalam lubangnya) dan kadang juga di dalam port charging.
+- **Android kebanyakan:** di dalam slot SIM/microSD, atau di balik penutup baterai untuk model yang baterainya masih bisa dilepas.
+
+Kalau stikernya sudah berubah warna, itu konfirmasi HP memang pernah kontak cairan — data ini berguna banget kalau kamu mau klaim garansi atau sekadar memastikan penyebab kerusakan sebelum diservis.
 
 ## Kalau Jatuh, Bukan Cuma Layar yang Perlu Dicek
 
-Kerusakan akibat jatuh nggak selalu langsung kelihatan dari luar. Kadang layar masih utuh tapi ada komponen di dalam yang bergeser atau terganggu, dan ini baru ketahuan setelah diperiksa lebih dalam.
+Benturan bisa menggeser konektor fleksibel (flex cable) yang menghubungkan layar, baterai, atau kamera ke motherboard tanpa merusak bagian luar sama sekali. Cara cek sendiri yang bisa dicoba:
+
+- **Tes respons layar di pojok-pojok** — sentuh keempat sudut layar, kalau ada area yang nggak merespons sentuhan padahal gambar tetap tampil normal, kemungkinan digitizer (lapisan sentuh) mulai terganggu.
+- **Tes kamera fokus** — buka kamera, coba fokus ke objek dekat dan jauh bergantian; kalau gambar buram terus atau butuh waktu lama fokus, ada kemungkinan modul kamera bergeser.
+- **Dengarkan suara speaker** — putar audio dengan volume penuh, kalau ada suara pecah/berdesis yang sebelumnya nggak ada, membran speaker mungkin retak akibat benturan.
 
 ---
 
-**HP kamu lagi ngalamin salah satu dari ini?** Jangan didiamkan terlalu lama. Konsultasikan ke Plandemic Space via WhatsApp untuk dicek kondisinya sebelum diambil langkah lebih lanjut.
+**HP kamu lagi ngalamin salah satu dari ini?** Jangan didiamkan terlalu lama, apalagi dicoba-coba nyalakan berkali-kali. Konsultasikan ke Plandemic Space via WhatsApp untuk dicek kondisinya sebelum diambil langkah lebih lanjut.
