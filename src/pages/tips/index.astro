@@ -2,10 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 import SiteNav from '../../components/SiteNav.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
+import TipCover from '../../components/TipCover.astro';
 import { getCollection } from 'astro:content';
 
 const allTips = await getCollection('tips');
 allTips.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const categories = ['Semua', ...Array.from(new Set(allTips.map((t) => t.data.category)))];
 
 const title = "Tips | Plandemic Space";
 const description = "Kumpulan tips seputar laptop, HP, dan printer dari Plandemic Space — servis laptop, komputer & printer di Kemiri, Purworejo.";
@@ -45,19 +48,58 @@ const breadcrumbSchema = {
 
     <section class="tips-list">
       <div class="tips-list-inner">
-        {allTips.map((tip) => (
-          <a class="tips-card" href={`/tips/${tip.slug}`}>
-            <span class="tips-card-cat">{tip.data.category}</span>
-            <h2 class="tips-card-title">{tip.data.title}</h2>
-            <p class="tips-card-desc">{tip.data.description}</p>
-            <span class="tips-card-more">Baca selengkapnya →</span>
-          </a>
-        ))}
+        <div class="tips-filter" role="tablist" aria-label="Filter kategori tips">
+          {categories.map((cat, i) => (
+            <button
+              type="button"
+              class="tips-filter-btn"
+              class:list={[{ active: i === 0 }]}
+              data-cat={cat}
+            >{cat}</button>
+          ))}
+        </div>
+
+        <div class="tips-grid">
+          {allTips.map((tip) => (
+            <a class="tips-card" href={`/tips/${tip.slug}`} data-cat={tip.data.category}>
+              <TipCover category={tip.data.category} size="card" />
+              <div class="tips-card-body">
+                <span class="tips-card-cat">{tip.data.category}</span>
+                <h2 class="tips-card-title">{tip.data.title}</h2>
+                <p class="tips-card-desc">{tip.data.description}</p>
+                <span class="tips-card-more">Baca selengkapnya →</span>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <p class="tips-empty" id="tipsEmpty" hidden>Belum ada tips di kategori ini.</p>
       </div>
     </section>
   </main>
   <SiteFooter />
 </Layout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.tips-filter-btn');
+  const cards = document.querySelectorAll<HTMLAnchorElement>('.tips-card');
+  const empty = document.getElementById('tipsEmpty');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      buttons.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+      let visibleCount = 0;
+      cards.forEach((card) => {
+        const show = cat === 'Semua' || card.dataset.cat === cat;
+        (card as HTMLElement).style.display = show ? '' : 'none';
+        if (show) visibleCount++;
+      });
+      if (empty) empty.hidden = visibleCount > 0;
+    });
+  });
+</script>
 
 <style>
   .tips-hero {
@@ -83,18 +125,45 @@ const breadcrumbSchema = {
   .tips-sub { color: var(--pastel); font-size: 1.05rem; }
 
   .tips-list { padding: 3rem 1.5rem 5rem; }
-  .tips-list-inner {
-    max-width: 880px;
-    margin: 0 auto;
+  .tips-list-inner { max-width: 880px; margin: 0 auto; }
+
+  .tips-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+  }
+  .tips-filter-btn {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    padding: 0.5rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(200, 223, 232, 0.8);
+    background: var(--white);
+    color: var(--navy-mid);
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+  .tips-filter-btn:hover { border-color: var(--gold-dim); }
+  .tips-filter-btn.active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: var(--white);
+  }
+
+  .tips-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
   }
   .tips-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background: var(--white);
     border-radius: 14px;
-    padding: 1.5rem;
+    overflow: hidden;
     text-decoration: none;
     color: var(--ink);
     border: 1px solid rgba(200, 223, 232, 0.6);
@@ -104,6 +173,7 @@ const breadcrumbSchema = {
     transform: translateY(-3px);
     box-shadow: 0 12px 24px rgba(27, 46, 75, 0.08);
   }
+  .tips-card-body { padding: 1.4rem 1.5rem 1.5rem; }
   .tips-card-cat {
     display: inline-block;
     font-family: 'Rajdhani', sans-serif;
@@ -132,5 +202,10 @@ const breadcrumbSchema = {
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--navy-mid);
+  }
+  .tips-empty {
+    text-align: center;
+    color: var(--muted);
+    padding: 2rem 0;
   }
 </style>

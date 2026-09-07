@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import SiteNav from '../../components/SiteNav.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
+import TipCover from '../../components/TipCover.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -23,6 +24,16 @@ const formattedDate = tip.data.pubDate.toLocaleDateString('id-ID', {
 
 const pageUrl = `https://plandemicspace.my.id/tips/${tip.slug}`;
 const isoDate = tip.data.pubDate.toISOString();
+
+// Artikel terkait: kategori sama, bukan artikel ini sendiri, ambil 3 terbaru
+const allTips = await getCollection('tips');
+const related = allTips
+  .filter((t) => t.slug !== tip.slug && t.data.category === tip.data.category)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const shareText = encodeURIComponent(tip.data.title);
+const shareUrl = encodeURIComponent(pageUrl);
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -73,17 +84,63 @@ const breadcrumbSchema = {
     <article class="tip-article">
       <div class="tip-article-inner">
         <a href="/tips" class="tip-back">← Semua Tips</a>
+
+        <div class="tip-cover-wrap">
+          <TipCover category={tip.data.category} size="hero" />
+        </div>
+
         <span class="tip-cat">{tip.data.category}</span>
         <h1>{tip.data.title}</h1>
         <p class="tip-date">{formattedDate}</p>
+
         <div class="tip-body">
           <Content />
         </div>
+
+        <div class="tip-share">
+          <span class="tip-share-label">Bagikan:</span>
+          <a class="tip-share-btn" href={`https://wa.me/?text=${shareText}%20${shareUrl}`} target="_blank" rel="noopener" aria-label="Bagikan ke WhatsApp">WhatsApp</a>
+          <a class="tip-share-btn" href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`} target="_blank" rel="noopener" aria-label="Bagikan ke Facebook">Facebook</a>
+          <a class="tip-share-btn" href={`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`} target="_blank" rel="noopener" aria-label="Bagikan ke X/Twitter">X</a>
+          <button type="button" class="tip-share-btn tip-copy" data-url={pageUrl}>Salin Link</button>
+        </div>
+
+        {related.length > 0 && (
+          <div class="tip-related">
+            <h2 class="tip-related-title">Tips lain di kategori {tip.data.category}</h2>
+            <div class="tip-related-grid">
+              {related.map((r) => (
+                <a class="tip-related-card" href={`/tips/${r.slug}`}>
+                  <TipCover category={r.data.category} size="card" />
+                  <div class="tip-related-body">
+                    <h3>{r.data.title}</h3>
+                    <p>{r.data.description}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </article>
   </main>
   <SiteFooter />
 </Layout>
+
+<script>
+  const copyBtn = document.querySelector<HTMLButtonElement>('.tip-copy');
+  copyBtn?.addEventListener('click', async () => {
+    const url = copyBtn.dataset.url ?? '';
+    try {
+      await navigator.clipboard.writeText(url);
+      const original = copyBtn.textContent;
+      copyBtn.textContent = 'Tersalin!';
+      setTimeout(() => { copyBtn.textContent = original; }, 1800);
+    } catch {
+      // Clipboard API gagal (browser lama/HTTP) — biarkan teks tombol apa adanya.
+    }
+  });
+</script>
 
 <style>
   .tip-article { padding: 7rem 1.5rem 5rem; }
@@ -95,6 +152,7 @@ const breadcrumbSchema = {
     text-decoration: none;
     margin-bottom: 1.5rem;
   }
+  .tip-cover-wrap { margin-bottom: 1.5rem; }
   .tip-cat {
     display: inline-block;
     font-family: 'Rajdhani', sans-serif;
@@ -134,4 +192,74 @@ const breadcrumbSchema = {
   }
   .tip-body :global(a) { color: var(--navy-mid); font-weight: 600; }
   .tip-body :global(strong) { color: var(--navy); }
+
+  .tip-share {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(200, 223, 232, 0.8);
+  }
+  .tip-share-label {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--navy-mid);
+    margin-right: 0.25rem;
+  }
+  .tip-share-btn {
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid rgba(200, 223, 232, 0.8);
+    background: var(--white);
+    color: var(--navy-mid);
+    text-decoration: none;
+    cursor: pointer;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .tip-share-btn:hover { border-color: var(--gold-dim); color: var(--navy); }
+
+  .tip-related { margin-top: 3rem; }
+  .tip-related-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.15rem;
+    color: var(--navy);
+    margin-bottom: 1.2rem;
+  }
+  .tip-related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.1rem;
+  }
+  .tip-related-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--ink);
+    border: 1px solid rgba(200, 223, 232, 0.6);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .tip-related-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(27, 46, 75, 0.08);
+  }
+  .tip-related-body { padding: 0.9rem 1rem 1.1rem; }
+  .tip-related-body h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 0.98rem;
+    line-height: 1.35;
+    margin-bottom: 0.4rem;
+  }
+  .tip-related-body p {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
 </style>
