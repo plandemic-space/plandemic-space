@@ -11,10 +11,13 @@ import galMainboard from '../assets/galeri/gal-6-mainboard.webp';
 import galHeatsink from '../assets/galeri/gal-2-heatsink.webp';
 import galKeyboard from '../assets/galeri/gal-3-keyboard.webp';
 
-const title = "Plandemic Space | Servis Laptop, Komputer & Printer di Kemiri Purworejo";
-const description = "Servis laptop, komputer & printer terpercaya di Dusun Ngemplak, Kemiri, Purworejo. Juga melayani print, fotokopi, pengetikan dokumen, dan servis HP. Konsultasi gratis via WhatsApp.";
+const title = "Servis Laptop, Komputer & Printer Purworejo | Plandemic Space";
+const description = "Servis laptop, komputer, HP & printer di Kemiri, Purworejo. Plandemic Space juga melayani print, fotokopi, pengetikan dokumen. Konsultasi via WhatsApp.";
+const keywords = "servis laptop Purworejo, servis komputer Kemiri, servis printer Purworejo, print fotokopi Kemiri, jasa pengetikan Purworejo, servis HP Ngemplak";
+const ogTitle = "Plandemic Space — Servis Laptop, Komputer & Printer di Purworejo";
+const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesialis servis laptop, komputer, printer, plus print, fotokopi, dan jual beli second.";
 ---
-<Layout title={title} description={description} canonical="https://plandemicspace.my.id/" schemas={[schema0, schema1]}>
+<Layout title={title} description={description} keywords={keywords} ogTitle={ogTitle} ogDescription={ogDescription} canonical="https://plandemicspace.my.id/" schemas={[schema0, schema1]}>
 
   <!-- NAVBAR -->
   <nav id="navbar">
@@ -50,7 +53,8 @@ const description = "Servis laptop, komputer & printer terpercaya di Dusun Ngemp
   <section class="hero" id="hero">
     <div class="hero-inner">
       <div class="hero-kicker">BUKA SETIAP HARI · 08.00–17.00</div>
-      <h1>Ruang Solusi,<br><em>Tumbuh Bersama.</em></h1>
+      <h1 class="hero-seo-heading">Servis Laptop, Komputer, HP &amp; Printer di Purworejo</h1>
+      <p class="hero-tagline">Ruang Solusi,<br><em>Tumbuh Bersama.</em></p>
       <p class="hero-sub">Servis laptop, komputer &amp; printer terpercaya di Kemiri, Purworejo — plus print, fotokopi, pengetikan dokumen, dan jual beli perangkat. Konsultasi &amp; diagnosa gratis.</p>
       <div class="hero-btns">
         <button class="btn-main" data-scroll-to="layanan">LIHAT LAYANAN</button>
