@@ -13,20 +13,25 @@ Banyak orang baru bawa laptopnya ke tempat servis kalau udah benar-benar mati to
 Ini paling sering disebabkan penyimpanan (HDD/SSD) yang mulai bermasalah atau kepenuhan, bukan prosesor. Cara cek:
 
 1. Buka **Task Manager** (`Ctrl + Shift + Esc`), klik tab **Performance**, lihat grafik **Disk**. Kalau angkanya konsisten di 90-100% saat cuma buka aplikasi ringan, itu tanda disk-nya jadi bottleneck.
-2. Untuk cek kesehatan fisik disk-nya, download **CrystalDiskInfo** (gratis). Lihat status kesehatan yang tertera — kalau muncul **"Caution"** atau **"Bad"** (biasanya warna kuning/merah), itu tanda disk memang mulai gagal secara fisik dan sebaiknya segera backup data lalu diganti sebelum benar-benar mati.
+2. Untuk cek kesehatan fisik disk-nya, download **[CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)** (gratis, ambil dari situs resminya biar nggak salah download versi bundling iklan). Lihat status kesehatan yang tertera — kalau muncul **"Caution"** atau **"Bad"** (biasanya warna kuning/merah), itu tanda disk memang mulai gagal secara fisik dan sebaiknya segera backup data lalu diganti sebelum benar-benar mati.
 
 ## 2. Suhu Laptop Terasa Lebih Panas dari Biasanya
 
 Panas berlebih mempercepat degradasi hampir semua komponen di sekitarnya, termasuk baterai dan motherboard. Cara cek:
 
-1. Download **HWMonitor** atau **HWiNFO** (gratis), buka saat laptop idle (nggak dipakai apa-apa) dan catat suhu CPU-nya.
+1. Download **[HWMonitor](https://www.cpuid.com/softwares/hwmonitor.html)** atau **[HWiNFO](https://www.hwinfo.com/download/)** (gratis, dari situs resminya), buka saat laptop idle (nggak dipakai apa-apa) dan catat suhu CPU-nya.
 2. Buka aplikasi/game yang agak berat, biarkan 10-15 menit, cek suhu CPU lagi. Kalau suhu saat beban ringan sekalipun sudah tembus **85-90°C** dan bertahan lama di situ (bukan cuma sekilas), itu indikasi thermal paste sudah kering (biasa terjadi setelah 2-3 tahun pemakaian) atau kipas/heatsink tersumbat debu sehingga nggak efektif membuang panas.
 
 ## 3. Baterai Cepat Habis atau Persentasenya "Meloncat"
 
 Windows punya command bawaan buat generate laporan kesehatan baterai secara detail, tanpa install apa-apa:
 
-1. Buka **Command Prompt**, ketik: `powercfg /batteryreport`
+1. Buka **Command Prompt**, lalu ketik perintah berikut:
+
+```
+powercfg /batteryreport
+```
+
 2. Tekan Enter, nanti muncul lokasi file HTML yang dihasilkan (biasanya di folder user). Buka file itu di browser.
 3. Cari bagian **"Design Capacity"** (kapasitas baterai waktu baru) dibanding **"Full Charge Capacity"** (kapasitas maksimal sekarang). Kalau selisihnya udah signifikan (misalnya Full Charge Capacity tinggal 60-70% dari Design Capacity), itu konfirmasi baterai memang sudah menurun secara fisik, bukan cuma perasaan.
 

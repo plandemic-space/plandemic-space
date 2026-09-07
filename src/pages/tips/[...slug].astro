@@ -140,6 +140,28 @@ const breadcrumbSchema = {
       // Clipboard API gagal (browser lama/HTTP) — biarkan teks tombol apa adanya.
     }
   });
+
+  // Tambahin tombol "Salin" otomatis di tiap blok kode (perintah/command) dalam artikel.
+  document.querySelectorAll<HTMLPreElement>('.tip-body pre').forEach((pre) => {
+    const codeEl = pre.querySelector('code');
+    if (!codeEl) return;
+
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'copy-code-btn';
+    btn.textContent = 'Salin';
+    pre.appendChild(btn);
+
+    btn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(codeEl.textContent ?? '');
+        btn.textContent = 'Tersalin!';
+        setTimeout(() => { btn.textContent = 'Salin'; }, 1800);
+      } catch {
+        // Clipboard API gagal (browser lama/HTTP) — biarkan teks tombol apa adanya.
+      }
+    });
+  });
 </script>
 
 <style>
@@ -190,8 +212,60 @@ const breadcrumbSchema = {
     border-top: 1px solid rgba(200, 223, 232, 0.8);
     margin: 2rem 0;
   }
-  .tip-body :global(a) { color: var(--navy-mid); font-weight: 600; }
-  .tip-body :global(strong) { color: var(--navy); }
+  .tip-body :global(a) {
+    color: var(--navy-mid);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(36, 61, 99, 0.35);
+    text-underline-offset: 2px;
+  }
+  .tip-body :global(a:hover) { text-decoration-color: var(--navy-mid); }
+  .tip-body :global(strong) { color: var(--ink); font-weight: 700; }
+
+  .tip-body :global(code) {
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 0.88em;
+    background: rgba(200, 223, 232, 0.35);
+    color: var(--navy);
+    padding: 0.15em 0.4em;
+    border-radius: 5px;
+  }
+  .tip-body :global(pre) {
+    position: relative;
+    background: var(--navy) !important;
+    color: var(--pastel-light) !important;
+    padding: 1.1rem 1.1rem;
+    padding-right: 3.2rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 0 0 1.3rem;
+  }
+  .tip-body :global(pre code) {
+    background: none !important;
+    color: inherit !important;
+    padding: 0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    white-space: pre;
+  }
+  .tip-body :global(pre code .line span) { color: inherit !important; }
+  .tip-body :global(pre .copy-code-btn) {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--pastel-light);
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .tip-body :global(pre .copy-code-btn:hover) { background: rgba(255, 255, 255, 0.22); }
 
   .tip-share {
     display: flex;

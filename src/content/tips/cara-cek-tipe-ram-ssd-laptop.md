@@ -24,7 +24,7 @@ Cara ini paling cepat, tapi khusus laptop keluaran lama-menengah yang RAM-nya ma
 
 **Cara 2 — pakai CPU-Z (lebih detail, gratis):**
 
-1. Download CPU-Z dari situs resminya, cpuid.com — jangan dari sembarang situs download biar nggak kebawa bundle software aneh-aneh
+1. Download **[CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)** dari situs resminya, cpuid.com — jangan dari sembarang situs download biar nggak kebawa bundle software aneh-aneh
 2. Install seperti biasa, buka aplikasinya
 3. Klik tab **Memory**, lihat baris "Type" — di situ tertulis DDR3, DDR4, atau DDR5-nya
 4. Klik tab **SPD**, di kiri atas ada dropdown "Slot #1", "Slot #2", dan seterusnya sesuai jumlah slot fisik di laptop. Klik satu per satu — kalau kolomnya kosong berarti slot itu belum kepasang apa-apa, alias masih bisa ditambah
@@ -51,7 +51,7 @@ Nah, ini bagian yang paling sering bikin orang salah beli: M.2 SATA dan M.2 NVMe
 
 1. Perhatikan bagian pin/notch (potongan) di sisi konektor SSD-nya — kalau potongannya cuma di satu sisi kiri (disebut "B key"), itu biasanya SATA. Kalau potongannya di sisi kanan ("M key"), itu NVMe. Kalau ada dua potongan sekaligus ("B+M key"), fisiknya bisa masuk ke slot mana aja, tapi kecepatannya tetap ngikutin slot motherboard-nya
 2. Buat tau slot di laptop kamu support yang mana, cara paling aman adalah cek buku manual servis resmi laptop tersebut (biasanya ada PDF-nya kalau dicari "service manual [nomor model laptop]"), soalnya ini nggak kebaca lewat software
-3. Kalau mau tau interface SSD/HDD yang **sudah terpasang sekarang**, buka software gratis **CrystalDiskInfo** — di situ langsung kelihatan tertulis interface-nya, SATA atau NVMe (PCIe)
+3. Kalau mau tau interface SSD/HDD yang **sudah terpasang sekarang**, buka software gratis **[CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)** — di situ langsung kelihatan tertulis interface-nya, SATA atau NVMe (PCIe)
 
 Kalau setelah dicek masih ragu — misalnya laptopnya model lama yang susah dicari manualnya — cara paling gampang ya foto langsung bagian dalam slot storage-nya (buka casing bawah laptop, biasanya cukup lepas beberapa baut), lalu kirim ke kami lewat WhatsApp buat dicek dulu sebelum kamu checkout.
 

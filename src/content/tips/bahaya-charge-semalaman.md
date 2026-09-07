@@ -26,7 +26,7 @@ Sebagian pabrikan (Apple, Samsung, beberapa merk Android lain) udah nambahin fit
 ## Cara Cek Sendiri Kondisi Baterai
 
 - **iPhone:** buka **Settings > Battery > Battery Health & Charging**, di situ ada angka "Maximum Capacity" (persentase kapasitas dibanding kondisi baru). Kalau sudah turun jauh di bawah 80%, itu tanda baterai memang sudah signifikan menurun.
-- **Android:** nggak semua HP nyediain menu bawaan, tapi bisa pakai aplikasi gratis **AccuBattery** — install, pakai HP seperti biasa selama beberapa hari, nanti aplikasi ini ngitung estimasi kapasitas aktual baterai dibanding kapasitas pabrik.
+- **Android:** nggak semua HP nyediain menu bawaan, tapi bisa pakai aplikasi gratis **[AccuBattery](https://play.google.com/store/apps/details?id=com.digibites.accubattery)** dari Play Store — install, pakai HP seperti biasa selama beberapa hari, nanti aplikasi ini ngitung estimasi kapasitas aktual baterai dibanding kapasitas pabrik.
 - **Cek suhu saat charging:** pegang HP sekitar 15-20 menit setelah dicas sambil dipakai aktif (main game/nonton video sambil dicas). Kalau area baterai terasa hangat sampai panas (bukan cuma hangat sedikit), itu kombinasi paling buruk buat kesehatan baterai jangka panjang dan sebaiknya dihindari — lepas HP dari charger dulu kalau mau dipakai aktif.
 
 ## Jadi, Amankah Charge Semalaman?
