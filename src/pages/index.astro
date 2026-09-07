@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import schema0 from '../data/schema-index-0.json';
 import schema1 from '../data/schema-index-1.json';
+import schema2 from '../data/schema-index-2.json';
 import galMejaKerja from '../assets/galeri/gal-4-meja-kerja.webp';
 import galServisLaptop from '../assets/galeri/gal-1-servis-laptop.webp';
 import galPrinter from '../assets/galeri/gal-5-printer.webp';
@@ -17,7 +18,7 @@ const keywords = "servis laptop Purworejo, servis komputer Kemiri, servis printe
 const ogTitle = "Plandemic Space — Servis Laptop, Komputer & Printer di Purworejo";
 const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesialis servis laptop, komputer, printer, plus print, fotokopi, dan jual beli second.";
 ---
-<Layout title={title} description={description} keywords={keywords} ogTitle={ogTitle} ogDescription={ogDescription} canonical="https://plandemicspace.my.id/" schemas={[schema0, schema1]}>
+<Layout title={title} description={description} keywords={keywords} ogTitle={ogTitle} ogDescription={ogDescription} canonical="https://plandemicspace.my.id/" schemas={[schema0, schema1, schema2]}>
 
   <!-- NAVBAR -->
   <nav id="navbar">
@@ -54,7 +55,7 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
     <div class="hero-inner">
       <div class="hero-kicker">BUKA SETIAP HARI · 08.00–17.00</div>
       <p class="hero-tagline">Ruang Solusi,<br><em>Tumbuh Bersama.</em></p>
-      <h1 class="hero-sub">Servis laptop, komputer, HP &amp; printer terpercaya di Kemiri, Purworejo — plus print, fotokopi, pengetikan dokumen, dan jual beli perangkat. Konsultasi &amp; diagnosa gratis.</h1>
+      <h1 class="hero-sub">Servis laptop, komputer, HP &amp; printer terpercaya di Kemiri, Purworejo.</h1>
       <div class="hero-btns">
         <button class="btn-main" data-scroll-to="layanan">LIHAT LAYANAN</button>
         <button class="btn-ghost" data-scroll-to="tentang">Tentang kami <span>→</span></button>
