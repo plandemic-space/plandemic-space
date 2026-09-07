@@ -189,15 +189,7 @@ body {
   max-width: 60px;
 }
 
-.hero-seo-heading {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.55);
-  line-height: 1.4;
-  margin-bottom: 0.85rem;
-  letter-spacing: 0.2px;
-}
+
 
 .hero-tagline {
   font-family: 'DM Serif Display', serif;
@@ -212,10 +204,11 @@ body {
 
 .hero-sub {
   font-size: 1rem;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.85;
   max-width: 420px;
-  margin-bottom: 3rem;
+  margin: 0 0 3rem;
 }
 
 .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
