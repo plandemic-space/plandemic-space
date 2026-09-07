@@ -52,4 +52,4 @@ Dua kasus ini butuh pengecekan langsung karena solusinya beda-beda (bersihkan en
 
 **Butuh tinta atau cartridge pengganti yang sesuai tipe printer kamu?** Cek rekomendasi tinta yang biasa kami sarankan [di sini](#) (link Shopee).
 
-Kalau sudah dicoba nozzle check dan cleaning tapi hasil print masih bermasalah, konsultasikan ke Plandemic Space via WhatsApp, biar dicek langsung penyebabnya.
+Kalau sudah dicoba nozzle check dan cleaning tapi hasil print masih bermasalah, konsultasikan ke [Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20hasil%20print%20saya%20bergaris%2Fburam%2C%20mau%20konsultasi), biar dicek langsung penyebabnya.
