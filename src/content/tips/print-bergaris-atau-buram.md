@@ -10,7 +10,7 @@ Hasil print yang tiba-tiba bergaris, buram, atau warnanya jadi pudar sering biki
 
 ## Kenapa Hasil Print Bisa Bergaris?
 
-Printer inkjet mencetak lewat ratusan lubang mikroskopis (nozzle) di print head yang menyemprotkan tinta dalam ukuran picoliter. Garis putih horizontal atau warna yang hilang sebagian itu hampir selalu tanda **nozzle tersumbat** — tinta yang mengering dan mengeras di lubang nozzle karena nggak terpakai dalam waktu lama, sehingga nozzle itu berhenti menyemprot sama sekali atau menyemprot nggak sempurna.
+Printer inkjet mencetak lewat ratusan lubang mikroskopis (nozzle) di print head yang menyemprotkan tinta dalam ukuran picoliter. Garis putih horizontal atau warna yang hilang sebagian itu hampir selalu tanda *nozzle tersumbat* — tinta yang mengering dan mengeras di lubang nozzle karena nggak terpakai dalam waktu lama, sehingga nozzle itu berhenti menyemprot sama sekali atau menyemprot nggak sempurna.
 
 Ini kenapa printer yang jarang dipakai justru lebih rawan bermasalah dibanding yang rutin dipakai tiap hari — tinta yang diam di nozzle dalam jangka lama mengering dan menyumbat, sementara tinta yang terus mengalir (karena rutin dipakai) nggak sempat mengeras.
 
