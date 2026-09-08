@@ -48,4 +48,4 @@ Harga murah itu menarik, tapi kalau ternyata baterai perlu diganti (bisa ratusan
 
 ---
 
-**Lagi cari laptop atau HP second yang kondisinya jelas dan ada jaminannya?** Tanya-tanya dulu ke Plandemic Space via WhatsApp, unit second kami dicek IMEI, baterai, dan stress test-nya sebelum dijual.
+**Lagi cari laptop atau HP second yang kondisinya jelas dan ada jaminannya?** [Tanya-tanya dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya-tanya%20soal%20laptop%2FHP%20second%20yang%20ready%20di%20Plandemic%20Space), unit second kami dicek IMEI, baterai, dan stress test-nya sebelum dijual.

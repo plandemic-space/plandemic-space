@@ -34,4 +34,4 @@ Sebagai gambaran umum: kalau total biaya upgrade RAM + SSD masih di kisaran 30-4
 
 ---
 
-**Laptop kamu mulai lemot dan bingung upgrade atau ganti baru?** Konsultasikan dulu ke Plandemic Space via WhatsApp, kirim screenshot Task Manager (tab Performance) kamu biar kami bantu cek dulu apa yang sebenarnya paling dibutuhkan.
+**Laptop kamu mulai lemot dan bingung upgrade atau ganti baru?** [Konsultasikan dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20mulai%20lemot%2C%20saya%20mau%20konsultasi%20apakah%20lebih%20baik%20upgrade%20RAM%2FSSD%20atau%20beli%20baru), kirim screenshot Task Manager (tab Performance) kamu biar kami bantu cek dulu apa yang sebenarnya paling dibutuhkan.

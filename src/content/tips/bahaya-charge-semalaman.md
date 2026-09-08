@@ -37,4 +37,4 @@ Sesekali, aman. Tapi kalau itu jadi kebiasaan tiap malam dalam jangka panjang, d
 
 Pengen charging yang lebih aman dan nggak gampang bikin HP kepanasan? Cek rekomendasi charger dan power bank yang biasa kami sarankan [di sini](#) (link Shopee).
 
-Kalau baterai HP kamu udah mulai terasa bermasalah (drop cepat, persentase meloncat, atau bodi menggembung), konsultasikan ke Plandemic Space via WhatsApp untuk dicek lebih lanjut.
+Kalau baterai HP kamu udah mulai terasa bermasalah (drop cepat, persentase meloncat, atau bodi menggembung), [konsultasikan ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20konsultasi%20soal%20baterai%20HP%20saya%20yang%20mulai%20bermasalah) untuk dicek lebih lanjut.
