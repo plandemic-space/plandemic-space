@@ -99,9 +99,9 @@ const breadcrumbSchema = {
 
         <div class="tip-share">
           <span class="tip-share-label">Bagikan:</span>
-          <a class="tip-share-btn tip-share-wa" href={`https://wa.me/?text=${shareText}%20${shareUrl}`} target="_blank" rel="noopener" aria-label="Bagikan ke WhatsApp">WhatsApp</a>
-          <a class="tip-share-btn tip-share-fb" href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`} target="_blank" rel="noopener" aria-label="Bagikan ke Facebook">Facebook</a>
-          <a class="tip-share-btn tip-share-x" href={`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`} target="_blank" rel="noopener" aria-label="Bagikan ke X/Twitter">X</a>
+          <a class="tip-share-btn" href={`https://wa.me/?text=${shareText}%20${shareUrl}`} target="_blank" rel="noopener" aria-label="Bagikan ke WhatsApp">WhatsApp</a>
+          <a class="tip-share-btn" href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`} target="_blank" rel="noopener" aria-label="Bagikan ke Facebook">Facebook</a>
+          <a class="tip-share-btn" href={`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`} target="_blank" rel="noopener" aria-label="Bagikan ke X/Twitter">X</a>
           <button type="button" class="tip-share-btn tip-copy" data-url={pageUrl}>Salin Link</button>
         </div>
 
@@ -188,80 +188,25 @@ const breadcrumbSchema = {
     margin-bottom: 0.75rem;
   }
   .tip-article-inner h1 {
-    font-family: 'Lora', serif;
-    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
     font-size: clamp(1.6rem, 4vw, 2.2rem);
     line-height: 1.3;
     margin: 0.5rem 0 0.5rem;
-    color: var(--navy);
   }
   .tip-date { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
   .tip-body {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: #2D2D2D;
+    color: var(--ink);
   }
   .tip-body :global(h2) {
-    font-family: 'Lora', serif;
-    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
     font-size: 1.3rem;
     margin: 2rem 0 0.75rem;
-    color: var(--navy);
-    padding-bottom: 0.5rem;
-    border-bottom: 1px dashed rgba(200, 223, 232, 0.9);
   }
   .tip-body :global(p) { margin-bottom: 1.1rem; }
-  .tip-body :global(ul) {
-    list-style: none;
-    margin: 0 0 1.1rem;
-    padding: 0;
-  }
-  .tip-body :global(ul li) {
-    position: relative;
-    padding-left: 1.3rem;
-    margin-bottom: 0.5rem;
-  }
-  .tip-body :global(ul li::before) {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.6em;
-    width: 6px;
-    height: 6px;
-    border-radius: 2px;
-    background: var(--gold-dim);
-  }
-  .tip-body :global(ol) {
-    list-style: none;
-    counter-reset: tip-steps;
-    margin: 0 0 1.1rem;
-    padding: 0;
-  }
-  .tip-body :global(ol li) {
-    counter-increment: tip-steps;
-    position: relative;
-    padding-left: 2.5rem;
-    margin-bottom: 0.7rem;
-    min-height: 1.7rem;
-  }
-  .tip-body :global(ol li::before) {
-    content: counter(tip-steps);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1.7rem;
-    height: 1.7rem;
-    border-radius: 50%;
-    background: var(--navy);
-    color: var(--white);
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
-    font-size: 0.85rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
+  .tip-body :global(ul) { margin: 0 0 1.1rem 1.2rem; }
+  .tip-body :global(li) { margin-bottom: 0.4rem; }
   .tip-body :global(hr) {
     border: none;
     border-top: 1px solid rgba(200, 223, 232, 0.8);
@@ -351,17 +296,10 @@ const breadcrumbSchema = {
     transition: border-color 0.15s ease, color 0.15s ease;
   }
   .tip-share-btn:hover { border-color: var(--gold-dim); color: var(--navy); }
-  .tip-share-wa { background: #25D366; border-color: #25D366; color: #FFFFFF; }
-  .tip-share-wa:hover { background: #1EBE5A; border-color: #1EBE5A; color: #FFFFFF; }
-  .tip-share-fb { background: #1877F2; border-color: #1877F2; color: #FFFFFF; }
-  .tip-share-fb:hover { background: #0F5FCC; border-color: #0F5FCC; color: #FFFFFF; }
-  .tip-share-x { background: #000000; border-color: #000000; color: #FFFFFF; }
-  .tip-share-x:hover { background: #2A2A2A; border-color: #2A2A2A; color: #FFFFFF; }
 
   .tip-related { margin-top: 3rem; }
   .tip-related-title {
-    font-family: 'Lora', serif;
-    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
     font-size: 1.15rem;
     color: var(--navy);
     margin-bottom: 1.2rem;
@@ -388,8 +326,7 @@ const breadcrumbSchema = {
   }
   .tip-related-body { padding: 0.9rem 1rem 1.1rem; }
   .tip-related-body h3 {
-    font-family: 'Lora', serif;
-    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
     font-size: 0.98rem;
     line-height: 1.35;
     margin-bottom: 0.4rem;
