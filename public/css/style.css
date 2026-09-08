@@ -254,7 +254,6 @@ body {
 
 .stat-n {
   font-family: 'DM Serif Display', serif;
-  font-weight: 400;
   font-size: 2rem;
   color: var(--gold);
   line-height: 1;
@@ -295,7 +294,6 @@ body {
 
 .about h2 {
   font-family: 'DM Serif Display', serif;
-  font-weight: 400;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   color: var(--navy);
   line-height: 1.2;
@@ -407,7 +405,6 @@ body {
 
 .sec-title {
   font-family: 'DM Serif Display', serif;
-  font-weight: 400;
   font-size: clamp(1.6rem, 3vw, 2.1rem);
   color: var(--navy);
   line-height: 1.2;
@@ -427,7 +424,6 @@ body {
 
 .step-num {
   font-family: 'DM Serif Display', serif;
-  font-weight: 400;
   font-size: 2rem;
   color: var(--pastel-dark);
   line-height: 1;
@@ -489,7 +485,6 @@ body {
 
 .svc-num {
   font-family: 'DM Serif Display', serif;
-  font-weight: 400;
   font-size: 1.2rem;
   color: var(--pastel-dark);
   margin-bottom: 0.75rem;
@@ -717,7 +712,6 @@ body {
 
 .cta h2 {
   font-family: 'DM Serif Display', serif;
-  font-weight: 400;
   font-size: clamp(2rem, 4vw, 2.8rem);
   color: var(--navy);
   line-height: 1.2;
