@@ -10,24 +10,26 @@ Panik itu wajar kalau HP tiba-tiba mati total abis kecebur air atau jatuh. Tapi 
 
 ## Kenapa HP Bisa Mati Total Kena Air, Padahal Air Bukan Konduktor yang Bagus?
 
-Air murni sebenarnya konduktor listrik yang buruk. Yang jadi masalah adalah air keran, air got, keringat, atau minuman manis — semuanya mengandung mineral dan ion (garam, kalsium, gula terlarut) yang membuatnya jadi konduktif. Begitu cairan ini masuk ke motherboard yang masih teraliri listrik (HP menyala atau baterainya masih terpasang), terjadi *korsleting mikro* antar jalur sirkuit yang seharusnya terpisah.
+Air murni sebenarnya konduktor listrik yang buruk. Yang jadi masalah adalah air keran, air got, keringat, atau minuman manis — semuanya mengandung mineral dan ion (garam, kalsium, gula terlarut) yang membuatnya jadi konduktif. Begitu cairan ini masuk ke motherboard yang masih teraliri listrik (HP menyala atau baterainya masih terpasang), terjadi **korsleting mikro** antar jalur sirkuit yang seharusnya terpisah.
 
-Lebih berbahaya lagi kalau HP tetap menyala atau dicas setelah kena air: arus listrik yang mengalir lewat cairan konduktif itu memicu *korosi elektrolitik* — proses di mana logam pada jalur PCB (biasanya tembaga) terurai secara kimia karena dialiri arus dalam kondisi basah, mirip proses elektroplating tapi merusak. Korosi jenis ini butuh waktu (bisa hitungan jam) untuk merusak jalur sampai putus total, dan ini yang membedakan HP yang "keburu dimatikan" dengan yang "dibiarkan menyala" — kerusakannya jauh lebih parah pada yang kedua.
+Lebih berbahaya lagi kalau HP tetap menyala atau dicas setelah kena air: arus listrik yang mengalir lewat cairan konduktif itu memicu **korosi elektrolitik** — proses di mana logam pada jalur PCB (biasanya tembaga) terurai secara kimia karena dialiri arus dalam kondisi basah, mirip proses elektroplating tapi merusak. Korosi jenis ini butuh waktu (bisa hitungan jam) untuk merusak jalur sampai putus total, dan ini yang membedakan HP yang "keburu dimatikan" dengan yang "dibiarkan menyala" — kerusakannya jauh lebih parah pada yang kedua.
 
 ## Kenapa Dijemur atau Di-hair Dryer Itu Salah
 
-Menjemur atau mengeringkan pakai hair dryer memang bisa menguapkan air lebih cepat, tapi panas berlebih (terutama di atas suhu operasional normal komponen, sekitar 40-45°C) bisa merusak perekat layar, melengkungkan komponen plastik internal, dan yang paling merugikan: menguapkan air justru bisa mendorong uap dan mineral terlarutnya makin dalam ke celah-celah komponen kecil, bukan mengeluarkannya.
+Menjemur atau mengeringkan pakai hair dryer memang bisa menguapkan air lebih cepat, tapi panas berlebih (terutama di atas suhu operasional normal komponen, sekitar 40-45°C) bisa merusak perekat layar, melengkungkan komponen plastik internal, dan yang paling merugikan: menguapkan air justru bisa **mendorong uap dan mineral terlarutnya makin dalam** ke celah-celah komponen kecil, bukan mengeluarkannya.
 
 ## Langkah yang Benar Begitu HP Kena Air
 
 1. **Matikan HP sesegera mungkin** — tahan tombol power sampai mati total. Ini memutus aliran listrik yang jadi penyebab utama korosi elektrolitik di atas.
 2. **Jangan dicas, jangan dicoba dinyalakan lagi** untuk sekadar "dicek apa masih hidup" — setiap kali dinyalakan sebelum benar-benar kering, kamu mengulang risiko korsleting yang sama.
-3. **Lepas casing/case tambahan**, keringkan bagian luar dengan kain/tisu, lalu simpan di wadah kedap udara berisi *silica gel* (bukan beras — beras justru bisa meninggalkan debu/pati yang masuk ke port dan speaker, dan daya serapnya kalah jauh dari silica gel).
+3. **Simpan casing/case tambahan**, keringkan bagian luar dengan kain/tisu, lalu simpan di wadah kedap udara berisi **silica gel**.
 4. **Diamkan minimal 48-72 jam** sebelum dicoba nyalakan lagi. Kalau bisa, bawa ke tempat servis untuk dibersihkan pakai isopropyl alcohol dan ultrasonic cleaner sebelum dinyalakan — ini jauh lebih aman daripada nebak sendiri sudah kering apa belum.
+
+> **Jangan pakai beras.** Mitos ini masih dipercaya banyak orang, padahal beras justru meninggalkan debu dan pati halus yang bisa masuk ke port charging dan lubang speaker. Silica gel jauh lebih efektif menyerap kelembapan dan nggak meninggalkan residu.
 
 ## Cara Cek Sendiri: Liquid Damage Indicator (LDI)
 
-Kebanyakan HP punya stiker kecil sensitif air (*Liquid Damage Indicator*) yang berubah warna — biasanya dari putih/perak jadi merah atau pink — kalau kena kontak air. Lokasinya:
+Kebanyakan HP punya stiker kecil sensitif air (**Liquid Damage Indicator**) yang berubah warna — biasanya dari putih/perak jadi merah atau pink — kalau kena kontak air. Lokasinya:
 
 - **iPhone:** di dalam slot SIM tray (lepas SIM tray pakai SIM ejector, LDI ada di dalam lubangnya) dan kadang juga di dalam port charging.
 - **Android kebanyakan:** di dalam slot SIM/microSD, atau di balik penutup baterai untuk model yang baterainya masih bisa dilepas.
@@ -44,4 +46,4 @@ Benturan bisa menggeser konektor fleksibel (flex cable) yang menghubungkan layar
 
 ---
 
-**HP kamu lagi ngalamin salah satu dari ini?** Jangan didiamkan terlalu lama, apalagi dicoba-coba nyalakan berkali-kali. [Konsultasikan ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20HP%20saya%20kena%20air%2Fjatuh%20dan%20mati%20total%2C%20saya%20mau%20konsultasi) untuk dicek kondisinya sebelum diambil langkah lebih lanjut.
+**HP kamu lagi ngalamin salah satu dari ini?** Jangan didiamkan terlalu lama, apalagi dicoba-coba nyalakan berkali-kali. [Konsultasikan ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20HP%20saya%20kena%20air%2Fjatuh%2C%20mau%20konsultasi%20kondisinya) untuk dicek kondisinya sebelum diambil langkah lebih lanjut.

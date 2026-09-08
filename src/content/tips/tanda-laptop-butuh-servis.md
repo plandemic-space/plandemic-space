@@ -13,13 +13,13 @@ Banyak orang baru bawa laptopnya ke tempat servis kalau udah benar-benar mati to
 Ini paling sering disebabkan penyimpanan (HDD/SSD) yang mulai bermasalah atau kepenuhan, bukan prosesor. Cara cek:
 
 1. Buka **Task Manager** (`Ctrl + Shift + Esc`), klik tab **Performance**, lihat grafik **Disk**. Kalau angkanya konsisten di 90-100% saat cuma buka aplikasi ringan, itu tanda disk-nya jadi bottleneck.
-2. Untuk cek kesehatan fisik disk-nya, download [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) (gratis, ambil dari situs resminya biar nggak salah download versi bundling iklan). Lihat status kesehatan yang tertera — kalau muncul **"Caution"** atau **"Bad"** (biasanya warna kuning/merah), itu tanda disk memang mulai gagal secara fisik dan sebaiknya segera backup data lalu diganti sebelum benar-benar mati.
+2. Untuk cek kesehatan fisik disk-nya, download **[CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)** (gratis, ambil dari situs resminya biar nggak salah download versi bundling iklan). Lihat status kesehatan yang tertera — kalau muncul **"Caution"** atau **"Bad"** (biasanya warna kuning/merah), itu tanda disk memang mulai gagal secara fisik dan sebaiknya segera backup data lalu diganti sebelum benar-benar mati.
 
 ## 2. Suhu Laptop Terasa Lebih Panas dari Biasanya
 
 Panas berlebih mempercepat degradasi hampir semua komponen di sekitarnya, termasuk baterai dan motherboard. Cara cek:
 
-1. Download [HWMonitor](https://www.cpuid.com/softwares/hwmonitor.html) atau [HWiNFO](https://www.hwinfo.com/download/) (gratis, dari situs resminya), buka saat laptop idle (nggak dipakai apa-apa) dan catat suhu CPU-nya.
+1. Download **[HWMonitor](https://www.cpuid.com/softwares/hwmonitor.html)** atau **[HWiNFO](https://www.hwinfo.com/download/)** (gratis, dari situs resminya), buka saat laptop idle (nggak dipakai apa-apa) dan catat suhu CPU-nya.
 2. Buka aplikasi/game yang agak berat, biarkan 10-15 menit, cek suhu CPU lagi. Kalau suhu saat beban ringan sekalipun sudah tembus **85-90°C** dan bertahan lama di situ (bukan cuma sekilas), itu indikasi thermal paste sudah kering (biasa terjadi setelah 2-3 tahun pemakaian) atau kipas/heatsink tersumbat debu sehingga nggak efektif membuang panas.
 
 ## 3. Baterai Cepat Habis atau Persentasenya "Meloncat"
@@ -39,15 +39,25 @@ powercfg /batteryreport
 
 Jenis suaranya menentukan komponen mana yang bermasalah:
 
-- **Bunyi klik-klik berulang** dari arah storage — ini klasik tanda HDD (bukan SSD) mulai gagal secara mekanis, karena head pembaca HDD "nge-klik" saat gagal membaca sektor tertentu. Kalau laptop kamu masih pakai HDD dan muncul bunyi ini, segera backup data — ini salah satu sinyal paling mendesak di antara semua tanda di artikel ini.
+- **Bunyi klik-klik berulang** dari arah storage — ini klasik tanda **HDD** (bukan SSD) mulai gagal secara mekanis, karena head pembaca HDD "nge-klik" saat gagal membaca sektor tertentu. Kalau laptop kamu masih pakai HDD dan muncul bunyi ini, segera backup data — ini salah satu sinyal paling mendesak di antara semua tanda di artikel ini.
 - **Dengung atau suara berdecit terus-menerus** dari arah kipas — biasanya bearing (bantalan) kipas mulai aus, bikin putarannya nggak mulus lagi.
 
 ## 5. Layar Berkedip atau Muncul Garis Tanpa Sebab Jelas
 
 Dua kemungkinan penyebab utama, dan bisa dibedakan dengan cara ini:
 
-1. **Cek kabel fleksibel layar** (paling umum di laptop yang sering dibuka-tutup kasar atau pernah kejatuhan/terbentur): goyangkan layar pelan-pelan di bagian engsel sambil perhatikan apakah kedipan berubah intensitasnya mengikuti sudut layar. Kalau iya, itu tanda kabel fleksibel di dalam engsel mulai longgar.
-2. **Cek driver grafis** (kalau kedipan nggak berubah walau layar digoyang): restart laptop masuk **Safe Mode** (yang menonaktifkan driver grafis pihak ketiga). Kalau kedipan hilang di Safe Mode, masalahnya di driver GPU — coba update atau rollback driver lewat Device Manager.
+1. **Cek kabel fleksibel layar (paling umum di laptop yang sering dibuka-tutup kasar atau pernah kejatuhan/terbentur):** goyangkan layar pelan-pelan di bagian engsel sambil perhatikan apakah kedipan berubah intensitasnya mengikuti sudut layar. Kalau iya, itu tanda kabel fleksibel di dalam engsel mulai longgar.
+2. **Cek driver grafis (kalau kedipan nggak berubah walau layar digoyang):** restart laptop masuk **Safe Mode** (yang menonaktifkan driver grafis pihak ketiga). Kalau kedipan hilang di Safe Mode, masalahnya di driver GPU — coba update atau rollback driver lewat Device Manager.
+
+## Ringkasan: Gejala, Tool Cek, dan Ambang Batasnya
+
+| Gejala | Tool buat Cek | Tanda Bahaya |
+|---|---|---|
+| Lag padahal aplikasi ringan | Task Manager (Disk), CrystalDiskInfo | Disk 90-100% terus, status S.M.A.R.T. "Caution/Bad" |
+| Terasa lebih panas | HWMonitor / HWiNFO | CPU >85-90°C bertahan lama saat beban ringan |
+| Baterai cepat habis | `powercfg /batteryreport` | Full Charge Capacity jauh di bawah Design Capacity |
+| Bunyi aneh | Dengar langsung | Klik-klik dari HDD, decit dari kipas |
+| Layar berkedip | Goyang engsel / Safe Mode | Berubah saat digoyang = kabel; hilang di Safe Mode = driver |
 
 ## Kenapa Nggak Boleh Ditunda?
 
@@ -55,4 +65,4 @@ Kerusakan kecil yang dibiarkan biasanya "menjalar" ke komponen lain — laptop y
 
 ---
 
-**Ngalamin salah satu tanda di atas?** Yuk konsultasi dulu, gratis, biar tahu penyebab pastinya sebelum makin parah. [Hubungi Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20konsultasi%20soal%20kondisi%20laptop%20saya%20yang%20menunjukkan%20tanda%20perlu%20servis) untuk cek kondisi laptop kamu.
+**Ngalamin salah satu tanda di atas?** Yuk konsultasi dulu, gratis, biar tahu penyebab pastinya sebelum makin parah. [Hubungi Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20menunjukkan%20salah%20satu%20tanda%20yang%20disebutkan%20di%20artikel%2C%20mau%20konsultasi) untuk cek kondisi laptop kamu.

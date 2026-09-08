@@ -188,7 +188,7 @@ const breadcrumbSchema = {
     margin-bottom: 0.75rem;
   }
   .tip-article-inner h1 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'DM Serif Display', serif;
     font-size: clamp(1.6rem, 4vw, 2.2rem);
     line-height: 1.3;
     margin: 0.5rem 0 0.5rem;
@@ -200,7 +200,7 @@ const breadcrumbSchema = {
     color: var(--ink);
   }
   .tip-body :global(h2) {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 1.3rem;
     margin: 2rem 0 0.75rem;
   }
@@ -215,19 +215,12 @@ const breadcrumbSchema = {
   .tip-body :global(a) {
     color: var(--navy-mid);
     font-weight: 600;
-    text-decoration: none;
-    border-bottom: 1.5px solid rgba(201, 168, 76, 0.5);
-    transition: border-color 0.15s ease, color 0.15s ease;
+    text-decoration: underline;
+    text-decoration-color: rgba(36, 61, 99, 0.35);
+    text-underline-offset: 2px;
   }
-  .tip-body :global(a:hover) {
-    color: var(--navy);
-    border-bottom-color: var(--gold);
-  }
+  .tip-body :global(a:hover) { text-decoration-color: var(--navy-mid); }
   .tip-body :global(strong) { color: var(--ink); font-weight: 700; }
-  .tip-body :global(em) {
-    font-style: italic;
-    color: var(--navy-mid);
-  }
 
   .tip-body :global(code) {
     font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
@@ -274,6 +267,52 @@ const breadcrumbSchema = {
   }
   .tip-body :global(pre .copy-code-btn:hover) { background: rgba(255, 255, 255, 0.22); }
 
+  .tip-body :global(blockquote) {
+    margin: 0 0 1.3rem;
+    padding: 0.9rem 1.1rem;
+    background: rgba(200, 223, 232, 0.28);
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+    color: var(--navy);
+  }
+  .tip-body :global(blockquote p) { margin: 0; }
+  .tip-body :global(blockquote p + p) { margin-top: 0.5rem; }
+  .tip-body :global(blockquote::before) {
+    content: "Catatan";
+    display: block;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 0.35rem;
+  }
+
+  .tip-body :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 1.3rem;
+    font-size: 0.95rem;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(27, 46, 75, 0.12);
+  }
+  .tip-body :global(th) {
+    background: var(--navy);
+    color: var(--white);
+    text-align: left;
+    padding: 0.6rem 0.9rem;
+    font-weight: 600;
+    font-size: 0.88rem;
+  }
+  .tip-body :global(td) {
+    padding: 0.55rem 0.9rem;
+    border-top: 1px solid rgba(27, 46, 75, 0.1);
+    color: var(--ink);
+  }
+  .tip-body :global(tr:nth-child(even) td) { background: rgba(200, 223, 232, 0.18); }
+
   .tip-share {
     display: flex;
     flex-wrap: wrap;
@@ -306,7 +345,7 @@ const breadcrumbSchema = {
 
   .tip-related { margin-top: 3rem; }
   .tip-related-title {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 1.15rem;
     color: var(--navy);
     margin-bottom: 1.2rem;
@@ -333,7 +372,7 @@ const breadcrumbSchema = {
   }
   .tip-related-body { padding: 0.9rem 1rem 1.1rem; }
   .tip-related-body h3 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 0.98rem;
     line-height: 1.35;
     margin-bottom: 0.4rem;

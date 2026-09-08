@@ -12,9 +12,9 @@ Laptop yang mulai terasa lemot sering langsung disimpulkan "sudah waktunya ganti
 
 1. Tekan `Ctrl + Shift + Esc` buat buka **Task Manager**, klik tab **Performance**.
 2. Buka aplikasi seperti biasa (browser dengan banyak tab, Word, dsb), lalu perhatikan tiga grafik: **CPU**, **Memory**, dan **Disk**.
-3. Kalau grafik **Memory konsisten di atas 80-90%** saat multitasking normal — ini tanda kapasitas RAM sudah nggak cukup, dan menambah RAM biasanya langsung terasa dampaknya.
-4. Kalau grafik **Disk sering nyangkut di 90-100%** padahal CPU dan Memory masih longgar — ini tanda penyimpanan jadi bottleneck. Cek juga jenis disk-nya: klik kanan Start > **Device Manager > Disk drives**, kalau namanya masih menyebut "ST" atau ada kata "HDD" dan bukan "SSD"/"NVMe", upgrade ke SSD biasanya kasih lompatan kecepatan booting dan loading aplikasi yang paling signifikan dari semua jenis upgrade — seringkali lebih terasa daripada upgrade CPU sekalipun.
-5. Kalau grafik **CPU konsisten 100%** bahkan cuma buka aplikasi ringan — ini yang paling penting dibedakan, karena beda solusinya (lihat bagian bawah).
+3. **Kalau grafik Memory konsisten di atas 80-90%** saat multitasking normal — ini tanda kapasitas RAM sudah nggak cukup, dan menambah RAM biasanya langsung terasa dampaknya.
+4. **Kalau grafik Disk sering nyangkut di 90-100%** padahal CPU dan Memory masih longgar — ini tanda penyimpanan jadi bottleneck. Cek juga jenis disk-nya: klik kanan Start > **Device Manager > Disk drives**, kalau namanya masih menyebut "ST" atau ada kata "HDD" dan bukan "SSD"/"NVMe", upgrade ke SSD biasanya kasih lompatan kecepatan booting dan loading aplikasi yang paling signifikan dari semua jenis upgrade — seringkali lebih terasa daripada upgrade CPU sekalipun.
+5. **Kalau grafik CPU yang konsisten 100%** bahkan cuma buka aplikasi ringan — ini yang paling penting dibedakan, karena beda solusinya (lihat bagian bawah).
 
 ## Kapan Upgrade RAM/SSD Jadi Pilihan yang Masuk Akal?
 
@@ -24,9 +24,19 @@ Upgrade komponen biasanya kasih hasil maksimal kalau:
 - Dari cek Task Manager di atas, yang jadi bottleneck adalah **Memory atau Disk**, bukan CPU
 - Cek model CPU di **Task Manager > Performance > CPU** (nama modelnya tertera di kanan atas), lalu cari tahu generasinya — kalau masih Intel Core generasi 8 ke atas atau AMD Ryzen seri 2000 ke atas, prosesornya umumnya masih memadai untuk kebutuhan harian (browsing, office, video call), asal RAM dan storage-nya yang dibenahi
 
+## Ringkasan Cepat
+
+| Kondisi dari Task Manager | Rekomendasi |
+|---|---|
+| Memory sering 80-90%+, CPU & Disk longgar | Upgrade RAM |
+| Disk sering 90-100%, masih pakai HDD | Upgrade ke SSD |
+| CPU konsisten 100% bahkan tugas ringan | Pertimbangkan beli baru |
+| Body/layar masih bagus, CPU generasi 8 ke atas | Upgrade lebih worth it |
+| CPU lemah + ada komponen inti lain bermasalah | Beli baru lebih masuk akal |
+
 ## Kapan Sebaiknya Pertimbangkan Beli Baru?
 
-Kebalikannya, upgrade RAM/SSD nggak akan banyak membantu kalau dari Task Manager ternyata CPU yang jadi bottleneck utama (grafiknya nempel di 100% bahkan untuk tugas ringan) — ini artinya prosesornya sendiri yang sudah nggak sanggup, dan RAM/SSD secanggih apapun nggak bisa menutupi keterbatasan itu. Beli baru juga lebih masuk akal kalau ada beberapa komponen inti yang bermasalah bersamaan (misalnya CPU sudah lemah dan motherboard mulai bermasalah), karena biaya upgrade satu-dua bagian saja nggak akan sepadan dengan hasil yang didapat.
+Kebalikannya, upgrade RAM/SSD nggak akan banyak membantu kalau dari Task Manager ternyata **CPU** yang jadi bottleneck utama (grafiknya nempel di 100% bahkan untuk tugas ringan) — ini artinya prosesornya sendiri yang sudah nggak sanggup, dan RAM/SSD secanggih apapun nggak bisa menutupi keterbatasan itu. Beli baru juga lebih masuk akal kalau ada beberapa komponen inti yang bermasalah bersamaan (misalnya CPU sudah lemah **dan** motherboard mulai bermasalah), karena biaya upgrade satu-dua bagian saja nggak akan sepadan dengan hasil yang didapat.
 
 ## Patokan Kasar Soal Biaya
 
@@ -34,4 +44,4 @@ Sebagai gambaran umum: kalau total biaya upgrade RAM + SSD masih di kisaran 30-4
 
 ---
 
-**Laptop kamu mulai lemot dan bingung upgrade atau ganti baru?** [Konsultasikan dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20mulai%20lemot%2C%20saya%20mau%20konsultasi%20apakah%20lebih%20baik%20upgrade%20RAM%2FSSD%20atau%20beli%20baru), kirim screenshot Task Manager (tab Performance) kamu biar kami bantu cek dulu apa yang sebenarnya paling dibutuhkan.
+**Laptop kamu mulai lemot dan bingung upgrade atau ganti baru?** [Konsultasikan dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20mulai%20lemot%2C%20mau%20konsultasi%20upgrade%20atau%20beli%20baru), kirim screenshot Task Manager (tab Performance) kamu biar kami bantu cek dulu apa yang sebenarnya paling dibutuhkan.

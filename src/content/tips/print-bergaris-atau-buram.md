@@ -10,7 +10,7 @@ Hasil print yang tiba-tiba bergaris, buram, atau warnanya jadi pudar sering biki
 
 ## Kenapa Hasil Print Bisa Bergaris?
 
-Printer inkjet mencetak lewat ratusan lubang mikroskopis (nozzle) di print head yang menyemprotkan tinta dalam ukuran picoliter. Garis putih horizontal atau warna yang hilang sebagian itu hampir selalu tanda *nozzle tersumbat* — tinta yang mengering dan mengeras di lubang nozzle karena nggak terpakai dalam waktu lama, sehingga nozzle itu berhenti menyemprot sama sekali atau menyemprot nggak sempurna.
+Printer inkjet mencetak lewat ratusan lubang mikroskopis (nozzle) di print head yang menyemprotkan tinta dalam ukuran picoliter. Garis putih horizontal atau warna yang hilang sebagian itu hampir selalu tanda **nozzle tersumbat** — tinta yang mengering dan mengeras di lubang nozzle karena nggak terpakai dalam waktu lama, sehingga nozzle itu berhenti menyemprot sama sekali atau menyemprot nggak sempurna.
 
 Ini kenapa printer yang jarang dipakai justru lebih rawan bermasalah dibanding yang rutin dipakai tiap hari — tinta yang diam di nozzle dalam jangka lama mengering dan menyumbat, sementara tinta yang terus mengalir (karena rutin dipakai) nggak sempat mengeras.
 
@@ -23,7 +23,7 @@ Semua printer inkjet (Epson, Canon, HP) punya utility bawaan buat mendiagnosis n
 3. Printer akan mencetak kotak-kotak garis warna (biasanya CMYK — cyan, magenta, yellow, black). Perhatikan tiap baris garis: kalau ada garis yang putus-putus atau hilang sama sekali di satu warna tertentu, itu nozzle warna tersebut yang tersumbat.
 4. Kalau hasilnya ada yang putus, jalankan **Head Cleaning** dari menu yang sama, lalu print ulang nozzle check pattern-nya untuk lihat apakah sudah membaik.
 
-**Penting:** jalankan head cleaning maksimal 2-3 kali berturut-turut. Tiap siklus cleaning menyedot tinta lumayan banyak buat mendorong sumbatan keluar, jadi kalau diulang berkali-kali tanpa hasil, itu tandanya sumbatannya udah terlalu keras/kering buat dibersihkan lewat cleaning biasa — dan meneruskan cleaning cuma buang-buang tinta.
+> **Penting:** jalankan head cleaning maksimal 2-3 kali berturut-turut. Tiap siklus cleaning menyedot tinta lumayan banyak buat mendorong sumbatan keluar, jadi kalau diulang berkali-kali tanpa hasil, itu tandanya sumbatannya udah terlalu keras/kering buat dibersihkan lewat cleaning biasa — dan meneruskan cleaning cuma buang-buang tinta.
 
 ## Kenapa Warnanya Jadi Pudar atau Buram, Padahal Bukan Bergaris?
 
@@ -52,4 +52,4 @@ Dua kasus ini butuh pengecekan langsung karena solusinya beda-beda (bersihkan en
 
 **Butuh tinta atau cartridge pengganti yang sesuai tipe printer kamu?** Cek rekomendasi tinta yang biasa kami sarankan [di sini](#) (link Shopee).
 
-**Sudah dicoba nozzle check dan cleaning tapi hasil print masih bermasalah?** [Konsultasikan ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20hasil%20print%20saya%20masih%20bermasalah%20meski%20sudah%20coba%20cleaning%2C%20saya%20mau%20konsultasi), biar dicek langsung penyebabnya.
+Kalau sudah dicoba nozzle check dan cleaning tapi hasil print masih bermasalah, [konsultasikan ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20hasil%20print%20saya%20masih%20bergaris%2Fburam%20meski%20sudah%20dicoba%20cleaning%2C%20mau%20konsultasi), biar dicek langsung penyebabnya.

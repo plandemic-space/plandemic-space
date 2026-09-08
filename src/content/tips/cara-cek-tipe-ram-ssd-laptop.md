@@ -24,7 +24,7 @@ Cara ini paling cepat, tapi khusus laptop keluaran lama-menengah yang RAM-nya ma
 
 **Cara 2 — pakai CPU-Z (lebih detail, gratis):**
 
-1. Download [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) dari situs resminya, cpuid.com — jangan dari sembarang situs download biar nggak kebawa bundle software aneh-aneh
+1. Download **[CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)** dari situs resminya, cpuid.com — jangan dari sembarang situs download biar nggak kebawa bundle software aneh-aneh
 2. Install seperti biasa, buka aplikasinya
 3. Klik tab **Memory**, lihat baris "Type" — di situ tertulis DDR3, DDR4, atau DDR5-nya
 4. Klik tab **SPD**, di kiri atas ada dropdown "Slot #1", "Slot #2", dan seterusnya sesuai jumlah slot fisik di laptop. Klik satu per satu — kalau kolomnya kosong berarti slot itu belum kepasang apa-apa, alias masih bisa ditambah
@@ -51,7 +51,7 @@ Nah, ini bagian yang paling sering bikin orang salah beli: M.2 SATA dan M.2 NVMe
 
 1. Perhatikan bagian pin/notch (potongan) di sisi konektor SSD-nya — kalau potongannya cuma di satu sisi kiri (disebut "B key"), itu biasanya SATA. Kalau potongannya di sisi kanan ("M key"), itu NVMe. Kalau ada dua potongan sekaligus ("B+M key"), fisiknya bisa masuk ke slot mana aja, tapi kecepatannya tetap ngikutin slot motherboard-nya
 2. Buat tau slot di laptop kamu support yang mana, cara paling aman adalah cek buku manual servis resmi laptop tersebut (biasanya ada PDF-nya kalau dicari "service manual [nomor model laptop]"), soalnya ini nggak kebaca lewat software
-3. Kalau mau tau interface SSD/HDD yang sudah terpasang sekarang, buka software gratis [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) — di situ langsung kelihatan tertulis interface-nya, SATA atau NVMe (PCIe)
+3. Kalau mau tau interface SSD/HDD yang **sudah terpasang sekarang**, buka software gratis **[CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)** — di situ langsung kelihatan tertulis interface-nya, SATA atau NVMe (PCIe)
 
 Kalau setelah dicek masih ragu — misalnya laptopnya model lama yang susah dicari manualnya — cara paling gampang ya foto langsung bagian dalam slot storage-nya (buka casing bawah laptop, biasanya cukup lepas beberapa baut), lalu kirim ke kami lewat WhatsApp buat dicek dulu sebelum kamu checkout.
 
@@ -65,7 +65,7 @@ Ketiga merk ini sama-sama jual RAM laptop SODIMM DDR4 dengan beberapa pilihan ke
 
 ## Merk SSD: dari yang paling unggul sampai yang paling ekonomis
 
-Beda sama RAM, garansi SSD ini nggak flat per merk — beda lini produk, beda tahun garansinya, bahkan kami nemuin kasus SKU yang sama persis dicantumin beda tahun garansi di toko yang berbeda (bakal dijelasin di bawah). Jadi angka di bawah ini sebagai gambaran umum, tapi tetap cek garansi yang tertulis di listing produknya pas mau checkout, jangan cuma percaya nama merknya doang.
+Beda sama RAM, garansi SSD ini nggak flat per merk — beda lini produk, beda tahun garansinya, bahkan kami nemuin kasus SKU yang sama persis dicantumin beda tahun garansi di toko yang berbeda (bakal dijelasin di bawah). Jadi angka di bawah ini sebagai gambaran umum, tapi tetap **cek garansi yang tertulis di listing produknya pas mau checkout**, jangan cuma percaya nama merknya doang.
 
 - **[Samsung Memory](https://s.shopee.co.id/9AOFTxTTj1)** — salah satu dari sedikit merk yang bikin sendiri chip NAND flash-nya, bukan cuma beli chip terus dirakit. Lini yang biasa dijual buat upgrade laptop, seri 980 (NVMe PCIe 3.0) dan 990 EVO Plus (NVMe PCIe 4.0/5.0), sama-sama dapat garansi resmi 5 tahun di toko Indonesia — ini paling konsisten di antara semua opsi. Harganya juga paling mahal, tapi kalau laptopnya buat kerja yang datanya penting banget, ini yang paling minim risiko.
 - **[Kingston](https://s.shopee.co.id/1qbek7VUt0)** — ada dua lini yang relevan: A400 (SATA 2.5 inch, entry-level) yang konsisten dapat garansi resmi 3 tahun, dan NV2 (M.2 NVMe, budget) yang justru perlu hati-hati — beberapa toko di Indonesia cuma nyantumin garansi 1 tahun buat NV2, meskipun harusnya SSD Kingston lain rata-rata 3-5 tahun. Jadi kalau incar NV2, pastikan baca dulu garansi yang tertulis di listing-nya sebelum checkout.

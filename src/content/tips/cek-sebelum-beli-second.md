@@ -14,14 +14,16 @@ Untuk HP, cek IMEI itu wajib sebelum transaksi:
 
 1. Ketik `*#06#` di dial pad HP yang mau dibeli (atau cek di **Settings > About Phone**) buat dapetin nomor IMEI-nya.
 2. Cocokkan nomor itu sama yang tertera di dus/faktur pembelian (kalau ada) — nomor yang beda adalah red flag besar, bisa jadi unit hasil ganti komponen atau bahkan curian.
-3. Cek status blokir IMEI lewat situs resmi [imei.kemenperin.go.id](https://imei.kemenperin.go.id/) — pastikan statusnya terdaftar normal, bukan yang sudah diblokir Kominfo (biasanya karena masuk lewat jalur nggak resmi/black market).
+3. Cek status blokir IMEI lewat situs resmi **[imei.kemenperin.go.id](https://imei.kemenperin.go.id/)** — pastikan statusnya terdaftar normal, bukan yang sudah diblokir Kominfo (biasanya karena masuk lewat jalur nggak resmi/black market).
+
+> **Nomor IMEI yang beda dengan yang di dus/faktur itu red flag besar** — bisa jadi unit hasil ganti komponen (mainboard) atau bahkan barang bermasalah. Jangan lanjut transaksi kalau penjual nggak bisa jelasin kenapa beda.
 
 ## 2. Cek Kesehatan Baterai dengan Angka, Bukan Perkiraan
 
 Body yang mulus di luar nggak menjamin baterai di dalamnya masih sehat, dan ini bisa dicek pakai angka pasti:
 
 - **iPhone:** buka **Settings > Battery > Battery Health & Charging**, lihat persentase **Maximum Capacity**. Idealnya masih di atas 85% untuk unit yang dijual "kondisi bagus"; di bawah 80% berarti kamu perlu budgetin biaya ganti baterai nggak lama lagi.
-- **Android:** kalau nggak ada menu bawaan, install [AccuBattery](https://play.google.com/store/apps/details?id=com.digibites.accubattery) dari Play Store, pakai HP-nya sekitar 15-30 menit sambil charge dan lihat estimasi kapasitasnya.
+- **Android:** kalau nggak ada menu bawaan, install **[AccuBattery](https://play.google.com/store/apps/details?id=com.digibites.accubattery)** dari Play Store, pakai HP-nya sekitar 15-30 menit sambil charge dan lihat estimasi kapasitasnya.
 - **Laptop:** buka **Command Prompt**, ketik perintah ini:
 
 ```
@@ -34,7 +36,7 @@ Lalu buka file HTML yang dihasilkan dan bandingkan **Design Capacity** vs **Full
 
 Unit second kadang terlihat baik-baik saja saat dicoba sebentar di tempat, tapi masalahnya baru kelihatan setelah dipakai lebih lama atau di kondisi tertentu:
 
-1. **Tes dead pixel:** buka situs [deadpixeltest.org](https://deadpixeltest.org/) (atau cari gambar warna solid: putih, hitam, merah, hijau, biru penuh satu layar) lalu perhatikan tiap warna dengan teliti — titik yang warnanya nggak berubah mengikuti warna layar berarti pixel mati/stuck.
+1. **Tes dead pixel:** buka situs **[deadpixeltest.org](https://deadpixeltest.org/)** (atau cari gambar warna solid: putih, hitam, merah, hijau, biru penuh satu layar) lalu perhatikan tiap warna dengan teliti — titik yang warnanya nggak berubah mengikuti warna layar berarti pixel mati/stuck.
 2. **Stress test suhu & performa:** nyalakan video/game yang agak berat selama 15-20 menit terus-menerus. Kalau muncul lag mendadak, restart sendiri, atau badan perangkat panas berlebihan jauh lebih cepat dari wajar, itu tanda ada komponen (baterai, thermal system, atau storage) yang bermasalah dan cuma kelihatan di bawah beban, bukan saat idle.
 3. **Untuk laptop:** tes tiap tombol keyboard satu-satu (bukan cuma ngetik cepat), cek engsel layar nggak longgar/oblak, dan dengarkan suara kipas — bunyi berdecit atau menderu kasar tanda bearing kipas sudah aus.
 
@@ -48,4 +50,4 @@ Harga murah itu menarik, tapi kalau ternyata baterai perlu diganti (bisa ratusan
 
 ---
 
-**Lagi cari laptop atau HP second yang kondisinya jelas dan ada jaminannya?** [Tanya-tanya dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya-tanya%20soal%20laptop%2FHP%20second%20yang%20ready%20di%20Plandemic%20Space), unit second kami dicek IMEI, baterai, dan stress test-nya sebelum dijual.
+**Lagi cari laptop atau HP second yang kondisinya jelas dan ada jaminannya?** [Tanya-tanya dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya-tanya%20soal%20laptop%2FHP%20second%20yang%20ready%2C%20mau%20konsultasi), unit second kami dicek IMEI, baterai, dan stress test-nya sebelum dijual.
