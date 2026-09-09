@@ -1,5 +1,6 @@
 ---
 title: "Kapan Sebaiknya Upgrade RAM/SSD Dibanding Beli Laptop Baru?"
+seoTitle: "Upgrade RAM/SSD atau Beli Laptop Baru?"
 pubDate: "2026-08-29"
 category: "Aksesoris"
 tags: ["upgrade", "ram", "ssd"]
@@ -166,3 +167,6 @@ Nggak. Slot M.2 di motherboard belum tentu mendukung NVMe — sebagian cuma mend
 
 **Lebih baik upgrade atau beli laptop baru?**
 Kalau bottleneck-nya di RAM/disk dan fisik laptop masih oke, upgrade biasanya jauh lebih hemat. Kalau CPU yang jadi masalah, ada kerusakan komponen inti, atau kebutuhan kamu udah jauh di atas kemampuan laptop itu dari awal, beli baru lebih masuk akal.
+
+**Apakah laptop lama masih layak di-upgrade?**
+Tergantung kondisi fisiknya, bukan cuma umurnya. Kalau body, layar, engsel, dan motherboard masih sehat, dan CPU-nya masih cukup buat kebutuhan sekarang, upgrade RAM/SSD tetap masuk akal walau laptopnya udah berumur. Yang bikin nggak layak itu kerusakan fisik yang menumpuk atau kebutuhan yang udah jauh melampaui kemampuan laptop, bukan sekadar angka tahun keluaran.

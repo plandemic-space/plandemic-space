@@ -74,7 +74,7 @@ const breadcrumbSchema = {
 };
 ---
 <Layout
-  title={`${tip.data.title} | Plandemic Space`}
+  title={`${tip.data.seoTitle ?? tip.data.title} | Plandemic Space`}
   description={tip.data.description}
   canonical={pageUrl}
   schemas={[articleSchema, breadcrumbSchema]}
