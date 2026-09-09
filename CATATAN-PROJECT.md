@@ -1,6 +1,6 @@
 # CATATAN PROJECT — Plandemic Space
-# Update terakhir: 1 September 2026 (halaman Tips diperluas, sinkronisasi antar-sesi diperbaiki)
-# Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai (29 Agu 2026) + halaman Tips di-restore & disepakati (1 Sep 2026)
+# Update terakhir: 9 September 2026 (font Roboto Slab yang kebawa dari sesi lain dibalikin ke DM Serif Display, kategori Tips diseragamkan)
+# Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai (29 Agu 2026) + halaman Tips di-restore & disepakati (1 Sep 2026) + fix sinkronisasi font & kategori (9 Sep 2026)
 
 ---
 
@@ -8,6 +8,11 @@
 - **2 Feb 2026** — Audit konten, copywriting, brand, SEO teknis. Lihat bagian "STATUS WEBSITE" & "SKOR AUDIT FINAL — Konten/Brand" di bawah.
 - **28 Agu 2026** — Code cleanup & refactor versi HTML vanilla (bukan ubah konten/tampilan). Lihat bagian "RIWAYAT REFACTOR KODE (HTML VANILLA)".
 - **29 Agu 2026** — Migrasi dari HTML vanilla ke Astro. Lihat bagian "RIWAYAT MIGRASI ASTRO" di bawah — ini sekarang jadi source of truth, bukan lagi folder HTML vanilla.
+- **9 Sep 2026** — Fix: font judul artikel Tips (h1/h2/related/cover watermark) sempat kebawa balik ke
+  `Roboto Slab` setelah commit sesi lain di-merge dengan patch konten dari sesi ini — dibalikin lagi ke
+  `DM Serif Display` yang final (lihat "HALAMAN TIPS"), dan `Roboto+Slab` dihapus dari Google Fonts import
+  di `Layout.astro` (font `Roboto` biasa tetap dipakai, itu untuk subteks, bukan judul). Juga dibenerin
+  2 artikel yang masih pakai nama kategori lama "Tips Perawatan" (harusnya "Perawatan" dan "Aksesoris").
 
 ---
 
@@ -82,10 +87,19 @@ sudah diseragamkan jadi kategori 1 kata: Laptop/HP/Printer/Perawatan/Beli/Akseso
 6. `upgrade-ram-ssd-vs-beli-baru` — kategori **Aksesoris** — kapan upgrade vs beli baru
 7. `cara-cek-tipe-ram-ssd-laptop` — kategori **Aksesoris** — panduan cek kompatibilitas RAM/SSD (baru)
 
-**Font judul (H1 & H2 dalam artikel): FINAL di `DM Serif Display`.** Sempat dicoba ganti
-ke `Roboto Slab` (terinspirasi referensi itkoding.com) oleh sesi/tim lain, tapi itu
-percobaan yang gak disepakati final — sudah dibalikin ke DM Serif Display. Kalau mau
-coba lagi font lain, diskusikan dulu, jangan ganti langsung di kode.
+**Font judul SEMUA yang berhubungan dengan Tips (cover watermark, listing Tips, dan halaman
+artikel — h1, h2, "artikel terkait") — FINAL per 9 Sep 2026: `Roboto Slab` bold (serif), BUKAN
+DM Serif Display sama sekali.** Owner tegas: DM Serif Display gak nyaman dibaca dan gak kepake
+di manapun yang berhubungan sama Tips — bukan cuma di halaman artikel, tapi juga cover
+(`TipCover.astro`) dan listing (`tips/index.astro`, hero title + judul kartu). DM Serif Display
+tetap dipakai di HALAMAN LAIN yang bukan Tips (mis. `404.astro`), itu gak masalah.
+Referensinya itkoding.com — dicek pakai DevTools Computed style TEPAT di elemen `h1.title.single-title`
+(bukan div/body pembungkusnya, itu jebakan karena container umum bisa nunjukkin font warisan buat teks
+biasa, bukan font judul yang sebenarnya dipakai). Hasil final: `"Roboto Slab", Arial, sans-serif`,
+font-weight 700, font-size 36px. Body paragraf artikel (`.tip-body`) tetap `Roboto` biasa (bukan
+Slab), sama kayak font subteks yang sebelumnya. Kalau mau ganti font lagi, diskusikan dulu dan
+verifikasi pakai Inspect Element langsung ke elemen judulnya (h1/h2), bukan ke container umum di
+sekitarnya.
 
 **Link afiliasi Shopee** sudah terpasang di 3 artikel (charger/powerbank di artikel 1,
 tinta printer di artikel 4, brand RAM/SSD di artikel 6 & 7) — semua link nyata (bukan
