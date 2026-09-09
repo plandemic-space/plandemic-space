@@ -47,8 +47,8 @@ Sebagai gambaran umum: kalau total biaya upgrade RAM + SSD masih di kisaran 30-4
 Udah yakin mau upgrade? Tinggal sesuaikan tipe & kapasitasnya sama kebutuhan laptop kamu.
 
 <ul class="tip-checklist">
-<li><strong>RAM & SSD dari toko resmi yang jual dua-duanya:</strong> <a href="https://s.shopee.co.id/1qbek7VUt0">Kingston</a>, <a href="https://s.shopee.co.id/20v4yq8hQA">V-GeN</a>, atau <a href="https://s.shopee.co.id/20v4ws4uRX">Transcend</a></li>
-<li><strong>Tambahan opsi khusus SSD:</strong> <a href="https://s.shopee.co.id/2VrLZbEknh">SanDisk</a> atau <a href="https://s.shopee.co.id/9AOFTxTTj1">Samsung Memory</a></li>
+<li><strong>Jual RAM sekaligus SSD:</strong> <a href="https://s.shopee.co.id/1qbek7VUt0">Kingston</a>, <a href="https://s.shopee.co.id/20v4yq8hQA">V-GeN</a>, atau <a href="https://s.shopee.co.id/20v4ws4uRX">Transcend</a></li>
+<li><strong>Cuma butuh SSD aja?</strong> Ada juga <a href="https://s.shopee.co.id/2VrLZbEknh">SanDisk</a> dan <a href="https://s.shopee.co.id/9AOFTxTTj1">Samsung Memory</a></li>
 </ul>
 
 **Laptop kamu mulai lemot dan bingung upgrade atau ganti baru?** [Konsultasikan dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20mulai%20lemot%2C%20mau%20konsultasi%20upgrade%20atau%20beli%20baru), kirim screenshot Task Manager (tab Performance) kamu biar kami bantu cek dulu apa yang sebenarnya paling dibutuhkan.
