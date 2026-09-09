@@ -78,13 +78,16 @@ Patokan kasar: kalau total biaya upgrade + servis udah mendekati separuh harga l
 | Kerusakan fisik menumpuk (engsel, layar, keyboard) | Kerusakan fisik | Beli baru |
 | Kebutuhan kerja jauh di atas kemampuan laptop | Laptop nggak didesain buat kebutuhan sekarang | Beli baru |
 
-## Udah Yakin Mau Upgrade?
+## Sudah Yakin Mau Upgrade?
 
-Kalau bottleneck-nya udah jelas dan tipe RAM/SSD-nya udah dicek [di artikel ini](/tips/cara-cek-tipe-ram-ssd-laptop), tinggal cari produknya:
+Kalau bottleneck-nya udah jelas dan tipe RAM/SSD-nya udah dicek [di artikel ini](/tips/cara-cek-tipe-ram-ssd-laptop), tinggal pilih toko sesuai budget:
 
 <ul class="tip-checklist">
-<li><strong>Jual RAM sekaligus SSD:</strong> <a href="https://s.shopee.co.id/1qbek7VUt0">Kingston</a>, <a href="https://s.shopee.co.id/20v4yq8hQA">V-GeN</a>, atau <a href="https://s.shopee.co.id/20v4ws4uRX">Transcend</a></li>
-<li><strong>Cuma butuh SSD aja?</strong> Ada juga <a href="https://s.shopee.co.id/2VrLZbEknh">SanDisk</a> dan <a href="https://s.shopee.co.id/9AOFTxTTj1">Samsung Memory</a></li>
+<li><strong>Kelas atas:</strong> <a href="https://s.shopee.co.id/9AOFTxTTj1">Samsung Memory</a> (SSD, garansi resmi 5 tahun, paling minim risiko) atau <a href="https://s.shopee.co.id/1qbek7VUt0">Kingston</a> (RAM & SSD, garansi lifetime, pilihan paling lengkap)</li>
+<li><strong>Seimbang harga-kualitas:</strong> <a href="https://s.shopee.co.id/20v4ws4uRX">Transcend</a> (RAM & SSD) atau <a href="https://s.shopee.co.id/2VrLZbEknh">SanDisk</a> (SSD aja)</li>
+<li><strong>Paling hemat:</strong> <a href="https://s.shopee.co.id/20v4yq8hQA">V-GeN</a> — RAM & SSD, proses klaim garansinya paling nggak ribet</li>
 </ul>
+
+**Yang paling penting:** kompatibilitasnya dulu, baru merek. Merek bagus tapi tipe salah tetap nggak kebaca.
 
 **Masih ragu bottleneck-nya apa?** [Kirim merek, model laptop, atau screenshot Task Manager kamu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20mulai%20lemot%2C%20mau%20konsultasi%20upgrade%20atau%20beli%20baru), biar kami bantu cek dulu sebelum kamu checkout.
