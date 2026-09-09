@@ -17,7 +17,7 @@ Ada dua cara, tinggal pilih mana yang lebih gampang buat kamu.
 1. Tekan `Ctrl + Shift + Esc` di keyboard buat langsung buka Task Manager
 2. Kalau tampilannya masih ringkas, klik "More details" dulu di pojok kiri bawah
 3. Klik tab **Performance** di sisi kiri, terus klik **Memory**
-4. Di pojok kanan atas ada angka kayak "8.0 GB (2 of 2 slots used)" — itu artinya laptopnya punya 2 slot RAM dan udah kepasang semua. Kalau tertulis "1 of 2 slots used", berarti masih ada 1 slot kosong yang bisa ditambah
+4. Di pojok kanan atas ada angka kayak "8.0 GB (2 of 2 slots used)" — itu artinya laptopnya punya 2 slot RAM dan udah kepasang semua. Kalau tertulis "1 of 2 slots used", itu artinya Windows mendeteksi 2 slot dengan 1 slot lagi kepasang. Tapi ini belum tentu berarti slot kosongnya beneran bisa dipakai buat upgrade — tetap cek spesifikasi laptop kamu buat mastiin
 5. Di bagian bawah ada baris **Speed** dan **Form factor** — form factor inilah yang nunjukkin DDR3, DDR4, atau DDR5
 
 Cara ini paling cepat, tapi khusus laptop keluaran lama-menengah yang RAM-nya masih bisa dicopot-pasang. Kalau laptopnya tipis banget (ultrabook kelas atas), ada kemungkinan RAM-nya udah disolder langsung ke motherboard — nggak ada slot sama sekali, jadi nggak bisa diupgrade fisik walaupun di Task Manager kelihatan ada RAM-nya. Ini yang paling sering bikin orang beli RAM padahal ternyata laptopnya emang nggak bisa di-upgrade.
@@ -55,15 +55,22 @@ Nah, ini bagian yang paling sering bikin orang salah beli: M.2 SATA dan M.2 NVMe
 
 Kalau setelah dicek masih ragu — misalnya laptopnya model lama yang susah dicari manualnya — cara paling gampang ya foto langsung bagian dalam slot storage-nya (buka casing bawah laptop, biasanya cukup lepas beberapa baut), lalu kirim ke kami lewat WhatsApp buat dicek dulu sebelum kamu checkout.
 
-## Merk RAM: dari yang paling unggul sampai yang paling ekonomis
+## Merk RAM: dari Kelas Menengah-Atas sampai Ekonomis
 
-Ketiga merk ini sama-sama jual RAM laptop SODIMM DDR4 dengan beberapa pilihan kecepatan (2133/2666/3200MHz), jadi bedanya lebih ke soal keandalan dan urusan klaim garansi kalau kelak bermasalah:
+Kelima merk ini sama-sama jual RAM laptop SODIMM DDR4 dengan beberapa pilihan kecepatan (2133/2666/3200MHz) dan rata-rata garansi seumur hidup — bedanya lebih ke posisi harga di pasaran, bukan soal mana yang "terbaik":
 
-- **[Kingston](https://s.shopee.co.id/1qbek7VUt0)** — lini ValueRAM-nya (kode produk biasanya diawali "KVR") yang paling umum dijual buat kebutuhan upgrade laptop harian, dan ini yang paling sering dijadiin acuan di industri servis. Garansinya seumur hidup (limited lifetime). Kalau kamu tipe yang maunya sekali pasang langsung beres tanpa mikir lagi, ini pilihannya — harganya di kelas menengah-atas.
-- **[Transcend](https://s.shopee.co.id/20v4ws4uRX)** — lini JetRam (kode produk diawali "JM"), garansinya juga seumur hidup.
-- **[V-GeN](https://s.shopee.co.id/20v4yq8hQA)** — lini Rescue, paling murah dari tiga-tiganya tapi bukan berarti abal-abal. V-GeN udah beberapa kali dapat Top Brand Award di Indonesia, garansinya juga seumur hidup. Buat yang budgetnya pas-pasan tapi tetap mau garansi jelas, ini opsi paling masuk akal.
+**RAM kelas menengah-atas**
+- **[Kingston](https://s.shopee.co.id/1qbek7VUt0)** — lini ValueRAM-nya (kode produk biasanya diawali "KVR"), paling umum dijual buat kebutuhan upgrade laptop harian dan paling sering dijadiin acuan di industri servis. Garansi seumur hidup (limited lifetime).
 
-## Merk SSD: dari yang paling unggul sampai yang paling ekonomis
+**RAM kelas menengah**
+- **[Transcend](https://s.shopee.co.id/20v4ws4uRX)** — lini JetRam (kode produk diawali "JM"), garansi seumur hidup.
+- **[Team Group](https://s.shopee.co.id/8fSEeiljJ1)** — produsen RAM/SSD asal Taiwan yang juga umum dipakai buat upgrade laptop. Kami belum nemuin angka garansi resmi yang konsisten khusus buat lini RAM laptopnya, jadi tetap cek ketentuan garansi yang tertulis di listing produknya sebelum checkout.
+- **[Adata](https://s.shopee.co.id/60RTV3QmHS)** — lini Premier Series SODIMM DDR4, di sejumlah listing resmi tercantum garansi seumur hidup (syarat & ketentuan berlaku sesuai listing).
+
+**RAM lebih ekonomis**
+- **[V-GeN](https://s.shopee.co.id/20v4yq8hQA)** — lini Rescue, garansi seumur hidup, udah beberapa kali dapat Top Brand Award di Indonesia. Buat yang budgetnya pas-pasan tapi tetap mau garansi jelas, ini opsi yang masuk akal.
+
+## Merk SSD: Gambaran Umum Garansi per Lini Produk
 
 Beda sama RAM, garansi SSD ini nggak flat per merk — beda lini produk, beda tahun garansinya. Jadi angka di bawah ini sebagai gambaran umum, tapi tetap cek garansi yang tertulis di listing produknya pas mau checkout, jangan cuma percaya nama merknya doang.
 
@@ -71,7 +78,7 @@ Beda sama RAM, garansi SSD ini nggak flat per merk — beda lini produk, beda ta
 - **[Kingston](https://s.shopee.co.id/1qbek7VUt0)** — ada dua lini yang relevan: A400 (SATA 2.5 inch, entry-level) yang konsisten dapat garansi resmi 3 tahun, dan NV2 (M.2 NVMe, budget) yang justru perlu hati-hati — beberapa toko di Indonesia cuma nyantumin garansi 1 tahun buat NV2, meskipun harusnya SSD Kingston lain rata-rata 3-5 tahun. Jadi kalau incar NV2, pastikan baca dulu garansi yang tertulis di listing-nya sebelum checkout.
 - **[SanDisk](https://s.shopee.co.id/2VrLZbEknh)** — sekarang satu grup sama Western Digital. Lini SSD Plus (SATA 2.5 inch) yang paling umum dijual buat upgrade laptop dapat garansi resmi 3 tahun. Di Indonesia mungkin lebih kamu kenal lewat flashdisk atau microSD-nya, tapi lini SSD-nya juga oke buat kebutuhan harian.
 - **[Transcend](https://s.shopee.co.id/20v4ws4uRX)** — lini MTE220S (M.2 NVMe) paling sering direkomendasikan buat budget terbatas, dan saat ini tercantum dengan garansi 5 tahun menurut kebijakan resmi Transcend. Saat membeli, tetap cek ketentuan garansi pada penjual, karena layanan klaim dapat mengikuti kebijakan distributor atau toko tempat pembelian.
-- **[V-GeN](https://s.shopee.co.id/20v4yq8hQA)** — FAQ resmi V-GeN menyebut garansi SSD flat 3 tahun untuk semua tipe, tapi lini terbaru mereka, Hyper (M.2 NVMe), sudah dicantumin garansi resmi 5 tahun di situs resminya — kemungkinan garansi lini terbaru udah dinaikin. Paling ekonomis dari segi harga, cocok kalau tujuan utamanya cuma pengin laptop nggak lemot lagi tanpa keluar budget besar.
+- **[V-GeN](https://s.shopee.co.id/20v4yq8hQA)** — FAQ resmi V-GeN menyebut garansi SSD 3 tahun untuk semua tipe, sementara lini Hyper (M.2 NVMe) di situs resminya tercantum dengan garansi 5 tahun. Karena ketentuan garansi bisa beda menurut lini produk, cek garansi model yang mau kamu beli sebelum checkout.
 
 ## Sebelum Checkout, Cocokkan Dulu 3 Hal Ini
 
