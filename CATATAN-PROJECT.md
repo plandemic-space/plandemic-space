@@ -1,6 +1,6 @@
 # CATATAN PROJECT — Plandemic Space
-# Update terakhir: 29 Agustus 2026 (migrasi HTML vanilla → Astro)
-# Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai & siap tayang (29 Agu 2026)
+# Update terakhir: 1 September 2026 (halaman Tips diperluas, sinkronisasi antar-sesi diperbaiki)
+# Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai (29 Agu 2026) + halaman Tips di-restore & disepakati (1 Sep 2026)
 
 ---
 
@@ -70,24 +70,63 @@ File di `src/assets/` diproses lewat komponen `<Image />` Astro saat build — o
 
 ---
 
-## HALAMAN TIPS (baru, 29 Agu 2026)
+## HALAMAN TIPS (per 1 Sep 2026 — update dari versi 29 Agu)
 
-6 artikel awal, semua kategori "Tips Perawatan/Beli/Laptop/HP/Printer":
-1. `bahaya-charge-semalaman` — mitos/fakta charge HP semalaman
-2. `cek-sebelum-beli-second` — 4 hal wajib dicek beli laptop/HP second
-3. `hp-mati-total-kena-air-jatuh` — pertolongan pertama HP kena air/jatuh
-4. `print-bergaris-atau-buram` — penyebab umum hasil print bermasalah
-5. `tanda-laptop-butuh-servis` — 5 tanda awal laptop butuh servis
-6. `upgrade-ram-ssd-vs-beli-baru` — kapan upgrade vs beli baru
+7 artikel, kategori final (JANGAN pakai lagi nama kategori lama "Tips Perawatan/Beli" —
+sudah diseragamkan jadi kategori 1 kata: Laptop/HP/Printer/Perawatan/Beli/Aksesoris):
+1. `bahaya-charge-semalaman` — kategori **Perawatan** — mitos/fakta charge HP semalaman
+2. `cek-sebelum-beli-second` — kategori **Beli** — 4 hal wajib dicek beli laptop/HP second
+3. `hp-mati-total-kena-air-jatuh` — kategori **HP** — pertolongan pertama HP kena air/jatuh
+4. `print-bergaris-atau-buram` — kategori **Printer** — penyebab umum hasil print bermasalah
+5. `tanda-laptop-butuh-servis` — kategori **Laptop** — 5 tanda awal laptop butuh servis
+6. `upgrade-ram-ssd-vs-beli-baru` — kategori **Aksesoris** — kapan upgrade vs beli baru
+7. `cara-cek-tipe-ram-ssd-laptop` — kategori **Aksesoris** — panduan cek kompatibilitas RAM/SSD (baru)
 
-Tiap artikel otomatis dapat:
-- Schema `Article` (headline, datePublished, author, publisher) + `BreadcrumbList`
-- Meta title/description/canonical sendiri, di-generate dari frontmatter
-- Masuk sitemap otomatis
+**Font judul (H1 & H2 dalam artikel): FINAL di `DM Serif Display`.** Sempat dicoba ganti
+ke `Roboto Slab` (terinspirasi referensi itkoding.com) oleh sesi/tim lain, tapi itu
+percobaan yang gak disepakati final — sudah dibalikin ke DM Serif Display. Kalau mau
+coba lagi font lain, diskusikan dulu, jangan ganti langsung di kode.
 
-**Cara nambah artikel baru:** taruh file `.md` baru di `src/content/tips/`, isi frontmatter (title, pubDate, category, tags, description), tulis isi pakai markdown biasa (## untuk subjudul). Astro otomatis bikin halaman & masuk ke daftar `/tips` serta sitemap — tidak perlu sentuh kode lain.
+**Link afiliasi Shopee** sudah terpasang di 3 artikel (charger/powerbank di artikel 1,
+tinta printer di artikel 4, brand RAM/SSD di artikel 6 & 7) — semua link nyata (bukan
+placeholder `#`), sumbernya dari riset merek + link yang dikirim owner langsung.
+**JANGAN dihapus/di-generic-kan lagi** kalau lagi convert/rewrite konten artikel ini.
 
-**Catatan:** `pubDate` ke-6 artikel awal ini sama semua (29 Agu 2026, tanggal migrasi) karena ditulis dalam satu batch. Kalau mau tanggal publikasi yang lebih natural/bertahap, edit manual di masing-masing file `.md`.
+**CTA WhatsApp di penutup tiap artikel HARUS berupa markdown link aktif**
+(`[teks](https://wa.me/6282241439784?text=...)`), bukan teks polos yang nyebut
+"via WhatsApp" tanpa link — ini sempat kejadian ke-revert beberapa kali, teks-nya
+kelihatan normal tapi gak bisa diklik.
+
+**CSS artikel yang WAJIB ada di `<style>` [...slug].astro** (sering ke-drop kalau ada
+overwrite parsial dari sesi lain):
+- `.tip-article-inner h1` dan `.tip-body h2` → `color: var(--navy)`
+- `.tip-body` → `color: #2D2D2D` (bukan `var(--ink)`, sengaja dilembutkan buat kenyamanan baca)
+- `.tip-body ol` → nomor custom (lingkaran navy solid, bukan angka polos browser)
+- `.tip-body ul` → bullet custom (kotak kecil gold, bukan titik/checkmark)
+- `.tip-body h2` → ada `border-bottom: dashed`
+- `.tip-share-wa/.tip-share-fb/.tip-share-x` → warna solid brand (hijau/biru/hitam)
+
+Tiap artikel otomatis dapat: Schema `Article` + `BreadcrumbList`, meta title/description/
+canonical dari frontmatter, masuk sitemap otomatis, cover SVG auto-generate per kategori
+(`TipCover.astro`), related articles (kategori sama), tombol share (WA/FB/X/Salin Link).
+
+**Cara nambah artikel baru:** taruh file `.md` baru di `src/content/tips/`, isi frontmatter
+(title, pubDate, category — pakai salah satu dari 6 kategori final di atas, jangan bikin
+baru tanpa diskusi, tags, description), tulis isi pakai markdown biasa (## untuk subjudul,
+CTA WhatsApp di akhir wajib link aktif). Astro otomatis bikin halaman & masuk ke daftar
+`/tips` serta sitemap.
+
+**PENDING (disepakati tapi belum dieksekusi, per 1 Sep 2026):**
+- [ ] Checkmark hijau buat step yang super granular/klik-per-klik (terinspirasi itkoding) —
+      HATI-HATI: jangan pakai checkmark buat list "hal yang harus DIHINDARI", cuma buat
+      list "hal yang harus DILAKUKAN"
+- [ ] Subjudul bernomor ("1. Muncul kode error X") khusus buat artikel `tanda-laptop-butuh-servis`
+      dan `cek-sebelum-beli-second` (isinya emang "list beberapa tanda/hal", cocok direstruktur)
+- [ ] Tabel spesifikasi (kayak tabel Nama/File/Support di itkoding) — belum ada elemen tabel
+      sama sekali di artikel manapun
+
+**pubDate ke-7 artikel sudah disebar** (bukan tanggal migrasi semua lagi) — item ini di
+PRIORITAS 3 di bawah sudah SELESAI, jangan dikerjakan ulang.
 
 ---
 
@@ -203,8 +242,6 @@ Urutan & kelas sama seperti sebelumnya, sekarang pakai komponen `<Image />`:
 - [ ] Embed Google Maps kecil di section Kontak
 - [ ] Pantau GSC setelah 2-4 minggu (khususnya cek apakah halaman Tips baru mulai
       ke-index dan bawa traffic)
-- [ ] Tanggal `pubDate` di 6 artikel Tips awal masih sama semua (tanggal migrasi) —
-      bisa disebar biar lebih natural kalau dirasa perlu
 
 ---
 
@@ -228,16 +265,28 @@ Urutan & kelas sama seperti sebelumnya, sekarang pakai komponen `<Image />`:
 
 ## WORKFLOW ANTAR SESI
 
-**Masalah yang sering terjadi:**
-Setiap kali upload versi baru, beberapa fix dari sesi sebelumnya hilang karena
-user edit manual file lama (bukan file output dari Claude).
+**Masalah yang sering terjadi (update per 1 Sep 2026 — lebih spesifik dari versi lama):**
+Bukan cuma "user edit manual" — masalah yang beneran kejadian adalah **2+ jalur kerja
+paralel di file yang sama** (misal: Claude sesi ini + AI/tim lain, sama-sama ngedit
+`[...slug].astro` atau file artikel Tips secara terpisah, gak saling tau). Begitu salah
+satu jalur di-upload ke GitHub, hasil kerja jalur yang lain hilang — bukan karena
+disengaja, tapi karena upload berikutnya nimpa total, gak di-merge otomatis. Ini
+sempat kejadian sampai 3x berturut-turut (font ganti-ganti sendiri, warna CSS balik ke
+default, link afiliasi hilang, placeholder `#` balik lagi) sebelum ketauan.
 
-**Cara yang benar:**
-1. Selalu mulai dari file output Claude sebagai base (sekarang: folder `astro-project/`,
-   BUKAN lagi `plandemic-space-main/` HTML vanilla)
-2. Kalau ada edit manual, ceritakan perubahannya ke Claude dulu
-3. Claude akan merge perubahan ke file yang sudah benar
-4. Baru upload ke GitHub / deploy ke Vercel
+**Cara yang benar (WAJIB diikuti):**
+1. **Kalau ada lebih dari satu AI/tim yang bakal megang file yang sama dalam periode
+   berdekatan, selesaikan SATU jalur dulu sampai tuntas & ke-upload ke GitHub, baru
+   pindah ke jalur lain.** Jangan biarkan dua-duanya jalan bersamaan di file yang sama.
+2. Kalau mau lanjut sesi baru (device/tab/AI apapun), **bilang dulu di awal** kalau ada
+   pekerjaan lain yang mungkin udah/lagi jalan di file yang sama — biar sesi baru itu
+   ngecek dulu sebelum nimpa.
+3. Selalu export/upload zip project **langsung dari GitHub** (bukan dari file lokal lama
+   yang mungkin ketinggalan) sebagai titik awal sesi baru.
+4. Kalau ada edit manual di luar Claude, ceritakan perubahannya dulu sebelum minta fix lain.
+5. Sebelum minta fix baru di file yang sebelumnya udah pernah di-fix, **sebutkan fix apa
+   aja yang seharusnya udah ada** (atau minta di-cross-check dulu) — biar ketauan dari
+   awal kalau ternyata ada yang hilang, bukan ketauan belakangan pas udah bandingin lama.
 
 ---
 
