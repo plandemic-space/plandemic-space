@@ -329,6 +329,24 @@ const breadcrumbSchema = {
     color: var(--navy);
   }
   .tip-body :global(blockquote p) { margin: 0; }
+  .tip-body :global(.tip-checklist) {
+    list-style: none;
+    margin: 0 0 1.1rem;
+    padding: 0;
+  }
+  .tip-body :global(.tip-checklist li) {
+    position: relative;
+    padding-left: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .tip-body :global(.tip-checklist li::before) {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #1EBE5A;
+    font-weight: 700;
+  }
   .tip-body :global(blockquote p + p) { margin-top: 0.5rem; }
   .tip-body :global(blockquote::before) {
     content: "Catatan";

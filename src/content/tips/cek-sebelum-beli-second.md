@@ -1,7 +1,7 @@
 ---
 title: "4 Hal yang Wajib Dicek Kalau Mau Beli Laptop atau HP Second"
 pubDate: "2026-08-29"
-category: "Tips Beli"
+category: "Beli"
 tags: ["laptop second", "hp second", "tips beli"]
 description: "Beli laptop atau HP second bisa jadi pilihan hemat yang tepat, asalkan tahu apa saja yang perlu dicek supaya nggak menyesal di kemudian hari."
 ---
@@ -47,6 +47,15 @@ Ini yang membedakan pembelian second yang aman dan yang berisiko. Unit second ya
 ## Kenapa Ini Penting Dipahami Sebelum Beli?
 
 Harga murah itu menarik, tapi kalau ternyata baterai perlu diganti (bisa ratusan ribu) dan nggak ada kejelasan garansi, biaya perbaikannya bisa membuat harga total jadi nggak lebih murah dari beli yang baru. Cek IMEI, baterai, dan stress test di atas cuma butuh waktu sekitar 20-30 menit total — jauh lebih murah daripada nyesel belakangan.
+
+## Ringkasan: 4 Hal yang Wajib Dicek dan Tanda Bahayanya
+
+| Yang Dicek | Cara Cek | Tanda Bahaya |
+|---|---|---|
+| IMEI/status unit | imei.kemenperin.go.id, cocokkan sama dus/faktur | Nomor beda dari dus, status "diblokir" |
+| Kesehatan baterai | Battery Health (iPhone), AccuBattery (Android), `powercfg /batteryreport` (laptop) | Maximum/Full Charge Capacity di bawah 80% |
+| Layar & stress test | deadpixeltest.org, pakai video/game berat 15-20 menit | Ada pixel mati, lag/restart sendiri, panas berlebihan |
+| Garansi/jaminan | Tanya langsung ke penjual | Nggak ada jaminan sama sekali setelah transaksi |
 
 ---
 
