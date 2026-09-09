@@ -42,7 +42,7 @@ Cek jenis penyimpanan yang terpasang: klik kanan Start → **Device Manager > Di
 
 Tipe SSD (2.5" SATA, M.2 SATA, M.2 NVMe) bentuknya bisa mirip tapi belum tentu kompatibel sama slot motherboard kamu — cara cek detailnya ada di [artikel yang sama di atas](/tips/cara-cek-tipe-ram-ssd-laptop).
 
-Dampaknya biasanya paling kentara: booting yang tadinya 2-3 menit bisa turun ke bawah 30 detik, dan aplikasi yang tadinya loading lama jadi langsung kebuka begitu diklik. Soal pasang: SSD 2.5" biasanya gampang, tinggal ganti langsung di bay yang sama kayak HDD lama; SSD M.2 kadang perlu buka bagian dalam casing yang lebih dalam, jadi kalau nggak biasa bongkar laptop, ini bagian yang lebih aman diserahin ke tukang servis.
+Dampaknya biasanya paling kentara: booting yang tadinya memakan waktu lama bisa jauh lebih singkat, dan aplikasi yang sebelumnya lama dibuka biasanya terasa lebih responsif. Soal pasang: SSD 2.5" biasanya gampang, tinggal ganti langsung di bay yang sama kayak HDD lama; SSD M.2 kadang perlu buka bagian dalam casing yang lebih dalam, jadi kalau nggak biasa bongkar laptop, ini bagian yang lebih aman diserahin ke tukang servis.
 
 ## Kapan Upgrade Dua-duanya Sekaligus
 
@@ -83,9 +83,9 @@ Patokan kasar: kalau total biaya upgrade + servis udah mendekati separuh harga l
 Kalau bottleneck-nya udah jelas dan tipe RAM/SSD-nya udah dicek [di artikel ini](/tips/cara-cek-tipe-ram-ssd-laptop), tinggal pilih toko sesuai budget:
 
 <ul class="tip-checklist">
-<li><strong>Kelas atas:</strong> <a href="https://s.shopee.co.id/9AOFTxTTj1">Samsung Memory</a> (SSD, garansi resmi 5 tahun, paling minim risiko) atau <a href="https://s.shopee.co.id/1qbek7VUt0">Kingston</a> (RAM & SSD, garansi lifetime, pilihan paling lengkap)</li>
+<li><strong>Kelas atas:</strong> <a href="https://s.shopee.co.id/9AOFTxTTj1">Samsung Memory</a> (SSD, garansi resmi 5 tahun) atau <a href="https://s.shopee.co.id/1qbek7VUt0">Kingston</a> (RAM & SSD, garansi lifetime, pilihan paling lengkap)</li>
 <li><strong>Seimbang harga-kualitas:</strong> <a href="https://s.shopee.co.id/20v4ws4uRX">Transcend</a> (RAM & SSD) atau <a href="https://s.shopee.co.id/2VrLZbEknh">SanDisk</a> (SSD aja)</li>
-<li><strong>Paling hemat:</strong> <a href="https://s.shopee.co.id/20v4yq8hQA">V-GeN</a> — RAM & SSD, proses klaim garansinya paling nggak ribet</li>
+<li><strong>Paling hemat:</strong> <a href="https://s.shopee.co.id/20v4yq8hQA">V-GeN</a> — pilihan lebih hemat untuk upgrade RAM maupun SSD</li>
 </ul>
 
 **Yang paling penting:** kompatibilitasnya dulu, baru merek. Merek bagus tapi tipe salah tetap nggak kebaca.
