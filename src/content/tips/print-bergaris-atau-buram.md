@@ -50,6 +50,12 @@ Dua kasus ini butuh pengecekan langsung karena solusinya beda-beda (bersihkan en
 
 ---
 
-**Butuh tinta atau cartridge pengganti yang sesuai tipe printer kamu?** Buat printer tabung Epson, paling aman pakai [tinta original Epson 664/T664/003](https://s.shopee.co.id/6L446Bvq8e). Mau opsi isi ulang yang lebih hemat? Ada [tinta bulk kompatibel buat Epson L1110/L3110/L3116/L3150](https://s.shopee.co.id/gPhLocBsy) atau [tinta bulk premium 1 liter](https://s.shopee.co.id/7KwbI6YPkk).
+**Butuh tinta atau cartridge pengganti yang sesuai tipe printer kamu?**
+
+<ul class="tip-checklist">
+<li><strong>Paling aman (original), buat printer tabung Epson:</strong> <a href="https://s.shopee.co.id/6L446Bvq8e">tinta original Epson 664/T664/003</a></li>
+<li><strong>Isi ulang lebih hemat, khusus seri L1110/L3110/L3116/L3150:</strong> <a href="https://s.shopee.co.id/gPhLocBsy">tinta bulk kompatibel Epson</a></li>
+<li><strong>Isi ulang, opsi premium 1 liter:</strong> <a href="https://s.shopee.co.id/7KwbI6YPkk">tinta bulk premium 1 liter</a></li>
+</ul>
 
 Kalau sudah dicoba nozzle check dan cleaning tapi hasil print masih bermasalah, [konsultasikan ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20hasil%20print%20saya%20masih%20bergaris%2Fburam%20meski%20sudah%20dicoba%20cleaning%2C%20mau%20konsultasi), biar dicek langsung penyebabnya.
