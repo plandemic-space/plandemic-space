@@ -23,7 +23,7 @@ Menjemur atau mengeringkan pakai hair dryer memang bisa menguapkan air lebih cep
 1. **Matikan HP sesegera mungkin** — tahan tombol power sampai mati total. Ini memutus aliran listrik yang jadi penyebab utama korosi elektrolitik di atas.
 2. **Jangan dicas, jangan dicoba dinyalakan lagi** untuk sekadar "dicek apa masih hidup" — setiap kali dinyalakan sebelum benar-benar kering, kamu mengulang risiko korsleting yang sama.
 3. **Simpan casing/case tambahan**, keringkan bagian luar dengan kain/tisu, lalu simpan di wadah kedap udara berisi *silica gel*.
-4. **Diamkan minimal 48-72 jam** sebelum dicoba nyalakan lagi. Kalau bisa, bawa ke tempat servis untuk dibersihkan pakai isopropyl alcohol dan ultrasonic cleaner sebelum dinyalakan — ini jauh lebih aman daripada nebak sendiri sudah kering apa belum.
+4. **Diamkan minimal 48 jam, idealnya sampai 72 jam** sebelum dicoba nyalakan lagi. Kalau bisa, bawa ke tempat servis untuk dibersihkan pakai isopropyl alcohol dan ultrasonic cleaner sebelum dinyalakan — ini jauh lebih aman daripada nebak sendiri sudah kering apa belum.
 
 > **Jangan pakai beras.** Mitos ini masih dipercaya banyak orang, padahal beras justru meninggalkan debu dan pati halus yang bisa masuk ke port charging dan lubang speaker. Silica gel jauh lebih efektif menyerap kelembapan dan nggak meninggalkan residu.
 
