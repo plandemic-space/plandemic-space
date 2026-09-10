@@ -37,7 +37,13 @@ Satu hal praktis pas masang: matiin laptop total dan cabut charger dulu (kalau b
 
 Dua hal ini yang paling sering kelewat, padahal nentuin banget:
 
-1. **Kapasitas maksimal yang didukung laptopnya.** CPU-Z atau Task Manager nggak nunjukkin ini — keduanya cuma baca RAM yang udah terpasang, bukan batas maksimal yang didukung motherboard/BIOS-nya. Cari nomor model laptop (stiker di bagian bawah, atau ketik `wmic csproduct get name` di Command Prompt), lalu cari spesifikasi resminya di situs merk laptop atau service manual-nya. Ini kenapa penting: ada laptop yang secara fisik bisa dipasangin RAM 32GB, tapi BIOS-nya cuma baca sampai 16GB — sisanya kepasang tapi mubazir.
+1. **Kapasitas maksimal yang didukung laptopnya.** CPU-Z atau Task Manager nggak nunjukkin ini — keduanya cuma baca RAM yang udah terpasang, bukan batas maksimal yang didukung motherboard/BIOS-nya. Cari nomor model laptop dari stiker di bagian bawah, atau lewat Command Prompt:
+
+```
+wmic csproduct get name
+```
+
+Lalu cari spesifikasi resminya di situs merk laptop atau service manual-nya. Ini kenapa penting: ada laptop yang secara fisik bisa dipasangin RAM 32GB, tapi BIOS-nya cuma baca sampai 16GB — sisanya kepasang tapi mubazir.
 2. **Slot SSD-nya beneran support tipe yang mau kamu beli** — bukan cuma "muat secara fisik". Kalau ragu, service manual tetap sumber paling akurat.
 
 Kalau setelah dicek masih ragu — laptop model lama yang susah dicari manualnya, misalnya — cara paling gampang: buka casing bawah laptop, foto langsung bagian dalam slot storage/RAM-nya, kirim ke kami lewat WhatsApp buat dicek dulu sebelum kamu checkout.
@@ -53,15 +59,17 @@ Ringkasnya, sebelum klik "beli", ini yang harusnya udah kamu pastikan:
 
 ## Pilih Produk Sesuai Kelas
 
-Setelah tipe RAM/SSD-nya jelas dan kompatibilitasnya udah dipastikan di atas, baru masuk ke pilihan produk. Ini bukan ranking "merek terbaik" — lebih ke kelas harga dan siapa yang cocok buat kebutuhan kamu. Kelimanya (Samsung, Kingston, Transcend, SanDisk, V-GeN) sama-sama jual RAM laptop SODIMM DDR4 dengan beberapa pilihan kecepatan (2133/2666/3200MHz), jadi bedanya lebih ke soal garansi dan seberapa gampang klaimnya kalau kelak bermasalah.
+Setelah tipe RAM/SSD-nya jelas dan kompatibilitasnya udah dipastikan di atas, baru masuk ke pilihan produk. Ini bukan ranking "merek terbaik" — lebih ke kelas harga dan siapa yang cocok buat kebutuhan kamu. Kelimanya sama-sama jual RAM laptop SODIMM DDR4 dengan beberapa pilihan kecepatan (2133/2666/3200MHz), jadi bedanya lebih ke soal garansi dan seberapa gampang klaimnya kalau kelak bermasalah.
 
-**Kelas premium:** [Samsung Memory](https://s.shopee.co.id/9AOFTxTTj1) (SSD NVMe seri 980/990 EVO Plus, garansi resmi 5 tahun — salah satu dari sedikit merk yang bikin sendiri chip NAND-nya) dan [Kingston](https://s.shopee.co.id/1qbek7VUt0) (RAM ValueRAM garansi lifetime; SSD-nya ada A400 garansi 3 tahun dan NV2 yang di beberapa toko cuma tercantum garansi 1 tahun — cek listing-nya sebelum checkout). Cocok kalau datanya penting banget dan nggak mau ambil risiko soal keandalan jangka panjang.
+<ul class="tip-checklist">
+<li><strong>Kelas premium — <a href="https://s.shopee.co.id/9AOFTxTTj1">Samsung Memory</a>:</strong> SSD NVMe seri 980/990 EVO Plus, garansi resmi 5 tahun, salah satu dari sedikit merk yang bikin sendiri chip NAND-nya</li>
+<li><strong>Kelas premium — <a href="https://s.shopee.co.id/1qbek7VUt0">Kingston</a>:</strong> RAM ValueRAM garansi lifetime; SSD-nya ada A400 (garansi 3 tahun) dan NV2 (beberapa toko cuma cantumin garansi 1 tahun, cek listing-nya)</li>
+<li><strong>Kelas menengah — <a href="https://s.shopee.co.id/20v4ws4uRX">Transcend</a>:</strong> RAM JetRam garansi lifetime tapi ketat soal kondisi fisik segel (simpan boksnya); SSD MTE220S garansinya beda-beda antar listing, 2-5 tahun tergantung toko</li>
+<li><strong>Kelas menengah — <a href="https://s.shopee.co.id/2VrLZbEknh">SanDisk</a>:</strong> SSD Plus, garansi resmi 3 tahun, satu grup sama Western Digital</li>
+<li><strong>Kelas ekonomis — <a href="https://s.shopee.co.id/20v4yq8hQA">V-GeN</a>:</strong> RAM & SSD, garansi lifetime buat RAM dan umumnya 3 tahun buat SSD (lini terbaru Hyper udah 5 tahun) — paling terjangkau dari semua opsi di atas</li>
+</ul>
 
-**Kelas menengah:** [Transcend](https://s.shopee.co.id/20v4ws4uRX) (RAM JetRam garansi lifetime tapi klaimnya ketat soal kondisi fisik segel — simpan boksnya kalau mau klaim nanti; SSD MTE220S yang garansinya kadang beda-beda antar listing, 2 sampai 5 tahun tergantung toko, jadi cek dulu angka yang tertulis) dan [SanDisk](https://s.shopee.co.id/2VrLZbEknh) (SSD Plus, garansi resmi 3 tahun, satu grup sama Western Digital). Pas buat yang mau seimbang antara harga dan kepastian garansi.
-
-**Kelas ekonomis:** [V-GeN](https://s.shopee.co.id/20v4yq8hQA) — RAM & SSD, garansi lifetime buat RAM dan umumnya 3 tahun buat SSD (lini terbaru Hyper sudah 5 tahun). Paling terjangkau dari semua opsi di atas, cocok kalau tujuannya sekadar bikin laptop nggak lemot lagi tanpa keluar budget besar.
-
-Garansi tiap merk itu bisa beda-beda tergantung lini dan waktu listing dibuat — jangan cuma percaya nama mereknya, tetap cek angka garansi yang tertulis di listing yang mau kamu checkout.
+Garansi tiap merk bisa beda-beda tergantung lini dan waktu listing dibuat — jangan cuma percaya nama mereknya, tetap cek angka garansi yang tertulis di listing yang mau kamu checkout.
 
 ---
 
