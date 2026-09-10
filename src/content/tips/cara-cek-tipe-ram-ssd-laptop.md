@@ -11,11 +11,11 @@ Kejadian yang sering banget kami temuin: orang udah semangat beli RAM atau SSD, 
 
 ## Cek RAM: DDR Berapa, Sisa Slot Berapa
 
-Tekan `Ctrl + Shift + Esc` → tab **Performance** → **Memory**. Ini cara paling cepat, cuma modal Windows bawaan, nggak perlu install apa-apa. Di pojok kanan atas ada angka kayak "8.0 GB (2 of 2 slots used)" — itu artinya laptopnya punya 2 slot RAM dan udah kepasang semua. Kalau tertulis "1 of 2 slots used", masih ada 1 slot kosong yang bisa ditambah.
+Tekan `Ctrl + Shift + Esc` → tab **Performance** → **Memory**. Ini cara paling cepat, cuma modal Windows bawaan, nggak perlu install apa-apa. Di pojok kanan atas ada angka kayak "8.0 GB (2 of 2 slots used)" — itu artinya laptopnya punya 2 slot RAM dan udah kepasang semua. Kalau tertulis "1 of 2 slots used", Windows mendeteksi ada 2 slot dengan 1 yang lagi kepasang — tapi tetap cek spesifikasi resmi atau service manual-nya, karena info dari Windows bukan jaminan slot itu beneran bisa dipakai buat upgrade (ada laptop yang punya kombinasi RAM onboard + 1 slot, dan cara pelaporannya di software bisa beda-beda).
 
 Satu koreksi penting: baris **"Form factor"** di situ nunjukkin bentuk fisiknya (DIMM buat desktop, SODIMM buat laptop) — **bukan** generasi DDR-nya. Task Manager sendiri sering nggak nampilin DDR3/DDR4/DDR5 secara eksplisit, jadi jangan nebak generasi dari situ. Kalau mau mastiin generasinya, install [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) (dari situs resmi cpuid.com, jangan sembarang situs download biar nggak kebawa bundle software aneh-aneh), buka tab **Memory**, baris **"Type"** di situ yang nunjukkin DDR-nya beneran. Tab **SPD** di CPU-Z juga bisa dicek satu-satu per slot (ada dropdown "Slot #1", "Slot #2", dst) buat lihat kolom mana yang masih kosong — berguna kalau Task Manager tadi kurang jelas.
 
-Kalau laptopnya tipis banget (ultrabook kelas atas), ada kemungkinan RAM-nya udah disolder langsung ke motherboard — nggak ada slot sama sekali walau di Task Manager kelihatan ada RAM-nya. Ini yang paling sering bikin orang beli RAM padahal laptopnya emang nggak bisa di-upgrade fisik.
+Kalau laptopnya tipis banget (ultrabook kelas atas), ada kemungkinan RAM-nya udah disolder langsung ke motherboard — nggak ada slot sama sekali walau di Task Manager kelihatan ada RAM-nya. Kondisi kayak gini bisa bikin orang beli RAM tambahan, padahal laptopnya ternyata nggak bisa di-upgrade secara fisik.
 
 Soal dual-channel: pasang 2 keping identik (misal 2x8GB) memang biasanya lebih cepat dibanding 1 keping besar sendirian (1x16GB) buat kebutuhan yang berat di bandwidth memori (multitasking berat, editing). Tapi ini bukan syarat mutlak — kalau slotnya cuma 1 atau kamu cuma butuh nambah kapasitas buat kerjaan ringan-sedang, 1 keping besar tetap oke aja, nggak akan bikin laptop "rusak" atau nggak jalan.
 
@@ -59,14 +59,14 @@ Ringkasnya, sebelum klik "beli", ini yang harusnya udah kamu pastikan:
 
 ## Pilih Produk Sesuai Kelas
 
-Setelah tipe RAM/SSD-nya jelas dan kompatibilitasnya udah dipastikan di atas, baru masuk ke pilihan produk. Ini bukan ranking "merek terbaik" — lebih ke kelas harga dan siapa yang cocok buat kebutuhan kamu. Kelimanya sama-sama jual RAM laptop SODIMM DDR4 dengan beberapa pilihan kecepatan (2133/2666/3200MHz), jadi bedanya lebih ke soal garansi dan seberapa gampang klaimnya kalau kelak bermasalah.
+Setelah tipe RAM/SSD-nya jelas dan kompatibilitasnya udah dipastikan di atas, baru masuk ke pilihan produk. Pilihan di bawah bukan ranking merek terbaik, tapi gambaran kelas produk berdasarkan lini yang umum ditemukan dan posisi harganya. Karena garansi bisa berbeda menurut lini produk, tetap cek model yang dipilih sebelum checkout.
 
 <ul class="tip-checklist">
-<li><strong>Kelas premium — <a href="https://s.shopee.co.id/9AOFTxTTj1">Samsung Memory</a>:</strong> SSD NVMe seri 980/990 EVO Plus, garansi resmi 5 tahun, salah satu dari sedikit merk yang bikin sendiri chip NAND-nya</li>
-<li><strong>Kelas premium — <a href="https://s.shopee.co.id/1qbek7VUt0">Kingston</a>:</strong> RAM ValueRAM garansi lifetime; SSD-nya ada A400 (garansi 3 tahun) dan NV2 (beberapa toko cuma cantumin garansi 1 tahun, cek listing-nya)</li>
-<li><strong>Kelas menengah — <a href="https://s.shopee.co.id/20v4ws4uRX">Transcend</a>:</strong> RAM JetRam garansi lifetime tapi ketat soal kondisi fisik segel (simpan boksnya); SSD MTE220S garansinya beda-beda antar listing, 2-5 tahun tergantung toko</li>
+<li><strong>Kelas premium — <a href="https://s.shopee.co.id/9AOFTxTTj1">Samsung</a>:</strong> SSD NVMe seri 980/990 EVO Plus, dengan garansi resmi 5 tahun</li>
+<li><strong>Kelas premium — <a href="https://s.shopee.co.id/1qbek7VUt0">Kingston</a>:</strong> RAM ValueRAM garansi seumur hidup; SSD A400 dan NV2 sama-sama garansi terbatas 3 tahun</li>
+<li><strong>Kelas menengah — <a href="https://s.shopee.co.id/20v4ws4uRX">Transcend</a>:</strong> RAM JetRam garansi seumur hidup; SSD MTE220S garansi 5 tahun menurut kebijakan resmi Transcend</li>
 <li><strong>Kelas menengah — <a href="https://s.shopee.co.id/2VrLZbEknh">SanDisk</a>:</strong> SSD Plus, garansi resmi 3 tahun, satu grup sama Western Digital</li>
-<li><strong>Kelas ekonomis — <a href="https://s.shopee.co.id/20v4yq8hQA">V-GeN</a>:</strong> RAM & SSD, garansi lifetime buat RAM dan umumnya 3 tahun buat SSD (lini terbaru Hyper udah 5 tahun) — paling terjangkau dari semua opsi di atas</li>
+<li><strong>Kelas ekonomis — <a href="https://s.shopee.co.id/20v4yq8hQA">V-GeN</a>:</strong> RAM (lini Platinum/Rescue/Tsunami) garansi seumur hidup; lini SSD-nya punya ketentuan garansi yang berbeda menurut model, jadi cek produk yang dipilih sebelum checkout</li>
 </ul>
 
 Garansi tiap merk bisa beda-beda tergantung lini dan waktu listing dibuat — jangan cuma percaya nama mereknya, tetap cek angka garansi yang tertulis di listing yang mau kamu checkout.
