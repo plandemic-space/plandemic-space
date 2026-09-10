@@ -17,7 +17,7 @@ Ada dua cara, tinggal pilih mana yang lebih gampang buat kamu.
 1. Tekan `Ctrl + Shift + Esc` di keyboard buat langsung buka Task Manager
 2. Kalau tampilannya masih ringkas, klik "More details" dulu di pojok kiri bawah
 3. Klik tab **Performance** di sisi kiri, terus klik **Memory**
-4. Di pojok kanan atas ada angka seperti "8.0 GB (2 of 2 slots used)". Ini menunjukkan Windows mendeteksi 2 slot yang sedang digunakan. "1 of 2 slots used" berarti Windows mendeteksi 2 slot dengan 1 slot sedang digunakan. Namun informasi ini sebaiknya tetap dikonfirmasi lewat spesifikasi atau service manual laptop sebelum membeli RAM tambahan
+4. Di pojok kanan atas ada angka seperti "8.0 GB (2 of 2 slots used)". Angka tersebut menunjukkan jumlah slot RAM yang dideteksi Windows beserta berapa yang sedang digunakan. "1 of 2 slots used" berarti Windows mendeteksi 2 slot dengan 1 slot sedang digunakan. Namun, informasi ini sebaiknya tetap dikonfirmasi lewat spesifikasi atau service manual laptop sebelum membeli RAM tambahan
 5. Di bagian bawah ada baris **Speed** dan **Form factor**. Form factor menunjukkan bentuk fisik RAM, misalnya SODIMM pada laptop. Untuk memastikan DDR3, DDR4, atau DDR5, gunakan CPU-Z dan lihat bagian "Type" seperti langkah berikut
 
 Cara ini paling cepat, tapi khusus laptop keluaran lama-menengah yang RAM-nya masih bisa dicopot-pasang. Kalau laptopnya tipis banget (ultrabook kelas atas), ada kemungkinan RAM-nya udah disolder langsung ke motherboard — nggak ada slot sama sekali, jadi nggak bisa diupgrade fisik walaupun di Task Manager kelihatan ada RAM-nya. Kondisi seperti ini cukup sering bikin orang membeli RAM tambahan, padahal RAM laptopnya ternyata sudah disolder dan tidak bisa di-upgrade secara fisik.
@@ -64,7 +64,7 @@ Kelima merek ini punya pilihan RAM laptop SODIMM DDR4 yang cukup mudah ditemukan
 
 **RAM kelas menengah**
 - **[Transcend](https://s.shopee.co.id/20v4ws4uRX)** — lini JetRam (kode produk diawali "JM"), garansi seumur hidup.
-- **[Team Group](https://s.shopee.co.id/8fSEeiljJ1)** — produsen RAM/SSD asal Taiwan yang juga umum dipakai buat upgrade laptop. Kami belum nemuin angka garansi resmi yang konsisten khusus buat lini RAM laptopnya, jadi tetap cek ketentuan garansi yang tertulis di listing produknya sebelum checkout.
+- **[Team Group](https://s.shopee.co.id/8fSEeiljJ1)** — produsen RAM/SSD asal Taiwan. Kami belum menemukan angka garansi resmi yang konsisten khusus untuk lini RAM laptopnya, jadi tetap cek ketentuan garansi yang tertulis di listing produk sebelum checkout.
 - **[Adata](https://s.shopee.co.id/60RTV3QmHS)** — lini Premier Series SODIMM DDR4, di sejumlah listing resmi tercantum garansi seumur hidup (syarat & ketentuan berlaku sesuai listing).
 
 **RAM lebih ekonomis**
@@ -74,9 +74,9 @@ Kelima merek ini punya pilihan RAM laptop SODIMM DDR4 yang cukup mudah ditemukan
 
 Beda sama RAM, garansi SSD ini nggak flat per merk — beda lini produk, beda tahun garansinya. Jadi angka di bawah ini sebagai gambaran umum, tapi tetap cek garansi yang tertulis di listing produknya pas mau checkout, jangan cuma percaya nama merknya doang.
 
-- **[Samsung Memory](https://s.shopee.co.id/9AOFTxTTj1)** — lini 990 EVO Plus (NVMe PCIe 4.0/5.0) tercatat dapat garansi terbatas resmi 5 tahun dari Samsung. Lini 980 (NVMe PCIe 3.0) juga umum dijual buat upgrade laptop — tapi cek dulu garansi yang tertulis di listing spesifik yang mau kamu beli, jangan asumsi semua lini Samsung otomatis dapat masa garansi yang sama. Harganya juga cenderung lebih mahal dari opsi lain di bawah.
+- **[Samsung](https://s.shopee.co.id/9AOFTxTTj1)** — lini 990 EVO Plus (NVMe PCIe 4.0/5.0) tercatat dapat garansi terbatas resmi 5 tahun dari Samsung. Lini 980 (NVMe PCIe 3.0) juga umum dijual buat upgrade laptop — tapi cek dulu garansi yang tertulis di listing spesifik yang mau kamu beli, jangan asumsi semua lini Samsung otomatis dapat masa garansi yang sama. Harganya juga cenderung lebih mahal dari opsi lain di bawah.
 - **[Kingston](https://s.shopee.co.id/1qbek7VUt0)** — A400 (SATA 2.5 inch, entry-level) dan NV2 (M.2 NVMe, budget) sama-sama tercantum dengan garansi terbatas 3 tahun dalam kebijakan resmi Kingston. Tetap cek ketentuan garansi pada toko/distributor tempat kamu membeli sebelum checkout, karena beberapa lini Kingston lainnya bisa punya masa garansi berbeda.
-- **[SanDisk](https://s.shopee.co.id/2VrLZbEknh)** — sekarang satu grup sama Western Digital. Lini SSD Plus (SATA 2.5 inch) yang paling umum dijual buat upgrade laptop dapat garansi resmi 3 tahun. Di Indonesia mungkin lebih kamu kenal lewat flashdisk atau microSD-nya, tapi lini SSD-nya juga oke buat kebutuhan harian.
+- **[SanDisk](https://s.shopee.co.id/2VrLZbEknh)** — sekarang satu grup sama Western Digital. Lini SSD Plus (SATA 2.5 inch) tersedia untuk kebutuhan upgrade laptop dan tercatat mendapat garansi resmi 3 tahun. Di Indonesia mungkin lebih kamu kenal lewat flashdisk atau microSD-nya, tapi lini SSD-nya juga oke buat kebutuhan harian.
 - **[Transcend](https://s.shopee.co.id/20v4ws4uRX)** — lini MTE220S (M.2 NVMe) merupakan salah satu opsi untuk upgrade laptop dengan budget terbatas, dan saat ini tercantum dengan garansi 5 tahun menurut kebijakan resmi Transcend. Saat membeli, tetap cek ketentuan garansi pada penjual, karena layanan klaim dapat mengikuti kebijakan distributor atau toko tempat pembelian.
 - **[V-GeN](https://s.shopee.co.id/20v4yq8hQA)** — FAQ resmi V-GeN menyebut garansi SSD 3 tahun untuk semua tipe, sementara lini Hyper (M.2 NVMe) di situs resminya tercantum dengan garansi 5 tahun. Karena ketentuan garansi bisa beda menurut lini produk, cek garansi model yang mau kamu beli sebelum checkout.
 
