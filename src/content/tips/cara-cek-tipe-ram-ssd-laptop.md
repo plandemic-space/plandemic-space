@@ -10,7 +10,7 @@ Kejadian yang sering banget kami temuin: orang udah semangat beli RAM atau SSD, 
 
 ## Cek RAM: DDR berapa, sisa slot berapa
 
-Ada dua cara, tinggal pilih mana yang lebih gampang buat kamu.
+Ada dua cara. Cara 1 nggak perlu install apa-apa dan langsung nunjukkin sisa slot RAM, tapi nggak bisa mastiin DDR-nya. Buat itu, tetap perlu Cara 2 pakai CPU-Z — jadi anggap Cara 1 sebagai cek cepat duluan, bukan pengganti Cara 2 sepenuhnya.
 
 **Cara 1 — tanpa install apa-apa (Windows 10/11):**
 
@@ -18,9 +18,9 @@ Ada dua cara, tinggal pilih mana yang lebih gampang buat kamu.
 2. Kalau tampilannya masih ringkas, klik "More details" dulu di pojok kiri bawah
 3. Klik tab **Performance** di sisi kiri, terus klik **Memory**
 4. Di pojok kanan atas ada angka seperti "8.0 GB (2 of 2 slots used)". Angka tersebut menunjukkan jumlah slot RAM yang dideteksi Windows beserta berapa yang sedang digunakan. "1 of 2 slots used" berarti Windows mendeteksi 2 slot dengan 1 slot sedang digunakan. Namun, informasi ini sebaiknya tetap dikonfirmasi lewat spesifikasi atau service manual laptop sebelum membeli RAM tambahan
-5. Di bagian bawah ada baris **Speed** dan **Form factor**. Form factor menunjukkan bentuk fisik RAM, misalnya SODIMM pada laptop. Untuk memastikan DDR3, DDR4, atau DDR5, gunakan CPU-Z dan lihat bagian "Type" seperti langkah berikut
+5. Di bagian bawah ada baris **Speed** dan **Form factor**. Form factor menunjukkan bentuk fisik RAM, misalnya SODIMM pada laptop. Untuk memastikan DDR3, DDR4, atau DDR5, lanjut ke Cara 2 di bawah dan lihat bagian "Type" di CPU-Z
 
-Cara ini paling cepat, tapi khusus laptop keluaran lama-menengah yang RAM-nya masih bisa dicopot-pasang. Kalau laptopnya tipis banget (ultrabook kelas atas), ada kemungkinan RAM-nya udah disolder langsung ke motherboard — nggak ada slot sama sekali, jadi nggak bisa diupgrade fisik walaupun di Task Manager kelihatan ada RAM-nya. Kondisi seperti ini cukup sering bikin orang membeli RAM tambahan, padahal RAM laptopnya ternyata sudah disolder dan tidak bisa di-upgrade secara fisik.
+Cara ini paling cepat, tapi khusus laptop keluaran lama-menengah yang RAM-nya masih bisa dicopot-pasang. Kalau laptopnya tipis banget (ultrabook kelas atas), ada kemungkinan RAM-nya udah disolder langsung ke motherboard — nggak ada slot sama sekali, jadi nggak bisa diupgrade fisik walaupun di Task Manager kelihatan ada RAM-nya. Ini yang bikin sebagian orang kadung beli RAM tambahan sebelum sadar laptopnya sendiri emang nggak bisa di-upgrade.
 
 **Cara 2 — pakai CPU-Z (lebih detail, gratis):**
 
@@ -55,7 +55,7 @@ Nah, ini bagian yang paling sering bikin orang salah beli: M.2 SATA dan M.2 NVMe
 
 Kalau setelah dicek masih ragu — misalnya laptopnya model lama yang susah dicari manualnya — cara paling gampang ya foto langsung bagian dalam slot storage-nya (buka casing bawah laptop, biasanya cukup lepas beberapa baut), lalu kirim ke kami lewat WhatsApp buat dicek dulu sebelum kamu checkout.
 
-## Merk RAM: dari Kelas Menengah-Atas sampai Ekonomis
+## Merk RAM: dari menengah-atas, menengah, sampai ekonomis
 
 Kelima merek ini punya pilihan RAM laptop SODIMM DDR4 yang cukup mudah ditemukan. Perbedaannya lebih ke posisi harga, pilihan produk, dan ketentuan garansi tiap lini — bukan soal mana yang "paling bagus":
 
@@ -70,17 +70,17 @@ Kelima merek ini punya pilihan RAM laptop SODIMM DDR4 yang cukup mudah ditemukan
 **RAM lebih ekonomis**
 - **[V-GeN](https://s.shopee.co.id/20v4yq8hQA)** — lini Rescue, garansi seumur hidup, udah beberapa kali dapat Top Brand Award di Indonesia. Buat yang budgetnya pas-pasan tapi tetap mau garansi jelas, ini opsi yang masuk akal.
 
-## Merk SSD: Gambaran Umum Garansi per Lini Produk
+## Merk SSD: gambaran umum garansi per lini produk
 
 Beda sama RAM, garansi SSD ini nggak flat per merk — beda lini produk, beda tahun garansinya. Jadi angka di bawah ini sebagai gambaran umum, tapi tetap cek garansi yang tertulis di listing produknya pas mau checkout, jangan cuma percaya nama merknya doang.
 
-- **[Samsung](https://s.shopee.co.id/9AOFTxTTj1)** — lini 990 EVO Plus (NVMe PCIe 4.0/5.0) tercatat dapat garansi terbatas resmi 5 tahun dari Samsung. Lini 980 (NVMe PCIe 3.0) juga umum dijual buat upgrade laptop — tapi cek dulu garansi yang tertulis di listing spesifik yang mau kamu beli, jangan asumsi semua lini Samsung otomatis dapat masa garansi yang sama. Harganya juga cenderung lebih mahal dari opsi lain di bawah.
+- **[Samsung](https://s.shopee.co.id/9AOFTxTTj1)** — lini 990 EVO Plus (NVMe PCIe 4.0/5.0) tercatat dapat garansi terbatas resmi 5 tahun dari Samsung. Lini 980 (NVMe PCIe 3.0) juga tersedia untuk upgrade laptop — tapi cek dulu garansi yang tertulis di listing spesifik yang mau kamu beli, jangan asumsi semua lini Samsung otomatis dapat masa garansi yang sama. Harganya juga cenderung lebih mahal dari opsi lain di bawah.
 - **[Kingston](https://s.shopee.co.id/1qbek7VUt0)** — A400 (SATA 2.5 inch, entry-level) dan NV2 (M.2 NVMe, budget) sama-sama tercantum dengan garansi terbatas 3 tahun dalam kebijakan resmi Kingston. Tetap cek ketentuan garansi pada toko/distributor tempat kamu membeli sebelum checkout, karena beberapa lini Kingston lainnya bisa punya masa garansi berbeda.
 - **[SanDisk](https://s.shopee.co.id/2VrLZbEknh)** — sekarang satu grup sama Western Digital. Lini SSD Plus (SATA 2.5 inch) tersedia untuk kebutuhan upgrade laptop dan tercatat mendapat garansi resmi 3 tahun. Di Indonesia mungkin lebih kamu kenal lewat flashdisk atau microSD-nya, tapi lini SSD-nya juga oke buat kebutuhan harian.
 - **[Transcend](https://s.shopee.co.id/20v4ws4uRX)** — lini MTE220S (M.2 NVMe) merupakan salah satu opsi untuk upgrade laptop dengan budget terbatas, dan saat ini tercantum dengan garansi 5 tahun menurut kebijakan resmi Transcend. Saat membeli, tetap cek ketentuan garansi pada penjual, karena layanan klaim dapat mengikuti kebijakan distributor atau toko tempat pembelian.
 - **[V-GeN](https://s.shopee.co.id/20v4yq8hQA)** — FAQ resmi V-GeN menyebut garansi SSD 3 tahun untuk semua tipe, sementara lini Hyper (M.2 NVMe) di situs resminya tercantum dengan garansi 5 tahun. Karena ketentuan garansi bisa beda menurut lini produk, cek garansi model yang mau kamu beli sebelum checkout.
 
-## Sebelum Checkout, Cocokkan Dulu 3 Hal Ini
+## Sebelum checkout, cocokkan dulu 3 hal ini
 
 - **DDR-nya harus sama** — DDR4 lama nggak bisa gantiin/digabung sama DDR3 atau DDR5, beda generasi beda bentuk fisik pin-nya
 - **Kapasitas nggak boleh lewat batas maksimum** yang didukung laptop, meskipun slotnya masih kosong
