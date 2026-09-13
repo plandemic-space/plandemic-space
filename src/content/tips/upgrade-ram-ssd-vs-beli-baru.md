@@ -60,11 +60,15 @@ Kalau budget-nya terbatas dan harus pilih salah satu duluan, biasanya SSD yang d
 
 Patokan kasar: kalau total biaya upgrade + servis udah mendekati separuh harga laptop baru yang setara, beli baru biasanya lebih masuk akal daripada terus nambal.
 
-## Dua Contoh Biar Kebayang
+## Empat Contoh Biar Kebayang
 
 **RAM 4GB + masih HDD, dipakai kerja kantoran.** Buka Excel aja lama, apalagi kalau ada tab browser lain kebuka bareng. Cek Task Manager: Memory dan Disk sama-sama sering penuh, CPU-nya adem-adem aja. Solusinya upgrade RAM + SSD sekaligus — biayanya jauh di bawah beli laptop baru, dan bedanya kerasa banget begitu selesai dipasang.
 
 **RAM 8GB + udah SSD, tapi tetap berat buat kerjaan sekarang.** Cek Task Manager, ternyata CPU yang konsisten di angka tinggi meski cuma buka aplikasi standar. Di sini upgrade RAM/SSD nggak akan banyak nolong — kalau kebutuhannya emang udah naik (misal mulai edit video), lebih masuk akal pertimbangin beli baru yang speknya didesain buat itu.
+
+**Laptop umur 5 tahun, tapi body dan layar masih mulus, dipakai buat browsing/dokumen/video call.** Nggak ada kerusakan fisik, dan kebutuhannya juga nggak berubah dari waktu beli dulu — cuma RAM 4GB dan masih HDD yang bikin kerasa lambat. CPU-nya (generasi menengah) sebenarnya masih cukup buat kebutuhan sekarang. Solusinya upgrade — kondisi fisik dan kebutuhan pengguna dua-duanya masih align, jadi jauh lebih masuk akal daripada ganti unit.
+
+**Engsel udah goyang, port charging kadang nggak kebaca, dan sekarang butuh buat edit video (dulu belinya cuma buat ngetik).** Ada kerusakan fisik yang nambah biaya kalau dibenerin, ditambah kebutuhannya udah jauh di atas kemampuan laptop ini dari awal. Upgrade RAM/SSD doang nggak nutup gap kebutuhan yang udah berubah jauh — lebih masuk akal beli baru.
 
 ## Ringkasan Tabel Keputusan
 
@@ -91,3 +95,26 @@ Kalau bottleneck-nya udah jelas dan tipe RAM/SSD-nya udah dicek [di artikel ini]
 **Yang paling penting:** kompatibilitasnya dulu, baru merek. Merek bagus tapi tipe salah tetap nggak kebaca.
 
 **Masih ragu bottleneck-nya apa?** [Kirim merek, model laptop, atau screenshot Task Manager kamu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20mulai%20lemot%2C%20mau%20konsultasi%20upgrade%20atau%20beli%20baru), biar kami bantu cek dulu sebelum kamu checkout.
+
+## Pertanyaan yang Sering Ditanyakan
+
+**RAM atau SSD, mana yang lebih penting?**
+Tergantung gejalanya. Kalau lemotnya pas multitasking (banyak tab/aplikasi bareng), RAM yang lebih berpengaruh. Kalau lemotnya pas booting/buka aplikasi, SSD yang lebih kerasa dampaknya. Cek dulu lewat Task Manager sebelum mutusin.
+
+**Apakah upgrade SSD bikin laptop lebih cepat?**
+Kalau sebelumnya masih pakai HDD, iya — biasanya ini upgrade yang dampaknya paling konsisten kerasa. Tapi kalau sebelumnya udah SSD dan lemotnya karena CPU, ganti SSD lagi nggak akan banyak ngaruh.
+
+**RAM 8GB apakah masih cukup?**
+Buat kebutuhan standar (browsing, office, nonton) umumnya masih cukup. Tapi kalau kerjanya multitasking berat, biasanya udah mulai kerasa sempit.
+
+**Apakah semua laptop bisa upgrade RAM?**
+Nggak semua. Sebagian laptop tipis/modern RAM-nya disolder langsung ke motherboard (onboard), jadi nggak bisa ditambah atau diganti sama sekali meski secara software kelihatan ada RAM terpasang.
+
+**Apakah semua laptop bisa dipasang SSD NVMe?**
+Nggak. Slot M.2 di motherboard belum tentu mendukung NVMe — sebagian cuma mendukung M.2 SATA meski bentuk fisiknya mirip. Wajib dicek dulu spesifikasi slotnya, bukan cuma modal "asal muat".
+
+**Lebih baik upgrade atau beli laptop baru?**
+Kalau bottleneck-nya di RAM/disk dan fisik laptop masih oke, upgrade biasanya jauh lebih hemat. Kalau CPU yang jadi masalah, ada kerusakan komponen inti, atau kebutuhan kamu udah jauh di atas kemampuan laptop itu dari awal, beli baru lebih masuk akal.
+
+**Apakah laptop lama masih layak di-upgrade?**
+Umur laptop sendiri bukan patokan utama — yang lebih menentukan itu kondisi fisiknya (motherboard, layar, engsel, baterai) dan apakah kebutuhan kamu sekarang masih sesuai sama kemampuan dasarnya. Laptop lama yang fisiknya masih sehat dan cuma kurang RAM/storage itu kandidat upgrade yang bagus — beda cerita kalau udah ada beberapa kerusakan komponen inti sekaligus.

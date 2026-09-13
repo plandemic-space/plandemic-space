@@ -27,7 +27,7 @@ Ada tiga bentuk SSD yang beredar:
 - **M.2 SATA** — kartu kecil memanjang, kecepatannya masih setara SATA biasa
 - **M.2 NVMe** — bentuk fisiknya mirip M.2 SATA, tapi lewat jalur PCIe sehingga jauh lebih cepat
 
-Bagian paling sering bikin salah beli: M.2 SATA dan M.2 NVMe bentuknya nyaris identik, tapi slot motherboard belum tentu support dua-duanya. Potongan pin di konektor ("notch") — B key biasanya SATA, M key biasanya NVMe, B+M key bisa masuk ke slot mana aja — itu cuma **petunjuk kasar**, bukan jaminan. Notch yang cocok secara fisik nggak otomatis berarti slotnya bakal ngebaca atau jalan optimal; sebagian motherboard cuma nyediain jalur PCIe terbatas (misalnya cuma PCIe x2) buat slot M.2-nya, jadi SSD NVMe secepat apapun tetap ke-bottleneck. Cara paling pasti: cek buku manual servis resmi laptopnya (cari "service manual [nomor model laptop]"), karena ini nggak kebaca lewat software apapun.
+Bagian paling sering bikin salah beli: M.2 SATA dan M.2 NVMe bentuknya nyaris identik, tapi slot motherboard belum tentu support dua-duanya. Bentuk notch (potongan pin) di konektornya bisa jadi petunjuk awal, tapi **nggak cukup buat mastiin apakah SSD itu SATA atau NVMe** — notch yang cocok secara fisik nggak otomatis berarti slotnya bakal ngebaca atau jalan optimal; sebagian motherboard cuma nyediain jalur PCIe terbatas (misalnya cuma PCIe x2) buat slot M.2-nya, jadi SSD NVMe secepat apapun tetap ke-bottleneck. Cara paling pasti: cek buku manual servis resmi laptopnya (cari "service manual [nomor model laptop]"), karena ini nggak kebaca lewat software apapun.
 
 Buat lihat interface yang **udah terpasang sekarang**, buka [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) — langsung kelihatan SATA atau NVMe (PCIe).
 
@@ -66,6 +66,8 @@ Setelah tipe RAM/SSD-nya jelas dan kompatibilitasnya udah dipastikan di atas, ba
 <li><strong>Kelas premium — <a href="https://s.shopee.co.id/1qbek7VUt0">Kingston</a>:</strong> RAM ValueRAM garansi seumur hidup; SSD A400 dan NV2 sama-sama garansi terbatas 3 tahun</li>
 <li><strong>Kelas menengah — <a href="https://s.shopee.co.id/20v4ws4uRX">Transcend</a>:</strong> RAM JetRam garansi seumur hidup; SSD MTE220S garansi 5 tahun menurut kebijakan resmi Transcend</li>
 <li><strong>Kelas menengah — <a href="https://s.shopee.co.id/2VrLZbEknh">SanDisk</a>:</strong> SSD Plus, garansi resmi 3 tahun, satu grup sama Western Digital</li>
+<li><strong>Kelas menengah — <a href="https://s.shopee.co.id/8fSEeiljJ1">Team Group</a>:</strong> produsen RAM/SSD asal Taiwan yang juga umum dipakai buat upgrade laptop — cek ketentuan garansi di listing produknya, belum ada angka garansi resmi yang konsisten khusus buat lini RAM laptopnya</li>
+<li><strong>Kelas menengah — <a href="https://s.shopee.co.id/60RTV3QmHS">Adata</a>:</strong> lini Premier Series SODIMM DDR4, di sejumlah listing resmi tercantum garansi seumur hidup (syarat & ketentuan berlaku)</li>
 <li><strong>Kelas ekonomis — <a href="https://s.shopee.co.id/20v4yq8hQA">V-GeN</a>:</strong> RAM (lini Platinum/Rescue/Tsunami) garansi seumur hidup; lini SSD-nya punya ketentuan garansi yang berbeda menurut model, jadi cek produk yang dipilih sebelum checkout</li>
 </ul>
 
