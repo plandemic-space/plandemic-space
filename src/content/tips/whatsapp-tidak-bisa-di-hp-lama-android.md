@@ -81,7 +81,7 @@ Bukan soal cari HP dengan spesifikasi setinggi mungkin, tapi yang cocok untuk pe
 
 Kriteria di atas kalau diterjemahkan ke satu pilihan nyata: **Samsung Galaxy A07** (4GB/64GB atau 4GB/128GB) — MediaTek Helio G99, layar 6,7 inci 90Hz, baterai 5.000 mAh, Android 15 dengan One UI 7. Harga saat riset mulai [Rp2.289.000 (4/64GB)](https://s.shopee.co.id/9Ki0NfyEnQ) sampai [Rp2.899.000 (4/128GB)](https://s.shopee.co.id/4VckcjxV7Z). Alasan utamanya: Samsung menjanjikan dukungan update software dan keamanan sampai **6 tahun** untuk seri ini — salah satu yang terpanjang di pasar Indonesia untuk kelas harga manapun, dan itu langsung berarti kecil kemungkinan kamu ngalamin masalah kompatibilitas kayak yang lagi dibahas di artikel ini dalam waktu dekat.
 
-A07 bukan satu-satunya opsi, dan bukan berarti paling murah. Kalau kamu mau lihat perbandingan lengkap — mulai dari Rp1,6 jutaan sampai Rp2,4 jutaan, lengkap dengan kelebihan-kekurangan tiap merek — cek artikel kami [HP Murah untuk WhatsApp: Rekomendasi Lengkap Semua Budget].
+A07 bukan satu-satunya opsi, dan bukan berarti paling murah. Kalau kamu mau lihat perbandingan lengkap — mulai dari Rp1,6 jutaan sampai Rp2,4 jutaan, lengkap dengan kelebihan-kekurangan tiap merek — cek artikel kami [HP Murah untuk WhatsApp: Rekomendasi Lengkap Semua Budget](/tips/hp-murah-untuk-whatsapp).
 
 Kalau sudah menentukan pilihan dan siap checkout, dua aksesoris ini biasanya langsung kepakai buat HP baru:
 
