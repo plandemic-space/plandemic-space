@@ -11,13 +11,27 @@ Kalau budget kamu benar-benar mepet dan yang penting HP-nya lancar buat WhatsApp
 
 ## Rekomendasi HP, Urut dari yang Paling Murah
 
-**itel A100CS** — harga real di marketplace sekitar <a href="https://s.shopee.co.id/8AW33CTQq4" target="_blank" rel="noopener noreferrer">Rp1.600.000 (3GB/64GB)</a> sampai Rp1.700.000 (4GB/64GB), tergantung akun dan promo yang sedang berjalan — harga resmi launching-nya dulu Rp1.399.000, jadi sudah naik cukup jauh. Chipset Unisoc T7100, layar 6,6 inci 90Hz, baterai 5.000 mAh, Android 15, dan yang cukup jarang di kelas harga ini: sertifikasi ketahanan **MIL-STD-810H**, jadi lebih tahan banting untuk pemakaian kasar sehari-hari. Kekurangannya: belum ada kejelasan resmi soal jaminan update Android ke depannya, dan RAM di kelas ini biasanya cuma 2-4GB — cek dulu varian RAM-nya sebelum beli.
+**itel A100CS**
+- **Harga**: sekitar <a href="https://s.shopee.co.id/8AW33CTQq4" target="_blank" rel="noopener noreferrer">Rp1.600.000 (3GB/64GB)</a> sampai Rp1.700.000 (4GB/64GB), tergantung akun dan promo yang sedang berjalan. Harga resmi launching-nya dulu Rp1.399.000, jadi sudah naik cukup jauh.
+- **Spesifikasi**: chipset Unisoc T7100, layar 6,6 inci 90Hz, baterai 5.000 mAh, Android 15.
+- **Kelebihan**: sertifikasi ketahanan **MIL-STD-810H** — cukup jarang di kelas harga ini, jadi lebih tahan banting untuk pemakaian kasar sehari-hari.
+- **Kekurangan**: belum ada kejelasan resmi soal jaminan update Android ke depannya, dan RAM di kelas ini biasanya cuma 2-4GB — cek dulu varian RAM-nya sebelum beli.
 
-**POCO C71** — <a href="https://s.shopee.co.id/5AsRWM9L3T?exp_info=tt_L439J4od" target="_blank" rel="noopener noreferrer">Rp1.950.000 (4+4GB/128GB)</a>, chipset Unisoc T7250, layar 6,88 inci 120Hz, baterai 5.200 mAh dengan fast charging 15W, Android 15. Ini model yang lebih dulu rilis (Mei 2025) dibanding POCO C81 Pro di bawah — beda seri, bukan penamaan yang tertukar. Kekurangannya dibanding C81 Pro: jaminan update cuma **2 tahun update OS + 4 tahun keamanan**, dan baterai lebih kecil (5.200 vs 6.000 mAh). Worth dipertimbangkan kalau selisih harga penting, tapi kalau bisa nambah sedikit, C81 Pro di bawah lebih future-proof soal update.
+**POCO C71**
+- **Harga**: <a href="https://s.shopee.co.id/5AsRWM9L3T?exp_info=tt_L439J4od" target="_blank" rel="noopener noreferrer">Rp1.950.000 (4+4GB/128GB)</a>.
+- **Spesifikasi**: chipset Unisoc T7250, layar 6,88 inci 120Hz, baterai 5.200 mAh dengan fast charging 15W, Android 15.
+- **Catatan**: model ini lebih dulu rilis (Mei 2025) dibanding POCO C81 Pro di bawah — beda seri, bukan penamaan yang tertukar.
+- **Kekurangan dibanding C81 Pro**: jaminan update cuma **2 tahun update OS + 4 tahun keamanan**, dan baterai lebih kecil (5.200 vs 6.000 mAh). Worth dipertimbangkan kalau selisih harga penting, tapi kalau bisa nambah sedikit, C81 Pro di bawah lebih future-proof soal update.
 
-**POCO C81 Pro** — <a href="https://s.shopee.co.id/2VrgK5wV6J" target="_blank" rel="noopener noreferrer">Rp1.999.900</a>, RAM 4GB, Android 15 dengan HyperOS 3. Layar lebar 6,9 inci 120Hz, baterai 6.000 mAh (fast charging 15W), bodi ramping cuma 208 gram. Xiaomi menjanjikan pembaruan sistem operasi dan keamanan secara berkala untuk seri ini — beberapa review pihak ketiga menyebut angka spesifik hingga 4 kali update OS, meski deskripsi resmi Xiaomi sendiri tidak mencantumkan angka pasti. Tetap salah satu yang komitmen update-nya paling jelas di kelas harga ini.
+**POCO C81 Pro**
+- **Harga**: <a href="https://s.shopee.co.id/2VrgK5wV6J" target="_blank" rel="noopener noreferrer">Rp1.999.900</a>.
+- **Spesifikasi**: RAM 4GB, Android 15 dengan HyperOS 3, layar lebar 6,9 inci 120Hz, baterai 6.000 mAh (fast charging 15W), bodi ramping cuma 208 gram.
+- **Kelebihan**: Xiaomi menjanjikan pembaruan sistem operasi dan keamanan secara berkala untuk seri ini — beberapa review pihak ketiga menyebut angka spesifik hingga 4 kali update OS, meski deskripsi resmi Xiaomi sendiri tidak mencantumkan angka pasti. Tetap salah satu yang komitmen update-nya paling jelas di kelas harga ini.
 
-**Tecno Spark Go 3** — Android 15 dengan HiOS 15, desain tahan cipratan air (IP64). Cocok kalau kamu sering kerja di luar ruangan atau khawatir HP kena hujan/debu. Tersedia <a href="https://s.shopee.co.id/3VkDSMTuvR" target="_blank" rel="noopener noreferrer">varian 4/64GB seharga Rp2.060.000</a> atau <a href="https://s.shopee.co.id/1LfisVyVW3" target="_blank" rel="noopener noreferrer">varian 4/128GB seharga Rp2.150.000</a>.
+**Tecno Spark Go 3**
+- **Harga**: tersedia <a href="https://s.shopee.co.id/3VkDSMTuvR" target="_blank" rel="noopener noreferrer">varian 4/64GB seharga Rp2.060.000</a> atau <a href="https://s.shopee.co.id/1LfisVyVW3" target="_blank" rel="noopener noreferrer">varian 4/128GB seharga Rp2.150.000</a>.
+- **Spesifikasi**: Android 15 dengan HiOS 15, desain tahan cipratan air (IP64).
+- **Cocok untuk**: kamu yang sering kerja di luar ruangan atau khawatir HP kena hujan/debu.
 
 ### ⭐ Xiaomi Redmi A7 Pro — Paling Direkomendasikan
 
@@ -29,7 +43,11 @@ Dari semua HP di kelas harga ini, Redmi A7 Pro paling menonjol untuk satu alasan
 - **Kekurangan**: RAM 4GB bisa terasa pas-pasan kalau sering buka banyak aplikasi sekaligus. Kamera juga standar untuk kelas harga ini, bukan andalan. Chipset Unisoc T7250-nya juga secara benchmark di bawah Helio G99 (lihat penjelasan di bawah) — bukan masalah untuk WhatsApp/medsos ringan, tapi kurang ideal kalau kamu sering multitasking berat atau gaming.
 - **Cocok untuk**: siapa saja yang mau HP murah tapi tidak mau pusing lagi soal update di masa depan.
 
-**Samsung Galaxy A07** — mulai <a href="https://s.shopee.co.id/9Ki0NfyEnQ" target="_blank" rel="noopener noreferrer">Rp2.289.000 (4/64GB)</a> sampai <a href="https://s.shopee.co.id/4VckcjxV7Z" target="_blank" rel="noopener noreferrer">Rp2.899.000 (4/128GB, light violet)</a>, MediaTek Helio G99, layar 6,7 inci 90Hz, baterai 5.000 mAh, Android 15 dengan One UI 7. Opsi paling atas di daftar ini kalau budget masih bisa lega dikit — jaminan update softwarenya **6 tahun**, salah satu yang terpanjang di pasar Indonesia untuk kelas harga manapun. Catatan: varian 128GB-nya (Rp2.899.000) hampir Rp800rb lebih mahal dari Redmi A7 Pro yang juga 128GB (Rp2.100.000), jadi kalau storage besar jadi prioritas, A7 Pro tetap lebih worth it di harga segitu. Detail lengkapnya ada di artikel utama kami soal [WhatsApp tidak bisa di HP lama](/tips/whatsapp-tidak-bisa-di-hp-lama-android).
+**Samsung Galaxy A07**
+- **Harga**: mulai <a href="https://s.shopee.co.id/9Ki0NfyEnQ" target="_blank" rel="noopener noreferrer">Rp2.289.000 (4/64GB)</a> sampai <a href="https://s.shopee.co.id/4VckcjxV7Z" target="_blank" rel="noopener noreferrer">Rp2.899.000 (4/128GB, light violet)</a>.
+- **Spesifikasi**: MediaTek Helio G99, layar 6,7 inci 90Hz, baterai 5.000 mAh, Android 15 dengan One UI 7.
+- **Kelebihan**: opsi paling atas di daftar ini kalau budget masih bisa lega dikit — jaminan update softwarenya **6 tahun**, salah satu yang terpanjang di pasar Indonesia untuk kelas harga manapun.
+- **Catatan**: varian 128GB-nya (Rp2.899.000) hampir Rp800rb lebih mahal dari Redmi A7 Pro yang juga 128GB (Rp2.100.000), jadi kalau storage besar jadi prioritas, A7 Pro tetap lebih worth it di harga segitu. Detail lengkapnya ada di artikel utama kami soal [WhatsApp tidak bisa di HP lama](/tips/whatsapp-tidak-bisa-di-hp-lama-android).
 
 ### Soal Chipset: Kenapa Banyak Reviewer Sering Rekomendasiin Helio G99?
 
@@ -39,9 +57,15 @@ Tapi ada konteks yang sering hilang dari perbandingan "menang benchmark": untuk 
 
 Jadi bukan berarti Redmi A7 Pro "lebih baik" dari Samsung A07 secara mutlak — **kalau prioritasmu performa mentah dan siap keluar budget lebih, Samsung A07 dengan Helio G99 memang pilihan yang lebih kuat secara chipset.** Redmi A7 Pro kami taruh di posisi "paling direkomendasikan" karena target artikel ini spesifik: WhatsApp dan pemakaian harian dengan budget paling efisien — bukan performa maksimal di kelas harga ini.
 
-**Realme Note 80** — <a href="https://s.shopee.co.id/60RYVUYTyl" target="_blank" rel="noopener noreferrer">Rp2,4 juta (4GB+8GB virtual/128GB)</a>, chipset Unisoc T7250, layar 6,74 inci 90Hz, baterai jumbo 6.300 mAh (fast charging 15W), desain ArmorShell tahan benturan + IP54, Android 15. *Harga resmi rilis (Maret 2026) untuk varian 128GB ini adalah Rp1.999.000, jadi harga di atas termasuk agak tinggi — cek harga terkini di toko sebelum beli.* Cocok kalau desain tahan banting jadi prioritas.
+**Realme Note 80**
+- **Harga**: sekitar <a href="https://s.shopee.co.id/60RYVUYTyl" target="_blank" rel="noopener noreferrer">Rp2,4 juta (4GB+8GB virtual/128GB)</a>. *Harga resmi rilis (Maret 2026) untuk varian 128GB ini adalah Rp1.999.000, jadi harga di atas termasuk agak tinggi — cek harga terkini di toko sebelum beli.*
+- **Spesifikasi**: chipset Unisoc T7250, layar 6,74 inci 90Hz, baterai jumbo 6.300 mAh (fast charging 15W), desain ArmorShell tahan benturan + IP54, Android 15.
+- **Cocok untuk**: kamu yang mengutamakan desain tahan banting.
 
-**itel Power 80** — chipset Unisoc T7250, RAM 4+4GB (dengan extended RAM), storage 128GB, baterai jumbo 7.000 mAh, kamera 50MP dengan AI Voice Capture, tahan jatuh dari ketinggian hingga 2 meter, sudah Android 16. <a href="https://s.shopee.co.id/9peH3fA9FY?exp_info=tt_L439J4od" target="_blank" rel="noopener noreferrer">Rp2.429.000</a>. *Harga bisa berbeda tergantung akun/waktu pengecekan.* Paling mahal di daftar ini — cocok kalau baterai awet dan ketahanan fisik jadi prioritas utama, tapi belum ada kejelasan resmi soal jaminan update sistem ke depan, jadi pastikan itu memang bukan prioritas kamu sebelum pilih ini dibanding Redmi A7 Pro atau Samsung A07 di atas.
+**itel Power 80**
+- **Harga**: <a href="https://s.shopee.co.id/9peH3fA9FY?exp_info=tt_L439J4od" target="_blank" rel="noopener noreferrer">Rp2.429.000</a>, paling mahal di daftar ini. *Harga bisa berbeda tergantung akun/waktu pengecekan.*
+- **Spesifikasi**: chipset Unisoc T7250, RAM 4+4GB (dengan extended RAM), storage 128GB, baterai jumbo 7.000 mAh, kamera 50MP dengan AI Voice Capture, tahan jatuh dari ketinggian hingga 2 meter, sudah Android 16.
+- **Kekurangan**: belum ada kejelasan resmi soal jaminan update sistem ke depan — cocok kalau baterai awet dan ketahanan fisik jadi prioritas utama, tapi pastikan itu memang bukan prioritas kamu sebelum pilih ini dibanding Redmi A7 Pro atau Samsung A07 di atas.
 
 ## Yang Perlu Diperhatikan Sebelum Beli
 
