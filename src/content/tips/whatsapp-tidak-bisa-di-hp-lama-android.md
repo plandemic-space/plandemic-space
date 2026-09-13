@@ -75,20 +75,7 @@ Bukan soal cari HP dengan spesifikasi setinggi mungkin, tapi yang cocok untuk pe
 - **Baterai**: minimal 5.000 mAh supaya tahan seharian penuh.
 - **Dukungan update software**: ini yang paling sering dilupakan orang, padahal ini yang bikin kejadian "WhatsApp tidak bisa lagi" seperti sekarang tidak terulang. Cek berapa lama merek HP menjanjikan update OS — beberapa merek sekarang menjanjikan sampai beberapa tahun ke depan.
 
-> **Hati-hati juga sama HP super murah yang sering muncul di live TikTok atau Shopee** — kapasitas gede, harga jauh di bawah pasaran normal. Sebagian dari HP semacam ini adalah HP KW (replika), yang sistemnya bukan Android asli. Ironisnya ini malah lebih parah dari topik yang lagi dibahas di artikel ini: HP KW biasanya nggak bisa diinstall WhatsApp sama sekali, bukan cuma soal versi Android yang ketinggalan. Kalau ragu sama penjualnya, pastikan beli dari toko resmi/official store brand-nya, atau langsung ke konter fisik. Bingung mana yang asli? Konsultasi dulu aja ke <a href="https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya-tanya%20soal%20HP%20yang%20mau%20saya%20beli%2C%20takut%20KW" target="_blank" rel="noopener noreferrer">Plandemic Space via WhatsApp</a>.
-
-## Kalau Mau Contoh Konkret
-
-Kriteria di atas kalau diterjemahkan ke satu pilihan nyata: **Samsung Galaxy A07** (4GB/64GB atau 4GB/128GB) — MediaTek Helio G99, layar 6,7 inci 90Hz, baterai 5.000 mAh, Android 15 dengan One UI 7. Harga saat riset mulai <a href="https://s.shopee.co.id/9Ki0NfyEnQ" target="_blank" rel="noopener noreferrer">Rp2.289.000 (4/64GB)</a> sampai <a href="https://s.shopee.co.id/4VckcjxV7Z" target="_blank" rel="noopener noreferrer">Rp2.899.000 (4/128GB)</a>. Alasan utamanya: Samsung menjanjikan dukungan update software dan keamanan sampai **6 tahun** untuk seri ini — salah satu yang terpanjang di pasar Indonesia untuk kelas harga manapun, dan itu langsung berarti kecil kemungkinan kamu ngalamin masalah kompatibilitas kayak yang lagi dibahas di artikel ini dalam waktu dekat.
-
-A07 bukan satu-satunya opsi, dan bukan berarti paling murah. Kalau kamu mau lihat perbandingan lengkap — mulai dari Rp1,6 jutaan sampai Rp2,4 jutaan, lengkap dengan kelebihan-kekurangan tiap merek — cek artikel kami [HP Murah untuk WhatsApp: Rekomendasi Lengkap Semua Budget](/tips/hp-murah-untuk-whatsapp).
-
-Kalau sudah menentukan pilihan dan siap checkout, dua aksesoris ini biasanya langsung kepakai buat HP baru:
-
-<ul class="tip-checklist">
-<li><strong>Charger serbaguna:</strong> <a href="https://s.shopee.co.id/7AdVqadlxo?exp_info=tt_L439J4od" target="_blank" rel="noopener noreferrer">Kepala charger universal yang kompatibel banyak merek</a></li>
-<li><strong>Kabel yang lebih awet:</strong> <a href="https://s.shopee.co.id/6q0fRDye6W?exp_info=tt_L439J4od" target="_blank" rel="noopener noreferrer">Kabel data USB Type-C nylon braided</a></li>
-</ul>
+Kalau kamu mau lihat pilihan HP nyata yang cocok sama kriteria ini — lengkap dengan spesifikasi, harga, dan perbandingan kelebihan-kekurangan tiap merek di kelas Rp1,6 jutaan sampai Rp2,4 jutaan — cek artikel kami [HP Lama Nggak Bisa WA? Ini Rekomendasi HP Penggantinya](/tips/hp-murah-untuk-whatsapp).
 
 ---
 

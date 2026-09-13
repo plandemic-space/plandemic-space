@@ -7,7 +7,9 @@ tags: ["whatsapp", "hp murah", "tips beli"]
 description: "WhatsApp nggak bisa lagi di HP lama kamu? Ini rekomendasi HP murah kelas Rp1,6-2,4 jutaan yang jaminan update software-nya paling awet di kelasnya."
 ---
 
-Kalau budget kamu benar-benar mepet dan yang penting HP-nya lancar buat WhatsApp, media sosial, dan telepon — kabar baiknya, di 2026 ini pilihannya lebih banyak dan lebih layak dibanding beberapa tahun lalu. Tapi ada satu catatan jujur dulu: HP yang benar-benar di bawah Rp1,5 juta itu praktis sudah tidak ada lagi yang worth it sekarang — kebanyakan HP yang dulu diiklankan "harga 1 jutaan" saat rilis, begitu dicek sekarang harganya sudah naik ke kisaran Rp1,6–2,4 juta, termasuk itel A100CS yang tadinya paling murah di daftar ini. Jadi anggap saja artikel ini membahas kelas **Rp1,6 juta sampai Rp2,4 jutaan** — realistis dengan harga yang akan kamu temui di marketplace, bukan harga launching yang sudah tidak berlaku lagi.
+Kalau WhatsApp di HP kamu sudah nggak bisa dibuka lagi gara-gara Android-nya kelewat lama — dan setelah dicek ternyata memang nggak ada update sistem resmi yang bisa dipasang — mau nggak mau opsi yang realistis tinggal satu: ganti HP. (Kalau kamu belum yakin ini penyebabnya, cek dulu [artikel kami soal diagnosis masalah WhatsApp tidak bisa di HP lama](/tips/whatsapp-tidak-bisa-di-hp-lama-android) sebelum lanjut baca ini.)
+
+Pertanyaannya, HP mana yang masuk akal dibeli supaya nggak ngalamin masalah yang sama lagi beberapa tahun ke depan? Kabar baiknya, di 2026 ini pilihannya lebih banyak dan lebih layak dibanding beberapa tahun lalu. Tapi ada satu catatan jujur dulu: HP yang benar-benar di bawah Rp1,5 juta itu praktis sudah tidak ada lagi yang worth it sekarang — kebanyakan HP yang dulu diiklankan "harga 1 jutaan" saat rilis, begitu dicek sekarang harganya sudah naik ke kisaran Rp1,6–2,4 juta, termasuk itel A100CS yang tadinya paling murah di daftar ini. Jadi anggap saja artikel ini membahas kelas **Rp1,6 juta sampai Rp2,4 jutaan** — realistis dengan harga yang akan kamu temui di marketplace, bukan harga launching yang sudah tidak berlaku lagi.
 
 ## Rekomendasi HP, Urut dari yang Paling Murah
 
@@ -29,25 +31,25 @@ Kalau budget kamu benar-benar mepet dan yang penting HP-nya lancar buat WhatsApp
 - **Kelebihan**: Xiaomi menjanjikan pembaruan sistem operasi dan keamanan secara berkala untuk seri ini — beberapa review pihak ketiga menyebut angka spesifik hingga 4 kali update OS, meski deskripsi resmi Xiaomi sendiri tidak mencantumkan angka pasti. Tetap salah satu yang komitmen update-nya paling jelas di kelas harga ini.
 
 **Tecno Spark Go 3**
-- **Harga**: tersedia <a href="https://s.shopee.co.id/3VkDSMTuvR" target="_blank" rel="noopener noreferrer">varian 4/64GB seharga Rp2.060.000</a> atau <a href="https://s.shopee.co.id/1LfisVyVW3" target="_blank" rel="noopener noreferrer">varian 4/128GB seharga Rp2.150.000</a>.
-- **Spesifikasi**: Android 15 dengan HiOS 15, desain tahan cipratan air (IP64).
+- **Harga**: tersedia <a href="https://s.shopee.co.id/3VkDSMTuvR" target="_blank" rel="noopener noreferrer">varian 4/64GB seharga Rp2.060.000</a> atau <a href="https://s.shopee.co.id/1LfisVyVW3" target="_blank" rel="noopener noreferrer">varian 4/128GB seharga Rp2.150.000</a>. Harga resmi rilisnya (Januari 2026) sebenarnya Rp1.699.000 (64GB) dan Rp1.799.000 (128GB) — jadi harga di atas cukup lebih tinggi, cek harga terkini di toko sebelum beli.
+- **Spesifikasi**: chipset Unisoc T7250, Android 15 dengan HiOS 15, desain tahan cipratan air (IP64).
 - **Cocok untuk**: kamu yang sering kerja di luar ruangan atau khawatir HP kena hujan/debu.
 
 ### ⭐ Xiaomi Redmi A7 Pro — Paling Direkomendasikan
 
 Dari semua HP di kelas harga ini, Redmi A7 Pro paling menonjol untuk satu alasan spesifik: **jaminan update software-nya jauh di atas rata-rata kelasnya.**
 
-- **Spesifikasi**: Unisoc T7250, RAM 4GB, storage 64/128GB, layar 6,9 inci 120Hz, baterai 6.000 mAh, Android 16 dengan HyperOS 3.
-- **Harga saat riset**: <a href="https://s.shopee.co.id/9Ki0OnbbAT" target="_blank" rel="noopener noreferrer">Rp2.100.000 (4/128GB)</a>. Harga resmi Xiaomi untuk varian 4/64GB adalah Rp1.699.000, jadi harga di atas untuk varian 128GB. *Harga bisa berbeda tergantung akun/waktu pengecekan.*
+- **Spesifikasi**: Unisoc T7250, RAM 4GB, storage 64/128GB, layar 6,9 inci 120Hz, baterai 6.000 mAh, Android 15 dengan HyperOS 3.
+- **Harga saat riset**: <a href="https://s.shopee.co.id/9Ki0OnbbAT" target="_blank" rel="noopener noreferrer">Rp2.100.000 (4/128GB)</a>. Harga resmi Xiaomi untuk varian 4/64GB adalah Rp1.699.000, dan varian 4/128GB Rp1.799.000 — jadi harga di atas untuk 128GB agak lebih tinggi dari harga resmi, kemungkinan markup marketplace. *Harga bisa berbeda tergantung akun/waktu pengecekan.*
 - **Kelebihan utama**: Xiaomi menjanjikan **4 kali update OS dan 6 tahun update keamanan** — setara dengan HP kelas Rp2,5 juta ke atas. Ini penting banget kalau kamu mau HP ini dipakai lama tanpa khawatir kena masalah kompatibilitas seperti kasus WhatsApp dan Android lama kemarin.
 - **Kekurangan**: RAM 4GB bisa terasa pas-pasan kalau sering buka banyak aplikasi sekaligus. Kamera juga standar untuk kelas harga ini, bukan andalan. Chipset Unisoc T7250-nya juga secara benchmark di bawah Helio G99 (lihat penjelasan di bawah) — bukan masalah untuk WhatsApp/medsos ringan, tapi kurang ideal kalau kamu sering multitasking berat atau gaming.
 - **Cocok untuk**: siapa saja yang mau HP murah tapi tidak mau pusing lagi soal update di masa depan.
 
 **Samsung Galaxy A07**
-- **Harga**: mulai <a href="https://s.shopee.co.id/9Ki0NfyEnQ" target="_blank" rel="noopener noreferrer">Rp2.289.000 (4/64GB)</a> sampai <a href="https://s.shopee.co.id/4VckcjxV7Z" target="_blank" rel="noopener noreferrer">Rp2.899.000 (4/128GB, light violet)</a>.
+- **Harga**: mulai <a href="https://s.shopee.co.id/9Ki0NfyEnQ" target="_blank" rel="noopener noreferrer">Rp2.289.000 (4/64GB)</a> sampai <a href="https://s.shopee.co.id/4VckcjxV7Z" target="_blank" rel="noopener noreferrer">Rp2.899.000 (4/128GB, light violet)</a>. Harga resmi Samsung Indonesia untuk seri ini sebenarnya jauh lebih murah — mulai Rp1.399.000 (4/64GB) sampai Rp2.299.000 (8/256GB) — jadi harga di atas cukup lebih tinggi dari harga resmi, kemungkinan besar markup toko tertentu. Cek harga terkini sebelum beli, atau cari toko lain dengan harga lebih mendekati harga resmi.
 - **Spesifikasi**: MediaTek Helio G99, layar 6,7 inci 90Hz, baterai 5.000 mAh, Android 15 dengan One UI 7.
-- **Kelebihan**: opsi paling atas di daftar ini kalau budget masih bisa lega dikit — jaminan update softwarenya **6 tahun**, salah satu yang terpanjang di pasar Indonesia untuk kelas harga manapun.
-- **Catatan**: varian 128GB-nya (Rp2.899.000) hampir Rp800rb lebih mahal dari Redmi A7 Pro yang juga 128GB (Rp2.100.000), jadi kalau storage besar jadi prioritas, A7 Pro tetap lebih worth it di harga segitu. Detail lengkapnya ada di artikel utama kami soal [WhatsApp tidak bisa di HP lama](/tips/whatsapp-tidak-bisa-di-hp-lama-android).
+- **Kelebihan**: jaminan update softwarenya **6 tahun**, salah satu yang terpanjang di pasar Indonesia untuk kelas harga manapun.
+- **Catatan**: kalau kamu dapat harga mendekati harga resmi, ini jadi salah satu pilihan terbaik di daftar ini — tapi kalau toko yang kamu temui jual jauh di atas harga resmi, Redmi A7 Pro di atas jadi pilihan yang lebih worth it untuk fitur update yang setara. Detail lengkapnya ada di artikel utama kami soal [WhatsApp tidak bisa di HP lama](/tips/whatsapp-tidak-bisa-di-hp-lama-android).
 
 ### Soal Chipset: Kenapa Banyak Reviewer Sering Rekomendasiin Helio G99?
 
@@ -66,6 +68,13 @@ Jadi bukan berarti Redmi A7 Pro "lebih baik" dari Samsung A07 secara mutlak — 
 - **Harga**: <a href="https://s.shopee.co.id/9peH3fA9FY?exp_info=tt_L439J4od" target="_blank" rel="noopener noreferrer">Rp2.429.000</a>, paling mahal di daftar ini. *Harga bisa berbeda tergantung akun/waktu pengecekan.*
 - **Spesifikasi**: chipset Unisoc T7250, RAM 4+4GB (dengan extended RAM), storage 128GB, baterai jumbo 7.000 mAh, kamera 50MP dengan AI Voice Capture, tahan jatuh dari ketinggian hingga 2 meter, sudah Android 16.
 - **Kekurangan**: belum ada kejelasan resmi soal jaminan update sistem ke depan — cocok kalau baterai awet dan ketahanan fisik jadi prioritas utama, tapi pastikan itu memang bukan prioritas kamu sebelum pilih ini dibanding Redmi A7 Pro atau Samsung A07 di atas.
+
+Kalau sudah menentukan pilihan dan siap checkout, dua aksesoris ini biasanya langsung kepakai buat HP baru:
+
+<ul class="tip-checklist">
+<li><strong>Charger serbaguna:</strong> <a href="https://s.shopee.co.id/7AdVqadlxo?exp_info=tt_L439J4od" target="_blank" rel="noopener noreferrer">Kepala charger universal yang kompatibel banyak merek</a></li>
+<li><strong>Kabel yang lebih awet:</strong> <a href="https://s.shopee.co.id/6q0fRDye6W?exp_info=tt_L439J4od" target="_blank" rel="noopener noreferrer">Kabel data USB Type-C nylon braided</a></li>
+</ul>
 
 ## Yang Perlu Diperhatikan Sebelum Beli
 
@@ -95,6 +104,6 @@ Karena harga HP biasanya naik beberapa bulan setelah rilis mengikuti kondisi pas
 
 ## Budget Belum Cukup Bahkan untuk HP di Kelas Ini?
 
-Kalau ternyata budget kamu belum sampai ke kisaran harga di atas, sebelum menunda-nunda ganti HP terus, ada opsi lain kalau kondisi fisik HP lama kamu masih bagus (baterai, layar, tombol normal): upgrade OS-nya lewat custom ROM oleh yang sudah berpengalaman, jauh lebih murah dari beli HP baru dan bisa bikin WhatsApp normal lagi — meski hasilnya tergantung model HP dan ketersediaan ROM yang kompatibel, bukan jaminan pasti berhasil di semua unit.
+Kalau ternyata budget kamu belum sampai ke kisaran harga di atas, jangan buru-buru nyerah dulu — kalau kondisi fisik HP lama kamu masih bagus (baterai, layar, tombol normal), ada opsi upgrade OS lewat custom ROM yang jauh lebih murah dari beli HP baru. Kami sudah bahas lebih detail cara kerjanya, risikonya, dan contoh kasus nyata yang pernah kami kerjakan di [artikel diagnosis WhatsApp tidak bisa di HP lama](/tips/whatsapp-tidak-bisa-di-hp-lama-android#belum-ada-budget-ganti-hp-tapi-kondisi-fisiknya-masih-bagus) — cek dulu di situ sebelum memutuskan.
 
 **<a href="https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya-tanya%20soal%20upgrade%20OS%20HP%20lama%20saya%2C%20belum%20ada%20budget%20buat%20beli%20HP%20baru" target="_blank" rel="noopener noreferrer">Cek dulu ke Plandemic Space via WhatsApp</a>**, biar dicek dulu apakah HP kamu bisa di-upgrade.
