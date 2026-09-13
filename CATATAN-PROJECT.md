@@ -1,6 +1,6 @@
 # CATATAN PROJECT — Plandemic Space
-# Update terakhir: 9 September 2026 (font Roboto Slab yang kebawa dari sesi lain dibalikin ke DM Serif Display, kategori Tips diseragamkan)
-# Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai (29 Agu 2026) + halaman Tips di-restore & disepakati (1 Sep 2026) + fix sinkronisasi font & kategori (9 Sep 2026)
+# Update terakhir: 13 September 2026 (2 artikel baru soal WhatsApp/HP lama ditambahkan + fact-check, klarifikasi aturan CTA link)
+# Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai (29 Agu 2026) + halaman Tips di-restore & disepakati (1 Sep 2026) + fix sinkronisasi font & kategori (9 Sep 2026) + 2 artikel baru & fact-check (13 Sep 2026)
 
 ---
 
@@ -13,6 +13,11 @@
   `DM Serif Display` yang final (lihat "HALAMAN TIPS"), dan `Roboto+Slab` dihapus dari Google Fonts import
   di `Layout.astro` (font `Roboto` biasa tetap dipakai, itu untuk subteks, bukan judul). Juga dibenerin
   2 artikel yang masih pakai nama kategori lama "Tips Perawatan" (harusnya "Perawatan" dan "Aksesoris").
+- **13 Sep 2026** — 2 artikel baru ditambahkan (`whatsapp-tidak-bisa-di-hp-lama-android` kategori HP,
+  `hp-murah-untuk-whatsapp` kategori Beli), lewat riset bertahap + fact-check ke sumber resmi/marketplace
+  (bukan langsung dari pengetahuan umum — banyak spesifikasi & harga HP berubah cepat). Juga klarifikasi
+  aturan CTA link (lihat "HALAMAN TIPS") dan beberapa catatan baru soal HP/harga yang sifatnya cepat basi
+  — lihat "CATATAN KHUSUS ARTIKEL HP/WHATSAPP" di bawah, bagian baru.
 
 ---
 
@@ -75,9 +80,9 @@ File di `src/assets/` diproses lewat komponen `<Image />` Astro saat build — o
 
 ---
 
-## HALAMAN TIPS (per 1 Sep 2026 — update dari versi 29 Agu)
+## HALAMAN TIPS (per 13 Sep 2026 — update dari versi 1 Sep)
 
-7 artikel, kategori final (JANGAN pakai lagi nama kategori lama "Tips Perawatan/Beli" —
+9 artikel, kategori final (JANGAN pakai lagi nama kategori lama "Tips Perawatan/Beli" —
 sudah diseragamkan jadi kategori 1 kata: Laptop/HP/Printer/Perawatan/Beli/Aksesoris):
 1. `bahaya-charge-semalaman` — kategori **Perawatan** — mitos/fakta charge HP semalaman
 2. `cek-sebelum-beli-second` — kategori **Beli** — 4 hal wajib dicek beli laptop/HP second
@@ -85,7 +90,12 @@ sudah diseragamkan jadi kategori 1 kata: Laptop/HP/Printer/Perawatan/Beli/Akseso
 4. `print-bergaris-atau-buram` — kategori **Printer** — penyebab umum hasil print bermasalah
 5. `tanda-laptop-butuh-servis` — kategori **Laptop** — 5 tanda awal laptop butuh servis
 6. `upgrade-ram-ssd-vs-beli-baru` — kategori **Aksesoris** — kapan upgrade vs beli baru
-7. `cara-cek-tipe-ram-ssd-laptop` — kategori **Aksesoris** — panduan cek kompatibilitas RAM/SSD (baru)
+7. `cara-cek-tipe-ram-ssd-laptop` — kategori **Aksesoris** — panduan cek kompatibilitas RAM/SSD
+8. `whatsapp-tidak-bisa-di-hp-lama-android` — kategori **HP** — kenapa WhatsApp berhenti dukung
+   Android lama per 8 Sep 2026, cara diagnosis, opsi custom ROM, kapan harus ganti HP (baru, 13 Sep 2026)
+9. `hp-murah-untuk-whatsapp` — kategori **Beli** — rekomendasi HP pengganti kelas Rp1,6-2,4 jutaan,
+   artikel turunan dari #8 (baru, 13 Sep 2026) — lihat "CATATAN KHUSUS ARTIKEL HP/WHATSAPP" di bawah
+   soal alasan pemilihan produk & riwayat judul
 
 **Font judul SEMUA yang berhubungan dengan Tips (cover watermark, listing Tips, dan halaman
 artikel — h1, h2, "artikel terkait") — FINAL per 9 Sep 2026: `Roboto Slab` bold (serif), BUKAN
@@ -101,15 +111,24 @@ Slab), sama kayak font subteks yang sebelumnya. Kalau mau ganti font lagi, disku
 verifikasi pakai Inspect Element langsung ke elemen judulnya (h1/h2), bukan ke container umum di
 sekitarnya.
 
-**Link afiliasi Shopee** sudah terpasang di 3 artikel (charger/powerbank di artikel 1,
-tinta printer di artikel 4, brand RAM/SSD di artikel 6 & 7) — semua link nyata (bukan
-placeholder `#`), sumbernya dari riset merek + link yang dikirim owner langsung.
-**JANGAN dihapus/di-generic-kan lagi** kalau lagi convert/rewrite konten artikel ini.
+**Link afiliasi Shopee** sudah terpasang di 5 artikel (charger/powerbank di artikel 1,
+tinta printer di artikel 4, brand RAM/SSD di artikel 6 & 7, dan ~14 link produk HP/aksesoris
+di artikel 9 `hp-murah-untuk-whatsapp`) — semua link nyata (bukan placeholder `#`), sumbernya
+dari riset merek + link yang dikirim owner langsung. **JANGAN dihapus/di-generic-kan lagi**
+kalau lagi convert/rewrite konten artikel ini.
 
-**CTA WhatsApp di penutup tiap artikel HARUS berupa markdown link aktif**
-(`[teks](https://wa.me/6282241439784?text=...)`), bukan teks polos yang nyebut
-"via WhatsApp" tanpa link — ini sempat kejadian ke-revert beberapa kali, teks-nya
-kelihatan normal tapi gak bisa diklik.
+**CTA WhatsApp (dan link affiliate lain) di penutup/isi artikel HARUS berupa link aktif yang
+beneran bisa diklik** — bukan teks polos yang nyebut "via WhatsApp" tanpa link (ini sempat
+kejadian ke-revert beberapa kali, teksnya kelihatan normal tapi gak bisa diklik).
+
+**Update 13 Sep 2026 — klarifikasi format link:** boleh pakai markdown biasa
+(`[teks](https://wa.me/...)`) ATAU tag HTML `<a href="..." target="_blank" rel="noopener noreferrer">teks</a>`
+kalau butuh link kebuka di tab baru (biar pembaca gak keluar dari artikel pas klik ke WA/Shopee).
+Markdown biasa gak bisa nambahin `target="_blank"`, jadi kalau butuh itu, HTML `<a>` adalah pilihan yang
+tepat, BUKAN penyimpangan dari aturan. Yang penting cuma satu: link-nya beneran aktif & bisa diklik,
+format markdown vs HTML gak masalah selama itu terpenuhi. 2 artikel terbaru (`whatsapp-tidak-bisa-di-hp-lama-android`
+dan `hp-murah-untuk-whatsapp`) pakai HTML `<a target="_blank">` secara konsisten — biarkan seperti itu,
+jangan direvert ke markdown biasa.
 
 **CSS artikel yang WAJIB ada di `<style>` [...slug].astro** (sering ke-drop kalau ada
 overwrite parsial dari sesi lain):
@@ -129,6 +148,51 @@ canonical dari frontmatter, masuk sitemap otomatis, cover SVG auto-generate per 
 baru tanpa diskusi, tags, description), tulis isi pakai markdown biasa (## untuk subjudul,
 CTA WhatsApp di akhir wajib link aktif). Astro otomatis bikin halaman & masuk ke daftar
 `/tips` serta sitemap.
+
+---
+
+## CATATAN KHUSUS ARTIKEL HP/WHATSAPP (baru, 13 Sep 2026)
+
+Ini catatan spesifik buat 2 artikel `whatsapp-tidak-bisa-di-hp-lama-android` dan
+`hp-murah-untuk-whatsapp` — biar sesi berikutnya gak salah paham dan ubah sesuatu yang
+sebenarnya udah sengaja begitu.
+
+**Kebijakan WhatsApp Android 6.0 itu snapshot, bukan aturan permanen.** Per 8 September 2026,
+WhatsApp naikkan syarat minimum dari Android 5.0 ke 6.0 — ini kebijakan yang berlaku SAAT
+ARTIKEL DITULIS. WhatsApp bisa aja naikkan syarat minimum lagi di masa depan (riwayatnya emang
+udah beberapa kali). Kalau udah lama dari 13 Sep 2026 dan mau publish ulang/update artikel ini,
+**cek dulu ke WhatsApp Help Center resmi** apakah syaratnya masih sama atau udah berubah lagi,
+jangan asumsi Android 6.0 masih jadi batasnya.
+
+**Kenapa Redmi A7 Pro yang jadi "⭐ Paling Direkomendasikan" di `hp-murah-untuk-whatsapp`,
+bukan Samsung Galaxy A07** — ini KEPUTUSAN SENGAJA, bukan kelupaan atau kurang riset:
+- Samsung A07 emang punya chipset lebih kencang (Helio G99 vs Unisoc T7250) dan jaminan
+  update yang setara/lebih banyak (6x update OS vs Redmi 4x, sama-sama 6 tahun security).
+- Tapi Redmi A7 Pro lebih murah (~Rp2,1jt vs ~Rp2,3-2,9jt) dan target artikel ini spesifik:
+  budget paling efisien buat WhatsApp + pemakaian harian, bukan performa maksimal.
+- Penjelasan lengkapnya udah ada di section "Soal Chipset: Kenapa Banyak Reviewer Sering
+  Rekomendasiin Helio G99?" di dalam artikel — JANGAN dihapus section ini, itu yang bikin
+  pemilihan produk kelihatan jujur & gak asal comot rekomendasi termurah.
+
+**Harga HP di rentang Rp1,5-3 jutaan naik cukup signifikan (20-40%) dalam beberapa bulan
+setelah rilis** — ini pola yang konsisten ketemu di HAMPIR SEMUA HP yang dicek buat 2 artikel
+ini (Tecno Spark Go 3 naik dari Rp1,4jt ke Rp2jt+, dst). Jadi kalau nanti cek ulang dan harga
+udah beda jauh dari yang ketulis di artikel, itu WAJAR — bukan berarti data lama salah. Tapi
+tetap perlu diupdate berkala biar gak makin melenceng dari harga real.
+
+**Riwayat judul `hp-murah-untuk-whatsapp`** (slug/filename gak berubah, cuma title/seoTitle):
+awalnya "HP 1 Jutaan yang Masih Layak untuk WhatsApp" → ternyata gak ada lagi HP beneran
+di bawah Rp1,5 juta yang worth it → diganti beberapa kali sampai final: "HP Lama Udah Nggak
+Bisa Buat WA? Ini Rekomendasi HP Pengganti Paling Realistis di 2026". Kalau mau ganti title
+lagi, boleh, tapi jangan ganti slug filenya kecuali siap pasang redirect 301 (belum pernah
+live sebelum 13 Sep 2026 jadi kemungkinan besar gak perlu redirect, tapi cek dulu).
+
+**Urutan rekomendasi HP di `hp-murah-untuk-whatsapp` sengaja diurutkan dari termurah ke
+termahal** (itel A100CS → POCO C71 → POCO C81 Pro → Tecno Spark Go 3 → Redmi A7 Pro ⭐ →
+Samsung A07 → Realme Note 80 → itel Power 80), bukan dari "paling direkomendasikan" duluan.
+Kalau nambah/hapus produk, jaga urutan harga ini.
+
+---
 
 **PENDING (disepakati tapi belum dieksekusi, per 1 Sep 2026):**
 - [ ] Checkmark hijau buat step yang super granular/klik-per-klik (terinspirasi itkoding) —
