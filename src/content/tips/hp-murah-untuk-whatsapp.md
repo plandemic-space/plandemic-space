@@ -50,18 +50,22 @@ Jadi bukan berarti Redmi A7 Pro "lebih baik" dari Samsung A07 secara mutlak — 
 2. **Pilih storage minimal 128GB** kalau memungkinkan. Chat WhatsApp dengan banyak foto/video cepat menghabiskan storage kecil. Kalau kepaksa ambil varian storage kecil, beberapa HP di kelas ini masih punya slot microSD terpisah — kartu seperti [microSD Lexar](https://s.shopee.co.id/8fSJck9kti) atau [microSD V-Gen](https://s.shopee.co.id/BTlVJWjFT) bisa jadi solusi murah menambah ruang penyimpanan.
 3. **Jangan tergoda embel-embel "harga 1 jutaan"** tanpa cek harga real di marketplace — banyak HP yang dulu diiklankan segitu, sekarang harganya sudah naik ke Rp1,6-2,4 jutaan.
 4. Kalau kamu sedang mengalami masalah WhatsApp tidak bisa dibuka karena HP lama, cek dulu [artikel kami soal cara mengatasinya] sebelum memutuskan beli HP baru — kadang solusinya lebih murah dari beli HP baru.
+5. **Hati-hati sama HP super murah yang sering muncul di live TikTok atau Shopee** — kapasitas gede, harga jauh di bawah pasaran normal. Sebagian dari HP semacam ini adalah HP KW (replika) yang sistemnya bukan Android asli, dan ironisnya HP KW biasanya malah nggak bisa diinstall WhatsApp sama sekali — lebih parah dari sekadar Android lama. Kalau ragu, pastikan beli dari toko resmi/official store brand-nya, atau langsung ke konter fisik. Bingung mana yang asli? Konsultasi dulu ke [Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya-tanya%20soal%20HP%20yang%20mau%20saya%20beli%2C%20takut%20KW).
 
 ---
 
 ## FAQ
 
 **HP murah apa yang paling recommended untuk WhatsApp?**
+
 Xiaomi Redmi A7 Pro jadi pilihan terbaik karena jaminan update software-nya paling panjang di kelas harga ini (4 kali update OS, 6 tahun update keamanan).
 
 **Apakah HP di kelas Rp1,6-2,4 juta beneran cukup buat WhatsApp?**
+
 Cukup, asal spesifikasi minimalnya RAM 4GB dan Android versi 15 ke atas. Semua HP yang direkomendasikan di artikel ini sudah Android 15 atau 16 — hanya perlu diperhatikan varian RAM-nya, karena beberapa model (seperti itel A100CS) juga dijual dalam varian RAM 2-3GB yang lebih pas-pasan.
 
 **Kenapa harga HP "1 jutaan" di marketplace kadang sudah Rp1,6-2,4 juta?**
+
 Karena harga HP biasanya naik beberapa bulan setelah rilis mengikuti kondisi pasar. Harga promo saat launching sering jauh lebih murah dari harga normal setelahnya.
 
 ---
