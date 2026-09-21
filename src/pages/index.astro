@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
+import { getPublishedTips } from '../lib/tips';
 import schema0 from '../data/schema-index-0.json';
 import schema1 from '../data/schema-index-1.json';
 import schema2 from '../data/schema-index-2.json';
@@ -16,11 +16,11 @@ import galKeyboard from '../assets/galeri/gal-3-keyboard.webp';
 const title = "Servis Laptop, Komputer, HP & Printer Kemiri Purworejo | Plandemic Space";
 const description = "Tempat service laptop, komputer, HP & printer di Kemiri, Purworejo. Diagnosa gratis, estimasi di awal, bisa panggilan & bergaransi. Chat WhatsApp.";
 const keywords = "servis laptop Purworejo, servis komputer Kemiri, servis printer Purworejo, print fotokopi Kemiri, jasa pengetikan Purworejo, servis HP Ngemplak";
-const ogTitle = "Plandemic Space — Servis Laptop, Komputer & Printer di Purworejo";
+const ogTitle = "Plandemic Space — Servis Laptop, Komputer, HP & Printer di Kemiri, Purworejo";
 const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesialis servis laptop, komputer, printer, plus print, fotokopi, dan jual beli second.";
 
 // Tips terbaru per kategori (Laptop, Printer, HP) untuk internal link dari beranda ke artikel
-const allTips = await getCollection('tips');
+const allTips = await getPublishedTips();
 const newestIn = (cat: string) =>
   allTips
     .filter((t) => t.data.category === cat)
@@ -386,7 +386,7 @@ const homeTips = ['Laptop', 'Printer', 'HP'].map(newestIn).filter(Boolean);
         </div>
         <div class="faq-item">
           <div class="faq-q">Di mana tempat service laptop dan komputer terdekat di Kemiri, Purworejo?</div>
-          <div class="faq-a">Plandemic Space ada di Ngemplak 02/02, Dusun III, Samping, Kemiri, Purworejo, buka setiap hari pukul 08.00–17.00. Melayani service laptop, komputer, HP, dan printer. Bisa datang langsung, chat WhatsApp dulu, atau pakai layanan panggilan — lokasi lengkapnya ada di Google Maps.</div>
+          <div class="faq-a">Plandemic Space ada di Samping, Kemiri, Purworejo, buka setiap hari pukul 08.00–17.00. Melayani service laptop, komputer, HP, dan printer. Bisa datang langsung, chat WhatsApp dulu, atau pakai layanan panggilan — lokasi lengkapnya ada di Google Maps.</div>
         </div>
         <div class="faq-item">
           <div class="faq-q">Laptop atau HP saya bermasalah, tapi belum tahu penyebabnya. Mulai dari mana?</div>
@@ -468,7 +468,6 @@ const homeTips = ['Laptop', 'Printer', 'HP'].map(newestIn).filter(Boolean);
         <div class="ft-copy">© 2020–2026 · Dari rumah, untuk warga.</div>
       </div>
       <div class="ft-col ft-addr">
-        Ngemplak 02/02, Dusun III<br>
         Samping, Kemiri, Purworejo<br>
         WhatsApp <a href="https://wa.me/6282241439784" target="_blank" rel="noopener">0822-4143-9784</a>
       </div>
