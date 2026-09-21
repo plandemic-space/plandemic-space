@@ -5,7 +5,10 @@ const tips = defineCollection({
   schema: z.object({
     title: z.string(),
     seoTitle: z.string().optional(),
-    pubDate: z.coerce.date(),
+    // Tanggal rilis. Boleh ditulis `publishDate` (sama seperti di proyek lain) atau `pubDate` — keduanya sama.
+    // Artikel dengan tanggal di masa depan belum tayang sampai build pada/setelah tanggal itu (lihat src/lib/tips.ts).
+    pubDate: z.coerce.date().optional(),
+    publishDate: z.coerce.date().optional(),
     // Isi kalau artikel di-update substansial (dipakai untuk dateModified di schema Article)
     updatedDate: z.coerce.date().optional(),
     category: z.string(),
@@ -19,6 +22,13 @@ const tips = defineCollection({
     // Paksa tampilkan/sembunyikan disclosure afiliasi. Kalau kosong, otomatis
     // muncul bila isi artikel mengandung link s.shopee.co.id.
     affiliate: z.boolean().optional(),
+  }).transform((d, ctx) => {
+    const date = d.publishDate ?? d.pubDate;
+    if (!date) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'Isi publishDate (atau pubDate) di frontmatter.' });
+      return z.NEVER;
+    }
+    return { ...d, pubDate: date };
   }),
 });
 
