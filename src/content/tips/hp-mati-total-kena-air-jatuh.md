@@ -47,6 +47,14 @@ Benturan bisa menggeser konektor fleksibel (flex cable) yang menghubungkan layar
 
 ---
 
+## Biar Kejadiannya Tidak Terulang
+
+Casing dan pelindung air adalah pencegahan. Keduanya tidak bisa menyelamatkan HP yang sudah basah atau retak di dalam.
+
+**Casing anti-shock.** Pilih yang berlapis ganda (bahan keras di luar, TPU di dalam), punya bantalan udara di keempat sudut, dan bibirnya lebih tinggi dari layar dan kamera. Casing harus sesuai model HP-mu, jadi pilih model di toko resminya: <a href="https://s.shopee.co.id/8KpgGlpzTP">Spigen Indonesia Official Shop</a>, <a href="https://s.shopee.co.id/70KIgLcFMS">Official Store Ringke</a> (biasanya lebih terjangkau), atau <a href="https://s.shopee.co.id/qjfL2lVeD">UAG Official Store</a> (kelas paling tangguh dan lebih mahal). Angka ketahanan jatuh yang tertulis di produk berasal dari klaim produsen. Kami belum mengujinya, dan tidak ada uji independen yang membandingkan merek-merek ini secara langsung.
+
+**Pouch anti air, untuk hujan deras atau kolam.** Beberapa pilihan yang bisa dicek: <a href="https://s.shopee.co.id/3VkQVpiAlI">NANVAN</a>, <a href="https://s.shopee.co.id/3qNGuSc6Gr">Essager</a>, dan <a href="https://s.shopee.co.id/3g3qiNkl9d">JETE WT1</a> (model universal dengan bantalan udara agar mengapung). Label IPX8 pada pouch berasal dari produsen, dan menurut beberapa panduan, pengujiannya tidak distandardkan antar merek. Kami belum menguji ketiganya, dan tidak menemukan ulasan independen untuk merek-merek ini. Karena itu, **tes dulu tanpa HP**: masukkan tisu atau kertas ke dalam pouch, tutup dengan benar, rendam sekitar dua menit, lalu periksa apakah ada yang basah. Pilih ukuran yang cocok untuk HP-mu, jangan asal "universal".
+
 Kalau HP masih menyala tapi terasa panas berlebih setelah kena air atau benturan, baca juga [HP cepat panas: kapan wajar dan kapan perlu dicek](/tips/hp-cepat-panas).
 
 **HP kamu lagi ngalamin salah satu dari ini?** Jangan didiamkan terlalu lama, apalagi dicoba-coba nyalakan berkali-kali. [Konsultasikan ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20HP%20saya%20kena%20air%2Fjatuh%2C%20mau%20konsultasi%20kondisinya) untuk dicek kondisinya sebelum diambil langkah lebih lanjut.

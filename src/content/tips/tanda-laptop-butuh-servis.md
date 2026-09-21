@@ -66,6 +66,22 @@ Kerusakan kecil yang dibiarkan biasanya "menjalar" ke komponen lain — laptop y
 
 ---
 
+## Sebelum Dibawa Servis, Amankan Data Dulu
+
+Apa pun tandanya, salin file yang tidak boleh hilang (dokumen kerja, foto, data usaha) ke tempat lain sebelum laptop diserahkan. Simpan cadangan **di perangkat terpisah dari laptop**, karena kalau laptop bermasalah, cadangan yang tersimpan di dalamnya ikut terancam.
+
+Satu pengecualian: kalau terdengar bunyi klik dari hard disk, jangan dipaksa menyalin data berulang-ulang. Matikan laptop dan minta teknisi memeriksanya lebih dulu, karena pemakaian terus-menerus bisa memperparah kerusakan.
+
+Beberapa pilihan untuk menyimpan cadangan:
+
+<ul class="tip-checklist">
+<li><strong>Flashdisk, untuk dokumen dan file kecil:</strong> Kingston DataTraveler Exodia <a href="https://s.shopee.co.id/4VcxhWv3xY">64GB</a> atau <a href="https://s.shopee.co.id/1135X8CsAA">128GB</a>, juga tersedia <a href="https://s.shopee.co.id/7Kx94nA0rl">varian Exodia M 128GB</a>. Seri DataTraveler bergaransi 5 tahun menurut Kingston, untuk produk dari distributor resmi. Kecepatan tulisnya tergolong pelan, jadi cocok untuk dokumen, bukan untuk memindahkan puluhan GB.</li>
+<li><strong>Hard disk eksternal, untuk foto, video, dan cadangan penuh:</strong> <a href="https://s.shopee.co.id/9KiDSBMJrw">WD My Passport 1TB</a> atau <a href="https://s.shopee.co.id/BTyXNlH1g">2TB</a> (ada software backup dan proteksi password), atau <a href="https://s.shopee.co.id/4LJXV4a6Si">WD Elements 1TB</a> (tanpa software, colok langsung).</li>
+<li><strong>SSD eksternal, kalau anggaran longgar:</strong> <a href="https://s.shopee.co.id/qjfKk1Qyh">WD Elements SE SSD</a> (varian 480GB sampai 2TB). Tanpa bagian yang bergerak, jadi lebih tahan benturan, tapi harganya lebih tinggi per GB.</li>
+</ul>
+
+Kenapa kami condong ke WD untuk hard disk: studi peer-reviewed di jurnal IEEE (2026) atas data Backblaze menemukan WD mengalami kegagalan lebih jarang daripada Seagate dan Toshiba pada kondisi yang disetarakan. Data itu berasal dari hard disk data center, bukan hard disk portabel, jadi anggap sebagai petunjuk, bukan jaminan. Harga hard disk dan SSD di 2026 juga naik dan berubah cepat. Bandingkan 1TB dengan 2TB, karena selisihnya kadang tidak sebesar selisih kapasitasnya. Semua pilihan di atas berasal dari spesifikasi dan ulasan pihak ketiga, bukan uji langsung oleh Plandemic Space.
+
 Kalau tanda yang kamu alami adalah panas berlebih atau mati mendadak, bahasan lanjutannya ada di [kenapa laptop cepat panas dan kapan itu wajar](/tips/kenapa-laptop-cepat-panas) serta [laptop yang sering mati sendiri](/tips/laptop-sering-mati-sendiri).
 
 **Ngalamin salah satu tanda di atas?** Yuk konsultasi dulu, gratis, biar tahu penyebab pastinya sebelum makin parah. [Hubungi Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20menunjukkan%20salah%20satu%20tanda%20yang%20disebutkan%20di%20artikel%2C%20mau%20konsultasi) untuk cek kondisi laptop kamu.

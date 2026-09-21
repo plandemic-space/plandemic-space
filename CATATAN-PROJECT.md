@@ -263,8 +263,12 @@ belum muncul saat itu. Bandingkan lagi sekitar 5 Okt dan 19 Okt.
 - [ ] `aggregateRating` (4.9 / 32 ulasan) di schema LocalBusiness adalah ulasan yang dikelola sendiri —
       Google tidak menampilkan bintang untuk jenis ini dan bisa dianggap self-serving. Dibiarkan seperti semula;
       pertimbangkan dihapus dari schema (angka di halaman tetap boleh tampil).
-- [ ] Judul (title tag) artikel lama masih panjang (65–81 karakter setelah " | Plandemic Space") — bisa dipendekkan
-      lewat `seoTitle`.
+- [x] Title artikel lama sudah dipendekkan lewat `seoTitle` (21 Sep, semua maksimal 66 karakter).
+- [x] Link Shopee untuk `tanda-laptop-butuh-servis` (WD My Passport/Elements, WD Elements SE SSD, Kingston Exodia) dan
+      `hp-mati-total-kena-air-jatuh` (toko resmi Spigen/Ringke/UAG, pouch NANVAN/Essager/JETE WT1) sudah dipasang
+      (21 Sep). Pilihan WD didasarkan studi IEEE 2026 atas data Backblaze (WD paling jarang gagal; data center, bukan HDD
+      portabel). Pouch NANVAN/Essager/JETE tidak punya ulasan independen yang ditemukan — teks artikel sudah menyebut itu
+      dan menyarankan tes tisu dulu. Artikel `backup-data` belum ditulis (tunggu data Search Console ~5 Okt).
 - [x] Link Shopee artikel #12 dan #13 sudah dipasang (21 Sep). Link opsional juga masuk: cooling pad ROBOT RCP20
       (#11), UGREEN Official Store (#14, charger HP), Casan Laptopku + Pusat Charger Laptop (#10).
 - [ ] Listing Shopee Epson, HP, dan Canon LBP6030 menggabungkan banyak varian dalam satu link — teks artikel sudah
