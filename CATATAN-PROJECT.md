@@ -250,6 +250,14 @@ Kalau di Search Console masih ada sitemap lama, kirim ulang `sitemap-index.xml`.
 Artikel `cara-cek-tipe-ram-ssd-laptop` & `upgrade-ram-ssd-vs-beli-baru`: bagian "pasang sendiri / buka casing"
 diganti arahan ke teknisi.
 
+**BASELINE Search Console (3 bulan, data 26 Agu–18 Sep 2026, diambil 21 Sep — SEBELUM perubahan SEO live):**
+1 klik, 97 tayangan, posisi rata-rata 10,9. Beranda 86 tayangan (pos 6,3), 0 klik. Kueri utama: "servis laptop purworejo"
+(7, pos 6,7), "service laptop purworejo" (7, pos 7,1), "service laptop terdekat" (5, pos 5,8), plus beberapa kueri
+"terdekat" lain. Kueri "service" (dengan c) sekitar 2x lebih banyak dari "servis" di sampel ini, dan kata "terdekat"
+muncul di banyak kueri — beranda sebelumnya tidak memuat keduanya (sudah ditambah 21 Sep di meta desc + FAQ lokasi).
+`/jasa-digital` muncul untuk "jasa web purworejo" di posisi ~93 (lini bisnis lain, belum digarap). Lima artikel baru
+belum muncul saat itu. Bandingkan lagi sekitar 5 Okt dan 19 Okt.
+
 **PENDING / perlu keputusan owner:**
 - [ ] `aggregateRating` (4.9 / 32 ulasan) di schema LocalBusiness adalah ulasan yang dikelola sendiri —
       Google tidak menampilkan bintang untuk jenis ini dan bisa dianggap self-serving. Dibiarkan seperti semula;
