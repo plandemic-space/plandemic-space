@@ -1,5 +1,5 @@
 # CATATAN PROJECT — Plandemic Space
-# Update terakhir: 13 September 2026 (2 artikel baru soal WhatsApp/HP lama ditambahkan + fact-check, klarifikasi aturan CTA link)
+# Update terakhir: 21 September 2026 (link Shopee dipasang di 5 artikel baru; tabel artikel tidak lagi overflow di HP)
 # Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai (29 Agu 2026) + halaman Tips di-restore & disepakati (1 Sep 2026) + fix sinkronisasi font & kategori (9 Sep 2026) + 2 artikel baru & fact-check (13 Sep 2026)
 
 ---
@@ -18,6 +18,10 @@
   (bukan langsung dari pengetahuan umum — banyak spesifikasi & harga HP berubah cepat). Juga klarifikasi
   aturan CTA link (lihat "HALAMAN TIPS") dan beberapa catatan baru soal HP/harga yang sifatnya cepat basi
   — lihat "CATATAN KHUSUS ARTIKEL HP/WHATSAPP" di bawah, bagian baru.
+
+- **20 Sep 2026** — Audit & optimasi SEO (lihat bagian "SEO — 20 SEP 2026" di bawah): title/meta/H2 beranda,
+  schema LocalBusiness, template artikel Tips (disclosure afiliasi, blok layanan, related pintar), 5 artikel baru,
+  perbaikan `robots.txt`, dan 2 artikel lama dilunakkan dari nada "pasang sendiri".
 
 ---
 
@@ -82,7 +86,7 @@ File di `src/assets/` diproses lewat komponen `<Image />` Astro saat build — o
 
 ## HALAMAN TIPS (per 13 Sep 2026 — update dari versi 1 Sep)
 
-9 artikel, kategori final (JANGAN pakai lagi nama kategori lama "Tips Perawatan/Beli" —
+14 artikel, kategori final (JANGAN pakai lagi nama kategori lama "Tips Perawatan/Beli" —
 sudah diseragamkan jadi kategori 1 kata: Laptop/HP/Printer/Perawatan/Beli/Aksesoris):
 1. `bahaya-charge-semalaman` — kategori **Perawatan** — mitos/fakta charge HP semalaman
 2. `cek-sebelum-beli-second` — kategori **Beli** — 4 hal wajib dicek beli laptop/HP second
@@ -96,6 +100,13 @@ sudah diseragamkan jadi kategori 1 kata: Laptop/HP/Printer/Perawatan/Beli/Akseso
 9. `hp-murah-untuk-whatsapp` — kategori **Beli** — rekomendasi HP pengganti kelas Rp1,6-2,4 jutaan,
    artikel turunan dari #8 (baru, 13 Sep 2026) — lihat "CATATAN KHUSUS ARTIKEL HP/WHATSAPP" di bawah
    soal alasan pemilihan produk & riwayat judul
+10. `laptop-sering-mati-sendiri` — kategori **Laptop** (baru, 20 Sep 2026)
+11. `kenapa-laptop-cepat-panas` — kategori **Laptop** (baru, 20 Sep 2026)
+12. `ssd-256gb-vs-512gb-laptop-lama` — kategori **Aksesoris** (baru, 20 Sep 2026) — link Shopee dipasang 21 Sep:
+    ADATA SU650, Kingston A400, SanDisk SSD Plus, TeamGroup GX2, Samsung 870 EVO, Lexar NM620
+13. `printer-inkjet-vs-laser-rumahan` — kategori **Printer** (baru, 20 Sep 2026) — link Shopee dipasang 21 Sep:
+    Canon G3730, Epson L3211/L3251, HP LaserJet 107/108, Canon LBP6030
+14. `hp-cepat-panas` — kategori **HP** (baru, 20 Sep 2026)
 
 **Font judul SEMUA yang berhubungan dengan Tips (cover watermark, listing Tips, dan halaman
 artikel — h1, h2, "artikel terkait") — FINAL per 9 Sep 2026: `Roboto Slab` bold (serif), BUKAN
@@ -205,6 +216,59 @@ Kalau nambah/hapus produk, jaga urutan harga ini.
 
 **pubDate ke-7 artikel sudah disebar** (bukan tanggal migrasi semua lagi) — item ini di
 PRIORITAS 3 di bawah sudah SELESAI, jangan dikerjakan ulang.
+
+---
+
+## SEO — 20 SEP 2026
+
+**Struktur:** situs ini satu halaman layanan (beranda) + `/jasa-digital` + `/tips`. TIDAK ada halaman servis
+terpisah per perangkat, dan itu disengaja dipertahankan (bukan doorway/thin page). Beranda = money page.
+Artikel Tips menaut ke kartu layanan lewat anchor `/#servis-laptop`, `/#servis-printer`, `/#servis-hp`,
+`/#jual-beli`, `/#print-fotokopi`, `/#pengetikan` (id ditambahkan di tiap `.svc` di `index.astro`).
+
+**Beranda:** title "Servis Laptop, Komputer, HP & Printer Kemiri Purworejo | Plandemic Space"; meta desc memuat
+diagnosa gratis/estimasi/panggilan/garansi; nama layanan jadi `<h3>`; kartu layanan menaut ke artikel Tips terkait;
+section Tips (3 artikel terbaru per kategori Laptop/Printer/HP); +2 FAQ (lokasi & jam, mulai dari mana) —
+FAQ visible dan `schema-index-1.json` HARUS selalu sinkron. H1 tetap kalimat keyword di `.hero-sub`
+("Ruang Solusi" tetap `<p>`, keputusan brand tidak diubah). NAP (alamat + WhatsApp) tampil di footer.
+
+**Template artikel** (`tips/[...slug].astro` + `content/config.ts`) — semua otomatis, artikel lama ikut kena:
+- Disclosure afiliasi muncul di atas artikel kalau isinya memuat `s.shopee.co.id` (atau `affiliate: true`).
+- Semua link Shopee otomatis `rel="sponsored nofollow noopener"` + `target="_blank"` lewat plugin rehype di
+  `astro.config.mjs` (ditulis pakai markdown atau HTML `<a>` sama saja).
+- Blok layanan di akhir artikel (frontmatter `service: laptop|printer|hp|jual-beli`; kalau kosong diturunkan dari kategori).
+- "Baca juga": urutan manual dari `related: [slug]`, lalu skor kategori + tag. Frontmatter opsional lain: `updatedDate`.
+- `og:type=article`, `article:*`, dan twitter card ditambahkan di `Layout.astro`.
+
+**Aturan konten artikel baru:** jangan bikin tutorial bongkar/perbaikan sendiri — pola: gejala → kemungkinan
+penyebab → yang bisa diperhatikan tanpa membongkar → kapan ke teknisi → CTA ke layanan. Judul tidak dipaksa
+memuat "Purworejo"; konteks lokal masuk di paragraf penutup + blok layanan. Jangan klaim "sudah kami tes"
+kalau produk belum dites; jangan pasang link afiliasi placeholder.
+
+**Diperbaiki:** `robots.txt` sebelumnya menunjuk `/sitemap.xml` (tidak ada) — sekarang `/sitemap-index.xml`.
+Kalau di Search Console masih ada sitemap lama, kirim ulang `sitemap-index.xml`.
+Artikel `cara-cek-tipe-ram-ssd-laptop` & `upgrade-ram-ssd-vs-beli-baru`: bagian "pasang sendiri / buka casing"
+diganti arahan ke teknisi.
+
+**PENDING / perlu keputusan owner:**
+- [ ] `aggregateRating` (4.9 / 32 ulasan) di schema LocalBusiness adalah ulasan yang dikelola sendiri —
+      Google tidak menampilkan bintang untuk jenis ini dan bisa dianggap self-serving. Dibiarkan seperti semula;
+      pertimbangkan dihapus dari schema (angka di halaman tetap boleh tampil).
+- [ ] Judul (title tag) artikel lama masih panjang (65–81 karakter setelah " | Plandemic Space") — bisa dipendekkan
+      lewat `seoTitle`.
+- [x] Link Shopee artikel #12 dan #13 sudah dipasang (21 Sep). Link opsional juga masuk: cooling pad ROBOT RCP20
+      (#11), UGREEN Official Store (#14, charger HP), Casan Laptopku + Pusat Charger Laptop (#10).
+- [ ] Listing Shopee Epson, HP, dan Canon LBP6030 menggabungkan banyak varian dalam satu link — teks artikel sudah
+      menyebut varian yang dimaksud; cek sesekali bahwa varian itu masih tersedia. Harga SSD 2026 bergerak liar
+      (mis. Kingston A400 480GB jauh lebih mahal dari ADATA SU650 512GB di listing yang dipakai) — cek ulang
+      sebelum promosi. Harga sengaja tidak ditulis di artikel.
+- [x] Artikel #6 menulis Kingston SSD "garansi lifetime" — sudah dikoreksi 21 Sep sesuai Pernyataan Garansi
+      Kingston (rev. 05/2026): seumur hidup hanya untuk modul RAM dan kartu memori; SSD A400/NV1/NV2 garansi
+      bersyarat 3 tahun (atau sampai indikator keausan habis), NV3 dan KC600 5 tahun. Garansi hanya untuk
+      produk dari distributor/penyalur resmi; di Indonesia klaim lewat tempat pembelian.
+- [ ] Bandingkan data GSC 2–4 minggu: kalau "servis printer/HP Purworejo" tidak naik dari satu URL beranda,
+      baru pertimbangkan maksimal 3 halaman pilar (bukan per-kecamatan).
+
 
 ---
 

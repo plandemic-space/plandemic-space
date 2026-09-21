@@ -24,13 +24,67 @@ const formattedDate = tip.data.pubDate.toLocaleDateString('id-ID', {
 
 const pageUrl = `https://plandemicspace.my.id/tips/${tip.slug}`;
 const isoDate = tip.data.pubDate.toISOString();
+const isoModified = (tip.data.updatedDate ?? tip.data.pubDate).toISOString();
+const ogImage = 'https://plandemicspace.my.id/img/og/og-image.png';
 
-// Artikel terkait: kategori sama, bukan artikel ini sendiri, ambil 3 terbaru
+// Artikel terkait: urutan manual dari frontmatter `related` dulu, lalu skor otomatis
+// (kategori sama = 2 poin, tiap tag yang sama = 1 poin), ambil maksimal 3.
 const allTips = await getCollection('tips');
-const related = allTips
-  .filter((t) => t.slug !== tip.slug && t.data.category === tip.data.category)
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 3);
+const manualRelated = (tip.data.related ?? [])
+  .map((slug) => allTips.find((t) => t.slug === slug))
+  .filter((t): t is (typeof allTips)[number] => Boolean(t) && t!.slug !== tip.slug);
+const relatedScore = (t: (typeof allTips)[number]) =>
+  (t.data.category === tip.data.category ? 2 : 0) +
+  t.data.tags.filter((tag) => tip.data.tags.includes(tag)).length;
+const autoRelated = allTips
+  .filter((t) => t.slug !== tip.slug && !manualRelated.includes(t))
+  .map((t) => ({ t, score: relatedScore(t) }))
+  .filter((x) => x.score > 0)
+  .sort((a, b) => b.score - a.score || b.t.data.pubDate.valueOf() - a.t.data.pubDate.valueOf())
+  .map((x) => x.t);
+const related = [...manualRelated, ...autoRelated].slice(0, 3);
+
+// Blok layanan di akhir artikel — diturunkan dari kategori kalau `service` tidak diisi
+type ServiceKey = 'laptop' | 'printer' | 'hp' | 'jual-beli';
+const serviceByCategory: Record<string, ServiceKey> = {
+  Laptop: 'laptop',
+  Aksesoris: 'laptop',
+  Printer: 'printer',
+  HP: 'hp',
+  Perawatan: 'hp',
+  Beli: 'jual-beli',
+};
+const serviceKey: ServiceKey = tip.data.service ?? serviceByCategory[tip.data.category] ?? 'laptop';
+const services: Record<ServiceKey, { title: string; text: string; link: string; href: string }> = {
+  laptop: {
+    title: 'Laptop atau komputer perlu diperiksa langsung?',
+    text: 'Plandemic Space melayani servis laptop & komputer di Kemiri, Purworejo — diagnosa gratis, dan estimasi biaya dikabari sebelum pengerjaan dimulai.',
+    link: 'Lihat layanan servis laptop & komputer',
+    href: '/#servis-laptop',
+  },
+  printer: {
+    title: 'Printer bermasalah dan perlu dicek teknisi?',
+    text: 'Plandemic Space melayani servis printer di Kemiri, Purworejo — bisa panggilan, dan estimasi biaya dikabari sebelum pengerjaan dimulai.',
+    link: 'Lihat layanan servis printer',
+    href: '/#servis-printer',
+  },
+  hp: {
+    title: 'HP bermasalah dan perlu diperiksa teknisi?',
+    text: 'Plandemic Space melayani servis HP di Kemiri, Purworejo — ceritakan dulu kerusakannya via WhatsApp, kami bantu cek solusi dan ketersediaan sparepart.',
+    link: 'Lihat layanan servis HP',
+    href: '/#servis-hp',
+  },
+  'jual-beli': {
+    title: 'Cari laptop atau HP yang sudah dicek kondisinya?',
+    text: 'Plandemic Space menyediakan laptop dan HP second pilihan maupun baru di Kemiri, Purworejo — harga transparan, bisa tanya-tanya dulu via WhatsApp.',
+    link: 'Lihat layanan jual beli HP & laptop',
+    href: '/#jual-beli',
+  },
+};
+const service = services[serviceKey];
+
+// Disclosure afiliasi: otomatis muncul kalau isi artikel memuat link Shopee affiliate
+const hasAffiliate = tip.data.affiliate ?? (tip.body ?? '').includes('s.shopee.co.id');
 
 const shareText = encodeURIComponent(tip.data.title);
 const shareUrl = encodeURIComponent(pageUrl);
@@ -41,7 +95,9 @@ const articleSchema = {
   headline: tip.data.title,
   description: tip.data.description,
   datePublished: isoDate,
-  dateModified: isoDate,
+  dateModified: isoModified,
+  inLanguage: 'id-ID',
+  image: ogImage,
   author: {
     '@type': 'Organization',
     name: 'Plandemic Space',
@@ -77,6 +133,10 @@ const breadcrumbSchema = {
   title={`${tip.data.seoTitle ?? tip.data.title} | Plandemic Space`}
   description={tip.data.description}
   canonical={pageUrl}
+  ogType="article"
+  publishedTime={isoDate}
+  modifiedTime={isoModified}
+  articleSection={tip.data.category}
   schemas={[articleSchema, breadcrumbSchema]}
 >
   <SiteNav />
@@ -93,9 +153,27 @@ const breadcrumbSchema = {
         <h1>{tip.data.title}</h1>
         <p class="tip-date">{formattedDate}</p>
 
+        {hasAffiliate && (
+          <p class="tip-disclosure">
+            <strong>Transparansi:</strong> artikel ini memuat link afiliasi Shopee. Kalau kamu membeli lewat link tersebut,
+            Plandemic Space bisa menerima komisi kecil tanpa biaya tambahan untukmu. Harga dan ketersediaan produk bisa
+            berubah sewaktu-waktu, jadi cek ulang di halaman produk.
+          </p>
+        )}
+
         <div class="tip-body">
           <Content />
         </div>
+
+        <aside class="tip-service" aria-label="Layanan Plandemic Space">
+          <p class="tip-service-title">{service.title}</p>
+          <p class="tip-service-text">{service.text}</p>
+          <div class="tip-service-actions">
+            <a class="tip-service-link" href={service.href}>{service.link}&nbsp;→</a>
+            <a class="tip-service-wa" href="https://wa.me/6282241439784" target="_blank" rel="noopener">Chat WhatsApp</a>
+          </div>
+          <p class="tip-service-nap">Plandemic Space · Ngemplak 02/02, Dusun III, Samping, Kemiri, Purworejo · Buka setiap hari 08.00–17.00</p>
+        </aside>
 
         <div class="tip-share">
           <span class="tip-share-label">Bagikan:</span>
@@ -107,7 +185,7 @@ const breadcrumbSchema = {
 
         {related.length > 0 && (
           <div class="tip-related">
-            <h2 class="tip-related-title">Tips lain di kategori {tip.data.category}</h2>
+            <h2 class="tip-related-title">Baca juga</h2>
             <div class="tip-related-grid">
               {related.map((r) => (
                 <a class="tip-related-card" href={`/tips/${r.slug}`}>
@@ -196,6 +274,17 @@ const breadcrumbSchema = {
     color: var(--navy);
   }
   .tip-date { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+  .tip-disclosure {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--muted);
+    background: rgba(200, 223, 232, 0.25);
+    border-left: 3px solid var(--pastel-dark);
+    border-radius: 6px;
+    padding: 0.7rem 0.95rem;
+    margin: -0.75rem 0 1.75rem;
+  }
+  .tip-disclosure strong { color: var(--navy); }
   .tip-body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.05rem;
@@ -376,6 +465,13 @@ const breadcrumbSchema = {
   }
   .tip-body :global(tr:nth-child(even) td) { background: rgba(200, 223, 232, 0.18); }
 
+  /* Tabel di layar kecil: cell lebih rapat, dan kalau masih lebar, scroll di dalam tabel (bukan seluruh halaman) */
+  @media (max-width: 640px) {
+    .tip-body :global(table) { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 0.85rem; }
+    .tip-body :global(th),
+    .tip-body :global(td) { padding: 0.5rem 0.6rem; }
+  }
+
   .tip-body :global(ul.tip-checklist) {
     list-style: none;
     margin: 0 0 1.3rem;
@@ -402,6 +498,46 @@ const breadcrumbSchema = {
     background-position: center;
     background-size: 62%;
   }
+
+  .tip-service {
+    margin-top: 2.25rem;
+    padding: 1.4rem 1.5rem;
+    background: var(--cream);
+    border: 1px solid var(--pastel);
+    border-left: 4px solid var(--gold);
+    border-radius: 10px;
+  }
+  .tip-service-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin: 0 0 0.4rem;
+  }
+  .tip-service-text { font-size: 0.95rem; line-height: 1.65; color: #2D2D2D; margin: 0 0 0.9rem; }
+  .tip-service-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.2rem; }
+  .tip-service-link {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--navy-mid);
+    text-decoration: none;
+    border-bottom: 1.5px solid rgba(201, 168, 76, 0.55);
+  }
+  .tip-service-link:hover { color: var(--navy); border-bottom-color: var(--gold); }
+  .tip-service-wa {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--navy);
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    transition: background 0.15s ease;
+  }
+  .tip-service-wa:hover { background: var(--navy-mid); }
+  .tip-service-nap { font-size: 0.78rem; color: var(--muted); margin: 0.9rem 0 0; }
 
   .tip-share {
     display: flex;
