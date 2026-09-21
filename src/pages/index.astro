@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
 import schema0 from '../data/schema-index-0.json';
 import schema1 from '../data/schema-index-1.json';
 import schema2 from '../data/schema-index-2.json';
@@ -12,11 +13,19 @@ import galMainboard from '../assets/galeri/gal-6-mainboard.webp';
 import galHeatsink from '../assets/galeri/gal-2-heatsink.webp';
 import galKeyboard from '../assets/galeri/gal-3-keyboard.webp';
 
-const title = "Servis Laptop, Komputer & Printer Purworejo | Plandemic Space";
-const description = "Servis laptop, komputer, HP & printer di Kemiri, Purworejo. Plandemic Space juga melayani print, fotokopi, pengetikan dokumen. Konsultasi via WhatsApp.";
+const title = "Servis Laptop, Komputer, HP & Printer Kemiri Purworejo | Plandemic Space";
+const description = "Servis laptop, komputer, HP & printer di Kemiri, Purworejo. Diagnosa gratis, estimasi biaya di awal, bisa panggilan & bergaransi. Chat via WhatsApp.";
 const keywords = "servis laptop Purworejo, servis komputer Kemiri, servis printer Purworejo, print fotokopi Kemiri, jasa pengetikan Purworejo, servis HP Ngemplak";
 const ogTitle = "Plandemic Space — Servis Laptop, Komputer & Printer di Purworejo";
 const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesialis servis laptop, komputer, printer, plus print, fotokopi, dan jual beli second.";
+
+// Tips terbaru per kategori (Laptop, Printer, HP) untuk internal link dari beranda ke artikel
+const allTips = await getCollection('tips');
+const newestIn = (cat: string) =>
+  allTips
+    .filter((t) => t.data.category === cat)
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf() || a.slug.localeCompare(b.slug))[0];
+const homeTips = ['Laptop', 'Printer', 'HP'].map(newestIn).filter(Boolean);
 ---
 <Layout title={title} description={description} keywords={keywords} ogTitle={ogTitle} ogDescription={ogDescription} canonical="https://plandemicspace.my.id/" schemas={[schema0, schema1, schema2]}>
 
@@ -66,7 +75,7 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
           <div class="stat-l">RATING GOOGLE</div>
         </div>
         <div class="stat">
-          <div class="stat-n">32+</div>
+          <div class="stat-n">30+</div>
           <div class="stat-l">ULASAN MAPS</div>
         </div>
         <div class="stat">
@@ -81,7 +90,7 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
   <section class="howto" id="cara-kerja">
     <div class="howto-inner">
       <div class="sec-label">CARA KERJA</div>
-      <h2 class="sec-title">Tiga langkah, beres.</h2>
+      <h2 class="sec-title">Cara servis di Plandemic Space: tiga langkah, beres.</h2>
       <div class="steps">
         <div class="step">
           <div class="step-num">01</div>
@@ -108,11 +117,11 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
   <section class="services" id="layanan">
     <div class="services-inner">
       <div class="sec-label">LAYANAN</div>
-      <h2 class="sec-title">Servis cepat, harga jelas dari awal.</h2>
+      <h2 class="sec-title">Servis laptop, HP &amp; printer — harga jelas dari awal.</h2>
       <div class="svc-grid">
-        <div class="svc">
+        <div class="svc" id="servis-laptop">
           <div class="svc-num">01</div>
-          <div class="svc-name">Servis Laptop &amp; Komputer</div>
+          <h3 class="svc-name">Servis Laptop &amp; Komputer</h3>
           <div class="svc-desc">Laptop, notebook, PC desktop, mini PC, hingga AIO — diagnosa gratis.</div>
           <ul class="svc-list">
             <li>Install ulang OS (Windows/Linux)</li>
@@ -121,11 +130,12 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
             <li>Bersih-bersih laptop/PC (heatsink, fan)</li>
             <li>Perbaikan motherboard</li>
           </ul>
+          <a class="svc-link" href="/tips/tanda-laptop-butuh-servis">Kenali tanda laptop butuh servis →</a>
           <div class="svc-badge">PANGGILAN</div>
         </div>
-        <div class="svc">
+        <div class="svc" id="servis-printer">
           <div class="svc-num">02</div>
-          <div class="svc-name">Servis Printer</div>
+          <h3 class="svc-name">Servis Printer</h3>
           <div class="svc-desc">Infus tinta, ganti cartridge, perawatan berkala. Layanan panggilan tersedia.</div>
           <ul class="svc-list">
             <li>Ganti cartridge / infus tinta</li>
@@ -133,11 +143,12 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
             <li>Servis mainboard &amp; power supply</li>
             <li>Perawatan berkala printer</li>
           </ul>
+          <a class="svc-link" href="/tips/print-bergaris-atau-buram">Hasil print bergaris? Cek penyebabnya →</a>
           <div class="svc-badge">PANGGILAN</div>
         </div>
-        <div class="svc">
+        <div class="svc" id="print-fotokopi">
           <div class="svc-num">03</div>
-          <div class="svc-name">Print, Fotokopi &amp; Scan</div>
+          <h3 class="svc-name">Print, Fotokopi &amp; Scan</h3>
           <div class="svc-desc">Hitam-putih maupun warna. Bisa ditunggu langsung.</div>
           <ul class="svc-list">
             <li>Print dokumen (HW &amp; warna)</li>
@@ -146,9 +157,9 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
             <li>Jilid dokumen</li>
           </ul>
         </div>
-        <div class="svc">
+        <div class="svc" id="pengetikan">
           <div class="svc-num">04</div>
-          <div class="svc-name">Pengetikan &amp; Bantu Tugas</div>
+          <h3 class="svc-name">Pengetikan &amp; Bantu Tugas</h3>
           <div class="svc-desc">Surat, proposal, CV, sampai tugas sekolah — dibantu susun sampai rapi, siap pakai.</div>
           <ul class="svc-list">
             <li>Pengetikan &amp; editing dokumen</li>
@@ -156,20 +167,21 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
             <li>Pembuatan CV &amp; proposal</li>
           </ul>
         </div>
-        <div class="svc">
+        <div class="svc" id="jual-beli">
           <div class="svc-num">05</div>
-          <div class="svc-name">Jual Beli HP &amp; Laptop</div>
+          <h3 class="svc-name">Jual Beli HP &amp; Laptop</h3>
           <div class="svc-desc">Cari second berkualitas atau pengen yang baru? Tinggal pilih sesuai budget, harga transparan.</div>
           <ul class="svc-list">
             <li>Laptop second pilihan, sudah dicek</li>
             <li>HP second kondisi mulus</li>
             <li>Tukar tambah device lama</li>
           </ul>
+          <a class="svc-link" href="/tips/cek-sebelum-beli-second">Hal yang wajib dicek sebelum beli second →</a>
           <div class="svc-badge">SECOND &amp; BARU</div>
         </div>
-        <div class="svc">
+        <div class="svc" id="servis-hp">
           <div class="svc-num">06</div>
-          <div class="svc-name">Servis HP</div>
+          <h3 class="svc-name">Servis HP</h3>
           <div class="svc-desc">Jangan panik duluan — chat dulu yuk, kami bantu carikan solusi &amp; sparepartnya.</div>
           <ul class="svc-list">
             <li>Ganti LCD / touchscreen</li>
@@ -177,6 +189,7 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
             <li>Perbaikan software (bootloop, lupa password)</li>
             <li>Perbaikan tombol, speaker, mic</li>
           </ul>
+          <a class="svc-link" href="/tips/hp-mati-total-kena-air-jatuh">HP kena air atau jatuh? Baca dulu →</a>
         </div>
       </div>
     </div>
@@ -233,7 +246,7 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
   <section class="gallery" id="galeri">
     <div class="gallery-inner">
       <div class="sec-label">GALERI</div>
-      <h2 class="sec-title">Lihat langsung tempat kami.</h2>
+      <h2 class="sec-title">Lihat langsung tempat servis kami di Kemiri.</h2>
       <div class="gal-grid">
         <div class="gal-item gal-wide">
           <Image src={galMejaKerja} alt="Meja kerja servis laptop dan komputer Plandemic Space Kemiri Purworejo" loading="lazy" width={1200} height={675} style="object-position: center center;" />
@@ -251,7 +264,7 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
           <Image src={galMainboard} alt="Servis mainboard printer Canon di Plandemic Space Kemiri" loading="lazy" width={675} height={1200} style="object-position: center center;" />
         </div>
         <div class="gal-item gal-tall">
-          <Image src={galHeatsink} alt="Bersih-bersih laptop laptop mati total di Plandemic Space Ngemplak Purworejo" loading="lazy" width={675} height={1200} style="object-position: center 30%;" />
+          <Image src={galHeatsink} alt="Bersih-bersih heatsink dan kipas laptop di Plandemic Space Ngemplak Purworejo" loading="lazy" width={675} height={1200} style="object-position: center 30%;" />
         </div>
         <div class="gal-item gal-wide">
           <Image src={galKeyboard} alt="Ganti keyboard laptop ASUS dan Acer di Plandemic Space Kemiri Purworejo" loading="lazy" width={1200} height={675} style="object-position: center 40%;" />
@@ -345,7 +358,7 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
   <section class="faq" id="faq">
     <div class="faq-inner">
       <div class="sec-label">FAQ</div>
-      <h2 class="sec-title">Yang sering ditanyain.</h2>
+      <h2 class="sec-title">Yang sering ditanyain soal servis.</h2>
       <div class="faq-list">
         <div class="faq-item">
           <div class="faq-q">Berapa lama proses servis laptop?</div>
@@ -371,7 +384,33 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
           <div class="faq-q">Bisa beli laptop second di sini?</div>
           <div class="faq-a">Bisa — kami jual perangkat second pilihan yang sudah dicek kondisinya, maupun perangkat baru. Harga transparan, bisa tanya-tanya dulu via WhatsApp.</div>
         </div>
+        <div class="faq-item">
+          <div class="faq-q">Di mana lokasi servis Plandemic Space dan jam bukanya?</div>
+          <div class="faq-a">Kami ada di Ngemplak 02/02, Dusun III, Samping, Kemiri, Purworejo, buka setiap hari pukul 08.00–17.00. Bisa datang langsung atau chat WhatsApp dulu — lokasi lengkapnya ada di Google Maps.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Laptop atau HP saya bermasalah, tapi belum tahu penyebabnya. Mulai dari mana?</div>
+          <div class="faq-a">Ceritakan gejalanya lewat WhatsApp — kami bantu analisa dulu, gratis. Sambil menunggu, kamu bisa baca <a href="/tips">tips mengenali gejala laptop, HP &amp; printer</a> untuk gambaran awal.</div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- TIPS TERBARU -->
+  <section class="home-tips" id="tips">
+    <div class="home-tips-inner">
+      <div class="sec-label">TIPS</div>
+      <h2 class="sec-title">Kenali gejalanya dulu sebelum dibawa servis.</h2>
+      <div class="home-tips-grid">
+        {homeTips.map((tip) => (
+          <a class="home-tip" href={`/tips/${tip.slug}`}>
+            <span class="home-tip-cat">{tip.data.category}</span>
+            <h3 class="home-tip-title">{tip.data.title}</h3>
+            <p class="home-tip-desc">{tip.data.description}</p>
+          </a>
+        ))}
+      </div>
+      <a href="/tips" class="gal-maps-link">Lihat semua tips <span>→</span></a>
     </div>
   </section>
 
@@ -430,12 +469,14 @@ const ogDescription = "Multi service & home business di Kemiri, Purworejo. Spesi
       </div>
       <div class="ft-col ft-addr">
         Ngemplak 02/02, Dusun III<br>
-        Samping, Kemiri, Purworejo
+        Samping, Kemiri, Purworejo<br>
+        WhatsApp <a href="https://wa.me/6282241439784" target="_blank" rel="noopener">0822-4143-9784</a>
       </div>
       <div class="ft-col ft-links">
         <a href="#tentang">Tentang</a>
         <a href="#layanan">Layanan</a>
         <a href="#kontak">Kontak</a>
+        <a href="/tips">Tips</a>
         <a href="/jasa-digital">Jasa Digital UMKM</a>
       </div>
     </div>

@@ -1,6 +1,6 @@
 ---
 title: "WhatsApp Tidak Bisa di HP Lama Setelah 8 September 2026? Cek Dulu Sebelum Ganti HP"
-seoTitle: "WhatsApp Tidak Bisa di HP Lama? Cek Dulu Sebelum Ganti"
+seoTitle: "WhatsApp Tidak Bisa di HP Lama? Cek Dulu"
 pubDate: "2026-09-13"
 category: "HP"
 tags: ["whatsapp", "android", "hp"]
@@ -61,6 +61,8 @@ Sebelum memutuskan beli HP baru, cek dulu checklist ini:
 3. Sudah coba hapus cache WhatsApp (Pengaturan → Aplikasi → WhatsApp → Penyimpanan → Hapus cache) untuk menyingkirkan kemungkinan masalah aplikasi biasa?
 4. Sudah cek sisa memori internal? Memori penuh juga bisa bikin WhatsApp lemot atau gagal update.
 5. Sudah backup chat WhatsApp (lewat Google Drive atau penyimpanan lokal) sebelum melakukan perubahan apa pun, jaga-jaga kalau memang harus pindah perangkat?
+
+Kalau HP lamamu juga mulai boros baterai atau terasa panas, itu bisa jadi masalah terpisah dari versi Android. Baca [HP cepat panas: kapan wajar dan kapan perlu dicek](/tips/hp-cepat-panas) untuk membedakannya.
 
 Kalau setelah semua langkah ini WhatsApp tetap tidak bisa dipakai, dan update sistem resmi ke Android 6+ memang tidak tersedia untuk HP kamu, baru masuk akal untuk mempertimbangkan HP baru.
 

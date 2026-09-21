@@ -1,5 +1,6 @@
 ---
 title: "4 Hal yang Wajib Dicek Kalau Mau Beli Laptop atau HP Second"
+seoTitle: "4 Cek Wajib Sebelum Beli Laptop/HP Second"
 pubDate: "2026-08-29"
 category: "Beli"
 tags: ["laptop second", "hp second", "tips beli"]
@@ -58,5 +59,7 @@ Harga murah itu menarik, tapi kalau ternyata baterai perlu diganti (bisa ratusan
 | Garansi/jaminan | Tanya langsung ke penjual | Nggak ada jaminan sama sekali setelah transaksi |
 
 ---
+
+Kalau laptop second yang kamu incar masih memakai hard disk, [upgrade ke SSD](/tips/ssd-256gb-vs-512gb-laptop-lama) sering jadi langkah pertama yang paling terasa. Cek dulu [tipe RAM dan SSD yang cocok](/tips/cara-cek-tipe-ram-ssd-laptop) sebelum membeli.
 
 **Lagi cari laptop atau HP second yang kondisinya jelas dan ada jaminannya?** [Tanya-tanya dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya-tanya%20soal%20laptop%2FHP%20second%20yang%20ready%2C%20mau%20konsultasi), unit second kami dicek IMEI, baterai, dan stress test-nya sebelum dijual.

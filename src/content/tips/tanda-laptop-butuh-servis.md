@@ -1,5 +1,6 @@
 ---
 title: "5 Tanda Laptop Butuh Servis Sebelum Makin Parah"
+seoTitle: "5 Tanda Laptop Butuh Servis, Jangan Ditunda"
 pubDate: "2026-08-29"
 category: "Laptop"
 tags: ["laptop", "servis", "perawatan"]
@@ -64,5 +65,7 @@ Dua kemungkinan penyebab utama, dan bisa dibedakan dengan cara ini:
 Kerusakan kecil yang dibiarkan biasanya "menjalar" ke komponen lain — laptop yang kepanasan terus-menerus misalnya, lama-lama ikut merusak baterai dan komponen di sekitar area panas tersebut. Semakin cepat gejala di atas dicek (dan sebagian besar bisa dicek sendiri dalam hitungan menit seperti langkah-langkah di atas), semakin besar peluang biaya perbaikannya tetap ringan dan datanya tetap selamat.
 
 ---
+
+Kalau tanda yang kamu alami adalah panas berlebih atau mati mendadak, bahasan lanjutannya ada di [kenapa laptop cepat panas dan kapan itu wajar](/tips/kenapa-laptop-cepat-panas) serta [laptop yang sering mati sendiri](/tips/laptop-sering-mati-sendiri).
 
 **Ngalamin salah satu tanda di atas?** Yuk konsultasi dulu, gratis, biar tahu penyebab pastinya sebelum makin parah. [Hubungi Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20menunjukkan%20salah%20satu%20tanda%20yang%20disebutkan%20di%20artikel%2C%20mau%20konsultasi) untuk cek kondisi laptop kamu.

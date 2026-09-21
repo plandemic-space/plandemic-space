@@ -1,6 +1,6 @@
 ---
 title: "Kapan Sebaiknya Upgrade RAM/SSD Dibanding Beli Laptop Baru?"
-seoTitle: "Upgrade RAM/SSD atau Beli Laptop Baru? Cek dalam 2 Menit"
+seoTitle: "Upgrade RAM/SSD atau Beli Laptop Baru?"
 pubDate: "2026-08-29"
 category: "Aksesoris"
 tags: ["upgrade", "ram", "ssd"]

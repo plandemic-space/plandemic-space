@@ -1,5 +1,6 @@
 ---
 title: "Bahaya Nge-charge HP Semalaman, Mitos atau Fakta?"
+seoTitle: "Nge-charge HP Semalaman: Mitos atau Fakta?"
 pubDate: "2026-08-29"
 category: "Perawatan"
 tags: ["baterai", "charging", "hp"]

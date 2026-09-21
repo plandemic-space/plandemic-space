@@ -1,54 +1,109 @@
 {
-    "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "RepairShop"],
-    "name": "Plandemic Space",
-    "image": "https://plandemicspace.my.id/img/og/og-image.png",
-    "logo": "https://plandemicspace.my.id/img/site/logo-512-whitebg.png",
-    "url": "https://plandemicspace.my.id/",
-    "telephone": "+6282241439784",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Ngemplak 02/02, Dusun III, Samping",
-      "addressLocality": "Kemiri",
-      "addressRegion": "Purworejo, Jawa Tengah",
-      "postalCode": "54262",
-      "addressCountry": "ID"
+  "@context": "https://schema.org",
+  "@type": [
+    "LocalBusiness",
+    "RepairShop"
+  ],
+  "@id": "https://plandemicspace.my.id/#localbusiness",
+  "name": "Plandemic Space",
+  "description": "Servis laptop, komputer, HP dan printer di Kemiri, Purworejo, Jawa Tengah. Diagnosa gratis, estimasi biaya sebelum pengerjaan, layanan panggilan, dan garansi pengerjaan. Juga melayani print, fotokopi, pengetikan dokumen, serta jual beli HP dan laptop.",
+  "image": "https://plandemicspace.my.id/img/og/og-image.png",
+  "logo": "https://plandemicspace.my.id/img/site/logo-512-whitebg.png",
+  "url": "https://plandemicspace.my.id/",
+  "telephone": "+6282241439784",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ngemplak 02/02, Dusun III, Samping",
+    "addressLocality": "Kemiri",
+    "addressRegion": "Purworejo, Jawa Tengah",
+    "postalCode": "54262",
+    "addressCountry": "ID"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -7.659723,
+    "longitude": 109.875111
+  },
+  "hasMap": "https://maps.app.goo.gl/W6FxkN82ArRKb5NT9",
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Kemiri, Purworejo"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -7.659723,
-      "longitude": 109.875111
-    },
-    "openingHoursSpecification": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Kabupaten Purworejo"
+    }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Layanan Plandemic Space",
+    "itemListElement": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "08:00",
-        "closes": "17:00"
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Servis Laptop & Komputer"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Servis Printer"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Print, Fotokopi & Scan"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pengetikan & Bantu Tugas"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Jual Beli HP & Laptop"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Servis HP"
+        }
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "32"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Layanan Plandemic Space",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Servis Laptop & Komputer" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Servis Printer" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Print, Fotokopi & Scan" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pengetikan & Bantu Tugas" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jual Beli HP & Laptop" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Servis HP" } }
-      ]
-    },
-    "sameAs": [
-      "https://www.instagram.com/zns.srr/",
-      "https://www.facebook.com/zainus.surur/",
-      "https://www.tiktok.com/@hisssdeneng",
-      "https://www.youtube.com/@Sururr"
     ]
-  }
+  },
+  "sameAs": [
+    "https://www.instagram.com/zns.srr/",
+    "https://www.facebook.com/zainus.surur/",
+    "https://www.tiktok.com/@hisssdeneng",
+    "https://www.youtube.com/@Sururr"
+  ]
+}

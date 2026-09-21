@@ -1,5 +1,6 @@
 ---
 title: "HP Mati Total Abis Kena Air atau Jatuh, Jangan Buru-buru Nyerah"
+seoTitle: "HP Mati Total Kena Air atau Jatuh? Jangan Nyerah"
 pubDate: "2026-08-29"
 category: "HP"
 tags: ["hp", "servis", "kena air"]
@@ -45,5 +46,7 @@ Benturan bisa menggeser konektor fleksibel (flex cable) yang menghubungkan layar
 - **Dengarkan suara speaker** — putar audio dengan volume penuh, kalau ada suara pecah/berdesis yang sebelumnya nggak ada, membran speaker mungkin retak akibat benturan.
 
 ---
+
+Kalau HP masih menyala tapi terasa panas berlebih setelah kena air atau benturan, baca juga [HP cepat panas: kapan wajar dan kapan perlu dicek](/tips/hp-cepat-panas).
 
 **HP kamu lagi ngalamin salah satu dari ini?** Jangan didiamkan terlalu lama, apalagi dicoba-coba nyalakan berkali-kali. [Konsultasikan ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20HP%20saya%20kena%20air%2Fjatuh%2C%20mau%20konsultasi%20kondisinya) untuk dicek kondisinya sebelum diambil langkah lebih lanjut.

@@ -1,6 +1,6 @@
 ---
 title: "Cara Cek Tipe RAM & SSD yang Cocok untuk Laptop/PC Kamu"
-seoTitle: "Cara Cek Tipe RAM & SSD Laptop Sebelum Beli (5 Menit)"
+seoTitle: "Cara Cek Tipe RAM & SSD Laptop Sebelum Beli"
 pubDate: "2026-09-01"
 category: "Aksesoris"
 tags: ["ram", "ssd", "upgrade", "kompatibilitas"]
@@ -31,7 +31,7 @@ Bagian paling sering bikin salah beli: M.2 SATA dan M.2 NVMe bentuknya nyaris id
 
 Buat lihat interface yang **udah terpasang sekarang**, buka [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) — langsung kelihatan SATA atau NVMe (PCIe).
 
-Satu hal praktis pas masang: matiin laptop total dan cabut charger dulu (kalau baterainya bisa dilepas, lepas juga), baru buka casing bawahnya. Pegang modul RAM/SSD di sisi tepinya, hindari nyentuh langsung ke bagian chip/pin emasnya — listrik statis dari tangan bisa merusak komponen di dalamnya walau nggak kelihatan efeknya langsung.
+Soal pemasangan, bagian ini lebih aman dikerjakan teknisi: modul RAM dan SSD sensitif terhadap listrik statis, dan salah pasang bisa merusak slot-nya. Di Plandemic Space, [pengecekan kompatibilitas sekaligus pemasangan RAM/SSD](/#servis-laptop) bisa dikerjakan langsung.
 
 ## Pastikan Dulu Sebelum Checkout
 
@@ -46,7 +46,7 @@ wmic csproduct get name
 Lalu cari spesifikasi resminya di situs merk laptop atau service manual-nya. Ini kenapa penting: ada laptop yang secara fisik bisa dipasangin RAM 32GB, tapi BIOS-nya cuma baca sampai 16GB — sisanya kepasang tapi mubazir.
 2. **Slot SSD-nya beneran support tipe yang mau kamu beli** — bukan cuma "muat secara fisik". Kalau ragu, service manual tetap sumber paling akurat.
 
-Kalau setelah dicek masih ragu — laptop model lama yang susah dicari manualnya, misalnya — cara paling gampang: buka casing bawah laptop, foto langsung bagian dalam slot storage/RAM-nya, kirim ke kami lewat WhatsApp buat dicek dulu sebelum kamu checkout.
+Kalau setelah dicek masih ragu — laptop model lama yang susah dicari manualnya, misalnya — cara paling gampang: kirim merek dan tipe/seri laptop kamu (biasanya tertera di stiker bawah laptop atau di System Information Windows) ke kami lewat WhatsApp, biar kami bantu cek tipe RAM/SSD yang didukung sebelum kamu checkout.
 
 Ringkasnya, sebelum klik "beli", ini yang harusnya udah kamu pastikan:
 

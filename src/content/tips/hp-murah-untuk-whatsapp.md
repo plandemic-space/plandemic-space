@@ -1,6 +1,6 @@
 ---
 title: "HP Lama Udah Nggak Bisa Buat WA? Ini Rekomendasi HP Pengganti Paling Realistis di 2026"
-seoTitle: "HP Lama Nggak Bisa WA? Ini Rekomendasi HP Pengganti 2026"
+seoTitle: "HP Lama Nggak Bisa WA? Pilihan HP Pengganti 2026"
 pubDate: "2026-09-13"
 category: "Beli"
 tags: ["whatsapp", "hp murah", "tips beli"]

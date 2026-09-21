@@ -1,5 +1,6 @@
 ---
 title: "Hasil Print Bergaris atau Buram, Ini Penyebab Umumnya"
+seoTitle: "Print Bergaris atau Buram? Ini Penyebabnya"
 pubDate: "2026-08-29"
 category: "Printer"
 tags: ["printer", "tinta", "perawatan"]
