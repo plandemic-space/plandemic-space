@@ -233,7 +233,8 @@ FAQ visible dan `schema-index-1.json` HARUS selalu sinkron. H1 tetap kalimat key
 ("Ruang Solusi" tetap `<p>`, keputusan brand tidak diubah). NAP (alamat + WhatsApp) tampil di footer.
 
 **Template artikel** (`tips/[...slug].astro` + `content/config.ts`) — semua otomatis, artikel lama ikut kena:
-- Disclosure afiliasi muncul di atas artikel kalau isinya memuat `s.shopee.co.id` (atau `affiliate: true`).
+- Catatan afiliasi di atas artikel DIMATIKAN atas keputusan owner (21 Sep 2026): `SHOW_AFFILIATE_NOTE = false` di
+  `tips/[...slug].astro`. Ubah ke `true` untuk menampilkannya lagi (otomatis untuk artikel yang memuat `s.shopee.co.id`).
 - Semua link Shopee otomatis `rel="sponsored nofollow noopener"` + `target="_blank"` lewat plugin rehype di
   `astro.config.mjs` (ditulis pakai markdown atau HTML `<a>` sama saja).
 - Blok layanan di akhir artikel (frontmatter `service: laptop|printer|hp|jual-beli`; kalau kosong diturunkan dari kategori).

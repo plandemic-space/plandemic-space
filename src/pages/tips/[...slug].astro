@@ -83,7 +83,10 @@ const services: Record<ServiceKey, { title: string; text: string; link: string; 
 };
 const service = services[serviceKey];
 
-// Disclosure afiliasi: otomatis muncul kalau isi artikel memuat link Shopee affiliate
+// Catatan afiliasi di atas artikel. Sengaja dimatikan (keputusan owner, 21 Sep 2026).
+// Ubah ke `true` untuk menampilkannya lagi: otomatis muncul di artikel yang memuat link s.shopee.co.id.
+// rel="sponsored nofollow" pada link Shopee tetap aktif lewat astro.config.mjs, terlepas dari pengaturan ini.
+const SHOW_AFFILIATE_NOTE = false;
 const hasAffiliate = tip.data.affiliate ?? (tip.body ?? '').includes('s.shopee.co.id');
 
 const shareText = encodeURIComponent(tip.data.title);
@@ -153,7 +156,7 @@ const breadcrumbSchema = {
         <h1>{tip.data.title}</h1>
         <p class="tip-date">{formattedDate}</p>
 
-        {hasAffiliate && (
+        {SHOW_AFFILIATE_NOTE && hasAffiliate && (
           <p class="tip-disclosure">
             <strong>Transparansi:</strong> artikel ini memuat link afiliasi Shopee. Kalau kamu membeli lewat link tersebut,
             Plandemic Space bisa menerima komisi kecil tanpa biaya tambahan untukmu. Harga dan ketersediaan produk bisa
