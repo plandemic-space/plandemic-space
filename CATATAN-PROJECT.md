@@ -1,5 +1,5 @@
 # CATATAN PROJECT — Plandemic Space
-# Update terakhir: 21 September 2026 (link Shopee dipasang di 5 artikel baru; tabel artikel tidak lagi overflow di HP)
+# Update terakhir: 21 September 2026 (link Shopee di 5 artikel baru; tabel artikel tidak overflow di HP; title halaman Tips & 404 noindex; rapikan file yang belum ter-upload)
 # Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai (29 Agu 2026) + halaman Tips di-restore & disepakati (1 Sep 2026) + fix sinkronisasi font & kategori (9 Sep 2026) + 2 artikel baru & fact-check (13 Sep 2026)
 
 ---
