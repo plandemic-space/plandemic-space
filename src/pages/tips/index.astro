@@ -3,9 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 import SiteNav from '../../components/SiteNav.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
 import TipCover from '../../components/TipCover.astro';
-import { getCollection } from 'astro:content';
+import { getPublishedTips } from '../../lib/tips';
 
-const allTips = await getCollection('tips');
+const allTips = await getPublishedTips();
 allTips.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const categories = ['Semua', ...Array.from(new Set(allTips.map((t) => t.data.category)))];

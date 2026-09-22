@@ -3,10 +3,10 @@ import Layout from '../../layouts/Layout.astro';
 import SiteNav from '../../components/SiteNav.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
 import TipCover from '../../components/TipCover.astro';
-import { getCollection } from 'astro:content';
+import { getPublishedTips } from '../../lib/tips';
 
 export async function getStaticPaths() {
-  const allTips = await getCollection('tips');
+  const allTips = await getPublishedTips();
   return allTips.map((tip) => ({
     params: { slug: tip.slug },
     props: { tip },
@@ -29,7 +29,7 @@ const ogImage = 'https://plandemicspace.my.id/img/og/og-image.png';
 
 // Artikel terkait: urutan manual dari frontmatter `related` dulu, lalu skor otomatis
 // (kategori sama = 2 poin, tiap tag yang sama = 1 poin), ambil maksimal 3.
-const allTips = await getCollection('tips');
+const allTips = await getPublishedTips();
 const manualRelated = (tip.data.related ?? [])
   .map((slug) => allTips.find((t) => t.slug === slug))
   .filter((t): t is (typeof allTips)[number] => Boolean(t) && t!.slug !== tip.slug);
