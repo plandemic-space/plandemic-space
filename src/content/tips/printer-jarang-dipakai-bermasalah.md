@@ -9,55 +9,55 @@ service: "printer"
 related: ["print-bergaris-atau-buram", "printer-inkjet-vs-laser-rumahan"]
 ---
 
-Printer dibeli, dipakai beberapa kali, lalu didiamkan berminggu-minggu. Begitu dibutuhkan mendadak (misalnya untuk tugas atau berkas penting), hasil cetaknya bergaris, warnanya hilang, atau printer menolak mencetak. Cerita ini sangat umum, dan penyebabnya biasanya bukan printer yang "rusak tiba-tiba".
+Printer dibeli, dipakai beberapa kali, terus didiemin berminggu-minggu. Begitu dibutuhin mendadak (misalnya buat tugas atau berkas penting), hasil cetaknya bergaris, warnanya ilang, atau printernya nolak nyetak. Cerita kayak gini sering banget kejadian, dan penyebabnya biasanya bukan printer yang "rusak tiba-tiba".
 
 ## Jawaban Singkat
 
-Pada printer inkjet, tinta yang lama didiamkan bisa **mengering di sekitar nozzle** (lubang halus tempat tinta keluar), sehingga aliran tinta terhambat. Semakin lama tidak dipakai, semakin besar kemungkinannya. Karena itu printer yang sesekali dipakai secara rutin sering justru lebih sehat daripada printer yang dibiarkan berbulan-bulan. Printer laser umumnya lebih tahan didiamkan.
+Di printer inkjet, tinta yang lama didiemin bisa **kering di sekitar nozzle** (lubang halus tempat tinta keluar), jadi aliran tintanya kehambat. Makin lama nggak dipakai, makin besar juga kemungkinannya. Makanya printer yang sesekali dipakai secara rutin justru sering lebih sehat daripada printer yang dibiarin berbulan-bulan. Printer laser umumnya lebih tahan didiemin.
 
 ## Kenapa Bisa Bermasalah kalau Jarang Dipakai?
 
-- **Tinta mengering di nozzle.** Ini penyebab paling umum hasil cetak bergaris atau ada warna yang hilang.
-- **Head mendapat sedikit atau tidak ada tinta segar.** Tanpa aliran tinta, bagian dalam head lebih mudah tersumbat.
-- **Debu dan udara panas.** Printer yang dibiarkan terbuka di ruangan berdebu atau panas lebih mudah bermasalah.
-- **Pembersihan otomatis berulang.** Printer melakukan siklus pembersihan head yang memakai tinta, dan sebagian tinta itu tertampung di penampung tinta buangan. Kalau pembersihan dilakukan berkali-kali karena masalah yang sama, tinta terbuang dan penampungnya lebih cepat penuh.
+- **Tinta kering di nozzle.** Ini penyebab paling umum hasil cetak bergaris atau ada warna yang ilang.
+- **Head cuma dapet sedikit atau nggak dapet tinta segar sama sekali.** Tanpa aliran tinta, bagian dalam head lebih gampang tersumbat.
+- **Debu dan udara panas.** Printer yang dibiarin kebuka di ruangan berdebu atau panas lebih gampang bermasalah.
+- **Pembersihan otomatis berulang.** Printer ngejalanin siklus pembersihan head yang makan tinta, dan sebagian tintanya ketampung di penampung tinta buangan. Kalau pembersihannya keulang-ulang gara-gara masalah yang sama, tintanya kebuang dan penampungnya makin cepat penuh.
 
-## Kebiasaan yang Membantu Mencegahnya
+## Kebiasaan yang Bantu Nyegah
 
-- **Cetak halaman uji secara berkala** (warna dan hitam-putih), misalnya beberapa minggu sekali kalau printer jarang dipakai. Anjuran tiap produsen berbeda, jadi cek petunjuk printermu.
-- **Matikan lewat tombol power**, bukan dengan mencabut kabel. Umumnya ini membuat head kembali ke posisi terkunci sehingga nozzle tertutup rapat.
-- **Jangan biarkan tinta sampai habis sepenuhnya.** Untuk printer tangki tinta, usahakan tinta tidak turun di bawah tanda batas minimum.
-- **Simpan di tempat yang tidak terlalu panas dan berdebu**, dan tutup penutupnya bila ada.
-- **Kalau printer perlu dipindah**, ikuti petunjuk pabrikan. Pada printer tangki tinta, umumnya posisinya harus tetap tegak supaya tinta tidak tumpah atau masuk ke bagian yang salah.
+- **Cetak halaman uji secara berkala** (warna dan hitam-putih), misalnya beberapa minggu sekali kalau printernya jarang dipakai. Anjuran tiap produsen beda-beda, jadi cek petunjuk printermu.
+- **Matiin lewat tombol power**, jangan cabut kabel langsung. Biasanya ini bikin head balik ke posisi terkunci jadi nozzle-nya ketutup rapat.
+- **Jangan biarin tintanya sampai bener-bener abis.** Buat printer tangki tinta, usahain tintanya nggak turun di bawah tanda batas minimum.
+- **Simpan di tempat yang nggak terlalu panas dan berdebu**, tutup penutupnya kalau ada.
+- **Kalau printernya perlu dipindah**, ikutin petunjuk pabrikan. Buat printer tangki tinta, biasanya posisinya harus tetap tegak biar tintanya nggak tumpah atau masuk ke bagian yang salah.
 
 ## Tanda Printer Mulai Bermasalah karena Jarang Dipakai
 
 | Yang kamu lihat | Kemungkinan penyebab umum |
 |---|---|
 | Hasil cetak bergaris atau ada bagian yang kosong | Nozzle tersumbat sebagian |
-| Salah satu warna hilang atau berubah | Nozzle warna itu tersumbat atau tinta habis |
-| Printer sibuk lama sebelum mencetak | Siklus pembersihan otomatis berjalan |
-| Muncul pesan error atau lampu berkedip terus | Perlu dicek sesuai pesan spesifik di printer |
+| Salah satu warna ilang atau berubah | Nozzle warna itu tersumbat atau tintanya abis |
+| Printer sibuk lama sebelum nyetak | Siklus pembersihan otomatis lagi jalan |
+| Muncul pesan error atau lampu berkedip terus | Perlu dicek sesuai pesan spesifik di printernya |
 
 Kenali lebih lanjut ciri-cirinya di [hasil print bergaris atau buram: penyebab dan cara mengeceknya](/tips/print-bergaris-atau-buram).
 
 ## Contoh Gambaran Kasus
 
-Printer di rumah dipakai untuk tugas sekolah anak, tapi hanya ramai di akhir semester. Di antaranya, printer dibiarkan berminggu-minggu, kadang berbulan-bulan. Ketika dipakai lagi, hasil cetaknya bergaris. Pola ini bukan kerusakan mendadak, melainkan tinta yang mengering karena jarang mengalir.
+Printer di rumah dipakai buat tugas sekolah anak, tapi cuma ramai pas akhir semester. Di antaranya, printernya dibiarin berminggu-minggu, kadang berbulan-bulan. Pas dipakai lagi, hasil cetaknya bergaris. Pola ini bukan kerusakan mendadak, tapi tinta yang kering gara-gara jarang mengalir.
 
 ## Kapan Sebaiknya Dibawa ke Teknisi
 
-- Hasil cetak tetap bergaris setelah beberapa kali pembersihan otomatis dari menu printer.
-- Kertas sering macet atau tertarik miring.
-- Muncul pesan error atau lampu berkedip terus yang tidak hilang.
-- Printer tidak terdeteksi komputer padahal kabel dan pengaturannya sudah benar.
+- Hasil cetak tetap bergaris meski udah beberapa kali dibersihin otomatis dari menu printer.
+- Kertas sering macet atau ketarik miring.
+- Muncul pesan error atau lampu berkedip terus yang nggak ilang-ilang.
+- Printer nggak kedeteksi komputer padahal kabel dan pengaturannya udah bener.
 
-Membongkar printer sendiri berisiko merusak head dan sensor. Dan kalau pembersihan otomatis diulang terlalu sering, tinta terbuang dan penampung tinta buangan makin cepat penuh, jadi lebih baik minta pemeriksaan sebelum terlalu jauh.
+Bongkar printer sendiri berisiko ngerusak head dan sensor. Kalau pembersihan otomatisnya keulang terus-terusan, tintanya kebuang dan penampung tinta buangannya makin cepat penuh, jadi lebih baik minta diperiksa sebelum kejauhan.
 
-## Kalau Ternyata Kamu Hanya Sesekali Print
+## Kalau Ternyata Kamu Cuma Sesekali Print
 
-Kalau kebutuhanmu cuma beberapa lembar per bulan, memakai jasa print sering lebih praktis dan hemat daripada merawat printer sendiri. Untuk pertimbangan memilih antara inkjet, tangki tinta, dan laser, baca [printer rumahan: inkjet atau laser](/tips/printer-inkjet-vs-laser-rumahan).
+Kalau kebutuhanmu cuma beberapa lembar sebulan, pakai jasa print sering kali lebih praktis dan hemat daripada ngerawat printer sendiri. Buat pertimbangan milih antara inkjet, tangki tinta, dan laser, baca [printer rumahan: inkjet atau laser](/tips/printer-inkjet-vs-laser-rumahan).
 
-Kalau kebutuhanmu memang hanya sesekali print, ada juga [layanan print, fotokopi, dan scan](/#print-fotokopi) yang bisa ditunggu langsung.
+Kalau kebutuhanmu emang cuma sesekali print, ada juga [layanan print, fotokopi, dan scan](/#print-fotokopi) yang bisa ditunggu langsung.
 
-**Printer kamu mulai rewel karena lama tidak dipakai?** [Ceritakan kondisinya lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20printer%20saya%20jarang%20dipakai%20dan%20hasil%20cetaknya%20bermasalah%2C%20mau%20konsultasi), sebutkan merek serta tipenya.
+**Printer kamu mulai rewel gara-gara lama nggak dipakai?** [Ceritain kondisinya lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20printer%20saya%20jarang%20dipakai%20dan%20hasil%20cetaknya%20bermasalah%2C%20mau%20konsultasi), sebutin merek serta tipenya.

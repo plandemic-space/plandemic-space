@@ -9,59 +9,59 @@ service: "laptop"
 related: ["laptop-sering-mati-sendiri", "tanda-laptop-butuh-servis"]
 ---
 
-Laptop yang hangat setelah dipakai beberapa jam itu hal biasa. Tapi laptop yang bagian bawahnya sudah bikin nggak nyaman di pangkuan, padahal kamu cuma buka browser, itu cerita lain. Pertanyaannya: mana yang wajar, dan mana yang sudah jadi sinyal ada yang perlu dicek?
+Laptop yang anget abis dipakai beberapa jam itu wajar. Tapi laptop yang bagian bawahnya udah bikin nggak nyaman di pangkuan, padahal kamu cuma buka browser, itu cerita lain. Pertanyaannya: mana yang wajar, dan mana yang udah jadi sinyal ada yang perlu dicek?
 
 ## Jawaban Singkat
 
-Panas saat laptop bekerja berat (main game, render, banyak aplikasi sekaligus) umumnya wajar, karena prosesor memang menghasilkan panas dan kipas bekerja untuk membuangnya. Yang patut diperhatikan adalah **panas yang muncul padahal beban ringan**, **kipas yang kencang terus-menerus**, atau **performa yang tiba-tiba turun**. Tiga hal itu biasanya menandakan sistem pendinginan tidak lagi bekerja optimal.
+Panas pas laptop kerja berat (main game, render, banyak aplikasi sekaligus) umumnya wajar, soalnya prosesor emang menghasilkan panas dan kipas kerja buat membuangnya. Yang patut diperhatikan itu **panas yang muncul padahal bebannya ringan**, **kipas kencang terus-terusan**, atau **performa yang tiba-tiba turun**. Tiga hal itu biasanya nandain sistem pendinginannya udah nggak optimal lagi.
 
 ## Panas Wajar vs Panas yang Perlu Diwaspadai
 
 | Kondisi | Cenderung wajar | Perlu diperhatikan |
 |---|---|---|
-| Beban kerja | Hangat saat game, edit video, atau banyak aplikasi berat | Panas saat cuma browsing atau mengetik |
-| Kipas | Berputar kencang sementara saat beban naik, lalu tenang | Kencang terus atau berisik walau laptop nyaris menganggur |
-| Performa | Stabil sepanjang pemakaian | Tiba-tiba melambat atau patah-patah saat panas |
-| Perilaku laptop | Tetap menyala normal | Restart atau mati sendiri saat panas |
+| Beban kerja | Anget saat game, edit video, atau banyak aplikasi berat | Panas cuma buat browsing atau ngetik |
+| Kipas | Kencang sementara pas beban naik, terus tenang lagi | Kencang terus atau berisik walau laptop nyaris nganggur |
+| Performa | Stabil sepanjang pemakaian | Tiba-tiba melambat atau patah-patah pas panas |
+| Perilaku laptop | Tetap nyala normal | Restart atau mati sendiri pas panas |
 
-Soal angka suhu, tiap prosesor punya batas aman yang berbeda, jadi jangan terpaku pada satu angka. Sebagai gambaran kasar, suhu yang terus-menerus mendekati level tertinggi padahal kerjaannya ringan patut dicurigai.
+Soal angka suhu, tiap prosesor punya batas amannya masing-masing, jadi jangan terpaku sama satu angka. Gambaran kasarnya, suhu yang terus-terusan mendekati level tertinggi padahal kerjaannya ringan patut dicurigai.
 
 ## Penyebab Umum Laptop Cepat Panas
 
-- **Ventilasi dan kipas tersumbat debu.** Ini penyebab yang sangat sering, apalagi pada laptop yang sudah dipakai bertahun-tahun.
-- **Pasta termal yang sudah menua.** Bahan penghantar panas antara prosesor dan pendingin bisa menurun kemampuannya seiring waktu.
-- **Kipas yang melemah.** Putarannya tidak lagi sekuat dulu, atau mulai bersuara tidak wajar.
-- **Beban di latar belakang.** Aplikasi yang jalan diam-diam, update yang sedang berjalan, atau terlalu banyak program yang aktif bersamaan.
-- **Lingkungan dan cara pakai.** Dipakai di atas kasur atau bantal, ruangan panas, atau lubang udara tertutup.
-- **Masalah pada baterai atau charger.** Adaptor atau baterai yang bermasalah kadang ikut membuat laptop terasa lebih panas dari biasanya.
+- **Ventilasi dan kipas tersumbat debu.** Ini penyebab paling sering, apalagi buat laptop yang udah dipakai bertahun-tahun.
+- **Pasta termal udah menua.** Bahan penghantar panas antara prosesor dan pendingin bisa menurun kemampuannya seiring waktu.
+- **Kipas melemah.** Putarannya udah nggak sekuat dulu, atau mulai bersuara aneh.
+- **Beban di latar belakang.** Aplikasi yang jalan diam-diam, update yang lagi berjalan, atau kebanyakan program aktif bareng-bareng.
+- **Lingkungan dan cara pakai.** Dipakai di atas kasur atau bantal, ruangan panas, atau lubang udaranya ketutup.
+- **Masalah baterai atau charger.** Adaptor atau baterai yang bermasalah kadang ikut bikin laptop kerasa lebih panas dari biasanya.
 
-## Apa yang Bisa Kamu Lakukan Sendiri
+## Apa yang Bisa Kamu Lakuin Sendiri
 
-Beberapa hal ini aman dan tidak perlu membongkar apa pun:
+Beberapa hal ini aman dan nggak perlu bongkar apa-apa:
 
 <ul class="tip-checklist">
-<li>Pakai laptop di permukaan yang keras dan rata supaya lubang udara di bawahnya tidak tertutup</li>
-<li>Tutup aplikasi dan tab yang tidak dipakai, lalu perhatikan lewat Task Manager apa yang memakan CPU paling banyak</li>
-<li>Pastikan tidak ada update besar yang sedang berjalan di latar belakang</li>
-<li>Kurangi kebiasaan mencas sambil dipakai berat kalau laptop sudah terasa sangat panas</li>
+<li>Pakai laptop di permukaan yang keras dan rata biar lubang udara di bawahnya nggak ketutup</li>
+<li>Tutup aplikasi dan tab yang nggak dipakai, terus cek lewat Task Manager apa yang paling banyak makan CPU</li>
+<li>Pastiin nggak ada update besar yang lagi jalan di latar belakang</li>
+<li>Kurangin kebiasaan ngecas sambil dipakai berat kalau laptop udah kerasa sangat panas</li>
 </ul>
 
-**Bagaimana dengan cooling pad?** Alas pendingin bisa membantu menurunkan suhu sedikit pada beberapa laptop, terutama yang punya lubang udara di bagian bawah. Tapi cooling pad tidak memperbaiki kipas yang lemah, pasta termal yang menua, atau debu di dalam. Kalau akar masalahnya di dalam, alas pendingin hanya menutupi gejala.
+**Gimana soal cooling pad?** Alas pendingin bisa bantu nurunin suhu dikit di beberapa laptop, terutama yang punya lubang udara di bagian bawah. Tapi cooling pad nggak bisa benerin kipas yang lemah, pasta termal yang udah tua, atau debu di dalam. Kalau akar masalahnya di dalam, alas pendingin cuma nutupin gejalanya aja.
 
-Kalau tetap ingin mencoba, salah satu contoh yang bisa dicek adalah [ROBOT RCP20](https://s.shopee.co.id/AAHKLfqnUp): enam kipas, kecepatan sampai 2.500 RPM, tujuh level pengaturan, untuk laptop 10–16 inci. Semua spesifikasi itu dari listing penjual, kami belum mengujinya, dan hasilnya bisa berbeda di tiap laptop. Kipas yang berputar kencang biasanya juga lebih berisik, jadi pilih level yang cukup saja.
+Kalau tetap mau nyoba, salah satu contoh yang bisa dicek [ROBOT RCP20](https://s.shopee.co.id/AAHKLfqnUp): enam kipas, kecepatan sampai 2.500 RPM, tujuh level pengaturan, buat laptop 10–16 inci. Semua spek itu dari listing penjualnya, kami belum nyoba sendiri, dan hasilnya bisa beda-beda di tiap laptop. Kipas yang muter kencang biasanya juga lebih berisik, jadi pilih level yang cukup aja.
 
 ## Kapan Sebaiknya Dibawa ke Teknisi
 
-Periksakan laptop kalau kamu mengalami salah satu dari ini:
+Periksakan laptopnya kalau kamu ngalamin salah satu dari ini:
 
-- Panas dan kipas kencang bertahan meski laptop hanya dipakai untuk pekerjaan ringan.
-- Laptop mulai restart atau [mati sendiri](/tips/laptop-sering-mati-sendiri) saat panas.
-- Terdengar bunyi tidak wajar dari kipas, misalnya berdecit atau bergesek.
-- Performa turun drastis setiap kali laptop mulai terasa panas.
-- Tercium bau hangus atau bodi terlihat menggembung. **Matikan dan cabut charger segera.**
+- Panas dan kipas kencang bertahan meski laptop cuma dipakai buat kerjaan ringan.
+- Laptop mulai restart atau [mati sendiri](/tips/laptop-sering-mati-sendiri) pas panas.
+- Kedengeran bunyi aneh dari kipas, misalnya berdecit atau bergesek.
+- Performa turun drastis tiap kali laptop mulai kerasa panas.
+- Tercium bau hangus atau bodinya keliatan menggembung. **Matikan dan cabut chargernya segera.**
 
-Pembersihan bagian dalam (kipas dan heatsink) dan penggantian pasta termal butuh membuka laptop dengan hati-hati. Salah langkah bisa merusak kabel fleksibel, konektor, atau komponen lain, jadi bagian ini paling aman dikerjakan teknisi.
+Bersihin bagian dalam (kipas dan heatsink) sama ganti pasta termal itu butuh bongkar laptop dengan hati-hati. Salah langkah malah bisa merusak kabel fleksibel, konektor, atau komponen lain, jadi bagian ini paling aman diserahin ke teknisi.
 
-Untuk gambaran gejala lain yang perlu diwaspadai, baca juga [5 tanda laptop butuh servis](/tips/tanda-laptop-butuh-servis).
+Buat gambaran gejala lain yang perlu diwaspadai, baca juga [5 tanda laptop butuh servis](/tips/tanda-laptop-butuh-servis).
 
-**Laptop kamu sudah menunjukkan tanda-tanda di atas?** Jangan tunggu sampai kerusakannya menjalar ke komponen lain — [chat dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20cepat%20panas%2C%20mau%20konsultasi) dan ceritakan gejalanya.
+**Laptop kamu udah nunjukin tanda-tanda di atas?** Jangan tunggu sampai kerusakannya nyebar ke komponen lain — [chat dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20cepat%20panas%2C%20mau%20konsultasi) dan ceritain gejalanya.
