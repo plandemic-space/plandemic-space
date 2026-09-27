@@ -63,8 +63,6 @@ Harga hard disk dan SSD di 2026 naik dan berubah cepat, jadi bandingkan 1TB deng
 - Hard disk berbunyi klik atau tidak terbaca. **Jangan dipaksa menyalin data berulang-ulang.** Matikan dan periksakan lebih dulu, karena pemakaian terus-menerus bisa memperparah kerusakan.
 - Kamu akan install ulang atau ganti storage dan bingung menyiapkan cadangannya.
 
-## Langkah Selanjutnya
+Untuk tanda-tanda laptop yang perlu segera diperiksa sebelum sempat backup, baca juga [5 tanda laptop butuh servis](/tips/tanda-laptop-butuh-servis).
 
-Kalau kamu ragu apa yang perlu dibackup sebelum laptop diservis atau di-install ulang, tanyakan dulu. Di sekitar Kemiri dan Purworejo, [servis dan install ulang laptop di Plandemic Space](/#servis-laptop) dimulai dengan diagnosa gratis, dan estimasi biaya dikabari sebelum pengerjaan.
-
-[Chat lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya%20soal%20backup%20data%20sebelum%20servis%20laptop) dan ceritakan kondisi laptopmu. Untuk tanda-tanda laptop yang perlu segera diperiksa, baca juga [5 tanda laptop butuh servis](/tips/tanda-laptop-butuh-servis).
+**Ragu apa yang perlu dibackup sebelum laptop diservis atau di-install ulang?** [Tanyakan dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya%20soal%20backup%20data%20sebelum%20servis%20laptop), ceritakan kondisi laptopmu.

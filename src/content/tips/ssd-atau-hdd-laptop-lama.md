@@ -54,8 +54,4 @@ Harga memori dan penyimpanan di 2026 sedang naik, dan laporan industri menyebut 
 
 Pemasangan SSD terlihat sederhana, tapi urutan membuka laptop berbeda di tiap model dan slot yang salah tangan bisa rusak. Minta bantuan teknisi kalau kamu belum yakin slot laptopmu, ingin data lama dipindahkan, atau laptop tipis yang tidak jelas cara membukanya.
 
-## Langkah Selanjutnya
-
-Kalau kamu ingin tahu apakah laptop lamamu layak di-upgrade ke SSD, pengecekan dan pemasangannya bisa dilakukan di Plandemic Space. Di sekitar Kemiri dan Purworejo, [layanan upgrade RAM, SSD, dan HDD ada di halaman servis laptop kami](/#servis-laptop), dengan estimasi biaya yang dikabari sebelum pengerjaan.
-
-[Kirim merek dan tipe laptop lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya%20soal%20upgrade%20laptop%20lama%20ke%20SSD%2C%20mau%20konsultasi) biar kami bantu cek dulu sebelum kamu membeli.
+**Ingin tahu apakah laptop lamamu layak di-upgrade ke SSD?** [Kirim merek dan tipe laptop lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya%20soal%20upgrade%20laptop%20lama%20ke%20SSD%2C%20mau%20konsultasi), biar kami bantu cek dulu sebelum kamu membeli.

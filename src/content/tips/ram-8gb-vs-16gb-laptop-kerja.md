@@ -56,8 +56,4 @@ Dua orang memakai laptop dengan RAM 8GB. Yang satu pekerja kantoran dengan banya
 - Kamu tidak tahu apakah lambatnya laptop benar-benar karena RAM.
 - Kamu takut salah beli atau salah pasang. RAM sensitif terhadap listrik statis dan salah pasang bisa merusak slot.
 
-## Langkah Selanjutnya
-
-Kalau ingin memastikan laptopmu bisa ditambah RAM dan jenis yang cocok, Plandemic Space dapat membantu melakukan pengecekan dan pemasangannya. Di sekitar Kemiri dan Purworejo, [layanan upgrade RAM, SSD, dan HDD ada di halaman servis laptop kami](/#servis-laptop). Diagnosa gratis, dan estimasi biaya dikabari sebelum pengerjaan.
-
-[Kirim merek dan tipe laptop lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20cek%20apakah%20laptop%20saya%20bisa%20ditambah%20RAM%2C%20mau%20konsultasi) biar kami bantu cek sebelum kamu membeli.
+**Ingin memastikan laptopmu bisa ditambah RAM dan jenis yang cocok?** [Kirim merek dan tipe laptop lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20cek%20apakah%20laptop%20saya%20bisa%20ditambah%20RAM%2C%20mau%20konsultasi), biar kami bantu cek dulu sebelum kamu membeli.

@@ -58,8 +58,4 @@ Segera periksakan HP kalau:
 
 Ganti baterai, cek konektor charging, dan pemeriksaan komponen lain sebaiknya dikerjakan teknisi. HP rapat dan padat, dan salah bongkar bisa menambah masalah.
 
-## Langkah Selanjutnya
-
-Kalau HP kamu masih panas berlebihan padahal sudah dicoba langkah-langkah di atas, [pemeriksaan teknisi bisa membantu memastikan penyebabnya](/#servis-hp). Di sekitar Kemiri dan Purworejo, Plandemic Space melayani servis HP — mulai dari ganti baterai dan konektor charging sampai perbaikan software — dan ceritakan dulu kerusakannya, kami bantu cek solusi dan ketersediaan sparepart.
-
-[Chat lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20HP%20saya%20cepat%20panas%2C%20mau%20konsultasi) dan sebutkan merek HP serta kapan biasanya panasnya muncul.
+**HP kamu masih panas berlebihan padahal sudah dicoba langkah-langkah di atas?** [Konsultasikan ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20HP%20saya%20cepat%20panas%2C%20mau%20konsultasi), sebutkan merek HP serta kapan biasanya panasnya muncul.

@@ -62,8 +62,6 @@ Periksakan laptop kalau kamu mengalami salah satu dari ini:
 
 Pembersihan bagian dalam (kipas dan heatsink) dan penggantian pasta termal butuh membuka laptop dengan hati-hati. Salah langkah bisa merusak kabel fleksibel, konektor, atau komponen lain, jadi bagian ini paling aman dikerjakan teknisi.
 
-## Langkah Selanjutnya
+Untuk gambaran gejala lain yang perlu diwaspadai, baca juga [5 tanda laptop butuh servis](/tips/tanda-laptop-butuh-servis).
 
-Kalau laptop kamu sudah menunjukkan tanda-tanda di atas, jangan tunggu sampai kerusakannya menjalar ke komponen lain. Di sekitar Kemiri dan Purworejo, [bersih-bersih dan pengecekan laptop bisa dilakukan di Plandemic Space](/#servis-laptop) — diagnosa gratis, dan estimasi biaya dikabari dulu sebelum pengerjaan.
-
-Mau tanya dulu sebelum datang? [Chat lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20cepat%20panas%2C%20mau%20konsultasi) dan ceritakan gejalanya. Untuk gambaran gejala lain yang perlu diwaspadai, baca juga [5 tanda laptop butuh servis](/tips/tanda-laptop-butuh-servis).
+**Laptop kamu sudah menunjukkan tanda-tanda di atas?** Jangan tunggu sampai kerusakannya menjalar ke komponen lain — [chat dulu ke Plandemic Space via WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20cepat%20panas%2C%20mau%20konsultasi) dan ceritakan gejalanya.

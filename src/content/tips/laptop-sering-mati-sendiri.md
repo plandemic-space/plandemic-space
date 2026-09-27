@@ -67,8 +67,6 @@ Charger yang rusak atau dayanya kurang bisa membuat laptop mati saat dicas atau 
 
 Sebagai pembanding, ada toko charger laptop di Shopee seperti [Casan Laptopku](https://s.shopee.co.id/7Kx8yfHuU7) dan [Pusat Charger Laptop](https://s.shopee.co.id/30o9oiuPir). Kami belum menguji produknya, jadi cek ulasan dan pastikan spesifikasinya cocok. Kalau ragu, bawa laptop dan charger lamanya untuk dicek dulu, karena kadang penyebabnya bukan di charger.
 
-## Langkah Selanjutnya
+Kalau laptop kamu juga terasa panas, baca juga [kenapa laptop cepat panas dan kapan itu wajar](/tips/kenapa-laptop-cepat-panas).
 
-Kalau penyebabnya belum jelas atau laptop justru semakin sering mati, pemeriksaan teknisi bisa membantu memastikan sumber masalahnya sebelum merembet ke komponen lain. Kalau laptop kamu berada di sekitar Kemiri atau Purworejo, [servis laptop dan komputer di Plandemic Space](/#servis-laptop) bisa jadi pilihan — diagnosa gratis, dan estimasi biaya kami kabari dulu sebelum pengerjaan dimulai.
-
-Kamu juga bisa [ceritakan gejalanya lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20sering%20mati%20sendiri%2C%20mau%20konsultasi) — sebutkan kapan biasanya laptop mati, kami bantu arahkan langkah berikutnya. Kalau laptop kamu juga terasa panas, baca juga [kenapa laptop cepat panas dan kapan itu wajar](/tips/kenapa-laptop-cepat-panas).
+**Penyebabnya belum jelas, atau laptop justru semakin sering mati?** [Ceritakan gejalanya lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20laptop%20saya%20sering%20mati%20sendiri%2C%20mau%20konsultasi) — sebutkan kapan biasanya laptop mati, kami bantu arahkan langkah berikutnya.

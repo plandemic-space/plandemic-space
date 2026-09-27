@@ -58,8 +58,6 @@ Membongkar printer sendiri berisiko merusak head dan sensor. Dan kalau pembersih
 
 Kalau kebutuhanmu cuma beberapa lembar per bulan, memakai jasa print sering lebih praktis dan hemat daripada merawat printer sendiri. Untuk pertimbangan memilih antara inkjet, tangki tinta, dan laser, baca [printer rumahan: inkjet atau laser](/tips/printer-inkjet-vs-laser-rumahan).
 
-## Langkah Selanjutnya
+Kalau kebutuhanmu memang hanya sesekali print, ada juga [layanan print, fotokopi, dan scan](/#print-fotokopi) yang bisa ditunggu langsung.
 
-Punya printer yang mulai rewel karena lama tidak dipakai? Di sekitar Kemiri dan Purworejo, [servis printer di Plandemic Space](/#servis-printer) bisa membantu dari pengecekan sampai perawatan berkala, dan bisa panggilan. Kalau kebutuhanmu hanya sesekali, ada juga [layanan print, fotokopi, dan scan](/#print-fotokopi) yang bisa ditunggu langsung.
-
-[Ceritakan kondisi printer kamu lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20printer%20saya%20jarang%20dipakai%20dan%20hasil%20cetaknya%20bermasalah%2C%20mau%20konsultasi) dan sebutkan merek serta tipenya.
+**Printer kamu mulai rewel karena lama tidak dipakai?** [Ceritakan kondisinya lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20printer%20saya%20jarang%20dipakai%20dan%20hasil%20cetaknya%20bermasalah%2C%20mau%20konsultasi), sebutkan merek serta tipenya.

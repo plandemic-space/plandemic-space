@@ -53,8 +53,4 @@ Kalau setelah dibersihkan storage tetap penuh, pertimbangkan dua jalur:
 
 Sebelum apa pun dilakukan, pastikan file penting sudah dicadangkan.
 
-## Langkah Selanjutnya
-
-Kalau storage laptopmu terus penuh atau kamu ingin menambah kapasitasnya, pengecekan dan pemasangan storage bisa dilakukan di Plandemic Space. Di sekitar Kemiri dan Purworejo, [layanan upgrade RAM, SSD, dan HDD ada di halaman servis laptop kami](/#servis-laptop), dengan diagnosa gratis dan estimasi biaya sebelum pengerjaan.
-
-[Chat lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20storage%20laptop%20saya%20cepat%20penuh%2C%20mau%20konsultasi) dan sebutkan merek laptop serta kapasitas storage yang sekarang.
+**Storage laptopmu terus penuh, atau ingin menambah kapasitasnya?** [Chat lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20storage%20laptop%20saya%20cepat%20penuh%2C%20mau%20konsultasi), sebutkan merek laptop serta kapasitas storage yang sekarang.

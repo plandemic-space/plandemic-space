@@ -77,8 +77,6 @@ Semua informasi di atas berasal dari spesifikasi produk dan ulasan pihak ketiga,
 
 Kalau printer sudah punya, dan muncul kondisi seperti hasil print bergaris walau tinta cukup, kertas sering macet, muncul pesan error yang tidak hilang, atau printer tidak terdeteksi komputer, sebaiknya diperiksa langsung. Bongkar printer sendiri berisiko merusak komponen sensitif seperti head dan sensor.
 
-## Langkah Selanjutnya
+Kalau kebutuhanmu ternyata hanya sesekali print, ada juga [layanan print, fotokopi, dan scan](/#print-fotokopi) yang bisa ditunggu langsung, tanpa perlu punya printer sendiri.
 
-Punya printer yang mulai rewel, atau ragu printer mana yang pas untuk kebutuhanmu? Di sekitar Kemiri dan Purworejo, [servis printer di Plandemic Space](/#servis-printer) bisa membantu dari pengecekan, ganti cartridge atau infus tinta, sampai perawatan berkala, dan bisa panggilan. Kalau kebutuhanmu ternyata hanya sesekali, ada juga [layanan print, fotokopi, dan scan](/#print-fotokopi) yang bisa ditunggu langsung.
-
-[Ceritakan kebutuhan atau masalah printer kamu lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya-tanya%20soal%20printer%20rumahan%20%28pilih%20atau%20servis%29%2C%20mau%20konsultasi) dan kami bantu arahkan.
+**Masih ragu printer mana yang pas untuk kebutuhanmu?** [Ceritakan kebutuhanmu lewat WhatsApp](https://wa.me/6282241439784?text=Halo%2C%20saya%20mau%20tanya-tanya%20soal%20printer%20rumahan%20%28pilih%20atau%20servis%29%2C%20mau%20konsultasi), biar kami bantu arahkan.
