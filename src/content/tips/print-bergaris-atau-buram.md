@@ -15,6 +15,11 @@ Printer inkjet mencetak lewat ratusan lubang mikroskopis (nozzle) di print head 
 
 Ini kenapa printer yang jarang dipakai justru lebih rawan bermasalah dibanding yang rutin dipakai tiap hari — tinta yang diam di nozzle dalam jangka lama mengering dan menyumbat, sementara tinta yang terus mengalir (karena rutin dipakai) nggak sempat mengeras.
 
+<figure class="tip-figure">
+<img src="/img/tips/printer-tangki-tinta-kuras-tinta.webp" alt="Printer tangki tinta dalam keadaan dibongkar, dengan lembar tes cetak, alat suntik, dan mangkuk berisi tinta di sekitarnya" width="1200" height="675" loading="lazy" decoding="async">
+<figcaption>Dokumentasi Plandemic Space: printer tangki tinta yang dibongkar buat kuras tinta. Lembar kiri adalah hasil tes cetak sebelum dikuras (bergaris), lembar kanan sesudahnya. Di kasus ini penyebabnya tinta KW.</figcaption>
+</figure>
+
 ## Cara Cek Sendiri: Nozzle Check Pattern
 
 Semua printer inkjet (Epson, Canon, HP) punya utility bawaan buat mendiagnosis nozzle mana yang tersumbat, tanpa perlu buka casing:

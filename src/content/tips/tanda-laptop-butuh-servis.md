@@ -36,6 +36,11 @@ powercfg /batteryreport
 2. Tekan Enter, nanti muncul lokasi file HTML yang dihasilkan (biasanya di folder user). Buka file itu di browser.
 3. Cari bagian **"Design Capacity"** (kapasitas baterai waktu baru) dibanding **"Full Charge Capacity"** (kapasitas maksimal sekarang). Kalau selisihnya udah signifikan (misalnya Full Charge Capacity tinggal 60-70% dari Design Capacity), itu konfirmasi baterai memang sudah menurun secara fisik, bukan cuma perasaan.
 
+<figure class="tip-figure">
+<img src="/img/tips/baterai-laptop-melelehkan-casing.webp" alt="Bagian bawah casing laptop yang meleleh dan menghitam di sekitar baterai" width="1200" height="856" loading="lazy" decoding="async">
+<figcaption>Dokumentasi Plandemic Space: baterai laptop yang rusak parah sampai melelehkan casing bagian bawah. Kalau baterai menggembung atau bodi terasa panas, jangan dipakai dulu.</figcaption>
+</figure>
+
 ## 4. Muncul Suara Aneh dari Dalam Laptop
 
 Jenis suaranya menentukan komponen mana yang bermasalah:

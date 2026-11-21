@@ -468,6 +468,22 @@ const breadcrumbSchema = {
   }
   .tip-body :global(tr:nth-child(even) td) { background: rgba(200, 223, 232, 0.18); }
 
+  /* Foto dokumentasi di dalam artikel */
+  .tip-body :global(figure.tip-figure) { margin: 1.75rem 0; }
+  .tip-body :global(figure.tip-figure img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--pastel);
+  }
+  .tip-body :global(figure.tip-figure figcaption) {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: var(--muted);
+    margin-top: 0.6rem;
+  }
+
   /* Tabel di layar kecil: cell lebih rapat, dan kalau masih lebar, scroll di dalam tabel (bukan seluruh halaman) */
   @media (max-width: 640px) {
     .tip-body :global(table) { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 0.85rem; }

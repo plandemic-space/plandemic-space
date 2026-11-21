@@ -36,6 +36,11 @@ HDD harus muterin piringan dan gerakin kepala baca buat nemuin data. Windows dan
 - Prosesor dan RAM-nya masih memadai buat kebutuhanmu (dokumen, browsing, video meeting).
 - Slot storage-nya emang bisa diganti.
 
+<figure class="tip-figure">
+<img src="/img/tips/hdd-ssd-terpasang-bareng-laptop.webp" alt="HDD lama dan SSD baru terpasang berdampingan di dalam laptop yang dibongkar" width="1200" height="978" loading="lazy" decoding="async">
+<figcaption>Dokumentasi Plandemic Space: HDD lama dan SSD baru dipasang bareng di satu laptop.</figcaption>
+</figure>
+
 ## Kapan Sebaiknya Nggak Buru-buru?
 
 - Laptopnya lambat gara-gara RAM kurang atau kondisi lain, jadi SSD aja belum nyelesain masalahnya.

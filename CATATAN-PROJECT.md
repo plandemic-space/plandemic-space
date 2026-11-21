@@ -1,5 +1,5 @@
 # CATATAN PROJECT — Plandemic Space
-# Update terakhir: 21 September 2026 (5 artikel terjadwal 22–26 Sep + sistem rilis terjadwal; link Shopee; rapikan SEO)
+# Update terakhir: 21 November 2026 (foto dokumentasi bengkel di 5 artikel; sebelumnya: artikel terjadwal, link Shopee, rapikan SEO)
 # Status: Konten & brand solid (Feb 2026) + kode dirapikan (Agu 2026) + migrasi Astro selesai (29 Agu 2026) + halaman Tips di-restore & disepakati (1 Sep 2026) + fix sinkronisasi font & kategori (9 Sep 2026) + 2 artikel baru & fact-check (13 Sep 2026)
 
 ---
@@ -273,6 +273,15 @@ push satu perubahan kecil pada/setelah tanggal itu, atau pasang pemicu otomatis 
 cron) — opsional, belum dipasang. Aturan: (1) isi `pubDate` dengan tanggal rilis yang SEBENARNYA, jangan
 di-backdate; (2) artikel tidak boleh menaut ke artikel yang tanggalnya lebih baru (link 404 sampai hari rilis);
 (3) uji lokal dengan `PUBLISH_AS_OF=2026-09-24T12:00:00Z npm run build`. 
+
+**FOTO DOKUMENTASI DI ARTIKEL (21 Nov 2026):** foto asli dari bengkel disimpan di `public/img/tips/*.webp`, dipasang di artikel
+lewat blok `<figure class="tip-figure">` (gaya ada di `tips/[...slug].astro`). Aturan yang disepakati owner: (1) tanpa tanggal foto,
+(2) pakai watermark "Plandemic Space" di kanan bawah, (3) merek yang tidak direkomendasikan (V-GeN) di-crop/diburamkan,
+(4) data pelanggan, nomor seri, dan metadata/GPS dibuang, (5) foto hanya dipakai kalau sesuai judul/isi artikelnya,
+(6) keterangan foto ditulis netral, tanpa klaim yang tidak dibuktikan. Foto asli ada koordinat GPS (HP), jangan diunggah mentah.
+Terpasang: kenapa-laptop-cepat-panas (2 foto kipas/heatsink berdebu), laptop-sering-mati-sendiri (baterai menggembung),
+tanda-laptop-butuh-servis (baterai melelehkan casing), print-bergaris-atau-buram (kuras tinta, kiri sebelum/kanan sesudah,
+penyebab tinta KW), ssd-atau-hdd-laptop-lama (HDD + SSD terpasang bareng; foto paling buram, boleh dibuang).
 
 **PENDING / perlu keputusan owner:**
 - [ ] `aggregateRating` (4.9 / 32 ulasan) di schema LocalBusiness adalah ulasan yang dikelola sendiri —

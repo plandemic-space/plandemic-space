@@ -35,6 +35,11 @@ Soal angka suhu, tiap prosesor punya batas amannya masing-masing, jadi jangan te
 - **Lingkungan dan cara pakai.** Dipakai di atas kasur atau bantal, ruangan panas, atau lubang udaranya ketutup.
 - **Masalah baterai atau charger.** Adaptor atau baterai yang bermasalah kadang ikut bikin laptop kerasa lebih panas dari biasanya.
 
+<figure class="tip-figure">
+<img src="/img/tips/kipas-heatsink-laptop-berdebu.webp" alt="Kipas dan heatsink laptop yang sirip pendinginnya tertutup lapisan debu tebal" width="1200" height="675" loading="lazy" decoding="async">
+<figcaption>Dokumentasi Plandemic Space: kipas dan heatsink laptop yang tertutup debu tebal. Kalau sirip pendinginnya sudah serapat ini, udara susah lewat dan panasnya numpuk.</figcaption>
+</figure>
+
 ## Apa yang Bisa Kamu Lakuin Sendiri
 
 Beberapa hal ini aman dan nggak perlu bongkar apa-apa:
@@ -61,6 +66,11 @@ Periksakan laptopnya kalau kamu ngalamin salah satu dari ini:
 - Tercium bau hangus atau bodinya keliatan menggembung. **Matikan dan cabut chargernya segera.**
 
 Bersihin bagian dalam (kipas dan heatsink) sama ganti pasta termal itu butuh bongkar laptop dengan hati-hati. Salah langkah malah bisa merusak kabel fleksibel, konektor, atau komponen lain, jadi bagian ini paling aman diserahin ke teknisi.
+
+<figure class="tip-figure">
+<img src="/img/tips/heatsink-laptop-tersumbat-debu.webp" alt="Sirip heatsink laptop yang tersumbat gumpalan debu, dipegang bersama kuas pembersih" width="1200" height="960" loading="lazy" decoding="async">
+<figcaption>Dokumentasi Plandemic Space: sirip heatsink yang tersumbat gumpalan debu, dibersihkan pakai kuas.</figcaption>
+</figure>
 
 Buat gambaran gejala lain yang perlu diwaspadai, baca juga [5 tanda laptop butuh servis](/tips/tanda-laptop-butuh-servis).
 

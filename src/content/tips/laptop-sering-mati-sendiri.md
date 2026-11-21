@@ -61,6 +61,11 @@ Jangan tunggu sampai laptop mati total kalau kamu ketemu salah satu kondisi beri
 - Muncul layar biru berulang dengan kode error yang sama.
 - Ada data penting di dalamnya dan kamu belum sempat backup. Teknisi bisa bantu ngamanin data dulu sebelum masalahnya makin parah.
 
+<figure class="tip-figure">
+<img src="/img/tips/baterai-laptop-menggembung-gosong.webp" alt="Bagian dalam laptop dengan baterai yang menggembung dan gosong" width="1200" height="550" loading="lazy" decoding="async">
+<figcaption>Dokumentasi Plandemic Space: isi laptop dengan baterai yang menggembung dan gosong. Kalau bodi laptop mulai menggembung, berhenti dipakai dan segera periksakan.</figcaption>
+</figure>
+
 ## Kalau Ternyata Charger-nya yang Bermasalah
 
 Charger yang rusak atau dayanya kurang bisa bikin laptop mati pas dicas atau nggak dapet suplai yang stabil. Kalau emang perlu ganti, cocokin tiga hal ini sama label di charger aslinya: **voltase (V)**, **arus (A) atau daya (W)**, dan **ukuran serta jenis konektornya**. Jangan pakai adaptor dengan daya lebih kecil dari aslinya.
