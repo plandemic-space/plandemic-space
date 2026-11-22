@@ -281,7 +281,7 @@ lewat blok `<figure class="tip-figure">` (gaya ada di `tips/[...slug].astro`). A
 (6) keterangan foto ditulis netral, tanpa klaim yang tidak dibuktikan. Foto asli ada koordinat GPS (HP), jangan diunggah mentah.
 Terpasang: kenapa-laptop-cepat-panas (2 foto kipas/heatsink berdebu), laptop-sering-mati-sendiri (baterai menggembung),
 tanda-laptop-butuh-servis (baterai melelehkan casing), print-bergaris-atau-buram (kuras tinta, kiri sebelum/kanan sesudah,
-penyebab tinta KW), ssd-atau-hdd-laptop-lama (HDD + SSD terpasang bareng; foto paling buram, boleh dibuang).
+penyebab tinta aspal = kemasan tulisan ori, isi palsu), ssd-atau-hdd-laptop-lama (HDD + SSD terpasang bareng; foto paling buram, boleh dibuang).
 
 **PENDING / perlu keputusan owner:**
 - [ ] `aggregateRating` (4.9 / 32 ulasan) di schema LocalBusiness adalah ulasan yang dikelola sendiri —

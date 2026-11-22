@@ -17,7 +17,7 @@ Ini kenapa printer yang jarang dipakai justru lebih rawan bermasalah dibanding y
 
 <figure class="tip-figure">
 <img src="/img/tips/printer-tangki-tinta-kuras-tinta.webp" alt="Printer tangki tinta dalam keadaan dibongkar, dengan lembar tes cetak, alat suntik, dan mangkuk berisi tinta di sekitarnya" width="1200" height="675" loading="lazy" decoding="async">
-<figcaption>Dokumentasi Plandemic Space: printer tangki tinta yang dibongkar buat kuras tinta. Lembar kiri adalah hasil tes cetak sebelum dikuras (bergaris), lembar kanan sesudahnya. Di kasus ini penyebabnya tinta KW.</figcaption>
+<figcaption>Dokumentasi Plandemic Space: printer tangki tinta yang dibongkar buat kuras tinta. Lembar kiri adalah hasil tes cetak sebelum dikuras (bergaris), lembar kanan sesudahnya. Di kasus ini penyebabnya tinta aspal: tulisannya ori, tapi isinya palsu.</figcaption>
 </figure>
 
 ## Cara Cek Sendiri: Nozzle Check Pattern
@@ -53,6 +53,7 @@ Dua kasus ini butuh pengecekan langsung karena solusinya beda-beda (bersihkan en
 - Pakai printer setidaknya seminggu sekali (cetak apa saja) biar tinta di nozzle nggak sempat mengering
 - Jangan tunggu sampai tinta benar-benar habis sebelum diganti — cartridge/tabung kosong yang tetap dipaksa jalan bisa merusak print head
 - Simpan printer di tempat yang nggak lembap (memicu jamur di sirkuit) dan nggak berdebu (debu bisa masuk ke jalur nozzle)
+- Hati-hati sama tinta aspal (kemasannya tulisan ori, tapi isinya palsu). Kalau mau yang pasti, beli ori di toko resmi atau yang segelnya resmi. Kalau mau yang lebih hemat, pilih merek isi ulang yang dipercaya dan banyak dipakai teknisi atau pengguna lain
 
 ---
 
